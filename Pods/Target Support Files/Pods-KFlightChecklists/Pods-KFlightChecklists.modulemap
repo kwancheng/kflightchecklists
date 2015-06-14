@@ -1,0 +1,6 @@
+framework module Pods_KFlightChecklists {
+  umbrella header "Pods-KFlightChecklists-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,25 +1,189 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="h62-SE-d51">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Navigation Controller-->
+        <scene sceneID="aoH-7b-B0m">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController id="h62-SE-d51" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Jck-GH-020">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="7TJ-c5-RXz" kind="relationship" relationship="rootViewController" id="LeT-MT-T7g"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YjS-QA-npQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-100" y="526"/>
+        </scene>
+        <!--Select Checklist-->
+        <scene sceneID="e1v-Tp-43J">
+            <objects>
+                <viewController id="7TJ-c5-RXz" customClass="ChecklistSelectViewController" customModule="KFlightChecklists" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="Zkl-5S-2mC"/>
+                        <viewControllerLayoutGuide type="bottom" id="IB7-Jm-FTS"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="NEx-Dg-xuc">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Z7F-x2-HL1">
+                                <rect key="frame" x="16" y="20" width="568" height="560"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Z7F-x2-HL1" secondAttribute="bottom" constant="20" symbolic="YES" id="EDC-s0-tI1"/>
+                            <constraint firstItem="Z7F-x2-HL1" firstAttribute="top" secondItem="NEx-Dg-xuc" secondAttribute="top" constant="20" symbolic="YES" id="EVZ-qU-5gk"/>
+                            <constraint firstItem="Z7F-x2-HL1" firstAttribute="trailing" secondItem="NEx-Dg-xuc" secondAttribute="trailingMargin" id="aEr-ax-n20"/>
+                            <constraint firstItem="Z7F-x2-HL1" firstAttribute="leading" secondItem="NEx-Dg-xuc" secondAttribute="leadingMargin" id="buT-tX-nrA"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Select Checklist" id="X3O-oC-R2N"/>
+                    <connections>
+                        <outlet property="lbChecklists" destination="Z7F-x2-HL1" id="3dU-eC-ONp"/>
+                        <segue destination="HJW-kc-DbC" kind="show" identifier="PerformChecklist" id="3ca-Ak-HSP"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q25-5d-763" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="743" y="526"/>
+        </scene>
+        <!--Title-->
+        <scene sceneID="Q3B-nr-YC5">
+            <objects>
+                <viewController id="HJW-kc-DbC" customClass="ChecklistViewController" customModule="KFlightChecklists" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="c8F-gS-orl"/>
+                        <viewControllerLayoutGuide type="bottom" id="8Tu-gi-0qr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Jof-74-NlU">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="fSu-dQ-BHA">
+                                <rect key="frame" x="16" y="0.0" width="568" height="580"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ActionItemCell" id="mkd-so-sUd" customClass="ActionItemCell" customModule="KFlightChecklists" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="568" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mkd-so-sUd" id="cUg-Jr-8zF">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3SD-bO-dxE" userLabel="Item Label">
+                                                    <rect key="frame" x="8" y="8" width="272" height="27"/>
+                                                    <color key="backgroundColor" name="selectedControlColor" catalog="System" colorSpace="catalog"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rde-dx-uX3" userLabel="Action Label">
+                                                    <rect key="frame" x="280" y="8" width="280" height="27"/>
+                                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstItem="Rde-dx-uX3" firstAttribute="leading" secondItem="3SD-bO-dxE" secondAttribute="trailing" id="AsJ-Q7-Sya"/>
+                                                <constraint firstItem="3SD-bO-dxE" firstAttribute="leading" secondItem="cUg-Jr-8zF" secondAttribute="leadingMargin" id="I2d-GW-hR2"/>
+                                                <constraint firstItem="Rde-dx-uX3" firstAttribute="bottom" secondItem="cUg-Jr-8zF" secondAttribute="bottomMargin" id="KeY-OJ-Hjc"/>
+                                                <constraint firstItem="Rde-dx-uX3" firstAttribute="top" secondItem="cUg-Jr-8zF" secondAttribute="topMargin" id="KgM-NL-Y2J"/>
+                                                <constraint firstItem="3SD-bO-dxE" firstAttribute="bottom" secondItem="cUg-Jr-8zF" secondAttribute="bottomMargin" id="U1V-77-B2i"/>
+                                                <constraint firstItem="3SD-bO-dxE" firstAttribute="top" secondItem="cUg-Jr-8zF" secondAttribute="topMargin" id="UMQ-80-uGC"/>
+                                                <constraint firstItem="Rde-dx-uX3" firstAttribute="trailing" secondItem="cUg-Jr-8zF" secondAttribute="trailingMargin" id="UXI-9z-ART"/>
+                                                <constraint firstItem="Rde-dx-uX3" firstAttribute="bottom" secondItem="cUg-Jr-8zF" secondAttribute="bottomMargin" id="boh-m2-YUy"/>
+                                                <constraint firstItem="3SD-bO-dxE" firstAttribute="trailing" secondItem="cUg-Jr-8zF" secondAttribute="trailingMargin" multiplier="50%" id="gn9-RM-5fB"/>
+                                                <constraint firstItem="Rde-dx-uX3" firstAttribute="top" secondItem="cUg-Jr-8zF" secondAttribute="topMargin" id="n36-3e-ZJf"/>
+                                                <constraint firstItem="Rde-dx-uX3" firstAttribute="trailing" secondItem="cUg-Jr-8zF" secondAttribute="trailingMargin" id="q38-2i-cuh"/>
+                                                <constraint firstItem="Rde-dx-uX3" firstAttribute="leading" secondItem="3SD-bO-dxE" secondAttribute="trailing" id="th0-Lm-EaO"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="lblAction" destination="Rde-dx-uX3" id="Abz-CH-jJi"/>
+                                            <outlet property="lblItem" destination="3SD-bO-dxE" id="qO0-hz-psa"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CautionCell" id="J59-2O-gj9" customClass="CautionCell" customModule="KFlightChecklists" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="568" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="J59-2O-gj9" id="8u0-eQ-x0o">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NHw-XH-xWB">
+                                                    <rect key="frame" x="8" y="11" width="552" height="21"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="NHw-XH-xWB" secondAttribute="bottom" constant="3" id="4Yl-5e-Xjz"/>
+                                                <constraint firstItem="NHw-XH-xWB" firstAttribute="leading" secondItem="8u0-eQ-x0o" secondAttribute="leadingMargin" id="CZz-9A-7Mw"/>
+                                                <constraint firstItem="NHw-XH-xWB" firstAttribute="trailing" secondItem="8u0-eQ-x0o" secondAttribute="trailingMargin" id="XUa-yo-AGD"/>
+                                                <constraint firstItem="NHw-XH-xWB" firstAttribute="top" secondItem="8u0-eQ-x0o" secondAttribute="topMargin" constant="3" id="ybw-LK-uu2"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="lblCautionText" destination="NHw-XH-xWB" id="9au-bL-tbH"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="NoteCell" id="K2a-Z6-hOd" customClass="NoteCell" customModule="KFlightChecklists" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="568" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="K2a-Z6-hOd" id="jeE-Xg-ccP">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="25" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6vQ-Wg-08X">
+                                                    <rect key="frame" x="8" y="11" width="552" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.76892639702074184" green="0.98950230801309236" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="6vQ-Wg-08X" firstAttribute="trailing" secondItem="jeE-Xg-ccP" secondAttribute="trailingMargin" id="08E-Pv-hrp"/>
+                                                <constraint firstItem="6vQ-Wg-08X" firstAttribute="leading" secondItem="jeE-Xg-ccP" secondAttribute="leadingMargin" id="2TV-dt-Mc9"/>
+                                                <constraint firstItem="6vQ-Wg-08X" firstAttribute="top" secondItem="jeE-Xg-ccP" secondAttribute="topMargin" constant="3" id="Njt-F9-yhs"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="6vQ-Wg-08X" secondAttribute="bottom" constant="3" id="eep-lQ-y9n"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="lblNoteText" destination="6vQ-Wg-08X" id="idE-40-4gc"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fSu-dQ-BHA" firstAttribute="trailing" secondItem="Jof-74-NlU" secondAttribute="trailingMargin" id="91u-1x-nar"/>
+                            <constraint firstAttribute="bottom" secondItem="fSu-dQ-BHA" secondAttribute="bottom" constant="20" symbolic="YES" id="Dco-8W-zCb"/>
+                            <constraint firstItem="fSu-dQ-BHA" firstAttribute="top" secondItem="Jof-74-NlU" secondAttribute="top" id="ZXN-uz-rEi"/>
+                            <constraint firstItem="fSu-dQ-BHA" firstAttribute="leading" secondItem="Jof-74-NlU" secondAttribute="leadingMargin" id="haV-Rf-0nG"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="ocC-3W-5uX"/>
+                    <connections>
+                        <outlet property="lbChecklist" destination="fSu-dQ-BHA" id="ZiT-2H-6WU"/>
+                        <outlet property="navItem" destination="ocC-3W-5uX" id="Aui-mk-N9N"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kbI-n4-JvI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="743" y="1240"/>
         </scene>
     </scenes>
 </document>

@@ -9,11 +9,26 @@
 /* Begin PBXBuildFile section */
 		0F0EE6471B2C925500755FCF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0EE6461B2C925500755FCF /* AppDelegate.swift */; };
 		0F0EE64A1B2C925500755FCF /* KFlightChecklists.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0F0EE6481B2C925500755FCF /* KFlightChecklists.xcdatamodeld */; };
-		0F0EE64C1B2C925500755FCF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0EE64B1B2C925500755FCF /* ViewController.swift */; };
 		0F0EE64F1B2C925500755FCF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F0EE64D1B2C925500755FCF /* Main.storyboard */; };
 		0F0EE6511B2C925500755FCF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F0EE6501B2C925500755FCF /* Images.xcassets */; };
 		0F0EE6541B2C925500755FCF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F0EE6521B2C925500755FCF /* LaunchScreen.xib */; };
 		0F0EE6601B2C925500755FCF /* KFlightChecklistsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0EE65F1B2C925500755FCF /* KFlightChecklistsTests.swift */; };
+		0F244DCF1B2D126300081141 /* ChecklistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F244DCE1B2D126300081141 /* ChecklistViewController.swift */; };
+		0F6D4C1B1B2C93D30002A070 /* ChecklistPack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6D4C1A1B2C93D30002A070 /* ChecklistPack.swift */; };
+		0F6D4C1D1B2C94570002A070 /* Checklist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6D4C1C1B2C94570002A070 /* Checklist.swift */; };
+		0F6D4C1F1B2C94A20002A070 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6D4C1E1B2C94A20002A070 /* Section.swift */; };
+		0F6D4C211B2C94CF0002A070 /* ChecklistItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6D4C201B2C94CF0002A070 /* ChecklistItem.swift */; };
+		0FF75C4C1B2C9C7800960DCA /* ChecklistType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF75C4B1B2C9C7800960DCA /* ChecklistType.swift */; };
+		0FF75C4F1B2CFC1A00960DCA /* Checklists.json in Resources */ = {isa = PBXBuildFile; fileRef = 0FF75C4E1B2CFC1A00960DCA /* Checklists.json */; };
+		0FF75C521B2CFE9300960DCA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF75C511B2CFE9300960DCA /* ViewController.swift */; };
+		0FF75C541B2CFEC900960DCA /* ChecklistSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF75C531B2CFEC900960DCA /* ChecklistSelectViewController.swift */; };
+		4412AED670F347553E974285 /* Pods_KFlightChecklistsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FB17246551392FF59599EF1 /* Pods_KFlightChecklistsTests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		8BAF5D244CE3D96F28065E64 /* Pods_KFlightChecklists.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D05D7D07794644001CDA704 /* Pods_KFlightChecklists.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		BC34F8ED1B2DE756001F60C9 /* ActionItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC34F8EC1B2DE756001F60C9 /* ActionItemCell.swift */; };
+		BC34F8F11B2DEED0001F60C9 /* CautionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC34F8F01B2DEED0001F60C9 /* CautionCell.swift */; };
+		BC34F8F31B2DF0FA001F60C9 /* NoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC34F8F21B2DF0FA001F60C9 /* NoteCell.swift */; };
+		BCCB8D441B2DA3D200EDE9C5 /* SectionHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCCB8D431B2DA3D200EDE9C5 /* SectionHeader.xib */; };
+		BCCB8D461B2DA54600EDE9C5 /* SectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCB8D451B2DA54600EDE9C5 /* SectionHeader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,13 +46,32 @@
 		0F0EE6451B2C925500755FCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F0EE6461B2C925500755FCF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0F0EE6491B2C925500755FCF /* KFlightChecklists.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = KFlightChecklists.xcdatamodel; sourceTree = "<group>"; };
-		0F0EE64B1B2C925500755FCF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0F0EE64E1B2C925500755FCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0F0EE6501B2C925500755FCF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		0F0EE6531B2C925500755FCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		0F0EE6591B2C925500755FCF /* KFlightChecklistsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KFlightChecklistsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F0EE65E1B2C925500755FCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F0EE65F1B2C925500755FCF /* KFlightChecklistsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KFlightChecklistsTests.swift; sourceTree = "<group>"; };
+		0F244DCE1B2D126300081141 /* ChecklistViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChecklistViewController.swift; sourceTree = "<group>"; };
+		0F6D4C1A1B2C93D30002A070 /* ChecklistPack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChecklistPack.swift; sourceTree = "<group>"; };
+		0F6D4C1C1B2C94570002A070 /* Checklist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Checklist.swift; sourceTree = "<group>"; };
+		0F6D4C1E1B2C94A20002A070 /* Section.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
+		0F6D4C201B2C94CF0002A070 /* ChecklistItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChecklistItem.swift; sourceTree = "<group>"; };
+		0FF75C4B1B2C9C7800960DCA /* ChecklistType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChecklistType.swift; sourceTree = "<group>"; };
+		0FF75C4E1B2CFC1A00960DCA /* Checklists.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Checklists.json; sourceTree = "<group>"; };
+		0FF75C511B2CFE9300960DCA /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0FF75C531B2CFEC900960DCA /* ChecklistSelectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChecklistSelectViewController.swift; sourceTree = "<group>"; };
+		3D05D7D07794644001CDA704 /* Pods_KFlightChecklists.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KFlightChecklists.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FB17246551392FF59599EF1 /* Pods_KFlightChecklistsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KFlightChecklistsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B09E9EF364C6BB9B1379049E /* Pods-KFlightChecklists.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KFlightChecklists.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KFlightChecklists/Pods-KFlightChecklists.debug.xcconfig"; sourceTree = "<group>"; };
+		B6402079B7E308B249B11FD9 /* Pods-KFlightChecklistsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KFlightChecklistsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KFlightChecklistsTests/Pods-KFlightChecklistsTests.release.xcconfig"; sourceTree = "<group>"; };
+		BC34F8EC1B2DE756001F60C9 /* ActionItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionItemCell.swift; sourceTree = "<group>"; };
+		BC34F8F01B2DEED0001F60C9 /* CautionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CautionCell.swift; sourceTree = "<group>"; };
+		BC34F8F21B2DF0FA001F60C9 /* NoteCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteCell.swift; sourceTree = "<group>"; };
+		BCCB8D431B2DA3D200EDE9C5 /* SectionHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SectionHeader.xib; sourceTree = "<group>"; };
+		BCCB8D451B2DA54600EDE9C5 /* SectionHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionHeader.swift; sourceTree = "<group>"; };
+		C0D28F7ED4A8E56A6DED0010 /* Pods-KFlightChecklists.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KFlightChecklists.release.xcconfig"; path = "Pods/Target Support Files/Pods-KFlightChecklists/Pods-KFlightChecklists.release.xcconfig"; sourceTree = "<group>"; };
+		DED56DAC1BB3ABD52566F21E /* Pods-KFlightChecklistsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KFlightChecklistsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KFlightChecklistsTests/Pods-KFlightChecklistsTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BAF5D244CE3D96F28065E64 /* Pods_KFlightChecklists.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4412AED670F347553E974285 /* Pods_KFlightChecklistsTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +100,8 @@
 				0F0EE6431B2C925500755FCF /* KFlightChecklists */,
 				0F0EE65C1B2C925500755FCF /* KFlightChecklistsTests */,
 				0F0EE6421B2C925500755FCF /* Products */,
+				5A5E17BE4A1CF182B264ABC0 /* Pods */,
+				B080C416EF7C40932709E0FC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,8 +117,10 @@
 		0F0EE6431B2C925500755FCF /* KFlightChecklists */ = {
 			isa = PBXGroup;
 			children = (
+				0FF75C4D1B2CFC1A00960DCA /* Resources */,
+				0F6D4C191B2C93C40002A070 /* Data */,
+				0FF75C501B2CFE9300960DCA /* Views */,
 				0F0EE6461B2C925500755FCF /* AppDelegate.swift */,
-				0F0EE64B1B2C925500755FCF /* ViewController.swift */,
 				0F0EE64D1B2C925500755FCF /* Main.storyboard */,
 				0F0EE6501B2C925500755FCF /* Images.xcassets */,
 				0F0EE6521B2C925500755FCF /* LaunchScreen.xib */,
@@ -115,6 +155,61 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		0F6D4C191B2C93C40002A070 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				0F6D4C1A1B2C93D30002A070 /* ChecklistPack.swift */,
+				0F6D4C1C1B2C94570002A070 /* Checklist.swift */,
+				0F6D4C1E1B2C94A20002A070 /* Section.swift */,
+				0F6D4C201B2C94CF0002A070 /* ChecklistItem.swift */,
+				0FF75C4B1B2C9C7800960DCA /* ChecklistType.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		0FF75C4D1B2CFC1A00960DCA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0FF75C4E1B2CFC1A00960DCA /* Checklists.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0FF75C501B2CFE9300960DCA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0FF75C511B2CFE9300960DCA /* ViewController.swift */,
+				0FF75C531B2CFEC900960DCA /* ChecklistSelectViewController.swift */,
+				0F244DCE1B2D126300081141 /* ChecklistViewController.swift */,
+				BCCB8D431B2DA3D200EDE9C5 /* SectionHeader.xib */,
+				BCCB8D451B2DA54600EDE9C5 /* SectionHeader.swift */,
+				BC34F8EC1B2DE756001F60C9 /* ActionItemCell.swift */,
+				BC34F8F01B2DEED0001F60C9 /* CautionCell.swift */,
+				BC34F8F21B2DF0FA001F60C9 /* NoteCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5A5E17BE4A1CF182B264ABC0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B09E9EF364C6BB9B1379049E /* Pods-KFlightChecklists.debug.xcconfig */,
+				C0D28F7ED4A8E56A6DED0010 /* Pods-KFlightChecklists.release.xcconfig */,
+				DED56DAC1BB3ABD52566F21E /* Pods-KFlightChecklistsTests.debug.xcconfig */,
+				B6402079B7E308B249B11FD9 /* Pods-KFlightChecklistsTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B080C416EF7C40932709E0FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3D05D7D07794644001CDA704 /* Pods_KFlightChecklists.framework */,
+				3FB17246551392FF59599EF1 /* Pods_KFlightChecklistsTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,9 +217,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0F0EE6631B2C925500755FCF /* Build configuration list for PBXNativeTarget "KFlightChecklists" */;
 			buildPhases = (
+				77F7A979444B61DECB67B4B9 /* Check Pods Manifest.lock */,
 				0F0EE63D1B2C925500755FCF /* Sources */,
 				0F0EE63E1B2C925500755FCF /* Frameworks */,
 				0F0EE63F1B2C925500755FCF /* Resources */,
+				1B550C639780C85C96B7459F /* Embed Pods Frameworks */,
+				33AF1B8EF35FCB203F5495F1 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -139,9 +237,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0F0EE6661B2C925500755FCF /* Build configuration list for PBXNativeTarget "KFlightChecklistsTests" */;
 			buildPhases = (
+				2658C810D3C910B602AEFFA8 /* Check Pods Manifest.lock */,
 				0F0EE6551B2C925500755FCF /* Sources */,
 				0F0EE6561B2C925500755FCF /* Frameworks */,
 				0F0EE6571B2C925500755FCF /* Resources */,
+				1B4BCB9E32907ABDCB7E7CA9 /* Embed Pods Frameworks */,
+				B291FA418C32DEFA566834EB /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -195,7 +296,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FF75C4F1B2CFC1A00960DCA /* Checklists.json in Resources */,
 				0F0EE64F1B2C925500755FCF /* Main.storyboard in Resources */,
+				BCCB8D441B2DA3D200EDE9C5 /* SectionHeader.xib in Resources */,
 				0F0EE6541B2C925500755FCF /* LaunchScreen.xib in Resources */,
 				0F0EE6511B2C925500755FCF /* Images.xcassets in Resources */,
 			);
@@ -210,14 +313,118 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1B4BCB9E32907ABDCB7E7CA9 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KFlightChecklistsTests/Pods-KFlightChecklistsTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1B550C639780C85C96B7459F /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KFlightChecklists/Pods-KFlightChecklists-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2658C810D3C910B602AEFFA8 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		33AF1B8EF35FCB203F5495F1 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KFlightChecklists/Pods-KFlightChecklists-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		77F7A979444B61DECB67B4B9 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B291FA418C32DEFA566834EB /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KFlightChecklistsTests/Pods-KFlightChecklistsTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0F0EE63D1B2C925500755FCF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0F0EE64C1B2C925500755FCF /* ViewController.swift in Sources */,
+				0F6D4C1D1B2C94570002A070 /* Checklist.swift in Sources */,
+				0FF75C4C1B2C9C7800960DCA /* ChecklistType.swift in Sources */,
+				0FF75C521B2CFE9300960DCA /* ViewController.swift in Sources */,
+				0F244DCF1B2D126300081141 /* ChecklistViewController.swift in Sources */,
+				BC34F8ED1B2DE756001F60C9 /* ActionItemCell.swift in Sources */,
+				BC34F8F31B2DF0FA001F60C9 /* NoteCell.swift in Sources */,
+				0F6D4C211B2C94CF0002A070 /* ChecklistItem.swift in Sources */,
 				0F0EE64A1B2C925500755FCF /* KFlightChecklists.xcdatamodeld in Sources */,
+				0F6D4C1F1B2C94A20002A070 /* Section.swift in Sources */,
 				0F0EE6471B2C925500755FCF /* AppDelegate.swift in Sources */,
+				BCCB8D461B2DA54600EDE9C5 /* SectionHeader.swift in Sources */,
+				0F6D4C1B1B2C93D30002A070 /* ChecklistPack.swift in Sources */,
+				BC34F8F11B2DEED0001F60C9 /* CautionCell.swift in Sources */,
+				0FF75C541B2CFEC900960DCA /* ChecklistSelectViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +551,7 @@
 		};
 		0F0EE6641B2C925500755FCF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B09E9EF364C6BB9B1379049E /* Pods-KFlightChecklists.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = KFlightChecklists/Info.plist;
@@ -354,6 +562,7 @@
 		};
 		0F0EE6651B2C925500755FCF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0D28F7ED4A8E56A6DED0010 /* Pods-KFlightChecklists.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = KFlightChecklists/Info.plist;
@@ -364,6 +573,7 @@
 		};
 		0F0EE6671B2C925500755FCF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DED56DAC1BB3ABD52566F21E /* Pods-KFlightChecklistsTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -383,6 +593,7 @@
 		};
 		0F0EE6681B2C925500755FCF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6402079B7E308B249B11FD9 /* Pods-KFlightChecklistsTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -415,6 +626,7 @@
 				0F0EE6651B2C925500755FCF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0F0EE6661B2C925500755FCF /* Build configuration list for PBXNativeTarget "KFlightChecklistsTests" */ = {
 			isa = XCConfigurationList;
@@ -423,6 +635,7 @@
 				0F0EE6681B2C925500755FCF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
