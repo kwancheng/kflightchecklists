@@ -9,9 +9,5 @@
 import UIKit
 
 public class SectionHeader : UIView {
-    @IBOutlet var lblTitle : UILabel?
-    
-    @IBAction func clicked(sender : AnyObject) {
-        println("clicked")
-    }
+    @IBOutlet var lblTitle : UILabel?    
 }

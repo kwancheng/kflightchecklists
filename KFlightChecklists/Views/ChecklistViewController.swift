@@ -48,6 +48,8 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        var retCell : UITableViewCell? = nil
+        
         if let checklistItem = self.checklist?.sections?[indexPath.section].checklistItems?[indexPath.row] {
             if let type = checklistItem.type {
                 switch type {
@@ -55,26 +57,36 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
                     var cell = tableView.dequeueReusableCellWithIdentifier("ActionItemCell") as! ActionItemCell
                     cell.lblItem?.text = checklistItem.details?[0]
                     cell.lblAction?.text = checklistItem.details?[1]
-                    return cell
+                    retCell = cell
                 case .Note :
                     var cell = tableView.dequeueReusableCellWithIdentifier("NoteCell") as! NoteCell
                     cell.lblNoteText?.text = checklistItem.details?[0]
-                    return cell
+                    retCell = cell
                 case .Caution :
                     var cell = tableView.dequeueReusableCellWithIdentifier("CautionCell") as! CautionCell
                     cell.lblCautionText?.text = checklistItem.details?[0]
-                    return cell
+                    retCell = cell
                 }
             } else {
                 var cell = tableView.dequeueReusableCellWithIdentifier("cell") as! UITableViewCell
                 cell.textLabel?.text = "Unknown"
-                return cell
+                retCell = cell
             }
         } else {
             var cell = tableView.dequeueReusableCellWithIdentifier("cell") as! UITableViewCell
             cell.textLabel?.text = "Unknown"
-            return cell            
+            retCell = cell
         }
+        
+        var bgView = UIView()
+        bgView.backgroundColor = UIColor.greenColor()
+        retCell?.selectedBackgroundView = bgView
+        
+        return retCell!
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        println(String(format: "Selected Section[%d] Row[%d]",indexPath.section, indexPath.row))
     }
     
     // MARK : UITableViewDelegate
