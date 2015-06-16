@@ -85,8 +85,35 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
         return retCell!
     }
     
+    private var curIndexPath : NSIndexPath? = nil
+    
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        println(String(format: "Selected Section[%d] Row[%d]",indexPath.section, indexPath.row))
+        var targetIndexPath = indexPath
+        
+        if let cip = curIndexPath {
+            if(cip.isEqual(indexPath)){
+                var section = indexPath.section
+                var row = indexPath.row + 1
+                
+                if(row >= self.checklist?.sections?[section].checklistItems?.count) {
+                    section++
+                    row = 0
+                    if(section >= self.checklist?.sections?.count) {
+                        section = indexPath.section
+                        row = indexPath.row
+                    }
+                }
+                
+                targetIndexPath = NSIndexPath(forRow: row, inSection: section)
+                curIndexPath = targetIndexPath
+            } else {
+                curIndexPath = indexPath
+            }
+        } else {
+            curIndexPath = indexPath
+        }
+        
+        tableView.selectRowAtIndexPath(targetIndexPath, animated: true, scrollPosition: UITableViewScrollPosition.Middle)
     }
     
     // MARK : UITableViewDelegate

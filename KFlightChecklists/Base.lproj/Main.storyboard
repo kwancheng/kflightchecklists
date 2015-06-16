@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="h62-SE-d51">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="h62-SE-d51">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
@@ -25,7 +25,7 @@
         <!--Select Checklist-->
         <scene sceneID="e1v-Tp-43J">
             <objects>
-                <viewController id="7TJ-c5-RXz" customClass="ChecklistSelectViewController" customModule="KFlightChecklists" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="7TJ-c5-RXz" customClass="ChecklistSelectViewController" customModule="KF_Checklists" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Zkl-5S-2mC"/>
                         <viewControllerLayoutGuide type="bottom" id="IB7-Jm-FTS"/>
@@ -60,7 +60,7 @@
         <!--Title-->
         <scene sceneID="Q3B-nr-YC5">
             <objects>
-                <viewController id="HJW-kc-DbC" customClass="ChecklistViewController" customModule="KFlightChecklists" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="HJW-kc-DbC" customClass="ChecklistViewController" customModule="KF_Checklists" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="c8F-gS-orl"/>
                         <viewControllerLayoutGuide type="bottom" id="8Tu-gi-0qr"/>
@@ -73,7 +73,7 @@
                                 <rect key="frame" x="16" y="0.0" width="568" height="580"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ActionItemCell" rowHeight="80" id="mkd-so-sUd" customClass="ActionItemCell" customModule="KFlightChecklists" customModuleProvider="target">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ActionItemCell" rowHeight="80" id="mkd-so-sUd" customClass="ActionItemCell" customModule="KF_Checklists" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="568" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mkd-so-sUd" id="cUg-Jr-8zF">
@@ -120,7 +120,7 @@
                                             <outlet property="lblItem" destination="3SD-bO-dxE" id="qO0-hz-psa"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CautionCell" id="J59-2O-gj9" customClass="CautionCell" customModule="KFlightChecklists" customModuleProvider="target">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CautionCell" id="J59-2O-gj9" customClass="CautionCell" customModule="KF_Checklists" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="568" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="J59-2O-gj9" id="8u0-eQ-x0o">
@@ -145,7 +145,7 @@
                                             <outlet property="lblCautionText" destination="NHw-XH-xWB" id="9au-bL-tbH"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="NoteCell" id="K2a-Z6-hOd" customClass="NoteCell" customModule="KFlightChecklists" customModuleProvider="target">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="NoteCell" id="K2a-Z6-hOd" customClass="NoteCell" customModule="KF_Checklists" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="568" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="K2a-Z6-hOd" id="jeE-Xg-ccP">
@@ -153,7 +153,7 @@
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="25" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6vQ-Wg-08X">
                                                     <rect key="frame" x="8" y="11" width="552" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>

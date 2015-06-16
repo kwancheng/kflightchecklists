@@ -42,7 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0F0EE6411B2C925500755FCF /* KFlightChecklists.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KFlightChecklists.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F0EE6411B2C925500755FCF /* KF Checklists.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "KF Checklists.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F0EE6451B2C925500755FCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F0EE6461B2C925500755FCF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0F0EE6491B2C925500755FCF /* KFlightChecklists.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = KFlightChecklists.xcdatamodel; sourceTree = "<group>"; };
@@ -108,7 +108,7 @@
 		0F0EE6421B2C925500755FCF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0F0EE6411B2C925500755FCF /* KFlightChecklists.app */,
+				0F0EE6411B2C925500755FCF /* KF Checklists.app */,
 				0F0EE6591B2C925500755FCF /* KFlightChecklistsTests.xctest */,
 			);
 			name = Products;
@@ -230,7 +230,7 @@
 			);
 			name = KFlightChecklists;
 			productName = KFlightChecklists;
-			productReference = 0F0EE6411B2C925500755FCF /* KFlightChecklists.app */;
+			productReference = 0F0EE6411B2C925500755FCF /* KF Checklists.app */;
 			productType = "com.apple.product-type.application";
 		};
 		0F0EE6581B2C925500755FCF /* KFlightChecklistsTests */ = {
@@ -556,7 +556,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = KFlightChecklists/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "KF Checklists";
 			};
 			name = Debug;
 		};
@@ -567,7 +567,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = KFlightChecklists/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "KF Checklists";
 			};
 			name = Release;
 		};
