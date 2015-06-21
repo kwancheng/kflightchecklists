@@ -4,13 +4,19 @@
    version = "2.0">
    <Breakpoints>
       <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.ExceptionBreakpoint">
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            scope = "0"
-            stopOnStyle = "0">
+            filePath = "KFlightChecklists/Views/ChecklistViewController.swift"
+            timestampString = "456488554.413502"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "120"
+            endingLineNumber = "120"
+            landmarkName = "ShowFuelQuantityNotepadPayload"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -19,13 +25,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "KFlightChecklists/Views/SectionHeader.swift"
-            timestampString = "455977651.587989"
+            filePath = "KFlightChecklists/Views/ChecklistViewController.swift"
+            timestampString = "456488554.413502"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "15"
-            endingLineNumber = "15"
-            landmarkName = "clicked(_:)"
+            startingLineNumber = "127"
+            endingLineNumber = "127"
+            landmarkName = "executeAction(_:callback:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

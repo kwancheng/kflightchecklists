@@ -116,20 +116,10 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
     }
     
     private class ShowFuelQuantityNotepadPayload {
-        var itemStr : String?
-        var actionStr : String?
         var callback : (() -> Void)? = nil
     }
     
-    private func executeAction(checklistItem : ChecklistItem?, _ actionType : ActionType, callback : () -> Void) {
-        var action : Action?
-        switch actionType {
-            case .Pre :
-                action = checklistItem?.preAction
-            case .Post :
-                action = checklistItem?.postAction
-        }
-        
+    private func executeAction(action : Action?, callback : () -> Void) {
         if let actionName = action?.name {
             switch actionName {
                 case "ShowMessage" :
@@ -147,8 +137,6 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
                 case "FuelQuantityNotepad" :
                     dispatch_async(dispatch_get_main_queue(), {()->Void in
                         var payload = ShowFuelQuantityNotepadPayload()
-                        payload.itemStr = checklistItem?.details?[0]
-                        payload.actionStr = checklistItem?.details?[1]
                         payload.callback = callback
                         self.performSegueWithIdentifier("ShowFuelQuantityNotepad", sender: payload)
                     })
@@ -168,7 +156,7 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
         self.mainTankLevel = mainTankLevel
         self.auxTankLevel = auxTankLevel
     }
-        
+    
     private func getChecklistItemAt(indexPath: NSIndexPath?) -> ChecklistItem? {
         return (indexPath == nil) ? nil : self.checklist?.sections?[indexPath!.section].checklistItems?[indexPath!.row]
     }
@@ -176,8 +164,6 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if let fuelQuantityVC = segue.destinationViewController as? R22FuelTankQuantityViewController {
             if let payload = sender as? ShowFuelQuantityNotepadPayload {
-                fuelQuantityVC.itemStr = payload.itemStr
-                fuelQuantityVC.actionStr = payload.actionStr
                 fuelQuantityVC.callback = payload.callback
             }
         }
@@ -216,11 +202,8 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
         .NAV : [.ERROR, .S3, .S0, .S0, .S3]
     ]
     
-    private enum ActionType {
-        case Pre, Post
-    }
-    
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        println("Bob")
         var next = indexPath
         if let currentIndexPath = self.currentIndexPath {
             if currentIndexPath.isEqual(indexPath) {
@@ -242,14 +225,15 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
             case .START :
                 break
             case .S0 :
-                executeAction(getChecklistItemAt(next), ActionType.Pre, callback: navigationClosure)
+                executeAction(getChecklistItemAt(next)?.preAction, callback: navigationClosure)
             case .S1 :
-                executeAction(getChecklistItemAt(currentIndexPath), ActionType.Post, callback: navigationClosure)
+                executeAction(getChecklistItemAt(currentIndexPath)?.postAction, callback: navigationClosure)
             case .S2 :
                 navigationClosure()
             case .S3 :
-                executeAction(getChecklistItemAt(currentIndexPath), ActionType.Post, callback: { () -> Void in
-                    self.executeAction(self.getChecklistItemAt(next), ActionType.Pre, callback: navigationClosure)
+                executeAction(getChecklistItemAt(currentIndexPath)?.postAction, callback: { () -> Void in
+                    println("Post Action")
+                    self.executeAction(self.getChecklistItemAt(next)?.preAction, callback: navigationClosure)
                 })
             case .ERROR :
                 var alert = UIAlertController(title: nil, message: "Error Occurred Restarting", preferredStyle: UIAlertControllerStyle.Alert)
@@ -267,7 +251,6 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
     
         if let sectionHeader = NSBundle.mainBundle().loadNibNamed("SectionHeader", owner: self, options: nil)[0] as? SectionHeader {
             sectionHeader.lblTitle?.text = checklist?.sections?[section].title
-            
             ret = sectionHeader
         }
         

@@ -1,0 +1,60 @@
+{
+	"title" : "Action Tester",
+	"checklists" : [
+		{
+			"title" : "Action Tester",
+			"sections" : [
+				{
+					"title" : "Action Tests",
+					"checklist_items" : [
+                        {
+                                         "type" : "ITEM_ACTION",
+                                         "action_has_note" : false,
+                                         "item_has_note" : false,
+                                         "pre_action" : null,
+                                         "post_action" : {
+                                         "name" : "FuelQuantityNotepad",
+                                         "message" : "Pre Action 2"
+                                         },
+                                         "details" : [
+                                                      "Item Item Item Item Item Item Item Item Item Item Item Item Item Item Item Item ", "Fuel Quantity Fuel Quantity Fuel Quantity Fuel Quantity Fuel Quantity Fuel Quantity Fuel Quantity Fuel Quantity Fuel Quantity Fuel Quantity Fuel Quantity Fuel Quantity Fuel Quantity Fuel Quantity Fuel Quantity "
+                                                      ]
+                                         },
+						{
+							"type" : "ITEM_ACTION",
+							"action_has_note" : false,
+							"item_has_note" : false,
+							"pre_action" : {
+									"name" : "ShowMessage",
+									"message" : "Pre Action 1"
+								},
+							"post_action" : {
+									"name" : "ShowMessage",
+									"message" : "Post Action 1"
+								},
+							"details" : [
+								"Item", "Action"
+							]
+						},
+						{
+							"type" : "ITEM_ACTION",
+							"action_has_note" : false,
+							"item_has_note" : false,
+							"pre_action" : {
+									"name" : "ShowMessage",
+									"message" : "Pre Action 2"
+								},
+							"post_action" : {
+									"name" : "ShowMessage",
+									"message" : "Post Action 2"
+								},
+							"details" : [
+								"Item", "Action"
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
