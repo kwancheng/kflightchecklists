@@ -14,6 +14,7 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
     
     private var checklist : Checklist?
     private var sectionHeaders : [UIView]?
+    private var flightInfo = FlightInfo()
     
     func setChecklist(var checklist : Checklist) {
         self.checklist = checklist
@@ -118,7 +119,8 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
     private class ShowFuelQuantityNotepadPayload {
         var itemStr : String?
         var actionStr : String?
-        var callback : (() -> Void)? = nil
+        var callback : (() -> Void)?
+        var setTankLevel : ((mainTankLevel : Float, auxTankLevel : Float)->Void)?
     }
     
     private func executeAction(checklistItem : ChecklistItem?, _ actionType : ActionType, callback : () -> Void) {
@@ -149,6 +151,7 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
                         var payload = ShowFuelQuantityNotepadPayload()
                         payload.itemStr = checklistItem?.details?[0]
                         payload.actionStr = checklistItem?.details?[1]
+                        payload.setTankLevel = self.setFuelQuantity
                         payload.callback = callback
                         self.performSegueWithIdentifier("ShowFuelQuantityNotepad", sender: payload)
                     })
@@ -161,12 +164,9 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
         }
     }
     
-    private var mainTankLevel : Float = 0
-    private var auxTankLevel : Float = 0
-    
     func setFuelQuantity(mainTankLevel : Float , auxTankLevel : Float) {
-        self.mainTankLevel = mainTankLevel
-        self.auxTankLevel = auxTankLevel
+        self.flightInfo.mainTankLevel = mainTankLevel
+        self.flightInfo.auxTankLevel = auxTankLevel
     }
         
     private func getChecklistItemAt(indexPath: NSIndexPath?) -> ChecklistItem? {
@@ -178,8 +178,11 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
             if let payload = sender as? ShowFuelQuantityNotepadPayload {
                 fuelQuantityVC.itemStr = payload.itemStr
                 fuelQuantityVC.actionStr = payload.actionStr
+                fuelQuantityVC.setTankLevelDelegate = payload.setTankLevel
                 fuelQuantityVC.callback = payload.callback
             }
+        } else if let flightInfoVC = segue.destinationViewController as? FlightInfoViewController {
+            flightInfoVC.flightInfo = self.flightInfo
         }
     }
         
@@ -276,5 +279,9 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
     
     func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 43
+    }
+    
+    @IBAction func showFlightInfo(sender : AnyObject) {
+        performSegueWithIdentifier("ShowFlightInfo", sender: self)
     }
 }

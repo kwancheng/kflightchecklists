@@ -46,6 +46,10 @@ public class R22FuelTankQuantityViewController : UIViewController {
     }
     
     @IBAction func returnToList(sender : AnyObject) {
+        if let setTankLevelDelegate = self.setTankLevelDelegate {
+            setTankLevelDelegate(mainGallons: sldrMain!.value, auxGallons: sldrAux!.value)
+        }
+        
         self.dismissViewControllerAnimated(true, completion: callback)
     }
     

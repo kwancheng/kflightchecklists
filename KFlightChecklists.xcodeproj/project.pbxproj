@@ -22,6 +22,8 @@
 		0F76A98F1B34A0E20051E61E /* ActionTests.json in Resources */ = {isa = PBXBuildFile; fileRef = 0F76A98E1B34A0E20051E61E /* ActionTests.json */; };
 		0F76A9A01B34A43E0051E61E /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F76A99F1B34A43E0051E61E /* Action.swift */; };
 		0F76A9A21B34A44F0051E61E /* ShowMessageAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F76A9A11B34A44F0051E61E /* ShowMessageAction.swift */; };
+		0FF4C6EE1B36EAC600448C55 /* FlightInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF4C6ED1B36EAC600448C55 /* FlightInfo.swift */; };
+		0FF4C6F01B36EE9000448C55 /* FlightInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF4C6EF1B36EE9000448C55 /* FlightInfoViewController.swift */; };
 		0FF75C4C1B2C9C7800960DCA /* ChecklistType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF75C4B1B2C9C7800960DCA /* ChecklistType.swift */; };
 		0FF75C4F1B2CFC1A00960DCA /* Checklists.json in Resources */ = {isa = PBXBuildFile; fileRef = 0FF75C4E1B2CFC1A00960DCA /* Checklists.json */; };
 		0FF75C521B2CFE9300960DCA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF75C511B2CFE9300960DCA /* ViewController.swift */; };
@@ -65,6 +67,8 @@
 		0F76A98E1B34A0E20051E61E /* ActionTests.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ActionTests.json; sourceTree = "<group>"; };
 		0F76A99F1B34A43E0051E61E /* Action.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
 		0F76A9A11B34A44F0051E61E /* ShowMessageAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowMessageAction.swift; sourceTree = "<group>"; };
+		0FF4C6ED1B36EAC600448C55 /* FlightInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightInfo.swift; sourceTree = "<group>"; };
+		0FF4C6EF1B36EE9000448C55 /* FlightInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightInfoViewController.swift; sourceTree = "<group>"; };
 		0FF75C4B1B2C9C7800960DCA /* ChecklistType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChecklistType.swift; sourceTree = "<group>"; };
 		0FF75C4E1B2CFC1A00960DCA /* Checklists.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Checklists.json; sourceTree = "<group>"; };
 		0FF75C511B2CFE9300960DCA /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -166,6 +170,7 @@
 		0F6D4C191B2C93C40002A070 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				0FF4C6ED1B36EAC600448C55 /* FlightInfo.swift */,
 				0F76A99E1B34A43E0051E61E /* Actions */,
 				0F6D4C1A1B2C93D30002A070 /* ChecklistPack.swift */,
 				0F6D4C1C1B2C94570002A070 /* Checklist.swift */,
@@ -206,6 +211,7 @@
 				BC34F8F01B2DEED0001F60C9 /* CautionCell.swift */,
 				BC34F8F21B2DF0FA001F60C9 /* NoteCell.swift */,
 				0F5EF2001B30CAE000622496 /* R22FuelTankQuantityViewController.swift */,
+				0FF4C6EF1B36EE9000448C55 /* FlightInfoViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -435,6 +441,7 @@
 				0F6D4C1D1B2C94570002A070 /* Checklist.swift in Sources */,
 				0FF75C4C1B2C9C7800960DCA /* ChecklistType.swift in Sources */,
 				0FF75C521B2CFE9300960DCA /* ViewController.swift in Sources */,
+				0FF4C6EE1B36EAC600448C55 /* FlightInfo.swift in Sources */,
 				0F244DCF1B2D126300081141 /* ChecklistViewController.swift in Sources */,
 				BC34F8ED1B2DE756001F60C9 /* ActionItemCell.swift in Sources */,
 				BC34F8F31B2DF0FA001F60C9 /* NoteCell.swift in Sources */,
@@ -446,6 +453,7 @@
 				0F76A9A21B34A44F0051E61E /* ShowMessageAction.swift in Sources */,
 				BCCB8D461B2DA54600EDE9C5 /* SectionHeader.swift in Sources */,
 				0F5EF2011B30CAE000622496 /* R22FuelTankQuantityViewController.swift in Sources */,
+				0FF4C6F01B36EE9000448C55 /* FlightInfoViewController.swift in Sources */,
 				0F6D4C1B1B2C93D30002A070 /* ChecklistPack.swift in Sources */,
 				BC34F8F11B2DEED0001F60C9 /* CautionCell.swift in Sources */,
 				0FF75C541B2CFEC900960DCA /* ChecklistSelectViewController.swift in Sources */,

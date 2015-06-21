@@ -181,11 +181,25 @@
                             <constraint firstItem="fSu-dQ-BHA" firstAttribute="leading" secondItem="Jof-74-NlU" secondAttribute="leadingMargin" id="haV-Rf-0nG"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Title" id="ocC-3W-5uX"/>
+                    <navigationItem key="navigationItem" title="Title" id="ocC-3W-5uX">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="FMZ-5X-uHF">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="G9r-q7-dlp">
+                                <rect key="frame" x="446" y="127" width="120" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Flight Info">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showFlightInfo:" destination="HJW-kc-DbC" eventType="touchUpInside" id="pLW-ed-acF"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="lbChecklist" destination="fSu-dQ-BHA" id="ZiT-2H-6WU"/>
                         <outlet property="navItem" destination="ocC-3W-5uX" id="Aui-mk-N9N"/>
                         <segue destination="Twc-aA-AOy" kind="presentation" identifier="ShowFuelQuantityNotepad" modalPresentationStyle="pageSheet" id="OeL-Q9-APj"/>
+                        <segue destination="8uq-ey-wfA" kind="show" identifier="ShowFlightInfo" id="Vav-nF-oEj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kbI-n4-JvI" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -355,6 +369,115 @@
                 <exit id="ugw-8R-Jm0" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1483" y="1240"/>
+        </scene>
+        <!--Flight Info-->
+        <scene sceneID="rE9-hf-N8M">
+            <objects>
+                <viewController id="8uq-ey-wfA" customClass="FlightInfoViewController" customModule="KF_Checklists" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cnZ-Rk-qmo"/>
+                        <viewControllerLayoutGuide type="bottom" id="9Vo-Dt-ZBN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NZR-4N-xgi">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vxq-TD-jqg">
+                                <rect key="frame" x="16" y="72" width="568" height="113"/>
+                                <subviews>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" misplaced="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="E6N-st-EBv" userLabel="Main Tank Level">
+                                        <rect key="frame" x="141" y="58" width="427" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="YXM-1c-niv"/>
+                                        </constraints>
+                                    </progressView>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" misplaced="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="7R6-y2-c0H" userLabel="Aux Tank Level">
+                                        <rect key="frame" x="141" y="0.0" width="427" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="iQV-it-4HT"/>
+                                        </constraints>
+                                    </progressView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aux Tank Level :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0EI-5Y-ujN">
+                                        <rect key="frame" x="0.0" y="14" width="133" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Main Tank Level :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pE2-Tq-uaP">
+                                        <rect key="frame" x="0.0" y="72" width="133" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="arJ-sY-u3K" userLabel="Aux Tank Level Label">
+                                        <rect key="frame" x="141" y="0.0" width="427" height="49"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W2V-63-EQ4" userLabel="Main Tank Level Label">
+                                        <rect key="frame" x="141" y="58" width="427" height="49"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="E6N-st-EBv" firstAttribute="trailing" secondItem="7R6-y2-c0H" secondAttribute="trailing" id="55C-Zy-1rO"/>
+                                    <constraint firstItem="W2V-63-EQ4" firstAttribute="top" secondItem="E6N-st-EBv" secondAttribute="top" id="BWX-dw-PYs"/>
+                                    <constraint firstAttribute="height" constant="113" id="EOt-uy-Jpo"/>
+                                    <constraint firstItem="0EI-5Y-ujN" firstAttribute="top" secondItem="Vxq-TD-jqg" secondAttribute="top" constant="14" id="KAY-h6-igh"/>
+                                    <constraint firstItem="0EI-5Y-ujN" firstAttribute="leading" secondItem="Vxq-TD-jqg" secondAttribute="leading" id="KD1-st-SWO"/>
+                                    <constraint firstItem="pE2-Tq-uaP" firstAttribute="top" secondItem="0EI-5Y-ujN" secondAttribute="bottom" constant="37" id="Psx-t4-64Q"/>
+                                    <constraint firstItem="arJ-sY-u3K" firstAttribute="trailing" secondItem="7R6-y2-c0H" secondAttribute="trailing" id="T0r-hQ-s8H"/>
+                                    <constraint firstItem="arJ-sY-u3K" firstAttribute="top" secondItem="7R6-y2-c0H" secondAttribute="top" id="We5-Va-6e7"/>
+                                    <constraint firstItem="W2V-63-EQ4" firstAttribute="centerY" secondItem="pE2-Tq-uaP" secondAttribute="centerY" id="XP9-O7-Myb"/>
+                                    <constraint firstItem="arJ-sY-u3K" firstAttribute="centerY" secondItem="0EI-5Y-ujN" secondAttribute="centerY" id="Y9a-Ip-1as"/>
+                                    <constraint firstItem="E6N-st-EBv" firstAttribute="top" secondItem="7R6-y2-c0H" secondAttribute="bottom" constant="8" id="ZCK-2N-5MI"/>
+                                    <constraint firstAttribute="bottom" secondItem="E6N-st-EBv" secondAttribute="bottom" constant="5" id="ak4-aI-9t2"/>
+                                    <constraint firstItem="E6N-st-EBv" firstAttribute="leading" secondItem="pE2-Tq-uaP" secondAttribute="trailing" constant="8" id="bDk-Jt-hig"/>
+                                    <constraint firstAttribute="bottom" secondItem="pE2-Tq-uaP" secondAttribute="bottom" constant="20" id="bYI-fU-2Mm"/>
+                                    <constraint firstItem="7R6-y2-c0H" firstAttribute="leading" secondItem="0EI-5Y-ujN" secondAttribute="trailing" constant="8" id="bcW-AN-ozl"/>
+                                    <constraint firstItem="7R6-y2-c0H" firstAttribute="top" secondItem="Vxq-TD-jqg" secondAttribute="top" id="bfP-Eu-2oz"/>
+                                    <constraint firstItem="arJ-sY-u3K" firstAttribute="leading" secondItem="7R6-y2-c0H" secondAttribute="leading" id="d9T-rG-Vdu"/>
+                                    <constraint firstAttribute="trailing" secondItem="7R6-y2-c0H" secondAttribute="trailing" id="deQ-kT-eQG"/>
+                                    <constraint firstItem="W2V-63-EQ4" firstAttribute="trailing" secondItem="E6N-st-EBv" secondAttribute="trailing" id="f0j-jG-Pbu"/>
+                                    <constraint firstItem="7R6-y2-c0H" firstAttribute="leading" secondItem="Vxq-TD-jqg" secondAttribute="leading" constant="141" id="mOb-zr-zth"/>
+                                    <constraint firstItem="E6N-st-EBv" firstAttribute="leading" secondItem="Vxq-TD-jqg" secondAttribute="leading" constant="141" id="tFO-t0-1EI"/>
+                                    <constraint firstItem="W2V-63-EQ4" firstAttribute="leading" secondItem="E6N-st-EBv" secondAttribute="leading" id="w5Q-Ci-FfG"/>
+                                    <constraint firstItem="pE2-Tq-uaP" firstAttribute="leading" secondItem="Vxq-TD-jqg" secondAttribute="leading" id="xNA-RI-Hw8"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Approximate Flight Time : " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VTV-eV-Gnw">
+                                <rect key="frame" x="16" y="193" width="568" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="VTV-eV-Gnw" firstAttribute="trailing" secondItem="NZR-4N-xgi" secondAttribute="trailingMargin" id="38D-RI-d3i"/>
+                            <constraint firstItem="VTV-eV-Gnw" firstAttribute="top" secondItem="Vxq-TD-jqg" secondAttribute="bottom" constant="8" id="HDF-cZ-o26"/>
+                            <constraint firstItem="Vxq-TD-jqg" firstAttribute="leading" secondItem="NZR-4N-xgi" secondAttribute="leadingMargin" id="ebf-cp-PlA"/>
+                            <constraint firstItem="VTV-eV-Gnw" firstAttribute="leading" secondItem="NZR-4N-xgi" secondAttribute="leadingMargin" id="ruL-KJ-oBH"/>
+                            <constraint firstItem="Vxq-TD-jqg" firstAttribute="top" secondItem="cnZ-Rk-qmo" secondAttribute="bottom" constant="8" symbolic="YES" id="s72-RC-Hop"/>
+                            <constraint firstItem="Vxq-TD-jqg" firstAttribute="trailing" secondItem="NZR-4N-xgi" secondAttribute="trailingMargin" id="svk-SI-2DV"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Flight Info" id="fxU-6l-T6Y"/>
+                    <connections>
+                        <outlet property="lblApproximateFlightTime" destination="VTV-eV-Gnw" id="rg8-Ku-Haf"/>
+                        <outlet property="lblAuxTankLevel" destination="arJ-sY-u3K" id="khK-58-0fA"/>
+                        <outlet property="lblMainTankLevel" destination="W2V-63-EQ4" id="AWs-9J-duu"/>
+                        <outlet property="pgsAuxTankLevel" destination="7R6-y2-c0H" id="wr7-5S-X0I"/>
+                        <outlet property="pgsMainTankLevel" destination="E6N-st-EBv" id="NGy-I0-tE1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6ie-hK-p9B" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="743" y="1986"/>
         </scene>
     </scenes>
 </document>
