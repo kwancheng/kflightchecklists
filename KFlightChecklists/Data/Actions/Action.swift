@@ -10,9 +10,9 @@ import Foundation
 import SwiftyJSON
 
 public class Action {
-    public var name : String?
+    public var type : String?
     
     public init(_ jsonData : JSON) {
-        name = jsonData["name"].string
+        self.type = jsonData["type"].string
     }
 }

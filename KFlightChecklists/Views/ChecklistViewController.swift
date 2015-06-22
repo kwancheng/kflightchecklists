@@ -116,13 +116,6 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
         return retVal
     }
     
-    private class ShowFuelQuantityNotepadPayload {
-        var itemStr : String?
-        var actionStr : String?
-        var callback : (() -> Void)?
-        var setTankLevel : ((mainTankLevel : Float, auxTankLevel : Float)->Void)?
-    }
-    
     private func executeAction(checklistItem : ChecklistItem?, _ actionType : ActionType, callback : () -> Void) {
         var action : Action?
         switch actionType {
@@ -132,7 +125,7 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
                 action = checklistItem?.postAction
         }
         
-        if let actionName = action?.name {
+        if let actionName = action?.type {
             switch actionName {
                 case "ShowMessage" :
                     if let showMessageAction = action as? ShowMessageAction {
@@ -155,6 +148,8 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
                         payload.callback = callback
                         self.performSegueWithIdentifier("ShowFuelQuantityNotepad", sender: payload)
                     })
+            case "HobbsNotepad" :
+                    break
                 default :
                     // unknown action just skip
                     callback()

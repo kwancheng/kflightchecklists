@@ -50,7 +50,7 @@ public class ChecklistItem {
     private func instantiateAction(jsonData:JSON) -> Action? {
         var retAction : Action? = Action(jsonData)
         
-        if let actionName = retAction?.name {
+        if let actionName = retAction?.type {
             switch actionName {
                 case "ShowMessage" :
                     retAction = ShowMessageAction(jsonData)

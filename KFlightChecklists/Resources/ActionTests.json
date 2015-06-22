@@ -8,18 +8,18 @@
 					"title" : "Action Tests",
 					"checklist_items" : [
                         {
-                                         "type" : "ITEM_ACTION",
-                                         "action_has_note" : false,
-                                         "item_has_note" : false,
-                                         "pre_action" : null,
-                                         "post_action" : {
-                                         "name" : "FuelQuantityNotepad",
-                                         "message" : "Pre Action 2"
-                                         },
-                                         "details" : [
-                                                      "Item Item Item Item Item Item Item Item Item Item Item Item Item Item Item Item ", "Fuel Quantity Fuel Quantity Fuel Quantity Fuel Quantity Fuel Quantity Fuel Quantity Fuel Quantity Fuel Quantity Fuel Quantity Fuel Quantity Fuel Quantity Fuel Quantity Fuel Quantity Fuel Quantity Fuel Quantity "
-                                                      ]
-                                         },
+                        	"type" : "ITEM_ACTION",
+							"action_has_note" : false,
+							"item_has_note" : false,
+							"pre_action" : null,
+							"post_action" : {
+								"name" : "FuelQuantityNotepad",
+								"message" : "Pre Action 2"
+							},
+							"details" : [
+							          "Item Item Item Item Item Item Item Item Item Item Item Item Item Item Item Item ", "Fuel Quantity Fuel Quantity Fuel Quantity Fuel Quantity Fuel Quantity Fuel Quantity Fuel Quantity Fuel Quantity Fuel Quantity Fuel Quantity Fuel Quantity Fuel Quantity Fuel Quantity Fuel Quantity Fuel Quantity "
+							          ]
+						},
 						{
 							"type" : "ITEM_ACTION",
 							"action_has_note" : false,
