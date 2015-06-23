@@ -1,5 +1,5 @@
 //
-//  ShowHobbsNotepadPayload.swift
+//  Payload.swift
 //  KFlightChecklists
 //
 //  Created by Congee on 6/21/15.
@@ -8,6 +8,8 @@
 
 import Foundation
 
-public class ShowHobbsNotepadPayload : Payload {
-    var setHobbs : ((reading: Float)->Void)?
+public class Payload {
+    var itemStr : String?
+    var actionStr : String?
+    var completionCallback : (()->Void)?
 }

@@ -8,6 +8,6 @@
 
 import Foundation
 
-public class ShowFuelQuantityNotepadPayload : Payload {
-    var setTankLevel : ((mainTankLevel : Float, auxTankLevel : Float)->Void)?
+public class RecordFuelQuantityPayload : Payload {
+    var setFuelLevelCallback : ((mainTankLevel : Float, auxTankLevel : Float)->Void)?
 }

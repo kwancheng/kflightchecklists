@@ -16,8 +16,8 @@ public class R22FuelTankQuantityViewController : UIViewController {
     @IBOutlet var lblItem : UILabel?
     @IBOutlet var lblAction : UILabel?
     
-    var callback : (()->Void)? = nil
-    var setTankLevelDelegate : ((mainGallons:Float, auxGallons:Float) -> Void)? = nil
+    var completionCallback : (()->Void)? = nil
+    var setFuelLevelCallback : ((mainGallons:Float, auxGallons:Float) -> Void)? = nil
     var itemStr : String?
     var actionStr : String?
     
@@ -27,6 +27,13 @@ public class R22FuelTankQuantityViewController : UIViewController {
         lblAction?.text = actionStr
         updateMainLabel(calculateMainGallons(sldrMain!.value))
         updateAuxLabel(calculateAuxGallons(sldrAux!.value))
+    }
+    
+    public func setPayload(payload : RecordFuelQuantityPayload) {
+        itemStr = payload.itemStr
+        actionStr = payload.actionStr
+        setFuelLevelCallback = payload.setFuelLevelCallback
+        completionCallback = payload.completionCallback
     }
     
     func calculateMainGallons(tankLevel : Float) -> Float {
@@ -45,14 +52,6 @@ public class R22FuelTankQuantityViewController : UIViewController {
         lblAux?.text = String(format: "Aux (10.5 US Gallons) : %.2f (%.0f%%)", auxAmount, sldrAux!.value * 100)
     }
     
-    @IBAction func returnToList(sender : AnyObject) {
-        if let setTankLevelDelegate = self.setTankLevelDelegate {
-            setTankLevelDelegate(mainGallons: sldrMain!.value, auxGallons: sldrAux!.value)
-        }
-        
-        self.dismissViewControllerAnimated(true, completion: callback)
-    }
-    
     @IBAction func mainSldrChange(mainSlider:UISlider) {
         updateMainLabel(calculateMainGallons(sldrMain!.value))
     }
@@ -60,4 +59,12 @@ public class R22FuelTankQuantityViewController : UIViewController {
     @IBAction func auxSldrChange(auxSlider:UISlider){
         updateAuxLabel(calculateAuxGallons(sldrAux!.value))
     }
+    
+    @IBAction func returnToList(sender : AnyObject) {
+        if let setFuelLevelCallback = self.setFuelLevelCallback {
+            setFuelLevelCallback(mainGallons: sldrMain!.value, auxGallons: sldrAux!.value)
+        }
+        
+        self.dismissViewControllerAnimated(true, completion: completionCallback)
+    }    
 }

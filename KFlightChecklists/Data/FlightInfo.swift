@@ -16,6 +16,9 @@ public class FlightInfo {
     public var mainTankLevel : Float = 0
     public var auxTankLevel : Float = 0
     
+    public var preFlightHobbsReading : Float = 0
+    public var postFlightHobbsReading : Float = 0
+    
     public func calcActualMainLevel() -> Float {
         return self.mainTankCapacity * self.mainTankLevel
     }

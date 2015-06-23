@@ -14,7 +14,7 @@ public class ChecklistPack {
     public var checklists : [Checklist]?
     
     public init(){
-        if let path = NSBundle.mainBundle().pathForResource("Checklists", ofType: "json") {
+        if let path = NSBundle.mainBundle().pathForResource("ActionTests", ofType: "json") {
             if let content = NSData(contentsOfFile: path) {
                 var error : NSErrorPointer = NSErrorPointer()
                 var jsonData = JSON(data: content, options: NSJSONReadingOptions.MutableContainers, error: error)

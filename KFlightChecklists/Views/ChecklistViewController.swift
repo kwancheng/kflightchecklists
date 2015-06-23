@@ -116,52 +116,66 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
         return retVal
     }
     
-    private func executeAction(checklistItem : ChecklistItem?, _ actionType : ActionType, callback : () -> Void) {
-        var action : Action?
-        switch actionType {
-            case .Pre :
-                action = checklistItem?.preAction
-            case .Post :
-                action = checklistItem?.postAction
-        }
-        
-        if let actionName = action?.type {
-            switch actionName {
-                case "ShowMessage" :
-                    if let showMessageAction = action as? ShowMessageAction {
-                        var alert = UIAlertController(title: nil, message: showMessageAction.message, preferredStyle: UIAlertControllerStyle.Alert)
-                        let defaultAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: { (alertAction) -> Void in
-                            callback()
-                        })
-                        
-                        alert.addAction(defaultAction)
-                        dispatch_async(dispatch_get_main_queue(), { () -> Void in
-                            self.presentViewController(alert, animated: true, completion: nil)
-                        })                        
-                    }
-                case "FuelQuantityNotepad" :
-                    dispatch_async(dispatch_get_main_queue(), {()->Void in
-                        var payload = ShowFuelQuantityNotepadPayload()
-                        payload.itemStr = checklistItem?.details?[0]
-                        payload.actionStr = checklistItem?.details?[1]
-                        payload.setTankLevel = self.setFuelQuantity
-                        payload.callback = callback
-                        self.performSegueWithIdentifier("ShowFuelQuantityNotepad", sender: payload)
-                    })
-            case "HobbsNotepad" :
-                    break
-                default :
-                    // unknown action just skip
-                    callback()
-            }
+    private func executePreAction(checklistItem:ChecklistItem?, callback : (()->Void)?) {
+        executeAction(checklistItem?.preAction, checklistItem, callback: callback)
+    }
+    
+    private func executePostAction(checklistItem:ChecklistItem?, callback : (()->Void)?) {
+        executeAction(checklistItem?.postAction, checklistItem, callback: callback)
+    }
+    
+    internal func setFuelQuantityCallback( mainTankLevel : Float, auxTankLevel : Float) -> Void  {
+        self.flightInfo.mainTankLevel = mainTankLevel
+        self.flightInfo.auxTankLevel = auxTankLevel
+    }
+
+    func setHobbsMeterReading(isPreFlight : Bool, _ reading : Float ) {
+        if(isPreFlight) {
+            self.flightInfo.preFlightHobbsReading = reading
         } else {
-            callback()
+            self.flightInfo.postFlightHobbsReading = reading
         }
     }
     
-    func setFuelQuantity(mainTankLevel : Float , auxTankLevel : Float) {
-        self.flightInfo.mainTankLevel = mainTankLevel
-        self.flightInfo.auxTankLevel = auxTankLevel
+    private func executeAction(action: Action?, _ checklistItem : ChecklistItem?, callback : (() -> Void)?) {
+        if let action = action {
+            var payload : Payload?
+            var checklistItemAction = (item:checklistItem?.details?[0], action:checklistItem?.details?[1])
+            
+            if let sma = action as? ShowMessageAction {
+                payload = sma.makePayload(
+                    checklistItemAction.item,
+                    checklistItemAction.action, callback)
+            } else if let rfqa = action as? RecordFuelQuantityAction {
+                payload = rfqa.makePayload(
+                    checklistItemAction.item,
+                    checklistItemAction.action,
+                    setFuelLevelCallback: self.setFuelQuantityCallback,
+                    completionCallback: callback)
+            } else if let rhmra = action as? RecordHobbsMeterReadingAction {
+                payload = rhmra.makePayload(
+                    checklistItemAction.item,
+                    checklistItemAction.action,
+                    flightInfo.preFlightHobbsReading,
+                    flightInfo.postFlightHobbsReading,
+                    setHobbsMeterReadingCallback: self.setHobbsMeterReading,
+                    completionCallback: callback)
+            } else if let sfta = action as? StartFlightTimerAction {
+            } else if let sfta = action as? StopFlightTimerAction {
+                
+            } else if let sta = action as? ShowTimerAction {
+                
+            } else if let rwca = action as? RecordWeatherConditionAction {
+                
+            }
+            
+            action.execute(self, payload)
+        } else {
+            // no action, just callback
+            if let callback = callback {
+                callback()
+            }
+        }
     }
         
     private func getChecklistItemAt(indexPath: NSIndexPath?) -> ChecklistItem? {
@@ -169,15 +183,13 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        // NOTE: sender is actually payload
         if let fuelQuantityVC = segue.destinationViewController as? R22FuelTankQuantityViewController {
-            if let payload = sender as? ShowFuelQuantityNotepadPayload {
-                fuelQuantityVC.itemStr = payload.itemStr
-                fuelQuantityVC.actionStr = payload.actionStr
-                fuelQuantityVC.setTankLevelDelegate = payload.setTankLevel
-                fuelQuantityVC.callback = payload.callback
-            }
+            fuelQuantityVC.setPayload(sender as! RecordFuelQuantityPayload)
         } else if let flightInfoVC = segue.destinationViewController as? FlightInfoViewController {
             flightInfoVC.flightInfo = self.flightInfo
+        } else if let recordHobbsVC = segue.destinationViewController as? HobbsReadingViewController {
+            recordHobbsVC.setPayload(sender as! RecordHobbsMeterReadingPayload)
         }
     }
         
@@ -214,10 +226,6 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
         .NAV : [.ERROR, .S3, .S0, .S0, .S3]
     ]
     
-    private enum ActionType {
-        case Pre, Post
-    }
-    
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         var next = indexPath
         if let currentIndexPath = self.currentIndexPath {
@@ -240,14 +248,18 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
             case .START :
                 break
             case .S0 :
-                executeAction(getChecklistItemAt(next), ActionType.Pre, callback: navigationClosure)
+                var checklistItem = getChecklistItemAt(next)
+                executePreAction(checklistItem, callback: navigationClosure)
             case .S1 :
-                executeAction(getChecklistItemAt(currentIndexPath), ActionType.Post, callback: navigationClosure)
+                var checklistItem  = getChecklistItemAt(currentIndexPath)
+                executePostAction(checklistItem, callback: navigationClosure)
             case .S2 :
                 navigationClosure()
             case .S3 :
-                executeAction(getChecklistItemAt(currentIndexPath), ActionType.Post, callback: { () -> Void in
-                    self.executeAction(self.getChecklistItemAt(next), ActionType.Pre, callback: navigationClosure)
+                var currentChecklistItem = getChecklistItemAt(currentIndexPath)
+                executePostAction(currentChecklistItem, callback: { () -> Void in
+                    var nextChecklistItem = self.getChecklistItemAt(next)
+                    self.executePreAction(nextChecklistItem, callback: navigationClosure)
                 })
             case .ERROR :
                 var alert = UIAlertController(title: nil, message: "Error Occurred Restarting", preferredStyle: UIAlertControllerStyle.Alert)

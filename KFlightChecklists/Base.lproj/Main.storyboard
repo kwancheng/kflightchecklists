@@ -200,11 +200,100 @@
                         <outlet property="navItem" destination="ocC-3W-5uX" id="Aui-mk-N9N"/>
                         <segue destination="Twc-aA-AOy" kind="presentation" identifier="ShowFuelQuantityNotepad" modalPresentationStyle="pageSheet" id="OeL-Q9-APj"/>
                         <segue destination="8uq-ey-wfA" kind="show" identifier="ShowFlightInfo" id="Vav-nF-oEj"/>
+                        <segue destination="tSn-0m-zxD" kind="presentation" identifier="ShowHobbsReadingNotepad" modalPresentationStyle="formSheet" id="4rG-jq-xlk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kbI-n4-JvI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="743" y="1240"/>
+        </scene>
+        <!--Hobbs Reading View Controller-->
+        <scene sceneID="pDv-sT-NTd">
+            <objects>
+                <viewController id="tSn-0m-zxD" customClass="HobbsReadingViewController" customModule="KF_Checklists" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QJl-Ed-4tC"/>
+                        <viewControllerLayoutGuide type="bottom" id="FeF-0m-fkq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iAf-5k-2Tf">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pre/Post - Flight Hobbs Reading :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kjq-WA-Mz0">
+                                <rect key="frame" x="16" y="20" width="568" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="00000" textAlignment="right" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Jxz-IF-7ex">
+                                <rect key="frame" x="16" y="49" width="386" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="jSL-RW-CAY">
+                                <rect key="frame" x="437" y="49" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="7DO-yS-ILT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1/10" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ndy-oe-N5L">
+                                <rect key="frame" x="542" y="53" width="35" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ol9-nN-YwZ">
+                                <rect key="frame" x="410" y="53" width="19" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="19" id="oEp-Zl-WXt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yRO-V1-Laf">
+                                <rect key="frame" x="16" y="87" width="561" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="WwI-n1-eC6"/>
+                                </constraints>
+                                <state key="normal" title="Done">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="returnToList:" destination="tSn-0m-zxD" eventType="touchUpInside" id="O4C-Uv-3h3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ndy-oe-N5L" firstAttribute="top" secondItem="kjq-WA-Mz0" secondAttribute="bottom" constant="12" id="B4C-fD-XOD"/>
+                            <constraint firstItem="Jxz-IF-7ex" firstAttribute="top" secondItem="kjq-WA-Mz0" secondAttribute="bottom" constant="8" id="BeK-9N-Beh"/>
+                            <constraint firstItem="Jxz-IF-7ex" firstAttribute="leading" secondItem="iAf-5k-2Tf" secondAttribute="leadingMargin" id="E6u-Ks-bCO"/>
+                            <constraint firstItem="ndy-oe-N5L" firstAttribute="leading" secondItem="jSL-RW-CAY" secondAttribute="trailing" constant="8" id="M9w-nP-RMv"/>
+                            <constraint firstItem="kjq-WA-Mz0" firstAttribute="leading" secondItem="iAf-5k-2Tf" secondAttribute="leadingMargin" id="SAz-io-vxL"/>
+                            <constraint firstItem="jSL-RW-CAY" firstAttribute="leading" secondItem="ol9-nN-YwZ" secondAttribute="trailing" constant="8" id="VtU-iL-Lbk"/>
+                            <constraint firstItem="yRO-V1-Laf" firstAttribute="leading" secondItem="iAf-5k-2Tf" secondAttribute="leadingMargin" id="aXc-6v-xCX"/>
+                            <constraint firstItem="kjq-WA-Mz0" firstAttribute="trailing" secondItem="iAf-5k-2Tf" secondAttribute="trailingMargin" id="atz-ei-d1e"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ndy-oe-N5L" secondAttribute="trailing" constant="7" id="dnf-mJ-cLb"/>
+                            <constraint firstItem="ol9-nN-YwZ" firstAttribute="leading" secondItem="Jxz-IF-7ex" secondAttribute="trailing" constant="8" id="eSn-BH-bRp"/>
+                            <constraint firstItem="ol9-nN-YwZ" firstAttribute="top" secondItem="kjq-WA-Mz0" secondAttribute="bottom" constant="12" id="iy7-bg-c7P"/>
+                            <constraint firstItem="yRO-V1-Laf" firstAttribute="top" secondItem="jSL-RW-CAY" secondAttribute="bottom" constant="8" id="sDa-jB-Xen"/>
+                            <constraint firstItem="kjq-WA-Mz0" firstAttribute="top" secondItem="QJl-Ed-4tC" secondAttribute="bottom" constant="20" id="tU5-TA-HQT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="yRO-V1-Laf" secondAttribute="trailing" constant="7" id="yHo-Rj-BEs"/>
+                            <constraint firstItem="jSL-RW-CAY" firstAttribute="top" secondItem="kjq-WA-Mz0" secondAttribute="bottom" constant="8" id="z0v-fU-jee"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lblTitleLabel" destination="kjq-WA-Mz0" id="VuG-NH-DbM"/>
+                        <outlet property="tbReadingHours" destination="Jxz-IF-7ex" id="lV3-9h-iCh"/>
+                        <outlet property="tbReadingHoursFractional" destination="jSL-RW-CAY" id="0YG-Hh-QZW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wuf-Gk-QoO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1514" y="1240"/>
         </scene>
         <!--Fuel Tank Quantity View Controller-->
         <scene sceneID="C6B-OO-rAN">
@@ -368,7 +457,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GXi-sf-2sf" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="ugw-8R-Jm0" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1483" y="1240"/>
+            <point key="canvasLocation" x="1514" y="526"/>
         </scene>
         <!--Flight Info-->
         <scene sceneID="rE9-hf-N8M">
@@ -400,13 +489,13 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aux Tank Level :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0EI-5Y-ujN">
                                         <rect key="frame" x="0.0" y="14" width="133" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Main Tank Level :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pE2-Tq-uaP">
                                         <rect key="frame" x="0.0" y="72" width="133" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="arJ-sY-u3K" userLabel="Aux Tank Level Label">
@@ -452,6 +541,24 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Approximate Flight Time : " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VTV-eV-Gnw">
                                 <rect key="frame" x="16" y="193" width="568" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pre-Flight Hobbs Reading : " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="um9-WC-E0z">
+                                <rect key="frame" x="16" y="222" width="568" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Post-Flight Hobbs Reading : " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HdY-nc-MlU">
+                                <rect key="frame" x="16" y="251" width="568" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hobbs Used :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Opa-ql-jhv">
+                                <rect key="frame" x="16" y="280" width="568" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -459,8 +566,17 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="VTV-eV-Gnw" firstAttribute="trailing" secondItem="NZR-4N-xgi" secondAttribute="trailingMargin" id="38D-RI-d3i"/>
+                            <constraint firstItem="HdY-nc-MlU" firstAttribute="leading" secondItem="NZR-4N-xgi" secondAttribute="leadingMargin" id="47v-FE-HoM"/>
+                            <constraint firstItem="um9-WC-E0z" firstAttribute="leading" secondItem="NZR-4N-xgi" secondAttribute="leadingMargin" id="COJ-em-Pg2"/>
                             <constraint firstItem="VTV-eV-Gnw" firstAttribute="top" secondItem="Vxq-TD-jqg" secondAttribute="bottom" constant="8" id="HDF-cZ-o26"/>
+                            <constraint firstItem="HdY-nc-MlU" firstAttribute="top" secondItem="um9-WC-E0z" secondAttribute="bottom" constant="8" id="LZ5-xE-dWL"/>
+                            <constraint firstItem="Opa-ql-jhv" firstAttribute="trailing" secondItem="NZR-4N-xgi" secondAttribute="trailingMargin" id="Vrl-PP-Xf9"/>
+                            <constraint firstItem="HdY-nc-MlU" firstAttribute="trailing" secondItem="NZR-4N-xgi" secondAttribute="trailingMargin" id="aSf-8w-wbN"/>
                             <constraint firstItem="Vxq-TD-jqg" firstAttribute="leading" secondItem="NZR-4N-xgi" secondAttribute="leadingMargin" id="ebf-cp-PlA"/>
+                            <constraint firstItem="Opa-ql-jhv" firstAttribute="leading" secondItem="NZR-4N-xgi" secondAttribute="leadingMargin" id="imk-SA-c4x"/>
+                            <constraint firstItem="um9-WC-E0z" firstAttribute="top" secondItem="VTV-eV-Gnw" secondAttribute="bottom" constant="8" id="kEm-2t-AIn"/>
+                            <constraint firstItem="um9-WC-E0z" firstAttribute="trailing" secondItem="NZR-4N-xgi" secondAttribute="trailingMargin" id="nYc-DG-2qc"/>
+                            <constraint firstItem="Opa-ql-jhv" firstAttribute="top" secondItem="HdY-nc-MlU" secondAttribute="bottom" constant="8" id="qAu-T5-WQ4"/>
                             <constraint firstItem="VTV-eV-Gnw" firstAttribute="leading" secondItem="NZR-4N-xgi" secondAttribute="leadingMargin" id="ruL-KJ-oBH"/>
                             <constraint firstItem="Vxq-TD-jqg" firstAttribute="top" secondItem="cnZ-Rk-qmo" secondAttribute="bottom" constant="8" symbolic="YES" id="s72-RC-Hop"/>
                             <constraint firstItem="Vxq-TD-jqg" firstAttribute="trailing" secondItem="NZR-4N-xgi" secondAttribute="trailingMargin" id="svk-SI-2DV"/>
@@ -470,7 +586,10 @@
                     <connections>
                         <outlet property="lblApproximateFlightTime" destination="VTV-eV-Gnw" id="rg8-Ku-Haf"/>
                         <outlet property="lblAuxTankLevel" destination="arJ-sY-u3K" id="khK-58-0fA"/>
+                        <outlet property="lblHobbsUsed" destination="Opa-ql-jhv" id="qi3-G0-EDb"/>
                         <outlet property="lblMainTankLevel" destination="W2V-63-EQ4" id="AWs-9J-duu"/>
+                        <outlet property="lblPostFlightHobbsReading" destination="HdY-nc-MlU" id="hMq-K2-mVN"/>
+                        <outlet property="lblPreFlightHobbsReading" destination="um9-WC-E0z" id="0D7-vc-1hS"/>
                         <outlet property="pgsAuxTankLevel" destination="7R6-y2-c0H" id="wr7-5S-X0I"/>
                         <outlet property="pgsMainTankLevel" destination="E6N-st-EBv" id="NGy-I0-tE1"/>
                     </connections>

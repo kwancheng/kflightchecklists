@@ -14,6 +14,9 @@ public class FlightInfoViewController : UIViewController {
     @IBOutlet var lblApproximateFlightTime : UILabel?
     @IBOutlet var pgsMainTankLevel : UIProgressView?
     @IBOutlet var pgsAuxTankLevel : UIProgressView?
+    @IBOutlet var lblPreFlightHobbsReading : UILabel?
+    @IBOutlet var lblPostFlightHobbsReading : UILabel?
+    @IBOutlet var lblHobbsUsed : UILabel?
     
     var flightInfo : FlightInfo?
     
@@ -21,6 +24,7 @@ public class FlightInfoViewController : UIViewController {
         super.viewDidLoad()
         self.updateTankLevels()
         self.updateApproximateFlightTime()
+        self.updateHobbsReadings()
     }
     
     private func updateTankLevels() {
@@ -32,5 +36,13 @@ public class FlightInfoViewController : UIViewController {
     
     private func updateApproximateFlightTime() {
         lblApproximateFlightTime?.text = String(format: "Approximate Flight Time : %.0f Minutes", self.flightInfo!.calcApproximateFlightTime() * 60)
+    }
+    
+    private func updateHobbsReadings() {
+        lblPreFlightHobbsReading?.text = String(format: "Pre-Flight Hobbs Reading : %.1f", self.flightInfo!.preFlightHobbsReading)
+        lblPostFlightHobbsReading?.text = String(format: "Post-Flight Hobbs Reading : %.1f", self.flightInfo!.postFlightHobbsReading)
+        
+        var hobbsUsed = self.flightInfo!.postFlightHobbsReading - self.flightInfo!.preFlightHobbsReading
+        lblHobbsUsed?.text = String(format: "Total Hobbs Used : %.1f", hobbsUsed)
     }
 }

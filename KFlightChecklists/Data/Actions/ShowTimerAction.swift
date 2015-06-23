@@ -10,10 +10,10 @@ import Foundation
 import SwiftyJSON
 
 public class ShowTimerAction : Action {
-    public var durationInSeconds : Int?
+    public var duration : Int?
     
     public override init(_ jsonData: JSON){
         super.init(jsonData)
-        durationInSeconds = jsonData["duration"].intValue
+        duration = jsonData["duration"].intValue
     }
 }

@@ -34,8 +34,8 @@ public class ChecklistItem {
         actionHasNote = jsonData["action_has_note"].bool
         itemHasNote = jsonData["item_has_note"].bool
         
-        self.preAction = instantiateAction(jsonData["pre_action"])
-        self.postAction = instantiateAction(jsonData["post_action"])
+        self.preAction = Action.instantiateActionFromJson(jsonData["pre_action"])
+        self.postAction = Action.instantiateActionFromJson(jsonData["post_action"])
         
         self.details = []
         if let detailsJsonArray = jsonData["details"].array {
@@ -45,24 +45,5 @@ public class ChecklistItem {
                 }
             }
         }
-    }
-    
-    private func instantiateAction(jsonData:JSON) -> Action? {
-        var retAction : Action? = Action(jsonData)
-        
-        if let actionName = retAction?.type {
-            switch actionName {
-                case "ShowMessage" :
-                    retAction = ShowMessageAction(jsonData)
-                case "FuelQuantityNotepad" :
-                    break
-                default :
-                    retAction = nil
-            }
-        } else {
-            retAction = nil
-        }
-        
-        return retAction
     }
 }

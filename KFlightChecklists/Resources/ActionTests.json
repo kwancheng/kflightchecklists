@@ -8,50 +8,93 @@
 					"title" : "Action Tests",
 					"checklist_items" : [
                         {
+                            "type" : "ITEM_ACTION",
+                            "action_has_note" : false,
+                            "item_has_note" : false,
+                            "pre_action" : null,
+                            "details" : [
+                                 "Action", "Record Hobbs Meter Reading : Pre-Flight"
+                            ],
+                            "post_action" : {
+                                 "name" : "RecordHobbsMeterReading",
+                                 "is_pre_flight" : true
+                            }
+                        },
+                        {
                         	"type" : "ITEM_ACTION",
-							"action_has_note" : false,
-							"item_has_note" : false,
-							"pre_action" : null,
-							"post_action" : {
-								"name" : "FuelQuantityNotepad",
-								"message" : "Pre Action 2"
-							},
-							"details" : [
-							          "Item Item Item Item Item Item Item Item Item Item Item Item Item Item Item Item ", "Fuel Quantity Fuel Quantity Fuel Quantity Fuel Quantity Fuel Quantity Fuel Quantity Fuel Quantity Fuel Quantity Fuel Quantity Fuel Quantity Fuel Quantity Fuel Quantity Fuel Quantity Fuel Quantity Fuel Quantity "
-							          ]
-						},
-						{
-							"type" : "ITEM_ACTION",
-							"action_has_note" : false,
-							"item_has_note" : false,
-							"pre_action" : {
-									"name" : "ShowMessage",
-									"message" : "Pre Action 1"
-								},
-							"post_action" : {
-									"name" : "ShowMessage",
-									"message" : "Post Action 1"
-								},
-							"details" : [
-								"Item", "Action"
-							]
-						},
-						{
-							"type" : "ITEM_ACTION",
-							"action_has_note" : false,
-							"item_has_note" : false,
-							"pre_action" : {
-									"name" : "ShowMessage",
-									"message" : "Pre Action 2"
-								},
-							"post_action" : {
-									"name" : "ShowMessage",
-									"message" : "Post Action 2"
-								},
-							"details" : [
-								"Item", "Action"
-							]
-						}
+                        	"action_has_note" : false,
+                        	"item_has_note" : false,
+                        	"pre_action" : null,
+                        	"details" : [
+                        		"Action", "Record Hobbs Meter Reading : Post-Flight"
+                        	],
+                        	"post_action" : {
+                        		"name" : "RecordHobbsMeterReading",
+                        		"is_pre_flight" : false
+                        	}
+                        },                        
+                        {
+                        	"type" : "ITEM_ACTION",
+                        	"action_has_note" : false,
+                        	"item_has_note" : false,
+                        	"pre_action" : null,
+                        	"details" : [
+                        		"Action", "Show Message"
+                        	],
+                        	"post_action" : {
+                        		"name" : "ShowMessage",
+                        		"message" : "Show Message Action"
+                        	}
+                        },
+                        {
+                        	"type" : "ITEM_ACTION",
+                        	"action_has_note" : false,
+                        	"item_has_note" : false,
+                        	"pre_action" : null,
+                        	"details" : [
+                        		"Action", "Record Fuel Quantity"
+                        	],
+                        	"post_action" : {
+                        		"name" : "RecordFuelQuantity"
+                        	}
+                        },
+                        {
+                        	"type" : "ITEM_ACTION",
+                        	"action_has_note" : false,
+                        	"item_has_note" : false,
+                        	"pre_action" : null,
+                        	"details" : [
+                        		"Action", "Start Flight Timer"
+                        	],
+                        	"post_action" : {
+                        		"name" : "StartFlightTimer"
+                          	}
+                        },
+                        {
+                        	"type" : "ITEM_ACTION",
+                        	"action_has_note" : false,
+                        	"item_has_note" : false,
+                        	"pre_action" : null,
+                        	"details" : [
+                        		"Action", "Stop Flight Timer"
+                        	],
+                        	"post_action" : {
+                        		"name" : "StopFlightTimer"
+                          	}
+                        },
+                        {
+                        	"type" : "ITEM_ACTION",
+                        	"action_has_note" : false,
+                        	"item_has_note" : false,
+                        	"pre_action" : null,
+                        	"details" : [
+                        		"Action", "Show Timer : 49 Seconds"
+                        	],
+                        	"post_action" : {
+                        		"name" : "ShowTimer",
+                        		"duration" : 60
+                          	}
+                        }
 					]
 				}
 			]
