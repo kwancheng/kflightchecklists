@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ChecklistViewController : ViewController, UITableViewDataSource, UITableViewDelegate {
+class ChecklistViewController : ViewController, UITableViewDataSource, UITableViewDelegate, ActionDelegate {
     @IBOutlet var navItem : UINavigationItem?
     @IBOutlet var lbChecklist : UITableView?
     
@@ -116,68 +116,25 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
         return retVal
     }
     
-    private func executePreAction(checklistItem:ChecklistItem?, callback : (()->Void)?) {
-        executeAction(checklistItem?.preAction, checklistItem, callback: callback)
+    private func executePreAction(checklistItem:ChecklistItem?, completionCallback : CompletionCallback?) {
+        executeAction(checklistItem?.preAction, checklistItem: checklistItem, completionCallback: completionCallback)
     }
     
-    private func executePostAction(checklistItem:ChecklistItem?, callback : (()->Void)?) {
-        executeAction(checklistItem?.postAction, checklistItem, callback: callback)
+    private func executePostAction(checklistItem:ChecklistItem?, completionCallback : (()->Void)?) {
+        executeAction(checklistItem?.postAction,checklistItem: checklistItem, completionCallback: completionCallback)
     }
     
-    internal func setFuelQuantityCallback( mainTankLevel : Float, auxTankLevel : Float) -> Void  {
-        self.flightInfo.mainTankLevel = mainTankLevel
-        self.flightInfo.auxTankLevel = auxTankLevel
-    }
-
-    func setHobbsMeterReading(isPreFlight : Bool, _ reading : Float ) {
-        if(isPreFlight) {
-            self.flightInfo.preFlightHobbsReading = reading
-        } else {
-            self.flightInfo.postFlightHobbsReading = reading
-        }
-    }
-    
-    private func executeAction(action: Action?, _ checklistItem : ChecklistItem?, callback : (() -> Void)?) {
+    private func executeAction(action : Action?, checklistItem : ChecklistItem?, completionCallback : CompletionCallback?) {
         if let action = action {
-            var payload : Payload?
-            var checklistItemAction = (item:checklistItem?.details?[0], action:checklistItem?.details?[1])
-            
-            if let sma = action as? ShowMessageAction {
-                payload = sma.makePayload(
-                    checklistItemAction.item,
-                    checklistItemAction.action, callback)
-            } else if let rfqa = action as? RecordFuelQuantityAction {
-                payload = rfqa.makePayload(
-                    checklistItemAction.item,
-                    checklistItemAction.action,
-                    setFuelLevelCallback: self.setFuelQuantityCallback,
-                    completionCallback: callback)
-            } else if let rhmra = action as? RecordHobbsMeterReadingAction {
-                payload = rhmra.makePayload(
-                    checklistItemAction.item,
-                    checklistItemAction.action,
-                    flightInfo.preFlightHobbsReading,
-                    flightInfo.postFlightHobbsReading,
-                    setHobbsMeterReadingCallback: self.setHobbsMeterReading,
-                    completionCallback: callback)
-            } else if let sfta = action as? StartFlightTimerAction {
-            } else if let sfta = action as? StopFlightTimerAction {
-                
-            } else if let sta = action as? ShowTimerAction {
-                
-            } else if let rwca = action as? RecordWeatherConditionAction {
-                
-            }
-            
-            action.execute(self, payload)
+            action.actionDelegate = self
+            action.execute(checklistItem, completionCallback: completionCallback)
         } else {
-            // no action, just callback
-            if let callback = callback {
-                callback()
+            if let completionCallback = completionCallback {
+                completionCallback()
             }
         }
     }
-        
+    
     private func getChecklistItemAt(indexPath: NSIndexPath?) -> ChecklistItem? {
         return (indexPath == nil) ? nil : self.checklist?.sections?[indexPath!.section].checklistItems?[indexPath!.row]
     }
@@ -190,32 +147,36 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
             flightInfoVC.flightInfo = self.flightInfo
         } else if let recordHobbsVC = segue.destinationViewController as? HobbsReadingViewController {
             recordHobbsVC.setPayload(sender as! RecordHobbsMeterReadingPayload)
+        } else if let rwcVC = segue.destinationViewController as? RecordWeatherConditionsViewController {
+            rwcVC.setPayload(sender as! RecordWeatherConditionsPayload)
         }
     }
         
-    private var supressNextPreAction = false
-    private var supressCurrentPostAction = false
-    
     enum ListItemTransition {
         case SOL  // Start of List
         case DOL  // Dual Wield
         case NAV  // Navigation
         
         static func getTransition(current : NSIndexPath?, _ next : NSIndexPath) -> ListItemTransition {
+            var retVal = ListItemTransition.SOL
             if let current = current {
                 if current.isEqual(next) {
-                    return ListItemTransition.DOL
+                    retVal = ListItemTransition.DOL
                 } else {
-                    return ListItemTransition.NAV
+                    retVal = ListItemTransition.NAV
                 }
-            } else {
-                return ListItemTransition.SOL
             }
+            return retVal
         }
     }
     
     enum ListItemState : Int {
-        case START = 0, S0 = 1, S1 = 2, S2 = 3, S3 = 4, ERROR = 5
+        case START = 0,
+        S0 = 1, // Execute Next PreAction Only
+        S1 = 2, // Execute Current PostAction Only
+        S2 = 3, // Just Navigate
+        S3 = 4, // Execute Current PostAction, Then Next PreAction
+        ERROR = 5
     }
     
     private var currentState = ListItemState.START
@@ -249,17 +210,17 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
                 break
             case .S0 :
                 var checklistItem = getChecklistItemAt(next)
-                executePreAction(checklistItem, callback: navigationClosure)
+                executePreAction(checklistItem, completionCallback: navigationClosure)
             case .S1 :
                 var checklistItem  = getChecklistItemAt(currentIndexPath)
-                executePostAction(checklistItem, callback: navigationClosure)
+                executePostAction(checklistItem, completionCallback: navigationClosure)
             case .S2 :
                 navigationClosure()
             case .S3 :
                 var currentChecklistItem = getChecklistItemAt(currentIndexPath)
-                executePostAction(currentChecklistItem, callback: { () -> Void in
+                executePostAction(currentChecklistItem, completionCallback: { () -> Void in
                     var nextChecklistItem = self.getChecklistItemAt(next)
-                    self.executePreAction(nextChecklistItem, callback: navigationClosure)
+                    self.executePreAction(nextChecklistItem, completionCallback: navigationClosure)
                 })
             case .ERROR :
                 var alert = UIAlertController(title: nil, message: "Error Occurred Restarting", preferredStyle: UIAlertControllerStyle.Alert)
@@ -277,7 +238,6 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
     
         if let sectionHeader = NSBundle.mainBundle().loadNibNamed("SectionHeader", owner: self, options: nil)[0] as? SectionHeader {
             sectionHeader.lblTitle?.text = checklist?.sections?[section].title
-            
             ret = sectionHeader
         }
         
@@ -290,5 +250,94 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
     
     @IBAction func showFlightInfo(sender : AnyObject) {
         performSegueWithIdentifier("ShowFlightInfo", sender: self)
+    }
+    
+    // MARK : ActionDelegate
+    func showMessage(action : Action, onChecklistItem : ChecklistItem?, completionCallback : CompletionCallback?) {
+        if let showMessageAction = action as? ShowMessageAction {
+            let alertController = UIAlertController(title: nil, message: showMessageAction.message, preferredStyle: UIAlertControllerStyle.Alert)
+            let defaultAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: { (alertAction) -> Void in
+                if let callback = completionCallback {
+                    callback()
+                }
+            })
+            alertController.addAction(defaultAction)
+            
+            dispatch_async(dispatch_get_main_queue(), {()->Void in
+                self.presentViewController(alertController, animated: true, completion: nil)
+            })
+        } else {
+            if let completionCallback = completionCallback {
+                completionCallback()
+            }
+        }
+    }
+    
+    func recordFuelQuantity(action : Action, onChecklistItem : ChecklistItem?, completionCallback : CompletionCallback?)
+    {
+        var payload = RecordFuelQuantityPayload(
+            onChecklistItem?.details?[0],
+            onChecklistItem?.details?[1],
+            self.flightInfo.setFuelQuantityCallback,
+            completionCallback)
+        
+        dispatch_async(dispatch_get_main_queue(), {()->Void in
+            self.performSegueWithIdentifier("ShowFuelQuantityNotepad", sender: payload)
+        })
+    }
+    
+    func recordHobbsMeterReading(action : Action, onChecklistItem : ChecklistItem?, completionCallback : CompletionCallback?)
+    {
+        if let recordHobbsMeterReadingAction = action as? RecordHobbsMeterReadingAction {
+            var reading = (recordHobbsMeterReadingAction.isPreFlight ?? false) ? flightInfo.preFlightHobbsReading : flightInfo.postFlightHobbsReading
+            
+            var payload = RecordHobbsMeterReadingPayload(
+                onChecklistItem?.details?[0],
+                onChecklistItem?.details?[1],
+                recordHobbsMeterReadingAction.isPreFlight,
+                reading,
+                flightInfo.setHobbsMeterReading,
+                completionCallback)
+    
+            dispatch_async(dispatch_get_main_queue(), {()->Void in
+                self.performSegueWithIdentifier("ShowHobbsReadingNotepad", sender: payload)
+            })
+        } else {
+            if let completionCallback = completionCallback {
+                completionCallback()
+            }
+        }
+        
+    }
+    func recordWeatherCondition(action : Action, onChecklistItem : ChecklistItem?, completionCallback : CompletionCallback?)
+    {
+        if let rwca = action as? RecordWeatherConditionsAction {
+            var payload = RecordWeatherConditionsPayload(
+                barometerReading: flightInfo.barometerReading,
+                windDirection: flightInfo.windDirection,
+                windSpeed: flightInfo.windSpeed,
+                temperature: flightInfo.temperature,
+                item: onChecklistItem!.details![0],
+                action: onChecklistItem!.details![1],
+                setWeatherConditionsCallback: flightInfo.setWeatherConditions,
+                completionCallback: completionCallback)
+            
+            dispatch_async(dispatch_get_main_queue(), {()->Void in
+                self.performSegueWithIdentifier("ShowRecordWeatherNotepad", sender: payload)
+            })
+        } else {
+            if let completionCallback = completionCallback {
+                completionCallback()
+            }
+        }
+    }
+    func startFlightTimer(action : Action, onChecklistItem : ChecklistItem?, completionCallback : CompletionCallback?) {
+        
+    }
+    func stopFlightTimer(action : Action, onChecklistItem : ChecklistItem?, completionCallback : CompletionCallback?) {
+        
+    }
+    func showTimer(action : Action, onChecklistItem : ChecklistItem?, completionCallback : CompletionCallback?) {
+        
     }
 }

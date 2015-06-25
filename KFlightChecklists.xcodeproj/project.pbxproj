@@ -22,6 +22,8 @@
 		0F76A98F1B34A0E20051E61E /* ActionTests.json in Resources */ = {isa = PBXBuildFile; fileRef = 0F76A98E1B34A0E20051E61E /* ActionTests.json */; };
 		0F76A9A01B34A43E0051E61E /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F76A99F1B34A43E0051E61E /* Action.swift */; };
 		0F76A9A21B34A44F0051E61E /* ShowMessageAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F76A9A11B34A44F0051E61E /* ShowMessageAction.swift */; };
+		0F820C9D1B3AD6EF00DEC9A4 /* ActionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F820C9C1B3AD6EF00DEC9A4 /* ActionDelegate.swift */; };
+		0F8C349E1B3B81A6002E5010 /* RecordWeatherConditionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8C349D1B3B81A6002E5010 /* RecordWeatherConditionsViewController.swift */; };
 		0FE88B281B383D9000FD7125 /* Payload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE88B261B383D9000FD7125 /* Payload.swift */; };
 		0FE88B291B383D9000FD7125 /* RecordFuelQuantityPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE88B271B383D9000FD7125 /* RecordFuelQuantityPayload.swift */; };
 		0FE88B2B1B3843F100FD7125 /* RecordHobbsMeterReadingPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE88B2A1B3843F100FD7125 /* RecordHobbsMeterReadingPayload.swift */; };
@@ -42,8 +44,10 @@
 		BC34F8ED1B2DE756001F60C9 /* ActionItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC34F8EC1B2DE756001F60C9 /* ActionItemCell.swift */; };
 		BC34F8F11B2DEED0001F60C9 /* CautionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC34F8F01B2DEED0001F60C9 /* CautionCell.swift */; };
 		BC34F8F31B2DF0FA001F60C9 /* NoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC34F8F21B2DF0FA001F60C9 /* NoteCell.swift */; };
+		BC6877721B3AB65300CF61E9 /* ShowTimerPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6877711B3AB65300CF61E9 /* ShowTimerPayload.swift */; };
 		BCCB8D441B2DA3D200EDE9C5 /* SectionHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCCB8D431B2DA3D200EDE9C5 /* SectionHeader.xib */; };
 		BCCB8D461B2DA54600EDE9C5 /* SectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCB8D451B2DA54600EDE9C5 /* SectionHeader.swift */; };
+		BCF5D37F1B3BFE680088F914 /* RecordWeatherConditionsPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF5D37E1B3BFE680088F914 /* RecordWeatherConditionsPayload.swift */; };
 		BCF639E41B3962FC00548379 /* ShowMessagePayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF639E31B3962FC00548379 /* ShowMessagePayload.swift */; };
 		BCF639E61B397A9900548379 /* HobbsReadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF639E51B397A9900548379 /* HobbsReadingViewController.swift */; };
 /* End PBXBuildFile section */
@@ -78,6 +82,8 @@
 		0F76A98E1B34A0E20051E61E /* ActionTests.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ActionTests.json; sourceTree = "<group>"; };
 		0F76A99F1B34A43E0051E61E /* Action.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
 		0F76A9A11B34A44F0051E61E /* ShowMessageAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowMessageAction.swift; sourceTree = "<group>"; };
+		0F820C9C1B3AD6EF00DEC9A4 /* ActionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionDelegate.swift; sourceTree = "<group>"; };
+		0F8C349D1B3B81A6002E5010 /* RecordWeatherConditionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordWeatherConditionsViewController.swift; sourceTree = "<group>"; };
 		0FE88B261B383D9000FD7125 /* Payload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Payload.swift; sourceTree = "<group>"; };
 		0FE88B271B383D9000FD7125 /* RecordFuelQuantityPayload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordFuelQuantityPayload.swift; sourceTree = "<group>"; };
 		0FE88B2A1B3843F100FD7125 /* RecordHobbsMeterReadingPayload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordHobbsMeterReadingPayload.swift; sourceTree = "<group>"; };
@@ -100,8 +106,10 @@
 		BC34F8EC1B2DE756001F60C9 /* ActionItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionItemCell.swift; sourceTree = "<group>"; };
 		BC34F8F01B2DEED0001F60C9 /* CautionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CautionCell.swift; sourceTree = "<group>"; };
 		BC34F8F21B2DF0FA001F60C9 /* NoteCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteCell.swift; sourceTree = "<group>"; };
+		BC6877711B3AB65300CF61E9 /* ShowTimerPayload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowTimerPayload.swift; sourceTree = "<group>"; };
 		BCCB8D431B2DA3D200EDE9C5 /* SectionHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SectionHeader.xib; sourceTree = "<group>"; };
 		BCCB8D451B2DA54600EDE9C5 /* SectionHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionHeader.swift; sourceTree = "<group>"; };
+		BCF5D37E1B3BFE680088F914 /* RecordWeatherConditionsPayload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordWeatherConditionsPayload.swift; sourceTree = "<group>"; };
 		BCF639E31B3962FC00548379 /* ShowMessagePayload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowMessagePayload.swift; sourceTree = "<group>"; };
 		BCF639E51B397A9900548379 /* HobbsReadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HobbsReadingViewController.swift; sourceTree = "<group>"; };
 		C0D28F7ED4A8E56A6DED0010 /* Pods-KFlightChecklists.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KFlightChecklists.release.xcconfig"; path = "Pods/Target Support Files/Pods-KFlightChecklists/Pods-KFlightChecklists.release.xcconfig"; sourceTree = "<group>"; };
@@ -207,6 +215,7 @@
 		0F76A99E1B34A43E0051E61E /* Actions */ = {
 			isa = PBXGroup;
 			children = (
+				0F820C9C1B3AD6EF00DEC9A4 /* ActionDelegate.swift */,
 				0F76A99F1B34A43E0051E61E /* Action.swift */,
 				0F76A9A11B34A44F0051E61E /* ShowMessageAction.swift */,
 				BC24FA3E1B373C62003D919D /* RecordFuelQuantityAction.swift */,
@@ -226,6 +235,8 @@
 				BCF639E31B3962FC00548379 /* ShowMessagePayload.swift */,
 				0FE88B271B383D9000FD7125 /* RecordFuelQuantityPayload.swift */,
 				0FE88B2A1B3843F100FD7125 /* RecordHobbsMeterReadingPayload.swift */,
+				BC6877711B3AB65300CF61E9 /* ShowTimerPayload.swift */,
+				BCF5D37E1B3BFE680088F914 /* RecordWeatherConditionsPayload.swift */,
 			);
 			path = Payloads;
 			sourceTree = "<group>";
@@ -253,6 +264,7 @@
 				0F5EF2001B30CAE000622496 /* R22FuelTankQuantityViewController.swift */,
 				0FF4C6EF1B36EE9000448C55 /* FlightInfoViewController.swift */,
 				BCF639E51B397A9900548379 /* HobbsReadingViewController.swift */,
+				0F8C349D1B3B81A6002E5010 /* RecordWeatherConditionsViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -487,7 +499,11 @@
 				BC34F8ED1B2DE756001F60C9 /* ActionItemCell.swift in Sources */,
 				BC34F8F31B2DF0FA001F60C9 /* NoteCell.swift in Sources */,
 				0F6D4C211B2C94CF0002A070 /* ChecklistItem.swift in Sources */,
+				0F820C9D1B3AD6EF00DEC9A4 /* ActionDelegate.swift in Sources */,
+				0F8C349E1B3B81A6002E5010 /* RecordWeatherConditionsViewController.swift in Sources */,
 				BC24FA4B1B3742F1003D919D /* RecordWeatherConditionAction.swift in Sources */,
+				BC6877721B3AB65300CF61E9 /* ShowTimerPayload.swift in Sources */,
+				BCF5D37F1B3BFE680088F914 /* RecordWeatherConditionsPayload.swift in Sources */,
 				0F0EE64A1B2C925500755FCF /* KFlightChecklists.xcdatamodeld in Sources */,
 				0F76A9A01B34A43E0051E61E /* Action.swift in Sources */,
 				0F6D4C1F1B2C94A20002A070 /* Section.swift in Sources */,

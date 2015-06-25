@@ -9,5 +9,13 @@
 import Foundation
 
 public class RecordFuelQuantityPayload : Payload {
-    var setFuelLevelCallback : ((mainTankLevel : Float, auxTankLevel : Float)->Void)?
+    var setFuelLevelCallback : SetFuelLevelCallback?
+    
+    public init(_ item: String?, _ action: String?,
+        _ setFuelLevelCallback : SetFuelLevelCallback?,
+        _ completionCallback: CompletionCallback?)
+    {
+        super.init(item, action, completionCallback)
+        self.setFuelLevelCallback = setFuelLevelCallback
+    }
 }

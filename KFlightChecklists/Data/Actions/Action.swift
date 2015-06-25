@@ -10,42 +10,54 @@ import Foundation
 import SwiftyJSON
 
 public class Action {
+    public var actionDelegate : ActionDelegate?
     public var name : String?
     
     public init(_ jsonData : JSON) {
         self.name = jsonData["name"].string
     }
     
-    public func makePayload<PayloadType:Payload>(itemString : String?, _ actionString: String?, _ completionCallback : (()->Void)?) -> PayloadType {
-        var retVal = PayloadType()
-        retVal.itemStr = itemString
-        retVal.actionStr = actionString
-        retVal.completionCallback = completionCallback
-        return retVal
+    public func execute(checklistItem : ChecklistItem?, completionCallback : CompletionCallback?) {
+        if let actionDelegate = self.actionDelegate {
+            if let showMessageAction = self as? ShowMessageAction {
+                actionDelegate.showMessage(self, onChecklistItem: checklistItem, completionCallback: completionCallback)
+            } else if let recordFuelQuantityAction = self as? RecordFuelQuantityAction {
+                actionDelegate.recordFuelQuantity(self, onChecklistItem: checklistItem, completionCallback: completionCallback!)
+            } else if let recordHobbsMeterReadingAction = self as? RecordHobbsMeterReadingAction {
+                actionDelegate.recordHobbsMeterReading(self, onChecklistItem: checklistItem, completionCallback: completionCallback!)
+            } else if let recordWeatherConditionAction = self as? RecordWeatherConditionsAction {
+                actionDelegate.recordWeatherCondition(self, onChecklistItem: checklistItem, completionCallback: completionCallback!)
+            } else if let startFlightTimerAction = self as? StartFlightTimerAction {
+                actionDelegate.startFlightTimer(self, onChecklistItem: checklistItem, completionCallback: completionCallback!)
+            } else if let stopFlightTimerAction = self as? StopFlightTimerAction {
+                actionDelegate.stopFlightTimer(self, onChecklistItem: checklistItem, completionCallback: completionCallback!)
+            } else if let showTimer = self as? ShowTimerAction {
+                actionDelegate.showTimer(self, onChecklistItem: checklistItem, completionCallback: completionCallback!)
+            }
+        }
     }
-    
-    public func execute(viewController : UIViewController,
-        _ payload : Payload?) {}
-    
+        
     static public func instantiateActionFromJson(jsonData : JSON) -> Action? {
         var retAction : Action?
         
         if let actionName = jsonData["name"].string {
             switch actionName {
-            case "ShowMessage" :
-                retAction = ShowMessageAction(jsonData)
-            case "RecordFuelQuantity" :
-                retAction = RecordFuelQuantityAction(jsonData)
-            case "RecordHobbsMeterReading" :
-                retAction = RecordHobbsMeterReadingAction(jsonData)
-            case "StartFlightTimer" :
-                retAction = StartFlightTimerAction(jsonData)
-            case "StopFlightTimer" :
-                retAction = StopFlightTimerAction(jsonData)
-            case "ShowTimer" :
-                retAction = ShowTimerAction(jsonData)
-            default :
-                break
+                case "ShowMessage" :
+                    retAction = ShowMessageAction(jsonData)
+                case "RecordFuelQuantity" :
+                    retAction = RecordFuelQuantityAction(jsonData)
+                case "RecordHobbsMeterReading" :
+                    retAction = RecordHobbsMeterReadingAction(jsonData)
+                case "RecordWeatherConditionAction":
+                    retAction = RecordWeatherConditionsAction(jsonData)
+                case "StartFlightTimer" :
+                    retAction = StartFlightTimerAction(jsonData)
+                case "StopFlightTimer" :
+                    retAction = StopFlightTimerAction(jsonData)
+                case "ShowTimer" :
+                    retAction = ShowTimerAction(jsonData)
+                default :
+                    break
             }
         }
         

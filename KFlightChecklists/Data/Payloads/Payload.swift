@@ -9,7 +9,13 @@
 import Foundation
 
 public class Payload {
-    var itemStr : String?
-    var actionStr : String?
-    var completionCallback : (()->Void)?
+    var item : String?
+    var action : String?
+    var completionCallback : CompletionCallback?
+    
+    public init(_ item : String?, _ action : String?, _ completionCallback : CompletionCallback?) {
+        self.item = item
+        self.action = action
+        self.completionCallback = completionCallback
+    }
 }

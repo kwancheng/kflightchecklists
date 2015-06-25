@@ -8,6 +8,6 @@
 
 import Foundation
 
-public class RecordWeatherConditionAction : Action {
+public class RecordWeatherConditionsAction : Action {
     
 }

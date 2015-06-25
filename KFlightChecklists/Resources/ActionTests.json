@@ -13,6 +13,18 @@
                             "item_has_note" : false,
                             "pre_action" : null,
                             "details" : [
+                                 "Action", "Record Weather Condition"
+                            ],
+                            "post_action" : {
+                                 "name" : "RecordWeatherConditionAction",
+                            }
+                        },					
+                        {
+                            "type" : "ITEM_ACTION",
+                            "action_has_note" : false,
+                            "item_has_note" : false,
+                            "pre_action" : null,
+                            "details" : [
                                  "Action", "Record Hobbs Meter Reading : Pre-Flight"
                             ],
                             "post_action" : {

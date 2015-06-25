@@ -17,6 +17,9 @@ public class FlightInfoViewController : UIViewController {
     @IBOutlet var lblPreFlightHobbsReading : UILabel?
     @IBOutlet var lblPostFlightHobbsReading : UILabel?
     @IBOutlet var lblHobbsUsed : UILabel?
+    @IBOutlet var lblBarometerReading : UILabel?
+    @IBOutlet var lblWindConditions : UILabel?
+    @IBOutlet var lblTemperature : UILabel?
     
     var flightInfo : FlightInfo?
     
@@ -25,6 +28,7 @@ public class FlightInfoViewController : UIViewController {
         self.updateTankLevels()
         self.updateApproximateFlightTime()
         self.updateHobbsReadings()
+        self.updateWeatherConditions()
     }
     
     private func updateTankLevels() {
@@ -44,5 +48,11 @@ public class FlightInfoViewController : UIViewController {
         
         var hobbsUsed = self.flightInfo!.postFlightHobbsReading - self.flightInfo!.preFlightHobbsReading
         lblHobbsUsed?.text = String(format: "Total Hobbs Used : %.1f", hobbsUsed)
+    }
+    
+    private func updateWeatherConditions() {
+        lblBarometerReading?.text = String(format:"Barometer Reading : %.2f", self.flightInfo!.barometerReading)
+        lblWindConditions?.text = String(format:"Wind Direction and Speed : %d (%d)", self.flightInfo!.windDirection, self.flightInfo!.windSpeed)
+        lblTemperature?.text = String(format:"Temperature : %d C", self.flightInfo!.temperature)
     }
 }

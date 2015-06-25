@@ -30,8 +30,8 @@ public class R22FuelTankQuantityViewController : UIViewController {
     }
     
     public func setPayload(payload : RecordFuelQuantityPayload) {
-        itemStr = payload.itemStr
-        actionStr = payload.actionStr
+        itemStr = payload.item
+        actionStr = payload.action
         setFuelLevelCallback = payload.setFuelLevelCallback
         completionCallback = payload.completionCallback
     }
