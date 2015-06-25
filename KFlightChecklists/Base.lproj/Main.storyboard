@@ -198,7 +198,7 @@
                     <connections>
                         <outlet property="lbChecklist" destination="fSu-dQ-BHA" id="ZiT-2H-6WU"/>
                         <outlet property="navItem" destination="ocC-3W-5uX" id="Aui-mk-N9N"/>
-                        <segue destination="Twc-aA-AOy" kind="presentation" identifier="ShowFuelQuantityNotepad" modalPresentationStyle="pageSheet" id="OeL-Q9-APj"/>
+                        <segue destination="Twc-aA-AOy" kind="presentation" identifier="ShowFuelQuantityNotepad" modalPresentationStyle="formSheet" id="OeL-Q9-APj"/>
                         <segue destination="8uq-ey-wfA" kind="show" identifier="ShowFlightInfo" id="Vav-nF-oEj"/>
                         <segue destination="tSn-0m-zxD" kind="presentation" identifier="ShowHobbsReadingNotepad" modalPresentationStyle="formSheet" id="4rG-jq-xlk"/>
                         <segue destination="7M5-l8-7DX" kind="presentation" identifier="ShowRecordWeatherNotepad" modalPresentationStyle="formSheet" id="YKq-MG-hCJ"/>
@@ -676,7 +676,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="tXi-Z9-Ck3" firstAttribute="leading" secondItem="mhb-5A-Mif" secondAttribute="trailing" constant="8" id="4kM-K6-w5h"/>
                                     <constraint firstItem="ufs-fg-xTh" firstAttribute="top" secondItem="LX2-wV-pzM" secondAttribute="bottom" constant="8" id="7LM-5W-8JF"/>
