@@ -104,7 +104,7 @@
                         	],
                         	"post_action" : {
                         		"name" : "ShowTimer",
-                        		"duration" : 60
+                        		"duration" : 49
                           	}
                         }
 					]

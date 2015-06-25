@@ -9,10 +9,10 @@
 import Foundation
 
 public class ShowTimerPayload : Payload {
-    var duration : Float?
+    var duration : Int?
     
-    init(_ item: String?, _ action: String?,
-        _ duration : Float?, completionCallback: CompletionCallback?)
+    public init(_ item: String?, _ action: String?,
+        _ duration : Int?, completionCallback: CompletionCallback?)
     {
         super.init(item, action, completionCallback)
         self.duration = duration

@@ -149,6 +149,8 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
             recordHobbsVC.setPayload(sender as! RecordHobbsMeterReadingPayload)
         } else if let rwcVC = segue.destinationViewController as? RecordWeatherConditionsViewController {
             rwcVC.setPayload(sender as! RecordWeatherConditionsPayload)
+        } else if let stVC = segue.destinationViewController as? TimerViewController {
+            stVC.setPayload(sender as! ShowTimerPayload)
         }
     }
         
@@ -362,6 +364,19 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
         
     }
     func showTimer(action : Action, onChecklistItem : ChecklistItem?, completionCallback : CompletionCallback?) {
-        
+        if let sta = action as? ShowTimerAction {
+            var payload = ShowTimerPayload(
+                onChecklistItem?.details?[0],
+                onChecklistItem?.details?[1],
+                sta.duration,
+                completionCallback: completionCallback)
+            dispatch_async(dispatch_get_main_queue(), {()->Void in
+                self.performSegueWithIdentifier("ShowTimer", sender: payload)
+            })
+        } else {
+            if let completionCallback = completionCallback {
+                completionCallback()
+            }
+        }
     }
 }

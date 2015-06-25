@@ -1744,8 +1744,8 @@
                                 "Read and Note"
                             ],
                             "post_action" : {
-                            	"type" : "ShowHobbsNotepad",
-                            	"pre_flight" : true
+                                "name" : "RecordHobbsMeterReading",
+                                "is_pre_flight" : true
                             }
                         },
                         {
@@ -1823,24 +1823,6 @@
                     ]
                 },
                 {
-                	"title": "Postflight Procedure",
-                	"checklist_items": [
-                        {
-                            "type": "ITEM_ACTION",
-                            "action_has_note": false,
-                            "item_has_note": false,
-                            "details": [
-                                "Hobbs Meter",
-                                "Read and Note"
-                            ],
-                            "post_action" : {
-                            	"type" : "ShowHobbsNotepad",
-                            	"pre_flight" : false
-                            }
-                        }                	
-                	]
-                },
-                {
                     "title": "Cowl Door",
                     "checklist_items": [
                         {
@@ -1876,10 +1858,10 @@
                             "item_has_note": false,
                             "details": [
                                 "Fuel Quantity",
-                                "Check Gauges"
+                                "Check Gauges and Note"
                             ],
                             "post_action" : {
-                            	"type" : "RecordFuelQuantity"
+                                "name" : "RecordFuelQuantity"
                             }
                         },
                         {
@@ -3053,7 +3035,7 @@
                                 "Start then Both"
                             ],
                             "post_action" : {
-                            	"type" : "StartFlightTimer"
+                                "name" : "StartFlightTimer"
                             }
                         },
                         {
@@ -3137,7 +3119,7 @@
                                 "Note Barometer, Temp, Wind Speed & Direction"
                             ],
                             "post_action" : {
-                            	"type" : "RecordWeatherCondition"
+                                 "name" : "RecordWeatherConditionAction",
                             }
                         },
                         {
@@ -3402,8 +3384,8 @@
                                 "60 Seconds"
                             ],
                             "post_action" : {
-                            	"type" : "ShowTimer",
-                            	"duration" : 60
+                                "name" : "ShowTimer",
+                                "duration" : 60
                             }
                         },
                         {
@@ -3424,8 +3406,8 @@
                                 "60 Seconds"
                             ],
                             "post_action" : {
-                            	"type" : "ShowTimer",
-                            	"duration" : 60
+                                "name" : "ShowTimer",
+                                "duration" : 60
                             }
                         },
                         {
@@ -3446,8 +3428,8 @@
                                 "60 Seconds"
                             ],
                             "post_action" : {
-                            	"type" : "ShowTimer",
-                            	"duration" : 60
+                                "name" : "ShowTimer",
+                                "duration" : 60
                             }
                         },
                         {
@@ -3540,11 +3522,29 @@
                                 "Off"
                             ],
                             "post_action" : {
-                            	"type" : "StopFlightTimer"
+                                "name" : "StopFlightTimer"
                             }
                         }
                     ]
-                }
+                },
+                {
+                    "title": "Postflight Procedure",
+                    "checklist_items": [
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Hobbs Meter",
+                                "Read and Note"
+                            ],
+                            "post_action" : {
+                                "name" : "RecordHobbsMeterReading",
+                                "is_pre_flight" : false
+                            }
+                        }                   
+                    ]
+                }                
             ]
         }
     ]

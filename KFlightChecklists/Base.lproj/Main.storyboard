@@ -202,6 +202,7 @@
                         <segue destination="8uq-ey-wfA" kind="show" identifier="ShowFlightInfo" id="Vav-nF-oEj"/>
                         <segue destination="tSn-0m-zxD" kind="presentation" identifier="ShowHobbsReadingNotepad" modalPresentationStyle="formSheet" id="4rG-jq-xlk"/>
                         <segue destination="7M5-l8-7DX" kind="presentation" identifier="ShowRecordWeatherNotepad" modalPresentationStyle="formSheet" id="YKq-MG-hCJ"/>
+                        <segue destination="hLS-SP-anu" kind="presentation" identifier="ShowTimer" modalPresentationStyle="formSheet" id="K3f-oA-3u5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kbI-n4-JvI" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -933,6 +934,58 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6ie-hK-p9B" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="743" y="1986"/>
+        </scene>
+        <!--Timer View Controller-->
+        <scene sceneID="Ycb-V7-AuW">
+            <objects>
+                <viewController id="hLS-SP-anu" customClass="TimerViewController" customModule="KF_Checklists" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kXO-IN-Bgc"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ers-e7-WFB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KYo-dQ-sPO">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UWk-fw-d3w">
+                                <rect key="frame" x="16" y="20" width="568" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="udH-lL-S4k"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oNO-jQ-NN5">
+                                <rect key="frame" x="16" y="98" width="568" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="mda-gj-6kK"/>
+                                </constraints>
+                                <state key="normal" title="Completed">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="completed:" destination="hLS-SP-anu" eventType="touchUpInside" id="RhS-hs-PtP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="UWk-fw-d3w" firstAttribute="trailing" secondItem="KYo-dQ-sPO" secondAttribute="trailingMargin" id="1K5-uu-Rr8"/>
+                            <constraint firstItem="oNO-jQ-NN5" firstAttribute="top" secondItem="UWk-fw-d3w" secondAttribute="bottom" constant="8" id="HaF-Xg-Hf0"/>
+                            <constraint firstItem="oNO-jQ-NN5" firstAttribute="leading" secondItem="KYo-dQ-sPO" secondAttribute="leadingMargin" id="b47-80-g5a"/>
+                            <constraint firstItem="UWk-fw-d3w" firstAttribute="top" secondItem="kXO-IN-Bgc" secondAttribute="bottom" constant="20" id="e7n-J3-6oi"/>
+                            <constraint firstItem="oNO-jQ-NN5" firstAttribute="trailing" secondItem="KYo-dQ-sPO" secondAttribute="trailingMargin" id="jMl-KZ-7k4"/>
+                            <constraint firstItem="UWk-fw-d3w" firstAttribute="leading" secondItem="KYo-dQ-sPO" secondAttribute="leadingMargin" id="nc3-fB-gBH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lblTimer" destination="UWk-fw-d3w" id="X3b-9g-CrS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f54-qR-GvS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="15" y="1986"/>
         </scene>
     </scenes>
 </document>
