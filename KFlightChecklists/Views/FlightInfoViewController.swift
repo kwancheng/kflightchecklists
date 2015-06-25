@@ -20,6 +20,8 @@ public class FlightInfoViewController : UIViewController {
     @IBOutlet var lblBarometerReading : UILabel?
     @IBOutlet var lblWindConditions : UILabel?
     @IBOutlet var lblTemperature : UILabel?
+    @IBOutlet var lblFlightStartTime : UILabel?
+    @IBOutlet var lblFlightEndTime : UILabel?
     
     var flightInfo : FlightInfo?
     
@@ -29,6 +31,7 @@ public class FlightInfoViewController : UIViewController {
         self.updateApproximateFlightTime()
         self.updateHobbsReadings()
         self.updateWeatherConditions()
+        self.updateFlightTimes()
     }
     
     private func updateTankLevels() {
@@ -54,5 +57,16 @@ public class FlightInfoViewController : UIViewController {
         lblBarometerReading?.text = String(format:"Barometer Reading : %.2f", self.flightInfo!.barometerReading)
         lblWindConditions?.text = String(format:"Wind Direction and Speed : %d (%d)", self.flightInfo!.windDirection, self.flightInfo!.windSpeed)
         lblTemperature?.text = String(format:"Temperature : %d C", self.flightInfo!.temperature)
+    }
+    
+    private func updateFlightTimes() {
+        let dateFormatter = NSDateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd 'at' h:mm a" // superset of OP's format
+        
+        var flightStartTimeStr = (self.flightInfo?.flightStartTime != nil) ? dateFormatter.stringFromDate(self.flightInfo!.flightStartTime!) : "None Recorded"
+        var flightEndTimeStr = (self.flightInfo?.flightEndTime != nil) ? dateFormatter.stringFromDate(self.flightInfo!.flightEndTime!) : "None Recorded"
+        
+        lblFlightStartTime?.text = String(format: "Flight Start Time : %@", flightStartTimeStr)
+        lblFlightEndTime?.text = String(format: "Flight End Time : %@", flightEndTimeStr)
     }
 }

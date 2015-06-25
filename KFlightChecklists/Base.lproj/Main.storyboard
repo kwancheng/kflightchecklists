@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="h62-SE-d51">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="h62-SE-d51">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
@@ -860,23 +860,47 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flight Start Time : " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="To7-bl-6Ta">
+                                <rect key="frame" x="16" y="396" width="568" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Qdq-vv-Rzz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flight End Time : " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Jx-ys-XtP">
+                                <rect key="frame" x="16" y="425" width="568" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="I3I-bF-djf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="VTV-eV-Gnw" firstAttribute="trailing" secondItem="NZR-4N-xgi" secondAttribute="trailingMargin" id="38D-RI-d3i"/>
                             <constraint firstItem="HdY-nc-MlU" firstAttribute="leading" secondItem="NZR-4N-xgi" secondAttribute="leadingMargin" id="47v-FE-HoM"/>
+                            <constraint firstItem="To7-bl-6Ta" firstAttribute="trailing" secondItem="NZR-4N-xgi" secondAttribute="trailingMargin" id="8oq-VK-UeN"/>
                             <constraint firstItem="WEt-Xi-LXw" firstAttribute="leading" secondItem="NZR-4N-xgi" secondAttribute="leadingMargin" id="CK6-Om-Mpx"/>
                             <constraint firstItem="um9-WC-E0z" firstAttribute="leading" secondItem="NZR-4N-xgi" secondAttribute="leadingMargin" id="COJ-em-Pg2"/>
                             <constraint firstItem="v7Y-df-tKu" firstAttribute="trailing" secondItem="NZR-4N-xgi" secondAttribute="trailingMargin" id="Dsd-8D-ofL"/>
                             <constraint firstItem="VTV-eV-Gnw" firstAttribute="top" secondItem="Vxq-TD-jqg" secondAttribute="bottom" constant="8" id="HDF-cZ-o26"/>
                             <constraint firstItem="HdY-nc-MlU" firstAttribute="top" secondItem="um9-WC-E0z" secondAttribute="bottom" constant="8" id="LZ5-xE-dWL"/>
+                            <constraint firstItem="To7-bl-6Ta" firstAttribute="top" secondItem="Cjc-74-ldB" secondAttribute="bottom" constant="8" id="Lyh-wj-PhY"/>
                             <constraint firstItem="v7Y-df-tKu" firstAttribute="leading" secondItem="NZR-4N-xgi" secondAttribute="leadingMargin" id="Mx1-Hm-zIL"/>
                             <constraint firstItem="Opa-ql-jhv" firstAttribute="trailing" secondItem="NZR-4N-xgi" secondAttribute="trailingMargin" id="Vrl-PP-Xf9"/>
+                            <constraint firstItem="To7-bl-6Ta" firstAttribute="leading" secondItem="NZR-4N-xgi" secondAttribute="leadingMargin" id="Wd3-eJ-wF0"/>
                             <constraint firstItem="Cjc-74-ldB" firstAttribute="leading" secondItem="NZR-4N-xgi" secondAttribute="leadingMargin" id="Xza-Cn-EoO"/>
                             <constraint firstItem="Cjc-74-ldB" firstAttribute="top" secondItem="v7Y-df-tKu" secondAttribute="bottom" constant="8" id="ZRo-lw-3Dt"/>
+                            <constraint firstItem="2Jx-ys-XtP" firstAttribute="top" secondItem="To7-bl-6Ta" secondAttribute="bottom" constant="8" id="Zym-LC-Nlj"/>
                             <constraint firstItem="HdY-nc-MlU" firstAttribute="trailing" secondItem="NZR-4N-xgi" secondAttribute="trailingMargin" id="aSf-8w-wbN"/>
                             <constraint firstItem="WEt-Xi-LXw" firstAttribute="top" secondItem="Opa-ql-jhv" secondAttribute="bottom" constant="8" id="bM5-We-0nI"/>
                             <constraint firstItem="Vxq-TD-jqg" firstAttribute="leading" secondItem="NZR-4N-xgi" secondAttribute="leadingMargin" id="ebf-cp-PlA"/>
+                            <constraint firstItem="2Jx-ys-XtP" firstAttribute="leading" secondItem="NZR-4N-xgi" secondAttribute="leadingMargin" id="fCt-ls-JWl"/>
+                            <constraint firstItem="2Jx-ys-XtP" firstAttribute="trailing" secondItem="NZR-4N-xgi" secondAttribute="trailingMargin" id="fLC-CK-Q6r"/>
                             <constraint firstItem="Opa-ql-jhv" firstAttribute="leading" secondItem="NZR-4N-xgi" secondAttribute="leadingMargin" id="imk-SA-c4x"/>
                             <constraint firstItem="v7Y-df-tKu" firstAttribute="top" secondItem="WEt-Xi-LXw" secondAttribute="bottom" constant="8" id="jnr-He-0UK"/>
                             <constraint firstItem="um9-WC-E0z" firstAttribute="top" secondItem="VTV-eV-Gnw" secondAttribute="bottom" constant="8" id="kEm-2t-AIn"/>
@@ -894,6 +918,8 @@
                         <outlet property="lblApproximateFlightTime" destination="VTV-eV-Gnw" id="rg8-Ku-Haf"/>
                         <outlet property="lblAuxTankLevel" destination="arJ-sY-u3K" id="khK-58-0fA"/>
                         <outlet property="lblBarometerReading" destination="WEt-Xi-LXw" id="GrO-ey-CbZ"/>
+                        <outlet property="lblFlightEndTime" destination="2Jx-ys-XtP" id="CvI-rU-zU7"/>
+                        <outlet property="lblFlightStartTime" destination="To7-bl-6Ta" id="Obx-cb-jwC"/>
                         <outlet property="lblHobbsUsed" destination="Opa-ql-jhv" id="qi3-G0-EDb"/>
                         <outlet property="lblMainTankLevel" destination="W2V-63-EQ4" id="AWs-9J-duu"/>
                         <outlet property="lblPostFlightHobbsReading" destination="HdY-nc-MlU" id="hMq-K2-mVN"/>

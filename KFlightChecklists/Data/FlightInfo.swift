@@ -24,6 +24,9 @@ public class FlightInfo {
     public var windSpeed = 20
     public var temperature = 10
     
+    public var flightStartTime : NSDate?
+    public var flightEndTime : NSDate?
+    
     public func calcActualMainLevel() -> Float {
         return self.mainTankCapacity * self.mainTankLevel
     }
