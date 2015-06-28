@@ -9,6 +9,8 @@
 import Foundation
 
 public class FlightInfo {
+    private let manifoldLimitCalculator = ManifoldLimiteCalculator()
+    
     public let mainTankCapacity : Float = 19.2
     public let auxTankCapacity : Float = 10.5
     public let gallonsPerHour : Float = 10
@@ -26,6 +28,8 @@ public class FlightInfo {
     
     public var flightStartTime : NSDate?
     public var flightEndTime : NSDate?
+    
+    public let maxFor5Min = 0.9
     
     public func calcActualMainLevel() -> Float {
         return self.mainTankCapacity * self.mainTankLevel

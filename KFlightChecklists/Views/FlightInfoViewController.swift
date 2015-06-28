@@ -20,10 +20,11 @@ public class FlightInfoViewController : UIViewController {
     @IBOutlet var lblBarometerReading : UILabel?
     @IBOutlet var lblWindConditions : UILabel?
     @IBOutlet var lblTemperature : UILabel?
-    @IBOutlet var lblFlightStartTime : UILabel?
-    @IBOutlet var lblFlightEndTime : UILabel?
+    @IBOutlet var lblFlightTime : UILabel?
+    @IBOutlet var lblManifoldLimit : UILabel?
     
     var flightInfo : FlightInfo?
+    private let manifoldLimitCalculator  = ManifoldLimiteCalculator()
     
     public override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +33,23 @@ public class FlightInfoViewController : UIViewController {
         self.updateHobbsReadings()
         self.updateWeatherConditions()
         self.updateFlightTimes()
+        self.updateManifoldPressure()
+    }
+    
+    private func updateManifoldPressure() {
+        let formatTemplate = "Manifold Limit : Temp[%d C] @SL Limit[%.2f] Takeoff[%.2fs](5 min)"
+        
+        var msg = "Manifold Limit : No Temperature Recorded"
+        if let temp = self.flightInfo?.temperature {
+            if let limit = manifoldLimitCalculator.getManifoldPressureAtAltitude(0, oat: temp) {
+                let max = limit + 0.9
+                msg = String(format:formatTemplate, temp, limit, max )
+            } else {
+                msg = String(format:"Manifold Limit : Limit not found for Temp[%d]", temp)
+            }
+        }
+        
+        lblManifoldLimit?.text = msg
     }
     
     private func updateTankLevels() {
@@ -60,13 +78,32 @@ public class FlightInfoViewController : UIViewController {
     }
     
     private func updateFlightTimes() {
+        let formatTemplate = "Flight Time : Start[%@] End[%@] Duration[%@]"
         let dateFormatter = NSDateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd 'at' h:mm a" // superset of OP's format
         
-        var flightStartTimeStr = (self.flightInfo?.flightStartTime != nil) ? dateFormatter.stringFromDate(self.flightInfo!.flightStartTime!) : "None Recorded"
-        var flightEndTimeStr = (self.flightInfo?.flightEndTime != nil) ? dateFormatter.stringFromDate(self.flightInfo!.flightEndTime!) : "None Recorded"
+        var flightStartTimeStr = "None Recorded"
+        if let flightStartTime = self.flightInfo?.flightStartTime {
+            flightStartTimeStr = dateFormatter.stringFromDate(flightStartTime)
+        }
         
-        lblFlightStartTime?.text = String(format: "Flight Start Time : %@", flightStartTimeStr)
-        lblFlightEndTime?.text = String(format: "Flight End Time : %@", flightEndTimeStr)
+        var flightEndTimeStr = "None Recorded"
+        if let flightEndTime = self.flightInfo?.flightEndTime {
+            flightEndTimeStr = dateFormatter.stringFromDate(flightEndTime)
+        }
+        
+        var durationStr = "--:--"
+        if let flightStartTime = self.flightInfo?.flightStartTime {
+            if let flightEndTime = self.flightInfo?.flightEndTime {
+                var duration = flightEndTime.timeIntervalSinceDate(flightStartTime)
+                let interval = Int(duration)
+                let seconds = interval % 60
+                let minutes = (interval/60)%60
+                let hours =   (interval / 3600)
+                durationStr = String(format: "%02d:%02d:%02d", hours, minutes, seconds)
+            }
+        }
+        
+        lblFlightTime?.text = String(format: formatTemplate, flightStartTimeStr, flightEndTimeStr, durationStr)        
     }
 }

@@ -14,6 +14,7 @@
 		0F0EE6541B2C925500755FCF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F0EE6521B2C925500755FCF /* LaunchScreen.xib */; };
 		0F0EE6601B2C925500755FCF /* KFlightChecklistsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0EE65F1B2C925500755FCF /* KFlightChecklistsTests.swift */; };
 		0F244DCF1B2D126300081141 /* ChecklistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F244DCE1B2D126300081141 /* ChecklistViewController.swift */; };
+		0F50914D1B3F10A2008E8AC4 /* ManifoldLimitCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F50914C1B3F10A2008E8AC4 /* ManifoldLimitCalculator.swift */; };
 		0F5EF2011B30CAE000622496 /* R22FuelTankQuantityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5EF2001B30CAE000622496 /* R22FuelTankQuantityViewController.swift */; };
 		0F6D4C1B1B2C93D30002A070 /* ChecklistPack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6D4C1A1B2C93D30002A070 /* ChecklistPack.swift */; };
 		0F6D4C1D1B2C94570002A070 /* Checklist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6D4C1C1B2C94570002A070 /* Checklist.swift */; };
@@ -76,6 +77,7 @@
 		0F0EE65E1B2C925500755FCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F0EE65F1B2C925500755FCF /* KFlightChecklistsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KFlightChecklistsTests.swift; sourceTree = "<group>"; };
 		0F244DCE1B2D126300081141 /* ChecklistViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChecklistViewController.swift; sourceTree = "<group>"; };
+		0F50914C1B3F10A2008E8AC4 /* ManifoldLimitCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManifoldLimitCalculator.swift; sourceTree = "<group>"; };
 		0F5EF2001B30CAE000622496 /* R22FuelTankQuantityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R22FuelTankQuantityViewController.swift; sourceTree = "<group>"; };
 		0F6D4C1A1B2C93D30002A070 /* ChecklistPack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChecklistPack.swift; sourceTree = "<group>"; };
 		0F6D4C1C1B2C94570002A070 /* Checklist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Checklist.swift; sourceTree = "<group>"; };
@@ -212,6 +214,7 @@
 				0F6D4C1E1B2C94A20002A070 /* Section.swift */,
 				0F6D4C201B2C94CF0002A070 /* ChecklistItem.swift */,
 				0FF75C4B1B2C9C7800960DCA /* ChecklistType.swift */,
+				0F50914C1B3F10A2008E8AC4 /* ManifoldLimitCalculator.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -527,6 +530,7 @@
 				BC34F8F11B2DEED0001F60C9 /* CautionCell.swift in Sources */,
 				0F7B186E1B3C2CE10010E279 /* TimerViewController.swift in Sources */,
 				BC24FA471B373EF2003D919D /* StartFlightTimerAction.swift in Sources */,
+				0F50914D1B3F10A2008E8AC4 /* ManifoldLimitCalculator.swift in Sources */,
 				BC24FA451B373EDB003D919D /* StopFlightTimerAction.swift in Sources */,
 				BCF639E41B3962FC00548379 /* ShowMessagePayload.swift in Sources */,
 				0FE88B2B1B3843F100FD7125 /* RecordHobbsMeterReadingPayload.swift in Sources */,
