@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5A78698E82696000AF865A9E"
+               BlueprintIdentifier = "8B5037BDB1DEA5F81B120FBF"
                BuildableName = "Pods_KFlightChecklists.framework"
                BlueprintName = "Pods-KFlightChecklists"
                ReferencedContainer = "container:Pods.xcodeproj">

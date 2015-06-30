@@ -4,6 +4,16 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Pods-KFlightChecklists-AEXML.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
+		<key>Pods-KFlightChecklists-Alamofire.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
 		<key>Pods-KFlightChecklists-SwiftyJSON.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -13,6 +23,16 @@
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+		<key>Pods-KFlightChecklistsTests-AEXML.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
+		</dict>
+		<key>Pods-KFlightChecklistsTests-Alamofire.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>8</integer>
 		</dict>
 		<key>Pods-KFlightChecklistsTests-SwiftyJSON.xcscheme</key>
 		<dict>
@@ -32,7 +52,37 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>1262430DC28AB2FE2890FB1B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>5A78698E82696000AF865A9E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8192064CC7A64A31F2232F37</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8B5037BDB1DEA5F81B120FBF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A64C98746592432BDA1378CD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B9A85EDD779B0806C623CCEA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C0AB210D8D71B4201CDC7536</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -43,6 +93,16 @@
 			<true/>
 		</dict>
 		<key>EB8F1C896A7AC670750E14E9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F47EDE0F8631C27A10C5CF0F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F9C5B308E678F8E80F22E65B</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -8,9 +8,7 @@
 
 import Foundation
 
-public class FlightInfo {
-    private let manifoldLimitCalculator = ManifoldLimiteCalculator()
-    
+public class FlightInfo {        
     public let mainTankCapacity : Float = 19.2
     public let auxTankCapacity : Float = 10.5
     public let gallonsPerHour : Float = 10

@@ -23,6 +23,10 @@ public class FlightInfoViewController : UIViewController {
     @IBOutlet var lblFlightTime : UILabel?
     @IBOutlet var lblManifoldLimit : UILabel?
     
+    @IBAction func showMapVne(sender : AnyObject) {
+        performSegueWithIdentifier("ShowMapVNE", sender: self)
+    }
+    
     var flightInfo : FlightInfo?
     private let manifoldLimitCalculator  = ManifoldLimiteCalculator()
     
