@@ -45,7 +45,7 @@ public class FlightInfoViewController : UIViewController {
         
         var msg = "Manifold Limit : No Temperature Recorded"
         if let temp = self.flightInfo?.temperature {
-            if let limit = manifoldLimitCalculator.getManifoldPressureAtAltitude(0, oat: temp) {
+            if let limit = manifoldLimitCalculator.calcMapLimit(0, oat: temp) {
                 let max = limit + 0.9
                 msg = String(format:formatTemplate, temp, limit, max )
             } else {

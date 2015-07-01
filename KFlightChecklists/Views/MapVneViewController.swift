@@ -26,10 +26,14 @@ public class MapVneViewController : UIViewController {
     }
     
     @IBAction func oatChanged(oatSlider : UISlider) {
-        tbOat?.text = String(format:"%.0f", oatSlider.value)
-        manifoldLimitDataSource.oat = Int(oatSlider.value)
+        
+        let oat = Int(oatSlider.value)
+        println(oat)
+        tbOat?.text = oat.description
+        
+        manifoldLimitDataSource.oat = oat
         mapTable?.reloadData()
-        vneLimitDataSource.oat = Int(oatSlider.value)
+        vneLimitDataSource.oat = oat
         vneTable?.reloadData()
     }
 }

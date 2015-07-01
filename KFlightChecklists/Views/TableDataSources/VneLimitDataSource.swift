@@ -9,7 +9,7 @@
 import UIKit
 
 public class VneLimitDataSource : NSObject, UITableViewDataSource {
-    private let vneCalculator = VNECalculator()
+    private let vneLimitCalculator = VneLimitCalculator()
     public var oat : Int?
     
     public func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -20,7 +20,7 @@ public class VneLimitDataSource : NSObject, UITableViewDataSource {
         var cell = tableView.dequeueReusableCellWithIdentifier("cell") as! VneLimitCell
         
         var altitude = indexPath.row * 2000
-        var vneLimit = self.vneCalculator.calculateVne(altitude, oat: oat!)
+        var vneLimit = self.vneLimitCalculator.calculateVne(altitude, oat: oat!)
         
         cell.lblAltitude?.text = altitude.description
         if vneLimit != -1 {
