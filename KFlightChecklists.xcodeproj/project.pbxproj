@@ -26,6 +26,7 @@
 		0F7B186C1B3C21950010E279 /* StartFlightTimerPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7B186B1B3C21950010E279 /* StartFlightTimerPayload.swift */; };
 		0F7B186E1B3C2CE10010E279 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7B186D1B3C2CE10010E279 /* TimerViewController.swift */; };
 		0F820C9D1B3AD6EF00DEC9A4 /* ActionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F820C9C1B3AD6EF00DEC9A4 /* ActionDelegate.swift */; };
+		0F8A4EAD1B4540A10020F9BD /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8A4EAC1B4540A10020F9BD /* LaunchScreen.swift */; };
 		0F8C349E1B3B81A6002E5010 /* RecordWeatherConditionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8C349D1B3B81A6002E5010 /* RecordWeatherConditionsViewController.swift */; };
 		0FB7F9601B42C1520035AAFC /* ActionItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB7F9591B42C1520035AAFC /* ActionItemCell.swift */; };
 		0FB7F9611B42C1520035AAFC /* CautionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB7F95A1B42C1520035AAFC /* CautionCell.swift */; };
@@ -100,6 +101,7 @@
 		0F7B186B1B3C21950010E279 /* StartFlightTimerPayload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartFlightTimerPayload.swift; sourceTree = "<group>"; };
 		0F7B186D1B3C2CE10010E279 /* TimerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 		0F820C9C1B3AD6EF00DEC9A4 /* ActionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionDelegate.swift; sourceTree = "<group>"; };
+		0F8A4EAC1B4540A10020F9BD /* LaunchScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
 		0F8C349D1B3B81A6002E5010 /* RecordWeatherConditionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordWeatherConditionsViewController.swift; sourceTree = "<group>"; };
 		0FB7F9591B42C1520035AAFC /* ActionItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionItemCell.swift; sourceTree = "<group>"; };
 		0FB7F95A1B42C1520035AAFC /* CautionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CautionCell.swift; sourceTree = "<group>"; };
@@ -322,6 +324,7 @@
 				0F7B186D1B3C2CE10010E279 /* TimerViewController.swift */,
 				0FFB12CD1B41EDCC000E0C03 /* MapVneViewController.swift */,
 				0FEC957F1B44D88F0088F7D5 /* NotepadViewController.swift */,
+				0F8A4EAC1B4540A10020F9BD /* LaunchScreen.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -564,6 +567,7 @@
 				0FF75C521B2CFE9300960DCA /* ViewController.swift in Sources */,
 				0FF4C6EE1B36EAC600448C55 /* FlightInfo.swift in Sources */,
 				0F244DCF1B2D126300081141 /* ChecklistViewController.swift in Sources */,
+				0F8A4EAD1B4540A10020F9BD /* LaunchScreen.swift in Sources */,
 				0F6D4C211B2C94CF0002A070 /* ChecklistItem.swift in Sources */,
 				0F820C9D1B3AD6EF00DEC9A4 /* ActionDelegate.swift in Sources */,
 				0FEC957E1B44B7050088F7D5 /* ChecklistCell.swift in Sources */,
