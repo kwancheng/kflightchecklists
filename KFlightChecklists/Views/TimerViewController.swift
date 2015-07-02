@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class TimerViewController : UIViewController {
+public class TimerViewController : NotepadViewController {
     @IBOutlet var lblTimer : UILabel?
     
     @IBAction func completed(sender : UIButton) {

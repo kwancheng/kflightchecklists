@@ -15,12 +15,11 @@ class ChecklistSelectViewController : ViewController, UITableViewDataSource, UIT
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        if let lbChecklists = self.lbChecklists {
-            lbChecklists.registerClass(UITableViewCell.self, forCellReuseIdentifier: "cell")
-            lbChecklists.dataSource = self
-            lbChecklists.delegate = self
-        }
+        lbChecklists?.dataSource = self
+        lbChecklists?.delegate = self
+        
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "main_background")!)
+        lbChecklists?.backgroundColor = UIColor.clearColor()
     }
     
     // MARK : UITableViewDataSource
@@ -33,9 +32,10 @@ class ChecklistSelectViewController : ViewController, UITableViewDataSource, UIT
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell = tableView.dequeueReusableCellWithIdentifier("cell") as! UITableViewCell
+        var cell = tableView.dequeueReusableCellWithIdentifier("cell") as! ChecklistCell
         
-        cell.textLabel?.text = self.checklistPack.checklists?[indexPath.row].title
+        cell.lblChecklistName?.text = self.checklistPack.checklists?[indexPath.row].title
+        cell.backgroundColor = UIColor.clearColor()
         
         return cell
     }

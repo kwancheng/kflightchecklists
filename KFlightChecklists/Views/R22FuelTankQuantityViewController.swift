@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class R22FuelTankQuantityViewController : UIViewController {
+public class R22FuelTankQuantityViewController : NotepadViewController {
     @IBOutlet private var lblMain : UILabel?
     @IBOutlet private var sldrMain : UISlider?
     @IBOutlet private var lblAux : UILabel?

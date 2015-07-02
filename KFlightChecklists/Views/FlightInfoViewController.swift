@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class FlightInfoViewController : UIViewController {
+public class FlightInfoViewController : NotepadViewController {
     @IBOutlet var lblMainTankLevel : UILabel?
     @IBOutlet var lblAuxTankLevel : UILabel?
     @IBOutlet var lblApproximateFlightTime : UILabel?

@@ -37,6 +37,8 @@
 		0FE88B281B383D9000FD7125 /* Payload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE88B261B383D9000FD7125 /* Payload.swift */; };
 		0FE88B291B383D9000FD7125 /* RecordFuelQuantityPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE88B271B383D9000FD7125 /* RecordFuelQuantityPayload.swift */; };
 		0FE88B2B1B3843F100FD7125 /* RecordHobbsMeterReadingPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE88B2A1B3843F100FD7125 /* RecordHobbsMeterReadingPayload.swift */; };
+		0FEC957E1B44B7050088F7D5 /* ChecklistCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FEC957D1B44B7050088F7D5 /* ChecklistCell.swift */; };
+		0FEC95801B44D88F0088F7D5 /* NotepadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FEC957F1B44D88F0088F7D5 /* NotepadViewController.swift */; };
 		0FF2F3FD1B42C3A10002555C /* ManifoldLimitCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF2F3FB1B42C3A10002555C /* ManifoldLimitCalculator.swift */; };
 		0FF2F3FE1B42C3A10002555C /* VneLimitCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF2F3FC1B42C3A10002555C /* VneLimitCalculator.swift */; };
 		0FF4C6EE1B36EAC600448C55 /* FlightInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF4C6ED1B36EAC600448C55 /* FlightInfo.swift */; };
@@ -109,6 +111,8 @@
 		0FE88B261B383D9000FD7125 /* Payload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Payload.swift; sourceTree = "<group>"; };
 		0FE88B271B383D9000FD7125 /* RecordFuelQuantityPayload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordFuelQuantityPayload.swift; sourceTree = "<group>"; };
 		0FE88B2A1B3843F100FD7125 /* RecordHobbsMeterReadingPayload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordHobbsMeterReadingPayload.swift; sourceTree = "<group>"; };
+		0FEC957D1B44B7050088F7D5 /* ChecklistCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChecklistCell.swift; sourceTree = "<group>"; };
+		0FEC957F1B44D88F0088F7D5 /* NotepadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotepadViewController.swift; sourceTree = "<group>"; };
 		0FF2F3FB1B42C3A10002555C /* ManifoldLimitCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManifoldLimitCalculator.swift; sourceTree = "<group>"; };
 		0FF2F3FC1B42C3A10002555C /* VneLimitCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VneLimitCalculator.swift; sourceTree = "<group>"; };
 		0FF4C6ED1B36EAC600448C55 /* FlightInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightInfo.swift; sourceTree = "<group>"; };
@@ -263,6 +267,7 @@
 				0FB7F95D1B42C1520035AAFC /* SectionHeader.swift */,
 				0FB7F95E1B42C1520035AAFC /* SectionHeader.xib */,
 				0FB7F95F1B42C1520035AAFC /* VneLimitCell.swift */,
+				0FEC957D1B44B7050088F7D5 /* ChecklistCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -316,6 +321,7 @@
 				0F8C349D1B3B81A6002E5010 /* RecordWeatherConditionsViewController.swift */,
 				0F7B186D1B3C2CE10010E279 /* TimerViewController.swift */,
 				0FFB12CD1B41EDCC000E0C03 /* MapVneViewController.swift */,
+				0FEC957F1B44D88F0088F7D5 /* NotepadViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -551,6 +557,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FEC95801B44D88F0088F7D5 /* NotepadViewController.swift in Sources */,
 				0F6D4C1D1B2C94570002A070 /* Checklist.swift in Sources */,
 				BCE999091B43DF4200A63E8F /* RangeInfo.swift in Sources */,
 				0FF75C4C1B2C9C7800960DCA /* ChecklistType.swift in Sources */,
@@ -559,6 +566,7 @@
 				0F244DCF1B2D126300081141 /* ChecklistViewController.swift in Sources */,
 				0F6D4C211B2C94CF0002A070 /* ChecklistItem.swift in Sources */,
 				0F820C9D1B3AD6EF00DEC9A4 /* ActionDelegate.swift in Sources */,
+				0FEC957E1B44B7050088F7D5 /* ChecklistCell.swift in Sources */,
 				0F8C349E1B3B81A6002E5010 /* RecordWeatherConditionsViewController.swift in Sources */,
 				BC24FA4B1B3742F1003D919D /* RecordWeatherConditionAction.swift in Sources */,
 				0F7B186C1B3C21950010E279 /* StartFlightTimerPayload.swift in Sources */,

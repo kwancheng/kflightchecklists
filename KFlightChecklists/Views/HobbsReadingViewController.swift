@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class HobbsReadingViewController : UIViewController, UITextFieldDelegate {
+public class HobbsReadingViewController : NotepadViewController, UITextFieldDelegate {
     @IBOutlet var tbReadingHours : UITextField?
     @IBOutlet var tbReadingHoursFractional : UITextField?
     @IBOutlet var lblTitleLabel : UILabel?

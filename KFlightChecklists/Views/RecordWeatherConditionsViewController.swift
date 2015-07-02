@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class RecordWeatherConditionsViewController : UIViewController {
+public class RecordWeatherConditionsViewController : NotepadViewController {
     @IBOutlet var sldrBarometer : UISlider?
     @IBOutlet var sldrWindDirection : UISlider?
     @IBOutlet var sldrWindSpeed : UISlider?

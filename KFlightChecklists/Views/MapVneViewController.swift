@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class MapVneViewController : UIViewController {
+public class MapVneViewController : NotepadViewController {
     @IBOutlet var tbOat : UITextField?
     @IBOutlet var sldrOat : UISlider?
     @IBOutlet var mapTable : UITableView?
@@ -28,7 +28,6 @@ public class MapVneViewController : UIViewController {
     @IBAction func oatChanged(oatSlider : UISlider) {
         
         let oat = Int(oatSlider.value)
-        println(oat)
         tbOat?.text = oat.description
         
         manifoldLimitDataSource.oat = oat

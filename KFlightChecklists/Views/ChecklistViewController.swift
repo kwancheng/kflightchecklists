@@ -29,6 +29,9 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
                 
         self.lbChecklist?.dataSource = self
         self.lbChecklist?.delegate = self
+        
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "checklist_background")!)
+        lbChecklist?.backgroundColor = UIColor.clearColor()
     }
     
     // MARK : UITableViewDataSource
@@ -82,6 +85,7 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
         var bgView = UIView()
         bgView.backgroundColor = UIColor.greenColor()
         retCell?.selectedBackgroundView = bgView
+        retCell?.backgroundColor = UIColor.clearColor()
         
         return retCell!
     }
