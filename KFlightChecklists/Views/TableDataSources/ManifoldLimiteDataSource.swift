@@ -24,7 +24,8 @@ public class ManifoldLimitDataSource : NSObject, UITableViewDataSource {
         
         cell.lblAltitude?.text = altitude.description
         if mapLimit != -1 {
-            cell.lblMapLimit?.text = String(format:"%.2f", mapLimit!)
+            var maxTakeoff = mapLimit! + 0.9
+            cell.lblMapLimit?.text = String(format:"%.2f - %.2f", mapLimit!, maxTakeoff)
         } else {
             cell.lblMapLimit?.text = "Full Throttle"
         }
