@@ -83,7 +83,9 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
         }
         
         var bgView = UIView()
-        bgView.backgroundColor = UIColor.greenColor()
+        bgView.backgroundColor = UIColor(patternImage: UIImage(named: "main_background")!)
+        bgView.layer.cornerRadius = 10
+        bgView.layer.masksToBounds = true
         retCell?.selectedBackgroundView = bgView
         retCell?.backgroundColor = UIColor.clearColor()
         

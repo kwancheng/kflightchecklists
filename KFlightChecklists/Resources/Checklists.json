@@ -1753,8 +1753,8 @@
                             "action_has_note": false,
                             "item_has_note": false,
                             "details": [
-                                "Find / Gather",
-                                "Fuel Examination Flask"
+                                "Fuel Examination Flask",
+                                "Find / Gather"
                             ]
                         },
                         {
@@ -1762,8 +1762,8 @@
                             "action_has_note": false,
                             "item_has_note": false,
                             "details": [
-                                "Find / Gather",
-                                "Paper Towels for Oil Examinations"
+                                "Paper Towels for Oil Examinations",
+                                "Find / Gather"
                             ]
                         },
                         {
@@ -1771,8 +1771,8 @@
                             "action_has_note": false,
                             "item_has_note": false,
                             "details": [
-                                "Sample",
-                                "Aux Tank Fuel"
+                                "Aux Tank Fuel",
+                                "Sample"
                             ]
                         },
                         {
@@ -1789,8 +1789,8 @@
                             "action_has_note": false,
                             "item_has_note": false,
                             "details": [
-                                "Sample",
-                                "Main Tank Fuel"
+                                "Main Tank Fuel",
+                                "Sample"
                             ]
                         },
                         {
@@ -1807,8 +1807,8 @@
                             "action_has_note": false,
                             "item_has_note": false,
                             "details": [
-                                "Sample",
-                                "Gascolator Fuel Drain"
+                                "Gascolator Fuel Drain",
+                                "Sample"
                             ]
                         },
                         {
@@ -2195,7 +2195,7 @@
                             "item_has_note": false,
                             "details": [
                                 "Cooling Fan Nut",
-                                "Pin In Line WIth No Marks"
+                                "Pin In Line With No Marks"
                             ]
                         },
                         {
