@@ -9,19 +9,37 @@
 import UIKit
 
 public class FlightInfoViewController : NotepadViewController {
+    @IBOutlet var lblManifoldLimit : UILabel?
+
+    @IBOutlet var viewFuelLevels : UIView?
     @IBOutlet var lblMainTankLevel : UILabel?
     @IBOutlet var lblAuxTankLevel : UILabel?
-    @IBOutlet var lblApproximateFlightTime : UILabel?
     @IBOutlet var pgsMainTankLevel : UIProgressView?
     @IBOutlet var pgsAuxTankLevel : UIProgressView?
-    @IBOutlet var lblPreFlightHobbsReading : UILabel?
-    @IBOutlet var lblPostFlightHobbsReading : UILabel?
-    @IBOutlet var lblHobbsUsed : UILabel?
-    @IBOutlet var lblBarometerReading : UILabel?
-    @IBOutlet var lblWindConditions : UILabel?
-    @IBOutlet var lblTemperature : UILabel?
-    @IBOutlet var lblFlightTime : UILabel?
-    @IBOutlet var lblManifoldLimit : UILabel?
+    @IBOutlet var tbApproximateFlightTime : UITextField?
+
+    @IBOutlet var viewHobbsMeter : UIView?
+    @IBOutlet var tbPreFlightHobbsReading : UITextField?
+    @IBOutlet var tbPostFlightHobbsReading : UITextField?
+    @IBOutlet var tbHobbsUsed : UITextField?
+    
+    @IBOutlet var viewWeather : UIView?
+    @IBOutlet var tbBarometerReading : UITextField?
+    @IBOutlet var tbTemperature : UITextField?
+    @IBOutlet var tbWindDirection : UITextField?
+    @IBOutlet var tbWindSpeed : UITextField?
+    @IBOutlet var tbWindGust : UITextField?
+    
+    @IBOutlet var viewFlightTime : UIView?
+    @IBOutlet var tbFlightStart : UITextField?
+    @IBOutlet var tbFlightEnd : UITextField?
+    @IBOutlet var tbFlightDuration: UITextField?
+    
+    @IBOutlet var viewMapLimit : UIView?
+    @IBOutlet var tbOat : UITextField?
+    @IBOutlet var tbMapLimit : UITextField?
+    @IBOutlet var tbTakeoff : UITextField?
+    @IBOutlet var tbVne : UITextField?
     
     @IBAction func showMapVne(sender : AnyObject) {
         performSegueWithIdentifier("ShowMapVNE", sender: self)
@@ -29,6 +47,7 @@ public class FlightInfoViewController : NotepadViewController {
     
     var flightInfo : FlightInfo?
     private let manifoldLimitCalculator  = ManifoldLimiteCalculator()
+    private let vneLimitCalculator = VneLimitCalculator()
     
     public override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,22 +57,37 @@ public class FlightInfoViewController : NotepadViewController {
         self.updateWeatherConditions()
         self.updateFlightTimes()
         self.updateManifoldPressure()
+        
+        viewFuelLevels?.layer.cornerRadius = 10
+        viewFuelLevels?.layer.masksToBounds = true
+        
+        viewHobbsMeter?.layer.cornerRadius = 10
+        viewHobbsMeter?.layer.masksToBounds = true
+        
+        viewWeather?.layer.cornerRadius = 10
+        viewWeather?.layer.masksToBounds = true
+        
+        viewFlightTime?.layer.cornerRadius = 10
+        viewFlightTime?.layer.masksToBounds = true
     }
     
     private func updateManifoldPressure() {
-        let formatTemplate = "Manifold Limit : Temp[%d C] @SL Limit[%.2f] Takeoff[%.2fs](5 min)"
-        
-        var msg = "Manifold Limit : No Temperature Recorded"
+        tbOat?.text = "Need Temp"
+        tbMapLimit?.text = ""
+        tbTakeoff?.text = ""
+        tbVne?.text = ""
         if let temp = self.flightInfo?.temperature {
+            tbOat?.text = String(format:"%.2f", temp)
+            
             if let limit = manifoldLimitCalculator.calcMapLimit(0, oat: temp) {
-                let max = limit + 0.9
-                msg = String(format:formatTemplate, temp, limit, max )
-            } else {
-                msg = String(format:"Manifold Limit : Limit not found for Temp[%d]", temp)
+                tbMapLimit?.text = String(format:"%.2f", limit)
+                tbTakeoff?.text = String(format:"%.2f", limit + 0.9)
+                
+                if let vneLimit = vneLimitCalculator.calculateVne(0, oat: temp) {
+                    tbVne?.text = String(format:"%.2f", vneLimit)
+                }
             }
         }
-        
-        lblManifoldLimit?.text = msg
     }
     
     private func updateTankLevels() {
@@ -64,21 +98,23 @@ public class FlightInfoViewController : NotepadViewController {
     }
     
     private func updateApproximateFlightTime() {
-        lblApproximateFlightTime?.text = String(format: "Approximate Flight Time : %.0f Minutes", self.flightInfo!.calcApproximateFlightTime() * 60)
+        tbApproximateFlightTime?.text = String(format: "%.0f Minutes", self.flightInfo!.calcApproximateFlightTime() * 60)
     }
     
     private func updateHobbsReadings() {
-        lblPreFlightHobbsReading?.text = String(format: "Pre-Flight Hobbs Reading : %.1f", self.flightInfo!.preFlightHobbsReading)
-        lblPostFlightHobbsReading?.text = String(format: "Post-Flight Hobbs Reading : %.1f", self.flightInfo!.postFlightHobbsReading)
+        tbPreFlightHobbsReading?.text = String(format: "%.1f", self.flightInfo!.preFlightHobbsReading)
+        tbPostFlightHobbsReading?.text = String(format: "%.1f", self.flightInfo!.postFlightHobbsReading)
         
         var hobbsUsed = self.flightInfo!.postFlightHobbsReading - self.flightInfo!.preFlightHobbsReading
-        lblHobbsUsed?.text = String(format: "Total Hobbs Used : %.1f", hobbsUsed)
+        tbHobbsUsed?.text = String(format: "%.1f", hobbsUsed)
     }
     
     private func updateWeatherConditions() {
-        lblBarometerReading?.text = String(format:"Barometer Reading : %.2f", self.flightInfo!.barometerReading)
-        lblWindConditions?.text = String(format:"Wind Direction and Speed : %d (%d)", self.flightInfo!.windDirection, self.flightInfo!.windSpeed)
-        lblTemperature?.text = String(format:"Temperature : %d C", self.flightInfo!.temperature)
+        tbBarometerReading?.text = String(format:"%.2f", self.flightInfo!.barometerReading)
+        tbTemperature?.text = String(format:"%d C", self.flightInfo!.temperature)
+        
+        tbWindDirection?.text = String(format:"%d", self.flightInfo!.windDirection)
+        tbWindSpeed?.text = String(format:"%d", self.flightInfo!.windSpeed)
     }
     
     private func updateFlightTimes() {
@@ -90,11 +126,13 @@ public class FlightInfoViewController : NotepadViewController {
         if let flightStartTime = self.flightInfo?.flightStartTime {
             flightStartTimeStr = dateFormatter.stringFromDate(flightStartTime)
         }
+        tbFlightStart?.text = flightStartTimeStr
         
         var flightEndTimeStr = "None Recorded"
         if let flightEndTime = self.flightInfo?.flightEndTime {
             flightEndTimeStr = dateFormatter.stringFromDate(flightEndTime)
         }
+        tbFlightEnd?.text = flightEndTimeStr
         
         var durationStr = "--:--"
         if let flightStartTime = self.flightInfo?.flightStartTime {
@@ -107,7 +145,6 @@ public class FlightInfoViewController : NotepadViewController {
                 durationStr = String(format: "%02d:%02d:%02d", hours, minutes, seconds)
             }
         }
-        
-        lblFlightTime?.text = String(format: formatTemplate, flightStartTimeStr, flightEndTimeStr, durationStr)        
+        tbFlightDuration?.text = durationStr
     }
 }
