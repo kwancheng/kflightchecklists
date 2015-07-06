@@ -17,6 +17,8 @@ public class MapVneViewController : NotepadViewController {
     private var manifoldLimitDataSource = ManifoldLimitDataSource()
     private var vneLimitDataSource = VneLimitDataSource()
     
+    private var completionCallback : CompletionCallback?
+    
     public override func viewDidLoad() {
         super.viewDidLoad()
         mapTable?.dataSource = self.manifoldLimitDataSource
@@ -25,8 +27,11 @@ public class MapVneViewController : NotepadViewController {
         vneLimitDataSource.oat = 10
     }
     
+    public func setPayload(payload : ShowMapVNEChartsPayload){
+        self.completionCallback = payload.completionCallback
+    }
+    
     @IBAction func oatChanged(oatSlider : UISlider) {
-        
         let oat = Int(oatSlider.value)
         tbOat?.text = oat.description
         
@@ -34,5 +39,9 @@ public class MapVneViewController : NotepadViewController {
         mapTable?.reloadData()
         vneLimitDataSource.oat = oat
         vneTable?.reloadData()
+    }
+    
+    @IBAction func hideVneMapCharts(button : UIButton) {
+        self.dismissViewControllerAnimated(true, completion: completionCallback)
     }
 }

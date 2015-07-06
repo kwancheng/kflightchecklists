@@ -33,6 +33,8 @@ public class Action {
                 actionDelegate.stopFlightTimer(self, onChecklistItem: checklistItem, completionCallback: completionCallback!)
             } else if let showTimer = self as? ShowTimerAction {
                 actionDelegate.showTimer(self, onChecklistItem: checklistItem, completionCallback: completionCallback!)
+            } else if let showMapVneCharts = self as? ShowMapVNEChartsAction {
+                actionDelegate.showMapVneActions(self, onChecklistItem: checklistItem, completionCallback: completionCallback)
             }
         }
     }
@@ -56,6 +58,8 @@ public class Action {
                     retAction = StopFlightTimerAction(jsonData)
                 case "ShowTimer" :
                     retAction = ShowTimerAction(jsonData)
+                case "ShowMapVNECharts" :
+                    retAction = ShowMapVNEChartsAction(jsonData)
                 default :
                     break
             }

@@ -19,4 +19,5 @@ public protocol ActionDelegate {
     func startFlightTimer(action : Action, onChecklistItem : ChecklistItem?, completionCallback : CompletionCallback?)
     func stopFlightTimer(action : Action, onChecklistItem : ChecklistItem?, completionCallback : CompletionCallback?)
     func showTimer(action : Action, onChecklistItem : ChecklistItem?, completionCallback : CompletionCallback?)
+    func showMapVneActions(action : Action, onChecklistItem : ChecklistItem?, completionCallback : CompletionCallback?)
 }

@@ -42,7 +42,7 @@ public class FlightInfoViewController : NotepadViewController {
     @IBOutlet var tbVne : UITextField?
     
     @IBAction func showMapVne(sender : AnyObject) {
-        performSegueWithIdentifier("ShowMapVNE", sender: self)
+        performSegueWithIdentifier("ShowMapVneCharts", sender: self)
     }
     
     var flightInfo : FlightInfo?
@@ -69,6 +69,9 @@ public class FlightInfoViewController : NotepadViewController {
         
         viewFlightTime?.layer.cornerRadius = 10
         viewFlightTime?.layer.masksToBounds = true
+        
+        viewMapLimit?.layer.cornerRadius = 10
+        viewMapLimit?.layer.masksToBounds = true
     }
     
     private func updateManifoldPressure() {

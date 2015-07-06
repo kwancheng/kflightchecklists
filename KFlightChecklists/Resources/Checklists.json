@@ -3129,7 +3129,10 @@
                             "details": [
                                 "Limit MAP / VNE Charts",
                                 "Check"
-                            ]
+                            ],
+                            "post_action" : {
+                                 "name" : "ShowMapVNECharts",
+                            }                            
                         },
                         {
                             "type": "ITEM_ACTION",

@@ -157,6 +157,8 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
             rwcVC.setPayload(sender as! RecordWeatherConditionsPayload)
         } else if let stVC = segue.destinationViewController as? TimerViewController {
             stVC.setPayload(sender as! ShowTimerPayload)
+        } else if let smvVC = segue.destinationViewController as? MapVneViewController {
+            smvVC.setPayload(sender as! ShowMapVNEChartsPayload)
         }
     }
         
@@ -378,6 +380,22 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
                 completionCallback: completionCallback)
             dispatch_async(dispatch_get_main_queue(), {()->Void in
                 self.performSegueWithIdentifier("ShowTimer", sender: payload)
+            })
+        } else {
+            if let completionCallback = completionCallback {
+                completionCallback()
+            }
+        }
+    }
+    func showMapVneActions(action : Action, onChecklistItem : ChecklistItem?, completionCallback : CompletionCallback?) {
+        if let sta = action as? ShowMapVNEChartsAction {
+            var payload = ShowMapVNEChartsPayload(
+                onChecklistItem?.details?[0],
+                onChecklistItem?.details?[1],
+                completionCallback: completionCallback)
+            
+            dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                self.performSegueWithIdentifier("ShowMapVneCharts", sender: payload)
             })
         } else {
             if let completionCallback = completionCallback {

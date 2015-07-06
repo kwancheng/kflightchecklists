@@ -65,6 +65,8 @@
 		BCF5D37F1B3BFE680088F914 /* RecordWeatherConditionsPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF5D37E1B3BFE680088F914 /* RecordWeatherConditionsPayload.swift */; };
 		BCF639E41B3962FC00548379 /* ShowMessagePayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF639E31B3962FC00548379 /* ShowMessagePayload.swift */; };
 		BCF639E61B397A9900548379 /* HobbsReadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF639E51B397A9900548379 /* HobbsReadingViewController.swift */; };
+		BCFB4CB51B4A9F6200EA9C1C /* ShowMapVNEChartsAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFB4CB41B4A9F6200EA9C1C /* ShowMapVNEChartsAction.swift */; };
+		BCFB4CB71B4AA10000EA9C1C /* ShowMapVNEChartsPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFB4CB61B4AA10000EA9C1C /* ShowMapVNEChartsPayload.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -142,6 +144,8 @@
 		BCF5D37E1B3BFE680088F914 /* RecordWeatherConditionsPayload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordWeatherConditionsPayload.swift; sourceTree = "<group>"; };
 		BCF639E31B3962FC00548379 /* ShowMessagePayload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowMessagePayload.swift; sourceTree = "<group>"; };
 		BCF639E51B397A9900548379 /* HobbsReadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HobbsReadingViewController.swift; sourceTree = "<group>"; };
+		BCFB4CB41B4A9F6200EA9C1C /* ShowMapVNEChartsAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowMapVNEChartsAction.swift; sourceTree = "<group>"; };
+		BCFB4CB61B4AA10000EA9C1C /* ShowMapVNEChartsPayload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowMapVNEChartsPayload.swift; sourceTree = "<group>"; };
 		C0D28F7ED4A8E56A6DED0010 /* Pods-KFlightChecklists.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KFlightChecklists.release.xcconfig"; path = "Pods/Target Support Files/Pods-KFlightChecklists/Pods-KFlightChecklists.release.xcconfig"; sourceTree = "<group>"; };
 		DED56DAC1BB3ABD52566F21E /* Pods-KFlightChecklistsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KFlightChecklistsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KFlightChecklistsTests/Pods-KFlightChecklistsTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -255,6 +259,7 @@
 				BC24FA461B373EF2003D919D /* StartFlightTimerAction.swift */,
 				BC24FA441B373EDB003D919D /* StopFlightTimerAction.swift */,
 				BC24FA481B37419B003D919D /* ShowTimerAction.swift */,
+				BCFB4CB41B4A9F6200EA9C1C /* ShowMapVNEChartsAction.swift */,
 			);
 			path = Actions;
 			sourceTree = "<group>";
@@ -284,6 +289,7 @@
 				BC6877711B3AB65300CF61E9 /* ShowTimerPayload.swift */,
 				BCF5D37E1B3BFE680088F914 /* RecordWeatherConditionsPayload.swift */,
 				0F7B186B1B3C21950010E279 /* StartFlightTimerPayload.swift */,
+				BCFB4CB61B4AA10000EA9C1C /* ShowMapVNEChartsPayload.swift */,
 			);
 			path = Payloads;
 			sourceTree = "<group>";
@@ -598,6 +604,7 @@
 				BCF639E41B3962FC00548379 /* ShowMessagePayload.swift in Sources */,
 				0FFB12CE1B41EDCC000E0C03 /* MapVneViewController.swift in Sources */,
 				0FE88B2B1B3843F100FD7125 /* RecordHobbsMeterReadingPayload.swift in Sources */,
+				BCFB4CB71B4AA10000EA9C1C /* ShowMapVNEChartsPayload.swift in Sources */,
 				0FF75C541B2CFEC900960DCA /* ChecklistSelectViewController.swift in Sources */,
 				BC32FADC1B42AEC000721E9A /* VneLimitDataSource.swift in Sources */,
 				0FB7F9631B42C1520035AAFC /* NoteCell.swift in Sources */,
@@ -606,6 +613,7 @@
 				0FB7F9641B42C1520035AAFC /* SectionHeader.swift in Sources */,
 				BCE9990B1B43DF5E00A63E8F /* LimitCalculator.swift in Sources */,
 				0FB7F9601B42C1520035AAFC /* ActionItemCell.swift in Sources */,
+				BCFB4CB51B4A9F6200EA9C1C /* ShowMapVNEChartsAction.swift in Sources */,
 				0FB7F9611B42C1520035AAFC /* CautionCell.swift in Sources */,
 				BC24FA411B373C7D003D919D /* RecordHobbsMeterReadingAction.swift in Sources */,
 				0FF2F3FD1B42C3A10002555C /* ManifoldLimitCalculator.swift in Sources */,
