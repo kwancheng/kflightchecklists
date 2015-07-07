@@ -11,6 +11,9 @@ import UIKit
 class ChecklistViewController : ViewController, UITableViewDataSource, UITableViewDelegate, ActionDelegate {
     @IBOutlet var navItem : UINavigationItem?
     @IBOutlet var lbChecklist : UITableView?
+    @IBOutlet var tbFlightTimeHours : UITextField?
+    @IBOutlet var tbFlightTimeMinutes : UITextField?
+    @IBOutlet var tbFlightTimeSeconds : UITextField?
     
     private var checklist : Checklist?
     private var sectionHeaders : [UIView]?
@@ -57,19 +60,19 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
         if let checklistItem = self.checklist?.sections?[indexPath.section].checklistItems?[indexPath.row] {
             if let type = checklistItem.type {
                 switch type {
-                case .ActionItem :
-                    var cell = tableView.dequeueReusableCellWithIdentifier("ActionItemCell") as! ActionItemCell
-                    cell.lblItem?.text = checklistItem.details?[0]
-                    cell.lblAction?.text = checklistItem.details?[1]
-                    retCell = cell
-                case .Note :
-                    var cell = tableView.dequeueReusableCellWithIdentifier("NoteCell") as! NoteCell
-                    cell.lblNoteText?.text = checklistItem.details?[0]
-                    retCell = cell
-                case .Caution :
-                    var cell = tableView.dequeueReusableCellWithIdentifier("CautionCell") as! CautionCell
-                    cell.lblCautionText?.text = checklistItem.details?[0]
-                    retCell = cell
+                    case .ActionItem :
+                        var cell = tableView.dequeueReusableCellWithIdentifier("ActionItemCell") as! ActionItemCell
+                        cell.lblItem?.text = checklistItem.details?[0]
+                        cell.lblAction?.text = checklistItem.details?[1]
+                        retCell = cell
+                    case .Note :
+                        var cell = tableView.dequeueReusableCellWithIdentifier("NoteCell") as! NoteCell
+                        cell.lblNoteText?.text = checklistItem.details?[0]
+                        retCell = cell
+                    case .Caution :
+                        var cell = tableView.dequeueReusableCellWithIdentifier("CautionCell") as! CautionCell
+                        cell.lblCautionText?.text = checklistItem.details?[0]
+                        retCell = cell
                 }
             } else {
                 var cell = tableView.dequeueReusableCellWithIdentifier("cell") as! UITableViewCell
@@ -341,34 +344,56 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
             }
         }
     }
+    
+    private var timer = NSTimer()
+    
+    func updateTimer() {
+        if let flightStartTime = self.flightInfo.flightStartTime {
+            if let flightEndTime = self.flightInfo.flightEndTime {
+                timer.invalidate()
+            } else {
+                let now = NSDate()
+                let interval = now.timeIntervalSinceDate(flightStartTime)
+                let seconds = interval % 60
+                let minutes = (interval / 60) % 60
+                let hours = (interval / 3600)
+                
+                tbFlightTimeHours?.text = String(format:"%02.0f", hours)
+                tbFlightTimeMinutes?.text = String(format:"%02.0f", minutes)
+                tbFlightTimeSeconds?.text = String(format:"%02.0f", seconds)
+            }
+        } else {
+            timer.invalidate()
+        }
+    }
+    
     func startFlightTimer(action : Action, onChecklistItem : ChecklistItem?, completionCallback : CompletionCallback?) {
         self.flightInfo.flightStartTime = NSDate()
-        
-        let alertController = UIAlertController(title: nil, message: "Flight Timer Started", preferredStyle: UIAlertControllerStyle.Alert)
-        let defaultAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: { (alertAction) -> Void in
-            if let callback = completionCallback {
-                callback()
-            }
-        })
-        alertController.addAction(defaultAction)
-        
-        dispatch_async(dispatch_get_main_queue(), {()->Void in
-            self.presentViewController(alertController, animated: true, completion: nil)
-        })
+        self.flightInfo.flightEndTime = nil
+        self.timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: Selector("updateTimer"), userInfo: nil, repeats: true)
+
+        if let completionCallback = completionCallback {
+            completionCallback()
+        }
     }
+    
     func stopFlightTimer(action : Action, onChecklistItem : ChecklistItem?, completionCallback : CompletionCallback?) {
         self.flightInfo.flightEndTime = NSDate()
-        let alertController = UIAlertController(title: nil, message: "Flight Timer Ended", preferredStyle: UIAlertControllerStyle.Alert)
-        let defaultAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: { (alertAction) -> Void in
-            if let callback = completionCallback {
-                callback()
-            }
-        })
-        alertController.addAction(defaultAction)
-        
-        dispatch_async(dispatch_get_main_queue(), {()->Void in
-            self.presentViewController(alertController, animated: true, completion: nil)
-        })
+        timer.invalidate()
+        if let completionCallback = completionCallback {
+            completionCallback()
+        }
+//        let alertController = UIAlertController(title: nil, message: "Flight Timer Ended", preferredStyle: UIAlertControllerStyle.Alert)
+//        let defaultAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: { (alertAction) -> Void in
+//            if let callback = completionCallback {
+//                callback()
+//            }
+//        })
+//        alertController.addAction(defaultAction)
+//        
+//        dispatch_async(dispatch_get_main_queue(), {()->Void in
+//            self.presentViewController(alertController, animated: true, completion: nil)
+//        })
         
     }
     func showTimer(action : Action, onChecklistItem : ChecklistItem?, completionCallback : CompletionCallback?) {
