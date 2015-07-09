@@ -383,18 +383,6 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
         if let completionCallback = completionCallback {
             completionCallback()
         }
-//        let alertController = UIAlertController(title: nil, message: "Flight Timer Ended", preferredStyle: UIAlertControllerStyle.Alert)
-//        let defaultAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: { (alertAction) -> Void in
-//            if let callback = completionCallback {
-//                callback()
-//            }
-//        })
-//        alertController.addAction(defaultAction)
-//        
-//        dispatch_async(dispatch_get_main_queue(), {()->Void in
-//            self.presentViewController(alertController, animated: true, completion: nil)
-//        })
-        
     }
     func showTimer(action : Action, onChecklistItem : ChecklistItem?, completionCallback : CompletionCallback?) {
         if let sta = action as? ShowTimerAction {

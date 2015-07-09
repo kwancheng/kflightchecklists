@@ -1722,7 +1722,7 @@
                             "action_has_note": false,
                             "item_has_note": false,
                             "details": [
-                                "During idle and after engine shutdown, pilot should uncover on ear and listen for unusual noise which may indicate impending failure of a bearing or other component."
+                                "During idle and after engine shutdown, pilot should uncover one ear and listen for unusual noise which may indicate impending failure of a bearing or other component."
                             ]
                         }
                     ]
@@ -2494,6 +2494,14 @@
                     "title": "Main Rotor",
                     "checklist_items": [
                         {
+                            "type": "CAUTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Do not pull rotor blades down as damage may occur.  To lower one blade, push opposite blade up."
+                            ]
+                        },                    
+                        {
                             "type": "ITEM_ACTION",
                             "action_has_note": false,
                             "item_has_note": false,
@@ -2502,6 +2510,14 @@
                                 "Clean, No Damage / Cracks"
                             ]
                         },
+                        {
+                            "type": "CAUTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Verify erosion on lower surface of blades has not exposed skin-to-spar bond line.  Reference Rotor Systems Description in Section 7."
+                            ]
+                        },                        
                         {
                             "type": "ITEM_ACTION",
                             "action_has_note": false,
@@ -2781,6 +2797,38 @@
                             "details": [
                                 "Clock",
                                 "Functioning"
+                            ]
+                        },
+                        {
+                            "type": "CAUTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "For helicopters with removable controls, remove left seat controls if person in that seat is not a rated helicopter pilot."
+                            ]
+                        },
+                        {
+                            "type": "CAUTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Be sure rotor blades are approximately level to avoid possible tailcone strike."
+                            ]
+                        },
+                        {
+                            "type": "CAUTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "When flying solo, fill left baggage compartment to capacity before using right compartment.  Avoid placing objects in compartments which could injure occupant if seat collapses during a hard landing."
+                            ]
+                        },
+                        {
+                            "type": "CAUTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Shorter pilots may require cushion to obtain full travel of all controls.  Verify aft cyclic travel is not restricted."
                             ]
                         }
                     ]
@@ -3259,7 +3307,23 @@
                                 "Area",
                                 "Clear"
                             ]
-                        }
+                        },
+                        {
+                            "type": "CAUTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "On slippery surfaces, be prepared to counter nose-right rotation with left pedal as governor increases RPM."
+                            ]
+                        },
+                        {
+                            "type": "NOTE",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Before takeoff, pilot should uncover one ear and listen for any unusual noise which may indicate impending failure of a bearing or other component."
+                            ]
+                        }                        
                     ]
                 },
                 {
@@ -3354,7 +3418,23 @@
                                 "Area",
                                 "Clear"
                             ]
-                        }
+                        },
+                        {
+                            "type": "NOTE",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Slowly raise collective until aircraft is light on skids.  Reposition cyclic as required for equilibrium, then gently lift aircraft into hover."
+                            ]
+                        },
+                        {
+                            "type": "CAUTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "If RPM drops below 102%, lower collective."
+                            ]
+                        }                        
                     ]
                 },
                 {
@@ -3413,6 +3493,14 @@
                                 "duration" : 60
                             }
                         },
+                        {
+                            "type": "NOTE",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "During idle and after engine shutdown, pilot should uncover one ear and listen for unusual noise which may indicate impending failure of a bearing or other component."
+                            ]
+                        },                        
                         {
                             "type": "ITEM_ACTION",
                             "action_has_note": false,
@@ -3499,6 +3587,14 @@
                             ]
                         },
                         {
+                            "type": "CAUTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Do not slow rotor by raising collective during shutdown.  Blades may flap and strike tailcone."
+                            ]
+                        },
+                        {
                             "type": "ITEM_ACTION",
                             "action_has_note": false,
                             "item_has_note": false,
@@ -3506,7 +3602,7 @@
                                 "Apply Rotor Brake",
                                 "3 Sec on, 3 Sec off"
                             ]
-                        },
+                        },                        
                         {
                             "type": "ITEM_ACTION",
                             "action_has_note": false,
