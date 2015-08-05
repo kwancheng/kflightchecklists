@@ -11,9 +11,7 @@ import UIKit
 class ChecklistViewController : ViewController, UITableViewDataSource, UITableViewDelegate, ActionDelegate {
     @IBOutlet var navItem : UINavigationItem?
     @IBOutlet var lbChecklist : UITableView?
-    @IBOutlet var tbFlightTimeHours : UITextField?
-    @IBOutlet var tbFlightTimeMinutes : UITextField?
-    @IBOutlet var tbFlightTimeSeconds : UITextField?
+    @IBOutlet var tbFlightTime : UITextField?
     
     private var checklist : Checklist?
     private var sectionHeaders : [UIView]?
@@ -354,13 +352,14 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
             } else {
                 let now = NSDate()
                 let interval = now.timeIntervalSinceDate(flightStartTime)
+                let miliseconds = (interval * 10000) % 10000;
                 let seconds = interval % 60
                 let minutes = (interval / 60) % 60
                 let hours = (interval / 3600)
                 
-                tbFlightTimeHours?.text = String(format:"%02.0f", hours)
-                tbFlightTimeMinutes?.text = String(format:"%02.0f", minutes)
-                tbFlightTimeSeconds?.text = String(format:"%02.0f", seconds)
+                let msg = String(format: "%02.0f : %02.0f : %02.0f . %04.0f", hours, minutes, seconds, miliseconds );
+                
+                tbFlightTime?.text = msg
             }
         } else {
             timer.invalidate()
@@ -370,7 +369,7 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
     func startFlightTimer(action : Action, onChecklistItem : ChecklistItem?, completionCallback : CompletionCallback?) {
         self.flightInfo.flightStartTime = NSDate()
         self.flightInfo.flightEndTime = nil
-        self.timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: Selector("updateTimer"), userInfo: nil, repeats: true)
+        self.timer = NSTimer.scheduledTimerWithTimeInterval(0.001, target: self, selector: Selector("updateTimer"), userInfo: nil, repeats: true)
 
         if let completionCallback = completionCallback {
             completionCallback()
