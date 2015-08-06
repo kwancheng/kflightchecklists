@@ -18,31 +18,38 @@ public class TimerViewController : NotepadViewController {
     
     private var timer : NSTimer?
     private var payload : ShowTimerPayload?
-    private var duration : Int = 0
+    private var duration : Float = 0
+    
+    private var startTime : NSDate?
     
     public func setPayload(payload : ShowTimerPayload) {
         self.payload = payload
-        self.duration = payload.duration!
+        self.duration = Float(payload.duration!)
     }
     
     public override func viewDidLoad() {
         super.viewDidLoad()
-        timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: Selector("updateTimer"), userInfo: nil, repeats: true)
+        startTime = NSDate()
+        timer = NSTimer.scheduledTimerWithTimeInterval(0.001, target: self, selector: Selector("updateTimer"), userInfo: nil, repeats: true)
     }
     
     public override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-        
         timer?.fire()
     }
     
     func updateTimer() {
-        duration--
-        if(duration <= 0) {
+        var now = NSDate()
+        
+        var interval = now.timeIntervalSinceDate(startTime!)
+        
+        var elapsed = self.duration - Float(interval)
+        
+        if(elapsed <= 0) {
             lblTimer?.text = "Timer Done"
             timer?.invalidate()
         } else {
-            lblTimer?.text = String(format: "%d", duration)
+            lblTimer?.text = String(format: "%02.4f", elapsed)
         }
     }
 }
