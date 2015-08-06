@@ -112,11 +112,11 @@
                         	"item_has_note" : false,
                         	"pre_action" : null,
                         	"details" : [
-                        		"Action", "Show Timer : 49 Seconds"
+                        		"Action", "Show Timer : 3 Seconds"
                         	],
                         	"post_action" : {
                         		"name" : "ShowTimer",
-                        		"duration" : 49
+                        		"duration" : 3
                           	}
                         }
 					]

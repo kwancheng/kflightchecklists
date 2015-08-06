@@ -10,6 +10,7 @@ import UIKit
 
 public class TimerViewController : NotepadViewController {
     @IBOutlet var lblTimer : UILabel?
+    @IBOutlet var containerView : UIView?
     
     @IBAction func completed(sender : UIButton) {
         timer?.invalidate()
@@ -37,6 +38,13 @@ public class TimerViewController : NotepadViewController {
         super.viewDidAppear(animated)
         timer?.fire()
     }
+
+    private var animating = false;
+    private var toRed = false;
+    
+    func animateToRed() {
+        
+    }
     
     func updateTimer() {
         var now = NSDate()
@@ -46,10 +54,20 @@ public class TimerViewController : NotepadViewController {
         var elapsed = self.duration - Float(interval)
         
         if(elapsed <= 0) {
-            lblTimer?.text = "Timer Done"
-            timer?.invalidate()
-        } else {
-            lblTimer?.text = String(format: "%02.4f", elapsed)
+            if(!self.animating) {
+                self.animating = true
+                UIView.animateWithDuration(NSTimeInterval(0.5), delay: NSTimeInterval(0.0), options: UIViewAnimationOptions.AllowUserInteraction | UIViewAnimationOptions.CurveEaseInOut, animations: { () -> Void in
+                    if(self.toRed){
+                        self.containerView!.backgroundColor = UIColor.redColor();
+                    }else{
+                        self.containerView!.backgroundColor = UIColor.clearColor()
+                    }
+                }, completion:{(b)->Void in
+                        self.toRed = !self.toRed
+                        self.animating = false;
+                });
+            }
         }
+        lblTimer?.text = String(format: "%02.4f", elapsed)
     }
 }
