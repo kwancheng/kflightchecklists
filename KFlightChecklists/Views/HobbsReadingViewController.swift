@@ -25,7 +25,7 @@ public class HobbsReadingViewController : NotepadViewController, UITextFieldDele
         
         var prefix = (isPreFlight ?? false) ? "Pre" : "Post"
         
-        lblTitleLabel?.text = String(format: "%@Flight Hobbs Reading : ", prefix)
+        lblTitleLabel?.text = String(format: "%@Flight Hobbs Reading", prefix)
     }
     
     public func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
