@@ -12,6 +12,7 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
     @IBOutlet var navItem : UINavigationItem?
     @IBOutlet var lbChecklist : UITableView?
     @IBOutlet var tbFlightTime : UITextField?
+    @IBOutlet var btnToggleTimeShown : UIButton?
     
     private var checklist : Checklist?
     private var sectionHeaders : [UIView]?
@@ -344,25 +345,62 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
     }
     
     private var timer = NSTimer()
+    private var showFlightTime = true
     
     func updateTimer() {
         if let flightStartTime = self.flightInfo.flightStartTime {
             if let flightEndTime = self.flightInfo.flightEndTime {
                 timer.invalidate()
             } else {
-                let now = NSDate()
-                let interval = now.timeIntervalSinceDate(flightStartTime)
-                let miliseconds = (interval * 10000) % 10000;
-                let seconds = interval % 60
-                let minutes = (interval / 60) % 60
-                let hours = (interval / 3600)
-                
-                let msg = String(format: "%02.0f : %02.0f : %02.0f . %04.0f", hours, minutes, seconds, miliseconds );
-                
-                tbFlightTime?.text = msg
+                if self.showFlightTime {
+                    self.showFlightTime(flightStartTime);
+                }else {
+                    self.showRemainingFlightTime(flightStartTime);
+                }
             }
         } else {
             timer.invalidate()
+        }
+    }
+    
+    private func showFlightTime(flightStartTime:NSDate) {
+        let now = NSDate()
+        let interval = now.timeIntervalSinceDate(flightStartTime)
+        
+        let miliseconds = (interval * 10000) % 10000;
+        let seconds = interval % 60
+        let minutes = (interval / 60) % 60
+        let hours = (interval / 3600)
+        
+        let msg = String(format: "%02.0f : %02.0f : %02.0f . %04.0f", hours, minutes, seconds, miliseconds );
+        
+        tbFlightTime?.text = msg
+    }
+    
+    private func showRemainingFlightTime(flightStartTime : NSDate) {
+        let now = NSDate()
+        let interval = now.timeIntervalSinceDate(flightStartTime)
+        
+        let approximateFlightTime = self.flightInfo.calcApproximateFlightTime() * 3600
+        let remainingTime = approximateFlightTime - Float(interval);
+        
+        let miliseconds = (remainingTime * 10000) % 10000;
+        let seconds = remainingTime % 60
+        let minutes = (remainingTime / 60) % 60
+        let hours = (remainingTime / 3600)
+        
+        let msg = String(format: "%02.0f : %02.0f : %02.0f . %04.0f", hours, minutes, seconds, miliseconds );
+        
+        tbFlightTime?.text = msg
+    }
+    
+    @IBAction func toggleShownTime() {
+        self.showFlightTime = !self.showFlightTime
+        
+        if self.showFlightTime {
+            btnToggleTimeShown?.setTitle("Flight Time", forState: UIControlState.Normal)
+        } else {
+            btnToggleTimeShown?.setTitle("Remaining", forState: UIControlState.Normal)
         }
     }
     
@@ -371,6 +409,13 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
         self.flightInfo.flightEndTime = nil
         self.timer = NSTimer.scheduledTimerWithTimeInterval(0.001, target: self, selector: Selector("updateTimer"), userInfo: nil, repeats: true)
 
+        self.showFlightTime = true
+        if self.showFlightTime {
+            btnToggleTimeShown?.setTitle("Flight Time", forState: UIControlState.Normal)
+        } else {
+            btnToggleTimeShown?.setTitle("Remaining", forState: UIControlState.Normal)
+        }
+        
         if let completionCallback = completionCallback {
             completionCallback()
         }
@@ -379,10 +424,12 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
     func stopFlightTimer(action : Action, onChecklistItem : ChecklistItem?, completionCallback : CompletionCallback?) {
         self.flightInfo.flightEndTime = NSDate()
         timer.invalidate()
+        self.showFlightTime = true
         if let completionCallback = completionCallback {
             completionCallback()
         }
     }
+    
     func showTimer(action : Action, onChecklistItem : ChecklistItem?, completionCallback : CompletionCallback?) {
         if let sta = action as? ShowTimerAction {
             var payload = ShowTimerPayload(

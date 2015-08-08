@@ -56,7 +56,7 @@ public class TimerViewController : NotepadViewController {
         if(elapsed <= 0) {
             if(!self.animating) {
                 self.animating = true
-                UIView.animateWithDuration(NSTimeInterval(0.5), delay: NSTimeInterval(0.0), options: UIViewAnimationOptions.AllowUserInteraction | UIViewAnimationOptions.CurveEaseInOut, animations: { () -> Void in
+                UIView.animateWithDuration(NSTimeInterval(0.25), delay: NSTimeInterval(0.0), options: UIViewAnimationOptions.AllowUserInteraction | UIViewAnimationOptions.CurveEaseInOut, animations: { () -> Void in
                     if(self.toRed){
                         self.containerView!.backgroundColor = UIColor.redColor();
                     }else{
