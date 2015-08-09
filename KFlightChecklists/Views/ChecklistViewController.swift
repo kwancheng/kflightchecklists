@@ -36,6 +36,18 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
         lbChecklist?.backgroundColor = UIColor.clearColor()
     }
     
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        var userDefaults = NSUserDefaults.standardUserDefaults()
+        
+        if let agreed = userDefaults.stringForKey("agreed") {
+            
+        } else {
+            performSegueWithIdentifier("ShowAgreement", sender: self)
+        }
+    }
+    
     // MARK : UITableViewDataSource
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         var count = 0

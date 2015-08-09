@@ -182,6 +182,9 @@
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
+                                                    <variation key="heightClass=regular" misplaced="YES">
+                                                        <rect key="frame" x="8" y="11" width="552" height="22"/>
+                                                    </variation>
                                                 </label>
                                             </subviews>
                                             <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -207,6 +210,9 @@
                                                     <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
+                                                    <variation key="heightClass=regular" misplaced="YES">
+                                                        <rect key="frame" x="8" y="11" width="552" height="22"/>
+                                                    </variation>
                                                 </label>
                                             </subviews>
                                             <color key="backgroundColor" red="0.76892639699999998" green="0.98950230800000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -398,10 +404,10 @@
                                     </mask>
                                     <mask key="constraints">
                                         <exclude reference="Sgq-uM-Nir"/>
-                                        <exclude reference="CzR-IT-pFt"/>
                                         <exclude reference="5Mu-4l-aKy"/>
                                         <exclude reference="N8J-IK-P2i"/>
                                         <exclude reference="VkS-FY-8hS"/>
+                                        <exclude reference="CzR-IT-pFt"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=regular">
@@ -411,10 +417,10 @@
                                     </mask>
                                     <mask key="constraints">
                                         <include reference="Sgq-uM-Nir"/>
-                                        <include reference="CzR-IT-pFt"/>
                                         <include reference="5Mu-4l-aKy"/>
                                         <include reference="N8J-IK-P2i"/>
                                         <include reference="VkS-FY-8hS"/>
+                                        <include reference="CzR-IT-pFt"/>
                                     </mask>
                                 </variation>
                             </view>
@@ -498,11 +504,134 @@
                         <segue destination="7M5-l8-7DX" kind="presentation" identifier="ShowRecordWeatherNotepad" modalPresentationStyle="formSheet" id="YKq-MG-hCJ"/>
                         <segue destination="hLS-SP-anu" kind="presentation" identifier="ShowTimer" modalPresentationStyle="formSheet" id="K3f-oA-3u5"/>
                         <segue destination="HpD-17-4E2" kind="presentation" identifier="ShowMapVneCharts" modalPresentationStyle="formSheet" id="tsr-6T-dpl"/>
+                        <segue destination="VVg-ev-7Sg" kind="presentation" identifier="ShowAgreement" modalPresentationStyle="formSheet" id="egp-l6-VR9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kbI-n4-JvI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="743" y="1239.75"/>
+        </scene>
+        <!--Agreement View Controller-->
+        <scene sceneID="9Ry-Oo-8f4">
+            <objects>
+                <viewController id="VVg-ev-7Sg" customClass="AgreementViewController" customModule="KF_Checklists" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1nv-WK-ghl"/>
+                        <viewControllerLayoutGuide type="bottom" id="ac0-8a-mbQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="21J-DT-vul">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ayJ-ZG-vx7">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">Permissible use of this product is limited to the authorized purchaser. This product is neither approved nor endorsed by any aircraft manufacturer. It is not intended to be used as a substitute for the approved Airplane Flight Manual (AFM) or Pilot's Operating Handbook (POH) that was originally supplied with the aircraft by the manufacturer. This product does not contain all of the information necessary to properly and safely operate an aircraft; therefore it is not a substitute for proper training in the aircraft by an appropriately-rated flight instructor. NO WARRANTIES ARE EXPRESSED OR IMPLIED, AND NO REPRESENTATIONS ARE MADE REGARDING THE ACCURACY OF THE INFORMATION CONTAINED HEREIN. Each aircraft of a particular year, make and model may be different; therefore, the user must always verify the accuracy of the information contained herein against the approved AFM or POH for that aircraft prior to using this product. By accepting and utilizing this product, the user assumes all risk involved in its use, and agrees indemnify, defend, and hold harmless and free from liability ACPROMA LLC, and its members and affiliates, from and against any violations of law, aircraft damage, property damage, personal injury, death, or other claims and losses resulting from the use or misuse of this product, and for any errors, inaccuracies, or omissions contained herein.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="heightClass=regular" misplaced="YES">
+                                    <rect key="frame" x="16" y="93" width="568" height="630"/>
+                                </variation>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Agreement" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1HL-dg-zcT">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="r0Y-LR-LJ3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="r0Y-LR-LJ3"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular" misplaced="YES">
+                                    <rect key="frame" x="16" y="28" width="568" height="57"/>
+                                    <mask key="constraints">
+                                        <include reference="r0Y-LR-LJ3"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d4e-ig-DZj">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="NRE-nt-Ofv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Agree">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="NRE-nt-Ofv"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="NRE-nt-Ofv"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="agreementAccepted:" destination="VVg-ev-7Sg" eventType="touchUpInside" id="yYe-VA-9ul"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ayJ-ZG-vx7" firstAttribute="top" secondItem="1HL-dg-zcT" secondAttribute="bottom" constant="8" id="1cD-zs-VyT"/>
+                            <constraint firstItem="d4e-ig-DZj" firstAttribute="leading" secondItem="21J-DT-vul" secondAttribute="leadingMargin" id="35v-nI-gl3"/>
+                            <constraint firstItem="ayJ-ZG-vx7" firstAttribute="trailing" secondItem="21J-DT-vul" secondAttribute="trailingMargin" id="5Iz-sr-SSn"/>
+                            <constraint firstItem="1HL-dg-zcT" firstAttribute="trailing" secondItem="21J-DT-vul" secondAttribute="trailingMargin" id="FZr-mp-Yyx"/>
+                            <constraint firstItem="d4e-ig-DZj" firstAttribute="trailing" secondItem="21J-DT-vul" secondAttribute="trailingMargin" id="H7A-KD-DI3"/>
+                            <constraint firstItem="ayJ-ZG-vx7" firstAttribute="leading" secondItem="21J-DT-vul" secondAttribute="leadingMargin" id="Is8-zz-6CW"/>
+                            <constraint firstItem="d4e-ig-DZj" firstAttribute="top" secondItem="ayJ-ZG-vx7" secondAttribute="bottom" constant="8" id="S2s-nn-eX1"/>
+                            <constraint firstItem="ac0-8a-mbQ" firstAttribute="top" secondItem="d4e-ig-DZj" secondAttribute="bottom" constant="20" id="S6m-fs-NKH"/>
+                            <constraint firstItem="1HL-dg-zcT" firstAttribute="leading" secondItem="21J-DT-vul" secondAttribute="leadingMargin" id="kft-qZ-4ly"/>
+                            <constraint firstItem="1HL-dg-zcT" firstAttribute="top" secondItem="1nv-WK-ghl" secondAttribute="bottom" constant="8" id="tFk-Ee-83i"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="ayJ-ZG-vx7"/>
+                                <exclude reference="1HL-dg-zcT"/>
+                                <exclude reference="d4e-ig-DZj"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="FZr-mp-Yyx"/>
+                                <exclude reference="kft-qZ-4ly"/>
+                                <exclude reference="tFk-Ee-83i"/>
+                                <exclude reference="1cD-zs-VyT"/>
+                                <exclude reference="5Iz-sr-SSn"/>
+                                <exclude reference="Is8-zz-6CW"/>
+                                <exclude reference="35v-nI-gl3"/>
+                                <exclude reference="H7A-KD-DI3"/>
+                                <exclude reference="S2s-nn-eX1"/>
+                                <exclude reference="S6m-fs-NKH"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular">
+                            <mask key="subviews">
+                                <include reference="ayJ-ZG-vx7"/>
+                                <include reference="1HL-dg-zcT"/>
+                                <include reference="d4e-ig-DZj"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="FZr-mp-Yyx"/>
+                                <include reference="kft-qZ-4ly"/>
+                                <include reference="tFk-Ee-83i"/>
+                                <include reference="1cD-zs-VyT"/>
+                                <include reference="5Iz-sr-SSn"/>
+                                <include reference="Is8-zz-6CW"/>
+                                <include reference="35v-nI-gl3"/>
+                                <include reference="H7A-KD-DI3"/>
+                                <include reference="S2s-nn-eX1"/>
+                                <include reference="S6m-fs-NKH"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Bg-2b-hHl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2255" y="1239"/>
         </scene>
         <!--Hobbs Reading View Controller-->
         <scene sceneID="pDv-sT-NTd">
@@ -627,7 +756,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wuf-Gk-QoO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1514" y="1239.75"/>
+            <point key="canvasLocation" x="1514" y="1239"/>
         </scene>
         <!--Record Weather Conditions View Controller-->
         <scene sceneID="GrK-I9-dK7">

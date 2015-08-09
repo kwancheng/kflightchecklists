@@ -28,6 +28,7 @@
 		0F820C9D1B3AD6EF00DEC9A4 /* ActionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F820C9C1B3AD6EF00DEC9A4 /* ActionDelegate.swift */; };
 		0F8A4EAD1B4540A10020F9BD /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8A4EAC1B4540A10020F9BD /* LaunchScreen.swift */; };
 		0F8C349E1B3B81A6002E5010 /* RecordWeatherConditionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8C349D1B3B81A6002E5010 /* RecordWeatherConditionsViewController.swift */; };
+		0F9D6B491B76F05B00254934 /* AgreementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9D6B481B76F05B00254934 /* AgreementViewController.swift */; };
 		0FB7F9601B42C1520035AAFC /* ActionItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB7F9591B42C1520035AAFC /* ActionItemCell.swift */; };
 		0FB7F9611B42C1520035AAFC /* CautionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB7F95A1B42C1520035AAFC /* CautionCell.swift */; };
 		0FB7F9621B42C1520035AAFC /* ManifoldLimitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB7F95B1B42C1520035AAFC /* ManifoldLimitCell.swift */; };
@@ -105,6 +106,7 @@
 		0F820C9C1B3AD6EF00DEC9A4 /* ActionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionDelegate.swift; sourceTree = "<group>"; };
 		0F8A4EAC1B4540A10020F9BD /* LaunchScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
 		0F8C349D1B3B81A6002E5010 /* RecordWeatherConditionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordWeatherConditionsViewController.swift; sourceTree = "<group>"; };
+		0F9D6B481B76F05B00254934 /* AgreementViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgreementViewController.swift; sourceTree = "<group>"; };
 		0FB7F9591B42C1520035AAFC /* ActionItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionItemCell.swift; sourceTree = "<group>"; };
 		0FB7F95A1B42C1520035AAFC /* CautionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CautionCell.swift; sourceTree = "<group>"; };
 		0FB7F95B1B42C1520035AAFC /* ManifoldLimitCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManifoldLimitCell.swift; sourceTree = "<group>"; };
@@ -331,6 +333,7 @@
 				0FFB12CD1B41EDCC000E0C03 /* MapVneViewController.swift */,
 				0FEC957F1B44D88F0088F7D5 /* NotepadViewController.swift */,
 				0F8A4EAC1B4540A10020F9BD /* LaunchScreen.swift */,
+				0F9D6B481B76F05B00254934 /* AgreementViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -606,6 +609,7 @@
 				0FFB12CE1B41EDCC000E0C03 /* MapVneViewController.swift in Sources */,
 				0FE88B2B1B3843F100FD7125 /* RecordHobbsMeterReadingPayload.swift in Sources */,
 				BCFB4CB71B4AA10000EA9C1C /* ShowMapVNEChartsPayload.swift in Sources */,
+				0F9D6B491B76F05B00254934 /* AgreementViewController.swift in Sources */,
 				0FF75C541B2CFEC900960DCA /* ChecklistSelectViewController.swift in Sources */,
 				BC32FADC1B42AEC000721E9A /* VneLimitDataSource.swift in Sources */,
 				0FB7F9631B42C1520035AAFC /* NoteCell.swift in Sources */,
