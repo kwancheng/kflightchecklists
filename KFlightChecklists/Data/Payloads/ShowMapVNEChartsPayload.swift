@@ -9,7 +9,11 @@
 import Foundation
 
 public class ShowMapVNEChartsPayload : Payload {
-    public init(_ item:String?, _ action: String?, completionCallback:CompletionCallback?) {
+    public var oat : Float = 10
+    
+    public init(_ oat : Float, _ item:String?, _ action: String?, completionCallback:CompletionCallback?) {
         super.init(item, action, completionCallback)
+        
+        self.oat = oat
     }
 }

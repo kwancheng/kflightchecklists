@@ -449,6 +449,7 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
     func showMapVneActions(action : Action, onChecklistItem : ChecklistItem?, completionCallback : CompletionCallback?) {
         if let sta = action as? ShowMapVNEChartsAction {
             var payload = ShowMapVNEChartsPayload(
+                Float(self.flightInfo.temperature),
                 onChecklistItem?.details?[0],
                 onChecklistItem?.details?[1],
                 completionCallback: completionCallback)

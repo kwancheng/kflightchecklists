@@ -16,6 +16,7 @@ public class MapVneViewController : NotepadViewController {
     
     private var manifoldLimitDataSource = ManifoldLimitDataSource()
     private var vneLimitDataSource = VneLimitDataSource()
+    private var payload : ShowMapVNEChartsPayload?
     
     private var completionCallback : CompletionCallback?
     
@@ -25,9 +26,12 @@ public class MapVneViewController : NotepadViewController {
         manifoldLimitDataSource.oat = 10
         vneTable?.dataSource = self.vneLimitDataSource
         vneLimitDataSource.oat = 10
+        sldrOat?.setValue(payload!.oat, animated: true)
+        oatChanged(sldrOat!)
     }
     
     public func setPayload(payload : ShowMapVNEChartsPayload){
+        self.payload = payload
         self.completionCallback = payload.completionCallback
     }
     
