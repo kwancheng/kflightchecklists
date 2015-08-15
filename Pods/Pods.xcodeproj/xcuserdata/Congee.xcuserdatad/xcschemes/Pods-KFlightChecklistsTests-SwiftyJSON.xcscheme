@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "13E709DBC1B7201593B056D3"
+               BlueprintIdentifier = "76507891D469B77A58AB49AF"
                BuildableName = "SwiftyJSON.framework"
                BlueprintName = "Pods-KFlightChecklistsTests-SwiftyJSON"
                ReferencedContainer = "container:Pods.xcodeproj">

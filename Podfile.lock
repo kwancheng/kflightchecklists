@@ -1,7 +1,7 @@
 PODS:
-  - AEXML (1.3.0)
-  - Alamofire (1.2.3)
-  - SwiftyJSON (2.2.0)
+  - AEXML (1.3.1)
+  - Alamofire (1.3.1)
+  - SwiftyJSON (2.2.1)
 
 DEPENDENCIES:
   - AEXML
@@ -9,8 +9,8 @@ DEPENDENCIES:
   - SwiftyJSON (~> 2.2.0)
 
 SPEC CHECKSUMS:
-  AEXML: 7c8ebf3393f566dfbdd996cf2c54e3dace0cb195
-  Alamofire: 20e123189a3ac9cb6be6b7db85f29d829b811313
-  SwiftyJSON: 203c1970b9de6b0f203f9c9b8e41c880e88c3710
+  AEXML: 8c7fd349b28f8f6c80e63c5ccfff02674f32f04c
+  Alamofire: 227a96543f23ce24c69c5052ea4e8bb206008c82
+  SwiftyJSON: 1bd8b3b8f669dd12a6f88465fdaeaa7a8d1123c6
 
 COCOAPODS: 0.37.2
