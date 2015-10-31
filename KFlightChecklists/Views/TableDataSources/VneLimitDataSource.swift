@@ -17,10 +17,13 @@ public class VneLimitDataSource : NSObject, UITableViewDataSource {
     }
     
     public func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell = tableView.dequeueReusableCellWithIdentifier("cell") as! VneLimitCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("cell") as! VneLimitCell
+
         
-        var altitude = indexPath.row * 2000
-        var vneLimit = self.vneLimitCalculator.calculateVne(altitude, oat: oat!)
+
+        let altitude = indexPath.row * 2000
+
+        let vneLimit = self.vneLimitCalculator.calculateVne(altitude, oat: oat!)
         
         cell.lblAltitude?.text = altitude.description
         if vneLimit != -1 {

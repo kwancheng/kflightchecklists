@@ -23,32 +23,57 @@ public class HobbsReadingViewController : NotepadViewController, UITextFieldDele
         tbReadingHours?.delegate = self
         tbReadingHoursFractional?.delegate = self
         
-        var prefix = (isPreFlight ?? false) ? "Pre" : "Post"
+        let prefix = (isPreFlight ?? false) ? "Pre" : "Post"
+
         
+
         lblTitleLabel?.text = String(format: "%@Flight Hobbs Reading", prefix)
+
     }
+
     
+
     public func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
-        let newLength = count(textField.text.utf16) + count(string.utf16) - range.length
+
+        let newLength = textField.text!.utf16.count + string.utf16.count - range.length
+
         return newLength <= textField.tag
+
     }
+
     
+
     public func setPayload(payload : RecordHobbsMeterReadingPayload) {
+
         self.reading = payload.reading
+
         self.isPreFlight = payload.isPreFlight
+
         self.setHobbsMeterReadingCallback = payload.setHobbsMeterReadingCallback
+
         self.completionCallback = payload.completionCallback
+
     }
+
     
+
     @IBAction func returnToList(sender : AnyObject) {
+
         var hours = 0
-        if count(tbReadingHours!.text) > 0 {
-            hours = tbReadingHours!.text!.toInt()!
+
+        if tbReadingHours!.text!.characters.count > 0 {
+
+            hours = Int(tbReadingHours!.text!)!
+
         }
+
         
+
         var fHours = 0
-        if count(tbReadingHoursFractional!.text) > 0 {
-            fHours = tbReadingHoursFractional!.text!.toInt()!
+
+        if tbReadingHoursFractional!.text!.characters.count > 0 {
+
+            fHours = Int(tbReadingHoursFractional!.text!)!
         }
         
         var reading = Float(hours) + (Float(fHours) / 10)

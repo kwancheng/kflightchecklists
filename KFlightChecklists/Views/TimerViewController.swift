@@ -47,16 +47,19 @@ public class TimerViewController : NotepadViewController {
     }
     
     func updateTimer() {
-        var now = NSDate()
-        
-        var interval = now.timeIntervalSinceDate(startTime!)
-        
-        var elapsed = self.duration - Float(interval)
-        
+        let now = NSDate()
+
+        let interval = now.timeIntervalSinceDate(startTime!)
+
+        let elapsed = self.duration - Float(interval)
+
         if(elapsed <= 0) {
+
             if(!self.animating) {
+
                 self.animating = true
-                UIView.animateWithDuration(NSTimeInterval(0.25), delay: NSTimeInterval(0.0), options: UIViewAnimationOptions.AllowUserInteraction | UIViewAnimationOptions.CurveEaseInOut, animations: { () -> Void in
+
+                UIView.animateWithDuration(NSTimeInterval(0.25), delay: NSTimeInterval(0.0), options: [UIViewAnimationOptions.AllowUserInteraction, UIViewAnimationOptions.CurveEaseInOut], animations: { () -> Void in
                     if(self.toRed){
                         self.containerView!.backgroundColor = UIColor.redColor();
                     }else{

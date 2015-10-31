@@ -17,14 +17,21 @@ public class ManifoldLimitDataSource : NSObject, UITableViewDataSource {
     }
     
     public func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell = tableView.dequeueReusableCellWithIdentifier("cell") as! ManifoldLimitCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("cell") as! ManifoldLimitCell
+
         
-        var altitude = indexPath.row * 2000
-        var mapLimit = manifoldLimitCalculator.calcMapLimit(altitude, oat: oat!)
+
+        let altitude = indexPath.row * 2000
+
+        let mapLimit = manifoldLimitCalculator.calcMapLimit(altitude, oat: oat!)
+
         
+
         cell.lblAltitude?.text = altitude.description
+
         if mapLimit != -1 {
-            var maxTakeoff = mapLimit! + 0.9
+
+            let maxTakeoff = mapLimit! + 0.9
             cell.lblMapLimit?.text = String(format:"%.2f - %.2f", mapLimit!, maxTakeoff)
         } else {
             cell.lblMapLimit?.text = "Full Throttle"

@@ -1,6 +1,0 @@
-framework module SwiftyJSON {
-  umbrella header "Pods-KFlightChecklistsTests-SwiftyJSON-umbrella.h"
-
-  export *
-  module * { export * }
-}

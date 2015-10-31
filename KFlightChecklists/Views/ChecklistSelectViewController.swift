@@ -32,7 +32,7 @@ class ChecklistSelectViewController : ViewController, UITableViewDataSource, UIT
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell = tableView.dequeueReusableCellWithIdentifier("cell") as! ChecklistCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("cell") as! ChecklistCell
         
         cell.lblChecklistName?.text = self.checklistPack.checklists?[indexPath.row].title
         cell.backgroundColor = UIColor.clearColor()
@@ -48,7 +48,7 @@ class ChecklistSelectViewController : ViewController, UITableViewDataSource, UIT
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "Back", style: UIBarButtonItemStyle.Plain, target: nil, action: nil)
-        var destVC = segue.destinationViewController as! ChecklistViewController
+        let destVC = segue.destinationViewController as! ChecklistViewController
         destVC.setChecklist(selectedChecklist!)
     }
 }

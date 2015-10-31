@@ -50,8 +50,8 @@
 		0FF75C521B2CFE9300960DCA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF75C511B2CFE9300960DCA /* ViewController.swift */; };
 		0FF75C541B2CFEC900960DCA /* ChecklistSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF75C531B2CFEC900960DCA /* ChecklistSelectViewController.swift */; };
 		0FFB12CE1B41EDCC000E0C03 /* MapVneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFB12CD1B41EDCC000E0C03 /* MapVneViewController.swift */; };
-		4412AED670F347553E974285 /* Pods_KFlightChecklistsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FB17246551392FF59599EF1 /* Pods_KFlightChecklistsTests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		8BAF5D244CE3D96F28065E64 /* Pods_KFlightChecklists.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D05D7D07794644001CDA704 /* Pods_KFlightChecklists.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		4412AED670F347553E974285 /* Pods_KFlightChecklistsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FB17246551392FF59599EF1 /* Pods_KFlightChecklistsTests.framework */; };
+		8BAF5D244CE3D96F28065E64 /* Pods_KFlightChecklists.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D05D7D07794644001CDA704 /* Pods_KFlightChecklists.framework */; };
 		BC24FA3F1B373C62003D919D /* RecordFuelQuantityAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC24FA3E1B373C62003D919D /* RecordFuelQuantityAction.swift */; };
 		BC24FA411B373C7D003D919D /* RecordHobbsMeterReadingAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC24FA401B373C7D003D919D /* RecordHobbsMeterReadingAction.swift */; };
 		BC24FA451B373EDB003D919D /* StopFlightTimerAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC24FA441B373EDB003D919D /* StopFlightTimerAction.swift */; };
@@ -417,7 +417,9 @@
 		0F0EE6391B2C925500755FCF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastSwiftMigration = 0710;
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "Acproma llc";
 				TargetAttributes = {
 					0F0EE6401B2C925500755FCF = {
@@ -684,6 +686,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -754,6 +757,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = KFlightChecklists/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.acproma.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "KF Checklists";
 				PROVISIONING_PROFILE = "";
 			};
@@ -767,6 +771,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = KFlightChecklists/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.acproma.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "KF Checklists";
 				PROVISIONING_PROFILE = "";
 			};
@@ -787,6 +792,7 @@
 				);
 				INFOPLIST_FILE = KFlightChecklistsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.acproma.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KF Checklists.app/KF Checklists";
 			};
@@ -803,6 +809,7 @@
 				);
 				INFOPLIST_FILE = KFlightChecklistsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.acproma.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KF Checklists.app/KF Checklists";
 			};

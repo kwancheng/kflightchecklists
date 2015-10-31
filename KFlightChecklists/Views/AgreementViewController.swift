@@ -10,7 +10,7 @@ import UIKit
 
 public class AgreementViewController : UIViewController {
     @IBAction func agreementAccepted(sender : AnyObject) {
-        var defaults = NSUserDefaults.standardUserDefaults()
+        let defaults = NSUserDefaults.standardUserDefaults()
         defaults.setValue("agreed", forKey: "agreed")
         
         dismissViewControllerAnimated(true, completion: nil)

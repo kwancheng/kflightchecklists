@@ -108,39 +108,71 @@ public class FlightInfoViewController : NotepadViewController {
         tbPreFlightHobbsReading?.text = String(format: "%.1f", self.flightInfo!.preFlightHobbsReading)
         tbPostFlightHobbsReading?.text = String(format: "%.1f", self.flightInfo!.postFlightHobbsReading)
         
-        var hobbsUsed = self.flightInfo!.postFlightHobbsReading - self.flightInfo!.preFlightHobbsReading
+        let hobbsUsed = self.flightInfo!.postFlightHobbsReading - self.flightInfo!.preFlightHobbsReading
+
         tbHobbsUsed?.text = String(format: "%.1f", hobbsUsed)
+
     }
+
     
+
     private func updateWeatherConditions() {
+
         tbBarometerReading?.text = String(format:"%.2f", self.flightInfo!.barometerReading)
+
         tbTemperature?.text = String(format:"%d C", self.flightInfo!.temperature)
+
         
+
         tbWindDirection?.text = String(format:"%d", self.flightInfo!.windDirection)
+
         tbWindSpeed?.text = String(format:"%d", self.flightInfo!.windSpeed)
+
     }
+
     
+
     private func updateFlightTimes() {
+
         let formatTemplate = "Flight Time : Start[%@] End[%@] Duration[%@]"
+
         let dateFormatter = NSDateFormatter()
+
         dateFormatter.dateFormat = "yyyy-MM-dd 'at' h:mm a" // superset of OP's format
+
         
+
         var flightStartTimeStr = "None Recorded"
+
         if let flightStartTime = self.flightInfo?.flightStartTime {
+
             flightStartTimeStr = dateFormatter.stringFromDate(flightStartTime)
+
         }
+
         tbFlightStart?.text = flightStartTimeStr
+
         
+
         var flightEndTimeStr = "None Recorded"
+
         if let flightEndTime = self.flightInfo?.flightEndTime {
+
             flightEndTimeStr = dateFormatter.stringFromDate(flightEndTime)
+
         }
+
         tbFlightEnd?.text = flightEndTimeStr
+
         
+
         var durationStr = "--:--"
+
         if let flightStartTime = self.flightInfo?.flightStartTime {
+
             if let flightEndTime = self.flightInfo?.flightEndTime {
-                var duration = flightEndTime.timeIntervalSinceDate(flightStartTime)
+
+                let duration = flightEndTime.timeIntervalSinceDate(flightStartTime)
                 let interval = Int(duration)
                 let seconds = interval % 60
                 let minutes = (interval/60)%60

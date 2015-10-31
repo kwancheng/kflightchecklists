@@ -37,10 +37,13 @@ public class RecordWeatherConditionsViewController : NotepadViewController {
     
     @IBAction func returnToList(sender : AnyObject) {
         if let setWeatherConditionsCallback = payload?.setWeatherConditionsCallback {
-            var barometerReading = sldrBarometer?.value ?? 0
-            var windDirection = String(format:"%.0f", sldrWindDirection!.value).toInt()
-            var windSpeed = String(format:"%.0f", sldrWindSpeed!.value).toInt()
-            var temperature = String(format:"%.0f", sldrTemperature!.value).toInt()
+            let barometerReading = sldrBarometer?.value ?? 0
+
+            let windDirection = Int(String(format:"%.0f", sldrWindDirection!.value))
+
+            let windSpeed = Int(String(format:"%.0f", sldrWindSpeed!.value))
+
+            let temperature = Int(String(format:"%.0f", sldrTemperature!.value))
             
             setWeatherConditionsCallback(barometerReading: barometerReading, windDirection: windDirection!, windSpeed: windSpeed!, temperature: temperature!)
         }

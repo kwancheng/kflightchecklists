@@ -9,7 +9,7 @@
 import UIKit
 
 public class LaunchScreen : UIView {
-    public required init(coder aDecoder: NSCoder) {
+    public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         
         self.backgroundColor = UIColor(patternImage: UIImage(named: "main_background")!)

@@ -64,12 +64,17 @@ public class LimitCalculator {
                 yMax = yMin.advanceIndex()
             }
             
-            var yMinVal = interpolateMinVal(
+            let yMinVal = interpolateMinVal(
+
                 limitTable[yMin.index][xMin.index],
+
                 MaxVal: limitTable[yMin.index][xMax.index],
+
                 offset: Double(xMin.offset),
+
                 stepVal: Double(xRangeInfo.stepVal))
-            var yMaxVal = interpolateMinVal(
+
+            let yMaxVal = interpolateMinVal(
                 limitTable[yMax.index][xMin.index],
                 MaxVal: limitTable[yMax.index][xMax.index],
                 offset: Double(xMin.offset),
