@@ -60,6 +60,8 @@
 		BC24FA4B1B3742F1003D919D /* RecordWeatherConditionAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC24FA4A1B3742F1003D919D /* RecordWeatherConditionAction.swift */; };
 		BC32FADC1B42AEC000721E9A /* VneLimitDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC32FADB1B42AEC000721E9A /* VneLimitDataSource.swift */; };
 		BC6877721B3AB65300CF61E9 /* ShowTimerPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6877711B3AB65300CF61E9 /* ShowTimerPayload.swift */; };
+		BCD4AF9C1BE6BDC900A1603A /* MetarEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD4AF9B1BE6BDC900A1603A /* MetarEntry.swift */; };
+		BCD4AF9E1BE6BE1300A1603A /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD4AF9D1BE6BE1300A1603A /* WeatherService.swift */; };
 		BCE999071B43DF2300A63E8F /* IndexOffset.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE999061B43DF2300A63E8F /* IndexOffset.swift */; };
 		BCE999091B43DF4200A63E8F /* RangeInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE999081B43DF4200A63E8F /* RangeInfo.swift */; };
 		BCE9990B1B43DF5E00A63E8F /* LimitCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE9990A1B43DF5E00A63E8F /* LimitCalculator.swift */; };
@@ -140,6 +142,8 @@
 		BC24FA4A1B3742F1003D919D /* RecordWeatherConditionAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordWeatherConditionAction.swift; sourceTree = "<group>"; };
 		BC32FADB1B42AEC000721E9A /* VneLimitDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VneLimitDataSource.swift; sourceTree = "<group>"; };
 		BC6877711B3AB65300CF61E9 /* ShowTimerPayload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowTimerPayload.swift; sourceTree = "<group>"; };
+		BCD4AF9B1BE6BDC900A1603A /* MetarEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetarEntry.swift; sourceTree = "<group>"; };
+		BCD4AF9D1BE6BE1300A1603A /* WeatherService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
 		BCE999061B43DF2300A63E8F /* IndexOffset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndexOffset.swift; sourceTree = "<group>"; };
 		BCE999081B43DF4200A63E8F /* RangeInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RangeInfo.swift; sourceTree = "<group>"; };
 		BCE9990A1B43DF5E00A63E8F /* LimitCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LimitCalculator.swift; sourceTree = "<group>"; };
@@ -236,6 +240,7 @@
 		0F6D4C191B2C93C40002A070 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				BCD4AF9A1BE6BDBD00A1603A /* WeatherService */,
 				0FF2F3FA1B42C3A10002555C /* LimitCalculator */,
 				0FE88B251B383D9000FD7125 /* Payloads */,
 				0F76A99E1B34A43E0051E61E /* Actions */,
@@ -365,6 +370,15 @@
 				3FB17246551392FF59599EF1 /* Pods_KFlightChecklistsTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BCD4AF9A1BE6BDBD00A1603A /* WeatherService */ = {
+			isa = PBXGroup;
+			children = (
+				BCD4AF9B1BE6BDC900A1603A /* MetarEntry.swift */,
+				BCD4AF9D1BE6BE1300A1603A /* WeatherService.swift */,
+			);
+			path = WeatherService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -595,10 +609,12 @@
 				0F0EE6471B2C925500755FCF /* AppDelegate.swift in Sources */,
 				0F76A9A21B34A44F0051E61E /* ShowMessageAction.swift in Sources */,
 				BC24FA491B37419B003D919D /* ShowTimerAction.swift in Sources */,
+				BCD4AF9C1BE6BDC900A1603A /* MetarEntry.swift in Sources */,
 				BCE999071B43DF2300A63E8F /* IndexOffset.swift in Sources */,
 				0F5EF2011B30CAE000622496 /* R22FuelTankQuantityViewController.swift in Sources */,
 				0FF4C6F01B36EE9000448C55 /* FlightInfoViewController.swift in Sources */,
 				0FE88B291B383D9000FD7125 /* RecordFuelQuantityPayload.swift in Sources */,
+				BCD4AF9E1BE6BE1300A1603A /* WeatherService.swift in Sources */,
 				0F6D4C1B1B2C93D30002A070 /* ChecklistPack.swift in Sources */,
 				0F3190811B4226350023216A /* ManifoldLimiteDataSource.swift in Sources */,
 				BC24FA3F1B373C62003D919D /* RecordFuelQuantityAction.swift in Sources */,

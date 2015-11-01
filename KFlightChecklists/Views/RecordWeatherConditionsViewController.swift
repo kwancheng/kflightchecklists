@@ -51,6 +51,24 @@ public class RecordWeatherConditionsViewController : NotepadViewController {
         self.dismissViewControllerAnimated(true, completion: payload?.completionCallback)
     }
     
+    @IBAction func getMetar(sender : AnyObject) {
+        WeatherService.sharedService.getMetar("KLDJ",
+            success: { (metarEntry) -> () in
+                if(metarEntry != nil) {
+                    self.sldrBarometer?.value = Float(metarEntry!.altimHg)
+                    self.barometerChanged(self.sldrBarometer!)
+                    self.sldrWindDirection?.value = Float(metarEntry!.windDirDegrees)
+                    self.windDirectionChanged(self.sldrWindDirection!)
+                    self.sldrWindSpeed?.value = Float(metarEntry!.windSpdKts)
+                    self.windSpeedChanged(self.sldrWindSpeed!)
+                    self.sldrTemperature?.value = Float(metarEntry!.tempC)
+                    self.temperatureChanged(self.sldrTemperature!)
+                }
+            }) { (error) -> () in
+                
+            }
+    }
+    
     private var payload : RecordWeatherConditionsPayload?
     
     public func setPayload(payload : RecordWeatherConditionsPayload) {
