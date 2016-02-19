@@ -770,12 +770,12 @@
 			baseConfigurationReference = B09E9EF364C6BB9B1379049E /* Pods-KFlightChecklists.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Yu Kwan Cheng (9SZFZ2ARAL)";
 				INFOPLIST_FILE = KFlightChecklists/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.acproma.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "KF Checklists";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "58c4d350-c24b-4a28-9b03-da34855b7486";
 			};
 			name = Debug;
 		};
@@ -784,12 +784,12 @@
 			baseConfigurationReference = C0D28F7ED4A8E56A6DED0010 /* Pods-KFlightChecklists.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Yu Kwan Cheng (9SZFZ2ARAL)";
 				INFOPLIST_FILE = KFlightChecklists/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.acproma.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "KF Checklists";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "58c4d350-c24b-4a28-9b03-da34855b7486";
 			};
 			name = Release;
 		};
