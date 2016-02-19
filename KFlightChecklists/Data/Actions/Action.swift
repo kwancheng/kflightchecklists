@@ -19,21 +19,21 @@ public class Action {
     
     public func execute(checklistItem : ChecklistItem?, completionCallback : CompletionCallback?) {
         if let actionDelegate = self.actionDelegate {
-            if let showMessageAction = self as? ShowMessageAction {
+            if let _ = self as? ShowMessageAction {
                 actionDelegate.showMessage(self, onChecklistItem: checklistItem, completionCallback: completionCallback)
-            } else if let recordFuelQuantityAction = self as? RecordFuelQuantityAction {
+            } else if let _ = self as? RecordFuelQuantityAction {
                 actionDelegate.recordFuelQuantity(self, onChecklistItem: checklistItem, completionCallback: completionCallback!)
-            } else if let recordHobbsMeterReadingAction = self as? RecordHobbsMeterReadingAction {
+            } else if let _ = self as? RecordHobbsMeterReadingAction {
                 actionDelegate.recordHobbsMeterReading(self, onChecklistItem: checklistItem, completionCallback: completionCallback!)
-            } else if let recordWeatherConditionAction = self as? RecordWeatherConditionsAction {
+            } else if let _ = self as? RecordWeatherConditionsAction {
                 actionDelegate.recordWeatherCondition(self, onChecklistItem: checklistItem, completionCallback: completionCallback!)
-            } else if let startFlightTimerAction = self as? StartFlightTimerAction {
+            } else if let _ = self as? StartFlightTimerAction {
                 actionDelegate.startFlightTimer(self, onChecklistItem: checklistItem, completionCallback: completionCallback!)
-            } else if let stopFlightTimerAction = self as? StopFlightTimerAction {
+            } else if let _ = self as? StopFlightTimerAction {
                 actionDelegate.stopFlightTimer(self, onChecklistItem: checklistItem, completionCallback: completionCallback!)
-            } else if let showTimer = self as? ShowTimerAction {
+            } else if let _ = self as? ShowTimerAction {
                 actionDelegate.showTimer(self, onChecklistItem: checklistItem, completionCallback: completionCallback!)
-            } else if let showMapVneCharts = self as? ShowMapVNEChartsAction {
+            } else if let _ = self as? ShowMapVNEChartsAction {
                 actionDelegate.showMapVneActions(self, onChecklistItem: checklistItem, completionCallback: completionCallback)
             }
         }

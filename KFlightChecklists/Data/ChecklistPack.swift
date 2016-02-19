@@ -16,10 +16,10 @@ public class ChecklistPack {
     public init(){
         if let path = NSBundle.mainBundle().pathForResource("Checklists", ofType: "json") {
             if let content = NSData(contentsOfFile: path) {
-                var error : NSErrorPointer = NSErrorPointer()
+                let error : NSErrorPointer = NSErrorPointer()
                 var jsonData = JSON(data: content, options: NSJSONReadingOptions.MutableContainers, error: error)
                 
-                if let error = jsonData.error {
+                if let _ = jsonData.error {
                     // TODO : handle json parse error
                 } else {
                     self.title = jsonData["title"].string

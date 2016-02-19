@@ -133,9 +133,6 @@ public class FlightInfoViewController : NotepadViewController {
     
 
     private func updateFlightTimes() {
-
-        let formatTemplate = "Flight Time : Start[%@] End[%@] Duration[%@]"
-
         let dateFormatter = NSDateFormatter()
 
         dateFormatter.dateFormat = "yyyy-MM-dd 'at' h:mm a" // superset of OP's format

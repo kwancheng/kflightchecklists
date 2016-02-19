@@ -19,7 +19,7 @@ public class Section {
         self.checklistItems = []
         if let checklistItemsArray = jsonData["checklist_items"].array {
             for checklistItemJson in checklistItemsArray {
-                var checklistItem = ChecklistItem(checklistItemJson)
+                let checklistItem = ChecklistItem(checklistItemJson)
                 self.checklistItems?.append(checklistItem)
             }
         }

@@ -62,18 +62,10 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
 
         let userDefaults = NSUserDefaults.standardUserDefaults()
 
-        
-
-        if let agreed = userDefaults.stringForKey("agreed") {
-
-            
-
-        } else {
-
+        guard let _ = userDefaults.stringForKey("agreed") else {
             performSegueWithIdentifier("ShowAgreement", sender: self)
-
+            return
         }
-
     }
 
     
@@ -126,7 +118,7 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
 
                     case .ActionItem :
 
-                        var cell = tableView.dequeueReusableCellWithIdentifier("ActionItemCell") as! ActionItemCell
+                        let cell = tableView.dequeueReusableCellWithIdentifier("ActionItemCell") as! ActionItemCell
 
                         cell.lblItem?.text = checklistItem.details?[0]
 
@@ -136,7 +128,7 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
 
                     case .Note :
 
-                        var cell = tableView.dequeueReusableCellWithIdentifier("NoteCell") as! NoteCell
+                        let cell = tableView.dequeueReusableCellWithIdentifier("NoteCell") as! NoteCell
 
                         cell.lblNoteText?.text = checklistItem.details?[0]
 
@@ -144,7 +136,7 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
 
                     case .Caution :
 
-                        var cell = tableView.dequeueReusableCellWithIdentifier("CautionCell") as! CautionCell
+                        let cell = tableView.dequeueReusableCellWithIdentifier("CautionCell") as! CautionCell
 
                         cell.lblCautionText?.text = checklistItem.details?[0]
 
@@ -154,7 +146,7 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
 
             } else {
 
-                var cell = tableView.dequeueReusableCellWithIdentifier("cell")! as UITableViewCell
+                let cell = tableView.dequeueReusableCellWithIdentifier("cell")! as UITableViewCell
 
                 cell.textLabel?.text = "Unknown"
 
@@ -164,7 +156,7 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
 
         } else {
 
-            var cell = tableView.dequeueReusableCellWithIdentifier("cell")! as UITableViewCell
+            let cell = tableView.dequeueReusableCellWithIdentifier("cell")! as UITableViewCell
 
             cell.textLabel?.text = "Unknown"
 
@@ -172,9 +164,7 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
 
         }
 
-        
-
-        var bgView = UIView()
+        let bgView = UIView()
 
         bgView.backgroundColor = UIColor(patternImage: UIImage(named: "main_background")!)
 
@@ -652,7 +642,7 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
 
     {
 
-        if let rwca = action as? RecordWeatherConditionsAction {
+        if let _ = action as? RecordWeatherConditionsAction {
 
             let payload = RecordWeatherConditionsPayload(
 
@@ -704,7 +694,7 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
 
         if let flightStartTime = self.flightInfo.flightStartTime {
 
-            if let flightEndTime = self.flightInfo.flightEndTime {
+            if let _ = self.flightInfo.flightEndTime {
 
                 timer.invalidate()
 
@@ -900,8 +890,7 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
 
     func showMapVneActions(action : Action, onChecklistItem : ChecklistItem?, completionCallback : CompletionCallback?) {
 
-        if let sta = action as? ShowMapVNEChartsAction {
-
+        if let _ = action as? ShowMapVNEChartsAction {
             let payload = ShowMapVNEChartsPayload(
                 Float(self.flightInfo.temperature),
                 onChecklistItem?.details?[0],

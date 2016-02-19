@@ -76,10 +76,10 @@ public class HobbsReadingViewController : NotepadViewController, UITextFieldDele
             fHours = Int(tbReadingHoursFractional!.text!)!
         }
         
-        var reading = Float(hours) + (Float(fHours) / 10)
+        let reading = Float(hours) + (Float(fHours) / 10)
 
         if let setHobbsMeterReadingCallback = self.setHobbsMeterReadingCallback {
-            var isPreFlight = self.isPreFlight ?? false
+            let isPreFlight = self.isPreFlight ?? false
             setHobbsMeterReadingCallback(isPreFlight: isPreFlight, reading: reading)
         }
         
