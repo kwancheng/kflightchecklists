@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0CA5C6E6B222C4652453C0F7 /* Pods_KFlightChecklists_KFlightChecklistsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3588246FD779A9E3BCD68CD /* Pods_KFlightChecklists_KFlightChecklistsTests.framework */; };
 		0F0EE6471B2C925500755FCF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0EE6461B2C925500755FCF /* AppDelegate.swift */; };
 		0F0EE64A1B2C925500755FCF /* KFlightChecklists.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0F0EE6481B2C925500755FCF /* KFlightChecklists.xcdatamodeld */; };
 		0F0EE64F1B2C925500755FCF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F0EE64D1B2C925500755FCF /* Main.storyboard */; };
@@ -51,8 +50,8 @@
 		0FF75C521B2CFE9300960DCA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF75C511B2CFE9300960DCA /* ViewController.swift */; };
 		0FF75C541B2CFEC900960DCA /* ChecklistSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF75C531B2CFEC900960DCA /* ChecklistSelectViewController.swift */; };
 		0FFB12CE1B41EDCC000E0C03 /* MapVneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFB12CD1B41EDCC000E0C03 /* MapVneViewController.swift */; };
-		A0D3F628163276DAD82511E6 /* Pods_KFlightChecklists.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E53229EF3DF19CAB3CD81E5 /* Pods_KFlightChecklists.framework */; };
-		ABA5905CE11F90035D756B3A /* Pods_KFlightChecklistsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26544A716F9DBC4919553FFD /* Pods_KFlightChecklistsTests.framework */; };
+		6F2102AAF05F5D04377903C1 /* Pods_KFlightChecklists.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ABC11ADF3883F81C30A0962 /* Pods_KFlightChecklists.framework */; };
+		83BADE8082ECADBF3E7F2E52 /* Pods_KFlightChecklists_KFlightChecklistsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E1BC851C6286DC5F9ADE857 /* Pods_KFlightChecklists_KFlightChecklistsTests.framework */; };
 		BC24FA3F1B373C62003D919D /* RecordFuelQuantityAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC24FA3E1B373C62003D919D /* RecordFuelQuantityAction.swift */; };
 		BC24FA411B373C7D003D919D /* RecordHobbsMeterReadingAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC24FA401B373C7D003D919D /* RecordHobbsMeterReadingAction.swift */; };
 		BC24FA451B373EDB003D919D /* StopFlightTimerAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC24FA441B373EDB003D919D /* StopFlightTimerAction.swift */; };
@@ -83,7 +82,21 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		0FC3FB001E60EBD2000AF01B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		07D570E4DD08824F4171C9F0 /* Pods-KFlightChecklists-KFlightChecklistsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KFlightChecklists-KFlightChecklistsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KFlightChecklists-KFlightChecklistsTests/Pods-KFlightChecklists-KFlightChecklistsTests.release.xcconfig"; sourceTree = "<group>"; };
 		0F0EE6411B2C925500755FCF /* KF Checklists.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "KF Checklists.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F0EE6451B2C925500755FCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F0EE6461B2C925500755FCF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -131,11 +144,9 @@
 		0FF75C511B2CFE9300960DCA /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0FF75C531B2CFEC900960DCA /* ChecklistSelectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChecklistSelectViewController.swift; sourceTree = "<group>"; };
 		0FFB12CD1B41EDCC000E0C03 /* MapVneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapVneViewController.swift; sourceTree = "<group>"; };
-		26544A716F9DBC4919553FFD /* Pods_KFlightChecklistsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KFlightChecklistsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4B30D7D1C5B0AEDBFC532207 /* Pods-KFlightChecklists.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KFlightChecklists.release.xcconfig"; path = "Pods/Target Support Files/Pods-KFlightChecklists/Pods-KFlightChecklists.release.xcconfig"; sourceTree = "<group>"; };
-		5E53229EF3DF19CAB3CD81E5 /* Pods_KFlightChecklists.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KFlightChecklists.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		62C36DA9E628DDC89251E77A /* Pods-KFlightChecklists.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KFlightChecklists.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KFlightChecklists/Pods-KFlightChecklists.debug.xcconfig"; sourceTree = "<group>"; };
-		A263BE32EEC27BCB0F194BB1 /* Pods-KFlightChecklistsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KFlightChecklistsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KFlightChecklistsTests/Pods-KFlightChecklistsTests.release.xcconfig"; sourceTree = "<group>"; };
+		229CD3BDAAF6ADB82861F794 /* Pods-KFlightChecklists-KFlightChecklistsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KFlightChecklists-KFlightChecklistsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KFlightChecklists-KFlightChecklistsTests/Pods-KFlightChecklists-KFlightChecklistsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5E1BC851C6286DC5F9ADE857 /* Pods_KFlightChecklists_KFlightChecklistsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KFlightChecklists_KFlightChecklistsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7ABC11ADF3883F81C30A0962 /* Pods_KFlightChecklists.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KFlightChecklists.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC24FA3E1B373C62003D919D /* RecordFuelQuantityAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordFuelQuantityAction.swift; sourceTree = "<group>"; };
 		BC24FA401B373C7D003D919D /* RecordHobbsMeterReadingAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordHobbsMeterReadingAction.swift; sourceTree = "<group>"; };
 		BC24FA441B373EDB003D919D /* StopFlightTimerAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopFlightTimerAction.swift; sourceTree = "<group>"; };
@@ -154,10 +165,8 @@
 		BCF639E51B397A9900548379 /* HobbsReadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HobbsReadingViewController.swift; sourceTree = "<group>"; };
 		BCFB4CB41B4A9F6200EA9C1C /* ShowMapVNEChartsAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowMapVNEChartsAction.swift; sourceTree = "<group>"; };
 		BCFB4CB61B4AA10000EA9C1C /* ShowMapVNEChartsPayload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowMapVNEChartsPayload.swift; sourceTree = "<group>"; };
-		E3588246FD779A9E3BCD68CD /* Pods_KFlightChecklists_KFlightChecklistsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KFlightChecklists_KFlightChecklistsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EE69804ECA1F0EB35B79E7A2 /* Pods-KFlightChecklists-KFlightChecklistsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KFlightChecklists-KFlightChecklistsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KFlightChecklists-KFlightChecklistsTests/Pods-KFlightChecklists-KFlightChecklistsTests.release.xcconfig"; sourceTree = "<group>"; };
-		F28CCE2B357DAC02B62D6E96 /* Pods-KFlightChecklistsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KFlightChecklistsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KFlightChecklistsTests/Pods-KFlightChecklistsTests.debug.xcconfig"; sourceTree = "<group>"; };
-		F9938F7B7F0312BAB58BD958 /* Pods-KFlightChecklists-KFlightChecklistsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KFlightChecklists-KFlightChecklistsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KFlightChecklists-KFlightChecklistsTests/Pods-KFlightChecklists-KFlightChecklistsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DE35D15B40CF6E1A6CD73DF1 /* Pods-KFlightChecklists.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KFlightChecklists.release.xcconfig"; path = "Pods/Target Support Files/Pods-KFlightChecklists/Pods-KFlightChecklists.release.xcconfig"; sourceTree = "<group>"; };
+		F407C42342B876ED4DFAB83B /* Pods-KFlightChecklists.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KFlightChecklists.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KFlightChecklists/Pods-KFlightChecklists.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,7 +174,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0D3F628163276DAD82511E6 /* Pods_KFlightChecklists.framework in Frameworks */,
+				6F2102AAF05F5D04377903C1 /* Pods_KFlightChecklists.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,8 +182,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ABA5905CE11F90035D756B3A /* Pods_KFlightChecklistsTests.framework in Frameworks */,
-				0CA5C6E6B222C4652453C0F7 /* Pods_KFlightChecklists_KFlightChecklistsTests.framework in Frameworks */,
+				83BADE8082ECADBF3E7F2E52 /* Pods_KFlightChecklists_KFlightChecklistsTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,8 +195,8 @@
 				0F0EE6431B2C925500755FCF /* KFlightChecklists */,
 				0F0EE65C1B2C925500755FCF /* KFlightChecklistsTests */,
 				0F0EE6421B2C925500755FCF /* Products */,
-				F75CB5C18B6DC1689D347F54 /* Pods */,
 				370C40F7212516857388A725 /* Frameworks */,
+				AA1303756251FC85579810A5 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -360,11 +368,21 @@
 		370C40F7212516857388A725 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5E53229EF3DF19CAB3CD81E5 /* Pods_KFlightChecklists.framework */,
-				26544A716F9DBC4919553FFD /* Pods_KFlightChecklistsTests.framework */,
-				E3588246FD779A9E3BCD68CD /* Pods_KFlightChecklists_KFlightChecklistsTests.framework */,
+				7ABC11ADF3883F81C30A0962 /* Pods_KFlightChecklists.framework */,
+				5E1BC851C6286DC5F9ADE857 /* Pods_KFlightChecklists_KFlightChecklistsTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AA1303756251FC85579810A5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F407C42342B876ED4DFAB83B /* Pods-KFlightChecklists.debug.xcconfig */,
+				DE35D15B40CF6E1A6CD73DF1 /* Pods-KFlightChecklists.release.xcconfig */,
+				229CD3BDAAF6ADB82861F794 /* Pods-KFlightChecklists-KFlightChecklistsTests.debug.xcconfig */,
+				07D570E4DD08824F4171C9F0 /* Pods-KFlightChecklists-KFlightChecklistsTests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		BCD4AF9A1BE6BDBD00A1603A /* WeatherService */ = {
@@ -376,19 +394,6 @@
 			path = WeatherService;
 			sourceTree = "<group>";
 		};
-		F75CB5C18B6DC1689D347F54 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				62C36DA9E628DDC89251E77A /* Pods-KFlightChecklists.debug.xcconfig */,
-				4B30D7D1C5B0AEDBFC532207 /* Pods-KFlightChecklists.release.xcconfig */,
-				F28CCE2B357DAC02B62D6E96 /* Pods-KFlightChecklistsTests.debug.xcconfig */,
-				A263BE32EEC27BCB0F194BB1 /* Pods-KFlightChecklistsTests.release.xcconfig */,
-				F9938F7B7F0312BAB58BD958 /* Pods-KFlightChecklists-KFlightChecklistsTests.debug.xcconfig */,
-				EE69804ECA1F0EB35B79E7A2 /* Pods-KFlightChecklists-KFlightChecklistsTests.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -396,12 +401,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0F0EE6631B2C925500755FCF /* Build configuration list for PBXNativeTarget "KFlightChecklists" */;
 			buildPhases = (
-				881EADD16E3612329C9AEA6F /* [CP] Check Pods Manifest.lock */,
+				646C31F4864B9EDF3C69BF71 /* [CP] Check Pods Manifest.lock */,
 				0F0EE63D1B2C925500755FCF /* Sources */,
 				0F0EE63E1B2C925500755FCF /* Frameworks */,
 				0F0EE63F1B2C925500755FCF /* Resources */,
-				13AAF457FC2C183AF818E982 /* [CP] Embed Pods Frameworks */,
-				FDE3C93CE116443172142386 /* [CP] Copy Pods Resources */,
+				0FC3FB001E60EBD2000AF01B /* Embed Frameworks */,
+				64BEAC573C8A8D0C92247A76 /* [CP] Embed Pods Frameworks */,
+				215BDFF68CA282392781B701 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -448,6 +454,7 @@
 						CreatedOnToolsVersion = 6.3.1;
 						DevelopmentTeam = GY744476KY;
 						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
 					};
 					0F0EE6581B2C925500755FCF = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -499,21 +506,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		13AAF457FC2C183AF818E982 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KFlightChecklists/Pods-KFlightChecklists-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		1558E106D9273FEC4A7557B2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -527,6 +519,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		215BDFF68CA282392781B701 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KFlightChecklists/Pods-KFlightChecklists-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		2596053D695BC3F4486AFE5C /* [CP] Copy Pods Resources */ = {
@@ -544,7 +551,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KFlightChecklists-KFlightChecklistsTests/Pods-KFlightChecklists-KFlightChecklistsTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		881EADD16E3612329C9AEA6F /* [CP] Check Pods Manifest.lock */ = {
+		646C31F4864B9EDF3C69BF71 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -557,6 +564,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		64BEAC573C8A8D0C92247A76 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KFlightChecklists/Pods-KFlightChecklists-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		AB18AC06CFF02BC6E763CD7B /* [CP] Embed Pods Frameworks */ = {
@@ -572,21 +594,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KFlightChecklists-KFlightChecklistsTests/Pods-KFlightChecklists-KFlightChecklistsTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FDE3C93CE116443172142386 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KFlightChecklists/Pods-KFlightChecklists-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -782,37 +789,41 @@
 		};
 		0F0EE6641B2C925500755FCF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 62C36DA9E628DDC89251E77A /* Pods-KFlightChecklists.debug.xcconfig */;
+			baseConfigurationReference = F407C42342B876ED4DFAB83B /* Pods-KFlightChecklists.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Yu Kwan Cheng (9SZFZ2ARAL)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = GY744476KY;
 				INFOPLIST_FILE = KFlightChecklists/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.acproma.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ghengiskwan.KFChecklists;
 				PRODUCT_NAME = "KF Checklists";
-				PROVISIONING_PROFILE = "58c4d350-c24b-4a28-9b03-da34855b7486";
+				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		0F0EE6651B2C925500755FCF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4B30D7D1C5B0AEDBFC532207 /* Pods-KFlightChecklists.release.xcconfig */;
+			baseConfigurationReference = DE35D15B40CF6E1A6CD73DF1 /* Pods-KFlightChecklists.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Yu Kwan Cheng (9SZFZ2ARAL)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = GY744476KY;
 				INFOPLIST_FILE = KFlightChecklists/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.acproma.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ghengiskwan.KFChecklists;
 				PRODUCT_NAME = "KF Checklists";
-				PROVISIONING_PROFILE = "58c4d350-c24b-4a28-9b03-da34855b7486";
+				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 		0F0EE6671B2C925500755FCF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F9938F7B7F0312BAB58BD958 /* Pods-KFlightChecklists-KFlightChecklistsTests.debug.xcconfig */;
+			baseConfigurationReference = 229CD3BDAAF6ADB82861F794 /* Pods-KFlightChecklists-KFlightChecklistsTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -834,7 +845,7 @@
 		};
 		0F0EE6681B2C925500755FCF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EE69804ECA1F0EB35B79E7A2 /* Pods-KFlightChecklists-KFlightChecklistsTests.release.xcconfig */;
+			baseConfigurationReference = 07D570E4DD08824F4171C9F0 /* Pods-KFlightChecklists-KFlightChecklistsTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
