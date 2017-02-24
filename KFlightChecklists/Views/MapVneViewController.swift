@@ -8,19 +8,19 @@
 
 import UIKit
 
-public class MapVneViewController : NotepadViewController {
+open class MapVneViewController : NotepadViewController {
     @IBOutlet var tbOat : UITextField?
     @IBOutlet var sldrOat : UISlider?
     @IBOutlet var mapTable : UITableView?
     @IBOutlet var vneTable : UITableView?
     
-    private var manifoldLimitDataSource = ManifoldLimitDataSource()
-    private var vneLimitDataSource = VneLimitDataSource()
-    private var payload : ShowMapVNEChartsPayload?
+    fileprivate var manifoldLimitDataSource = ManifoldLimitDataSource()
+    fileprivate var vneLimitDataSource = VneLimitDataSource()
+    fileprivate var payload : ShowMapVNEChartsPayload?
     
-    private var completionCallback : CompletionCallback?
+    fileprivate var completionCallback : CompletionCallback?
     
-    public override func viewDidLoad() {
+    open override func viewDidLoad() {
         super.viewDidLoad()
         mapTable?.dataSource = self.manifoldLimitDataSource
         manifoldLimitDataSource.oat = 10
@@ -30,12 +30,12 @@ public class MapVneViewController : NotepadViewController {
         oatChanged(sldrOat!)
     }
     
-    public func setPayload(payload : ShowMapVNEChartsPayload){
+    open func setPayload(_ payload : ShowMapVNEChartsPayload){
         self.payload = payload
         self.completionCallback = payload.completionCallback
     }
     
-    @IBAction func oatChanged(oatSlider : UISlider) {
+    @IBAction func oatChanged(_ oatSlider : UISlider) {
         let oat = Int(oatSlider.value)
         tbOat?.text = oat.description
         
@@ -45,7 +45,7 @@ public class MapVneViewController : NotepadViewController {
         vneTable?.reloadData()
     }
     
-    @IBAction func hideVneMapCharts(button : UIButton) {
-        self.dismissViewControllerAnimated(true, completion: completionCallback)
+    @IBAction func hideVneMapCharts(_ button : UIButton) {
+        self.dismiss(animated: true, completion: completionCallback)
     }
 }

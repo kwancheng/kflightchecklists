@@ -8,6 +8,6 @@
 
 import UIKit
 
-public class NoteCell : UITableViewCell {
+open class NoteCell : UITableViewCell {
     @IBOutlet var lblNoteText : UILabel?
 }

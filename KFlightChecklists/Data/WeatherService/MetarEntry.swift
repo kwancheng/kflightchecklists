@@ -26,21 +26,21 @@ class MetarEntry {
     var elevationMeter : Double
     
     init(xmlElem : AEXMLElement) {
-        print("Metar Element \(xmlElem.xmlString)")
+        print("Metar Element \(xmlElem.xml)")
         
-        self.rawText = xmlElem["raw_text"].stringValue
-        self.stationId = xmlElem["station_id"].stringValue
-        self.observationTime = xmlElem["observation_time"].stringValue
-        self.latitude = xmlElem["latitude"].doubleValue
-        self.longitude = xmlElem["longitude"].doubleValue
-        self.tempC = xmlElem["temp_c"].doubleValue
-        self.dewPointC = xmlElem["dewpoint_c"].doubleValue
-        self.windDirDegrees = xmlElem["wind_dir_degrees"].intValue
-        self.windSpdKts = xmlElem["wind_speed_kt"].intValue
-        self.visibilitySM = xmlElem["visibility_statute_mi"].doubleValue
-        self.altimHg = xmlElem["altim_in_hg"].doubleValue
-        self.flightCategory = xmlElem["flight_category"].stringValue
-        self.metarType = xmlElem["metar_type"].stringValue
-        self.elevationMeter = xmlElem["elevation_m"].doubleValue
+        self.rawText = xmlElem["raw_text"].string
+        self.stationId = xmlElem["station_id"].string
+        self.observationTime = xmlElem["observation_time"].string
+        self.latitude = xmlElem["latitude"].double
+        self.longitude = xmlElem["longitude"].double
+        self.tempC = xmlElem["temp_c"].double
+        self.dewPointC = xmlElem["dewpoint_c"].double
+        self.windDirDegrees = xmlElem["wind_dir_degrees"].int
+        self.windSpdKts = xmlElem["wind_speed_kt"].int
+        self.visibilitySM = xmlElem["visibility_statute_mi"].double
+        self.altimHg = xmlElem["altim_in_hg"].double
+        self.flightCategory = xmlElem["flight_category"].string
+        self.metarType = xmlElem["metar_type"].string
+        self.elevationMeter = xmlElem["elevation_m"].double
     }
 }

@@ -8,6 +8,6 @@
 
 import UIKit
 
-public class CautionCell : UITableViewCell {
+open class CautionCell : UITableViewCell {
     @IBOutlet var lblCautionText : UILabel?
 }

@@ -8,12 +8,12 @@
 
 import Foundation
 
-public typealias SetHobbsMeterReadingCallback = (isPreFlight : Bool, reading : Float)->Void
+public typealias SetHobbsMeterReadingCallback = (_ isPreFlight : Bool, _ reading : Float)->Void
 
-public class RecordHobbsMeterReadingPayload : Payload {
-    public var isPreFlight : Bool?
-    public var reading : Float?
-    public var setHobbsMeterReadingCallback : SetHobbsMeterReadingCallback?
+open class RecordHobbsMeterReadingPayload : Payload {
+    open var isPreFlight : Bool?
+    open var reading : Float?
+    open var setHobbsMeterReadingCallback : SetHobbsMeterReadingCallback?
 
     init(_ item: String?, _ action: String?,
         _ isPreFlight : Bool?, _ reading : Float?,

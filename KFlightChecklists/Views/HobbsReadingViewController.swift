@@ -8,17 +8,17 @@
 
 import UIKit
 
-public class HobbsReadingViewController : NotepadViewController, UITextFieldDelegate {
+open class HobbsReadingViewController : NotepadViewController, UITextFieldDelegate {
     @IBOutlet var tbReadingHours : UITextField?
     @IBOutlet var tbReadingHoursFractional : UITextField?
     @IBOutlet var lblTitleLabel : UILabel?
     
-    private var reading : Float?
-    private var isPreFlight : Bool?
-    private var setHobbsMeterReadingCallback : ((isPreFlight : Bool, reading : Float)->Void)?
-    private var completionCallback : (()->Void)?
+    fileprivate var reading : Float?
+    fileprivate var isPreFlight : Bool?
+    fileprivate var setHobbsMeterReadingCallback : ((_ isPreFlight : Bool, _ reading : Float)->Void)?
+    fileprivate var completionCallback : (()->Void)?
     
-    public override func viewDidLoad() {
+    open override func viewDidLoad() {
         super.viewDidLoad()
         tbReadingHours?.delegate = self
         tbReadingHoursFractional?.delegate = self
@@ -33,7 +33,7 @@ public class HobbsReadingViewController : NotepadViewController, UITextFieldDele
 
     
 
-    public func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
+    open func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
 
         let newLength = textField.text!.utf16.count + string.utf16.count - range.length
 
@@ -43,7 +43,7 @@ public class HobbsReadingViewController : NotepadViewController, UITextFieldDele
 
     
 
-    public func setPayload(payload : RecordHobbsMeterReadingPayload) {
+    open func setPayload(_ payload : RecordHobbsMeterReadingPayload) {
 
         self.reading = payload.reading
 
@@ -57,7 +57,7 @@ public class HobbsReadingViewController : NotepadViewController, UITextFieldDele
 
     
 
-    @IBAction func returnToList(sender : AnyObject) {
+    @IBAction func returnToList(_ sender : AnyObject) {
 
         var hours = 0
 
@@ -80,9 +80,9 @@ public class HobbsReadingViewController : NotepadViewController, UITextFieldDele
 
         if let setHobbsMeterReadingCallback = self.setHobbsMeterReadingCallback {
             let isPreFlight = self.isPreFlight ?? false
-            setHobbsMeterReadingCallback(isPreFlight: isPreFlight, reading: reading)
+            setHobbsMeterReadingCallback(isPreFlight, reading)
         }
         
-        self.dismissViewControllerAnimated(true, completion: completionCallback)
+        self.dismiss(animated: true, completion: completionCallback)
     }
 }

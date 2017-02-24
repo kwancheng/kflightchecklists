@@ -8,5 +8,5 @@
 
 import Foundation
 
-public class ShowMessagePayload : Payload {
+open class ShowMessagePayload : Payload {
 }

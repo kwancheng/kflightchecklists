@@ -8,16 +8,16 @@
 
 import UIKit
 
-public class VneLimitDataSource : NSObject, UITableViewDataSource {
-    private let vneLimitCalculator = VneLimitCalculator()
-    public var oat : Int?
+open class VneLimitDataSource : NSObject, UITableViewDataSource {
+    fileprivate let vneLimitCalculator = VneLimitCalculator()
+    open var oat : Int?
     
-    public func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    open func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return oat == nil ? 0 : 8
     }
     
-    public func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("cell") as! VneLimitCell
+    open func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! VneLimitCell
 
         
 

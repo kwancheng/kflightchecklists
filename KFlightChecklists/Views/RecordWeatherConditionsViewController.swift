@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class RecordWeatherConditionsViewController : NotepadViewController {
+open class RecordWeatherConditionsViewController : NotepadViewController {
     @IBOutlet var sldrBarometer : UISlider?
     @IBOutlet var sldrWindDirection : UISlider?
     @IBOutlet var sldrWindSpeed : UISlider?
@@ -19,23 +19,23 @@ public class RecordWeatherConditionsViewController : NotepadViewController {
     @IBOutlet var tbWindSpeed : UITextField?
     @IBOutlet var tbTemperature : UITextField?
     
-    @IBAction func barometerChanged(slider : UISlider) {
+    @IBAction func barometerChanged(_ slider : UISlider) {
         tbBarometer?.text = String(format: "%.2f", slider.value)
     }
     
-    @IBAction func windDirectionChanged(slider : UISlider){
+    @IBAction func windDirectionChanged(_ slider : UISlider){
         tbWindDirection?.text = String(format: "%.0f", slider.value)
     }
     
-    @IBAction func windSpeedChanged(slider : UISlider) {
+    @IBAction func windSpeedChanged(_ slider : UISlider) {
         tbWindSpeed?.text = String(format: "%.0f", slider.value)
     }
     
-    @IBAction func temperatureChanged(slider : UISlider) {
+    @IBAction func temperatureChanged(_ slider : UISlider) {
         tbTemperature?.text = String(format: "%.0f", slider.value)
     }
     
-    @IBAction func returnToList(sender : AnyObject) {
+    @IBAction func returnToList(_ sender : AnyObject) {
         if let setWeatherConditionsCallback = payload?.setWeatherConditionsCallback {
             let barometerReading = sldrBarometer?.value ?? 0
 
@@ -45,13 +45,13 @@ public class RecordWeatherConditionsViewController : NotepadViewController {
 
             let temperature = Int(String(format:"%.0f", sldrTemperature!.value))
             
-            setWeatherConditionsCallback(barometerReading: barometerReading, windDirection: windDirection!, windSpeed: windSpeed!, temperature: temperature!)
+            setWeatherConditionsCallback(barometerReading, windDirection!, windSpeed!, temperature!)
         }
         
-        self.dismissViewControllerAnimated(true, completion: payload?.completionCallback)
+        self.dismiss(animated: true, completion: payload?.completionCallback)
     }
     
-    @IBAction func getMetar(sender : AnyObject) {
+    @IBAction func getMetar(_ sender : AnyObject) {
         WeatherService.sharedService.getMetar("KLDJ",
             success: { (metarEntry) -> () in
                 if(metarEntry != nil) {
@@ -69,13 +69,13 @@ public class RecordWeatherConditionsViewController : NotepadViewController {
             }
     }
     
-    private var payload : RecordWeatherConditionsPayload?
+    fileprivate var payload : RecordWeatherConditionsPayload?
     
-    public func setPayload(payload : RecordWeatherConditionsPayload) {
+    open func setPayload(_ payload : RecordWeatherConditionsPayload) {
         self.payload = payload
     }
     
-    public override func viewDidLoad() {
+    open override func viewDidLoad() {
         super.viewDidLoad()
         if let payload = self.payload {
             sldrBarometer?.value = payload.barometerReading!

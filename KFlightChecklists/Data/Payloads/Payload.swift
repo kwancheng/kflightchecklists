@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class Payload {
+open class Payload {
     var item : String?
     var action : String?
     var completionCallback : CompletionCallback?

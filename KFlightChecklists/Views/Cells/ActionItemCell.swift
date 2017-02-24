@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class ActionItemCell : UITableViewCell {
+open class ActionItemCell : UITableViewCell {
     @IBOutlet var lblItem : UILabel?
     @IBOutlet var lblAction : UILabel?
 }

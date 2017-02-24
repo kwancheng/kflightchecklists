@@ -8,16 +8,16 @@
 
 import UIKit
 
-public class ManifoldLimitDataSource : NSObject, UITableViewDataSource {
-    private let manifoldLimitCalculator = ManifoldLimiteCalculator()
-    public var oat : Int?
+open class ManifoldLimitDataSource : NSObject, UITableViewDataSource {
+    fileprivate let manifoldLimitCalculator = ManifoldLimiteCalculator()
+    open var oat : Int?
     
-    public func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    open func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return oat == nil ? 0 : 5
     }
     
-    public func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("cell") as! ManifoldLimitCell
+    open func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! ManifoldLimitCell
 
         
 

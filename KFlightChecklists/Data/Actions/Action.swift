@@ -9,15 +9,15 @@
 import Foundation
 import SwiftyJSON
 
-public class Action {
-    public var actionDelegate : ActionDelegate?
-    public var name : String?
+open class Action {
+    open var actionDelegate : ActionDelegate?
+    open var name : String?
     
     public init(_ jsonData : JSON) {
         self.name = jsonData["name"].string
     }
     
-    public func execute(checklistItem : ChecklistItem?, completionCallback : CompletionCallback?) {
+    open func execute(_ checklistItem : ChecklistItem?, completionCallback : CompletionCallback?) {
         if let actionDelegate = self.actionDelegate {
             if let _ = self as? ShowMessageAction {
                 actionDelegate.showMessage(self, onChecklistItem: checklistItem, completionCallback: completionCallback)
@@ -39,7 +39,7 @@ public class Action {
         }
     }
         
-    static public func instantiateActionFromJson(jsonData : JSON) -> Action? {
+    static open func instantiateActionFromJson(_ jsonData : JSON) -> Action? {
         var retAction : Action?
         
         if let actionName = jsonData["name"].string {

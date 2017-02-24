@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class FlightInfoViewController : NotepadViewController {
+open class FlightInfoViewController : NotepadViewController {
     @IBOutlet var lblManifoldLimit : UILabel?
 
     @IBOutlet var viewFuelLevels : UIView?
@@ -41,15 +41,15 @@ public class FlightInfoViewController : NotepadViewController {
     @IBOutlet var tbTakeoff : UITextField?
     @IBOutlet var tbVne : UITextField?
     
-    @IBAction func showMapVne(sender : AnyObject) {
-        performSegueWithIdentifier("ShowMapVneCharts", sender: self)
+    @IBAction func showMapVne(_ sender : AnyObject) {
+        performSegue(withIdentifier: "ShowMapVneCharts", sender: self)
     }
     
     var flightInfo : FlightInfo?
-    private let manifoldLimitCalculator  = ManifoldLimiteCalculator()
-    private let vneLimitCalculator = VneLimitCalculator()
+    fileprivate let manifoldLimitCalculator  = ManifoldLimiteCalculator()
+    fileprivate let vneLimitCalculator = VneLimitCalculator()
     
-    public override func viewDidLoad() {
+    open override func viewDidLoad() {
         super.viewDidLoad()
         self.updateTankLevels()
         self.updateApproximateFlightTime()
@@ -74,7 +74,7 @@ public class FlightInfoViewController : NotepadViewController {
         viewMapLimit?.layer.masksToBounds = true
     }
     
-    private func updateManifoldPressure() {
+    fileprivate func updateManifoldPressure() {
         tbOat?.text = "Need Temp"
         tbMapLimit?.text = ""
         tbTakeoff?.text = ""
@@ -93,18 +93,18 @@ public class FlightInfoViewController : NotepadViewController {
         }
     }
     
-    private func updateTankLevels() {
+    fileprivate func updateTankLevels() {
         lblMainTankLevel?.text = String(format: "%.2f Gal (%.0f%%)", self.flightInfo!.calcActualMainLevel(), self.flightInfo!.mainTankLevel*100)
         lblAuxTankLevel?.text = String(format: "%.2f Gal (%.0f%%)", self.flightInfo!.calcActualAuxLevel(), self.flightInfo!.auxTankLevel*100)
         pgsMainTankLevel?.progress = self.flightInfo!.mainTankLevel
         pgsAuxTankLevel?.progress = self.flightInfo!.auxTankLevel
     }
     
-    private func updateApproximateFlightTime() {
+    fileprivate func updateApproximateFlightTime() {
         tbApproximateFlightTime?.text = String(format: "%.0f Minutes", self.flightInfo!.calcApproximateFlightTime() * 60)
     }
     
-    private func updateHobbsReadings() {
+    fileprivate func updateHobbsReadings() {
         tbPreFlightHobbsReading?.text = String(format: "%.1f", self.flightInfo!.preFlightHobbsReading)
         tbPostFlightHobbsReading?.text = String(format: "%.1f", self.flightInfo!.postFlightHobbsReading)
         
@@ -116,7 +116,7 @@ public class FlightInfoViewController : NotepadViewController {
 
     
 
-    private func updateWeatherConditions() {
+    fileprivate func updateWeatherConditions() {
 
         tbBarometerReading?.text = String(format:"%.2f", self.flightInfo!.barometerReading)
 
@@ -132,8 +132,8 @@ public class FlightInfoViewController : NotepadViewController {
 
     
 
-    private func updateFlightTimes() {
-        let dateFormatter = NSDateFormatter()
+    fileprivate func updateFlightTimes() {
+        let dateFormatter = DateFormatter()
 
         dateFormatter.dateFormat = "yyyy-MM-dd 'at' h:mm a" // superset of OP's format
 
@@ -143,7 +143,7 @@ public class FlightInfoViewController : NotepadViewController {
 
         if let flightStartTime = self.flightInfo?.flightStartTime {
 
-            flightStartTimeStr = dateFormatter.stringFromDate(flightStartTime)
+            flightStartTimeStr = dateFormatter.string(from: flightStartTime as Date)
 
         }
 
@@ -155,7 +155,7 @@ public class FlightInfoViewController : NotepadViewController {
 
         if let flightEndTime = self.flightInfo?.flightEndTime {
 
-            flightEndTimeStr = dateFormatter.stringFromDate(flightEndTime)
+            flightEndTimeStr = dateFormatter.string(from: flightEndTime as Date)
 
         }
 
@@ -169,7 +169,7 @@ public class FlightInfoViewController : NotepadViewController {
 
             if let flightEndTime = self.flightInfo?.flightEndTime {
 
-                let duration = flightEndTime.timeIntervalSinceDate(flightStartTime)
+                let duration = flightEndTime.timeIntervalSince(flightStartTime as Date)
                 let interval = Int(duration)
                 let seconds = interval % 60
                 let minutes = (interval/60)%60

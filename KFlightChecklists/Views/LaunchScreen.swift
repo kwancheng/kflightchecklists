@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class LaunchScreen : UIView {
+open class LaunchScreen : UIView {
     public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         

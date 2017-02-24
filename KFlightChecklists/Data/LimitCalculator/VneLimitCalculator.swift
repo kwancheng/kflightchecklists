@@ -8,8 +8,8 @@
 
 import Foundation
 
-public class VneLimitCalculator : LimitCalculator {
-    private let vneTable : [[Double]] = [
+open class VneLimitCalculator : LimitCalculator {
+    fileprivate let vneTable : [[Double]] = [
         [102, 102, 102, 102, 102, 102, 102], // SL
         [102, 102, 102, 102, 102,  99,  96], // 2000
         [102, 102, 102,  98,  94,  91,  87], // 4000
@@ -19,14 +19,14 @@ public class VneLimitCalculator : LimitCalculator {
         [ 74,  67,  61,  -1,  -1,  -1,  -1], // 12000
         [ 61,  -1,  -1,  -1,  -1,  -1,  -1]  // 14000
     ]
-    private let oatRangeInfo = RangeInfo(count: 7, minVal: -20, maxVal: 40, stepVal: 10, normalizeBy: 20)
-    private let altRangeInfo = RangeInfo(count: 8, minVal: 0, maxVal: 14000, stepVal: 2000, normalizeBy: 0)
+    fileprivate let oatRangeInfo = RangeInfo(count: 7, minVal: -20, maxVal: 40, stepVal: 10, normalizeBy: 20)
+    fileprivate let altRangeInfo = RangeInfo(count: 8, minVal: 0, maxVal: 14000, stepVal: 2000, normalizeBy: 0)
     
     public init() {
         super.init(xRangeInfo: oatRangeInfo, yRangeInfo: altRangeInfo, limitTable: vneTable)
     }
     
-    func calculateVne(altitude: Int, oat:Int) -> Double? {
+    func calculateVne(_ altitude: Int, oat:Int) -> Double? {
         return calcLimitAt(oat, y: altitude)
     }
 }

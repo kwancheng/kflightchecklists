@@ -8,14 +8,14 @@
 
 import Foundation
 
-public typealias SetWeatherConditionsCallback = (barometerReading : Float, windDirection: Int, windSpeed:Int, temperature:Int)->Void
+public typealias SetWeatherConditionsCallback = (_ barometerReading : Float, _ windDirection: Int, _ windSpeed:Int, _ temperature:Int)->Void
 
-public class RecordWeatherConditionsPayload :Payload {
-    public var barometerReading : Float?
-    public var windDirection : Int?
-    public var windSpeed : Int?
-    public var temperature : Int?
-    public var setWeatherConditionsCallback : SetWeatherConditionsCallback?
+open class RecordWeatherConditionsPayload :Payload {
+    open var barometerReading : Float?
+    open var windDirection : Int?
+    open var windSpeed : Int?
+    open var temperature : Int?
+    open var setWeatherConditionsCallback : SetWeatherConditionsCallback?
     
     public init(barometerReading:Float, windDirection : Int, windSpeed:Int, temperature:Int, item:String, action:String?, setWeatherConditionsCallback : SetWeatherConditionsCallback?, completionCallback : CompletionCallback?)
     {

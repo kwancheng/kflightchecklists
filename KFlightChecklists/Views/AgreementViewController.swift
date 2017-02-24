@@ -8,11 +8,11 @@
 
 import UIKit
 
-public class AgreementViewController : UIViewController {
-    @IBAction func agreementAccepted(sender : AnyObject) {
-        let defaults = NSUserDefaults.standardUserDefaults()
+open class AgreementViewController : UIViewController {
+    @IBAction func agreementAccepted(_ sender : AnyObject) {
+        let defaults = UserDefaults.standard
         defaults.setValue("agreed", forKey: "agreed")
         
-        dismissViewControllerAnimated(true, completion: nil)
+        dismiss(animated: true, completion: nil)
     }
 }

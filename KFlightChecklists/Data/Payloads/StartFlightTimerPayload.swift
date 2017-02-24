@@ -8,4 +8,4 @@
 
 import Foundation
 
-public class StartFlightTimerPayload : Payload {}
+open class StartFlightTimerPayload : Payload {}

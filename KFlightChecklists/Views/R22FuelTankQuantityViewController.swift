@@ -8,20 +8,20 @@
 
 import UIKit
 
-public class R22FuelTankQuantityViewController : NotepadViewController {
-    @IBOutlet private var lblMain : UILabel?
-    @IBOutlet private var sldrMain : UISlider?
-    @IBOutlet private var lblAux : UILabel?
-    @IBOutlet private var sldrAux : UISlider?
+open class R22FuelTankQuantityViewController : NotepadViewController {
+    @IBOutlet fileprivate var lblMain : UILabel?
+    @IBOutlet fileprivate var sldrMain : UISlider?
+    @IBOutlet fileprivate var lblAux : UILabel?
+    @IBOutlet fileprivate var sldrAux : UISlider?
     @IBOutlet var lblItem : UILabel?
     @IBOutlet var lblAction : UILabel?
     
     var completionCallback : (()->Void)? = nil
-    var setFuelLevelCallback : ((mainGallons:Float, auxGallons:Float) -> Void)? = nil
+    var setFuelLevelCallback : ((_ mainGallons:Float, _ auxGallons:Float) -> Void)? = nil
     var itemStr : String?
     var actionStr : String?
     
-    public override func viewDidLoad() {
+    open override func viewDidLoad() {
         super.viewDidLoad()
         lblItem?.text = itemStr
         lblAction?.text = actionStr
@@ -29,42 +29,42 @@ public class R22FuelTankQuantityViewController : NotepadViewController {
         updateAuxLabel(calculateAuxGallons(sldrAux!.value))
     }
     
-    public func setPayload(payload : RecordFuelQuantityPayload) {
+    open func setPayload(_ payload : RecordFuelQuantityPayload) {
         itemStr = payload.item
         actionStr = payload.action
         setFuelLevelCallback = payload.setFuelLevelCallback
         completionCallback = payload.completionCallback
     }
     
-    func calculateMainGallons(tankLevel : Float) -> Float {
+    func calculateMainGallons(_ tankLevel : Float) -> Float {
         return self.sldrMain!.value * 19.2
     }
     
-    func calculateAuxGallons(tankLevel : Float) -> Float {
+    func calculateAuxGallons(_ tankLevel : Float) -> Float {
         return self.sldrAux!.value * 10.5
     }
     
-    func updateMainLabel(mainAmount : Float){
+    func updateMainLabel(_ mainAmount : Float){
         lblMain?.text = String(format: "Main (19.2 US Gallons) : %.2f (%.0f%%)", mainAmount, sldrMain!.value * 100)
     }
     
-    func updateAuxLabel(auxAmount : Float) {
+    func updateAuxLabel(_ auxAmount : Float) {
         lblAux?.text = String(format: "Aux (10.5 US Gallons) : %.2f (%.0f%%)", auxAmount, sldrAux!.value * 100)
     }
     
-    @IBAction func mainSldrChange(mainSlider:UISlider) {
+    @IBAction func mainSldrChange(_ mainSlider:UISlider) {
         updateMainLabel(calculateMainGallons(sldrMain!.value))
     }
     
-    @IBAction func auxSldrChange(auxSlider:UISlider){
+    @IBAction func auxSldrChange(_ auxSlider:UISlider){
         updateAuxLabel(calculateAuxGallons(sldrAux!.value))
     }
     
-    @IBAction func returnToList(sender : AnyObject) {
+    @IBAction func returnToList(_ sender : AnyObject) {
         if let setFuelLevelCallback = self.setFuelLevelCallback {
-            setFuelLevelCallback(mainGallons: sldrMain!.value, auxGallons: sldrAux!.value)
+            setFuelLevelCallback(sldrMain!.value, sldrAux!.value)
         }
         
-        self.dismissViewControllerAnimated(true, completion: completionCallback)
+        self.dismiss(animated: true, completion: completionCallback)
     }    
 }

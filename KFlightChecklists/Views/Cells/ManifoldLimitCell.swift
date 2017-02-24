@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class ManifoldLimitCell : UITableViewCell {
+open class ManifoldLimitCell : UITableViewCell {
     @IBOutlet var lblAltitude : UILabel?
     @IBOutlet var lblMapLimit : UILabel?
 }

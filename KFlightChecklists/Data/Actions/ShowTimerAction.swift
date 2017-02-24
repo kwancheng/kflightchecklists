@@ -9,8 +9,8 @@
 import Foundation
 import SwiftyJSON
 
-public class ShowTimerAction : Action {
-    public var duration : Int?
+open class ShowTimerAction : Action {
+    open var duration : Int?
     
     public override init(_ jsonData: JSON){
         super.init(jsonData)

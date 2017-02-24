@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class RecordFuelQuantityPayload : Payload {
+open class RecordFuelQuantityPayload : Payload {
     var setFuelLevelCallback : SetFuelLevelCallback?
     
     public init(_ item: String?, _ action: String?,

@@ -8,6 +8,6 @@
 
 import Foundation
 
-public class StartFlightTimerAction : Action {
+open class StartFlightTimerAction : Action {
     
 }

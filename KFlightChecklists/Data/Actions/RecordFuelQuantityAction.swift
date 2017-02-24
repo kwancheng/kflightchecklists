@@ -8,5 +8,5 @@
 
 import UIKit
 
-public class RecordFuelQuantityAction : Action {
+open class RecordFuelQuantityAction : Action {
 }

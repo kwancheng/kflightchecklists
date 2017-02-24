@@ -8,6 +8,6 @@
 
 import UIKit
 
-public class ChecklistCell : UITableViewCell {
+open class ChecklistCell : UITableViewCell {
     @IBOutlet var lblChecklistName : UILabel?
 }

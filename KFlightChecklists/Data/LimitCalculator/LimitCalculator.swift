@@ -8,10 +8,10 @@
 
 import Foundation
 
-public class LimitCalculator {
-    private let limitTable : [[Double]]
-    private let xRangeInfo : RangeInfo
-    private let yRangeInfo : RangeInfo
+open class LimitCalculator {
+    fileprivate let limitTable : [[Double]]
+    fileprivate let xRangeInfo : RangeInfo
+    fileprivate let yRangeInfo : RangeInfo
     
     public init(xRangeInfo:RangeInfo, yRangeInfo:RangeInfo, limitTable:[[Double]]) {
         self.limitTable = limitTable
@@ -19,7 +19,7 @@ public class LimitCalculator {
         self.yRangeInfo = yRangeInfo
     }
     
-    private func interpolateMinVal(minVal:Double, MaxVal maxVal:Double, offset:Double, stepVal:Double) -> Double {
+    fileprivate func interpolateMinVal(_ minVal:Double, MaxVal maxVal:Double, offset:Double, stepVal:Double) -> Double {
         var retVal = -1.0
         
         if minVal != -1 {
@@ -43,7 +43,7 @@ public class LimitCalculator {
     returns nil, if the x and y values are out of bounds
     returns the interpolate range of the values specified by x and y
     */
-    func calcLimitAt(x : Int, y : Int) -> Double? {
+    func calcLimitAt(_ x : Int, y : Int) -> Double? {
         var limit : Double? = nil
         
         let validX = x >= xRangeInfo.minVal && x <= xRangeInfo.maxVal

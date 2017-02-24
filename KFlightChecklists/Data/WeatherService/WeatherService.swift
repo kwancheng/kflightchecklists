@@ -10,16 +10,16 @@ import Foundation
 import Alamofire
 import AEXML
 
-typealias MetarSuccessHanlder = (metarEntry : MetarEntry?) -> ()
-typealias MetarFailureHandler = (error : String) -> ()
+typealias MetarSuccessHanlder = (_ metarEntry : MetarEntry?) -> ()
+typealias MetarFailureHandler = (_ error : String) -> ()
 
 class WeatherService {
     static let sharedService = WeatherService()
     
     let server = "https://www.aviationweather.gov/adds/dataserver_current/httpparam"
     
-    func getMetar(airportCode : String, success :MetarSuccessHanlder, failure:MetarFailureHandler) {
-        let queryParams = [
+    func getMetar(_ airportCode : String, success :@escaping MetarSuccessHanlder, failure:@escaping MetarFailureHandler) {
+        let queryParams : Parameters? = [
             "dataSource" : "metars",
             "requestType" : "retrieve",
             "format" : "xml",
@@ -27,21 +27,24 @@ class WeatherService {
             "hoursBeforeNow" : "1"
         ]
         
-        Alamofire.request(.GET, server, parameters: queryParams, encoding: ParameterEncoding.URL, headers: nil)
-        .response { (request, response, data, error) -> Void in
-            do {
-                let xmlDoc = try AEXMLDocument(xmlData: data!)
-                if let numResults = Int(xmlDoc.root["data"].attributes["num_results"]!) {
-                    if(numResults < 1) {
-                        success(metarEntry: nil)
-                    } else {
-                        success(metarEntry: MetarEntry(xmlElem: xmlDoc.root["data"].children[0]))
+        
+        Alamofire.request(server, method: HTTPMethod.get, parameters: queryParams, encoding: URLEncoding.default, headers: [:])
+            .response { (response) in
+                do {
+                    guard let data = response.data else { return }
+                    
+                    let xmlDoc = try AEXMLDocument(xml: data)
+                    if let numResults = Int(xmlDoc.root["data"].attributes["num_results"]!) {
+                        if(numResults < 1) {
+                            success(nil)
+                        } else {
+                            success(MetarEntry(xmlElem: xmlDoc.root["data"].children[0]))
+                        }
                     }
+                } catch {
+                    print("Error retrieving metar for airport \(airportCode). Error \(error)")
+                    failure("Shit")
                 }
-            } catch {
-                print("Error retrieving metar for airport \(airportCode). Error \(error)")
-                failure(error: "Shit")
             }
-        }
     }
 }

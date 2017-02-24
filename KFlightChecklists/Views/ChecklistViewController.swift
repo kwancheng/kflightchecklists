@@ -14,11 +14,11 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
     @IBOutlet var tbFlightTime : UITextField?
     @IBOutlet var btnToggleTimeShown : UIButton?
     
-    private var checklist : Checklist?
-    private var sectionHeaders : [UIView]?
-    private var flightInfo = FlightInfo()
+    fileprivate var checklist : Checklist?
+    fileprivate var sectionHeaders : [UIView]?
+    fileprivate var flightInfo = FlightInfo()
     
-    func setChecklist(checklist : Checklist) {
+    func setChecklist(_ checklist : Checklist) {
 
         self.checklist = checklist
 
@@ -36,7 +36,7 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
 
         self.lbChecklist?.estimatedRowHeight = 44.0
 
-        self.lbChecklist?.registerClass(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        self.lbChecklist?.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
 
                 
 
@@ -48,22 +48,22 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
 
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "checklist_background")!)
 
-        lbChecklist?.backgroundColor = UIColor.clearColor()
+        lbChecklist?.backgroundColor = UIColor.clear
 
     }
 
     
 
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
 
         super.viewDidAppear(animated)
 
         
 
-        let userDefaults = NSUserDefaults.standardUserDefaults()
+        let userDefaults = UserDefaults.standard
 
-        guard let _ = userDefaults.stringForKey("agreed") else {
-            performSegueWithIdentifier("ShowAgreement", sender: self)
+        guard let _ = userDefaults.string(forKey: "agreed") else {
+            performSegue(withIdentifier: "ShowAgreement", sender: self)
             return
         }
     }
@@ -72,7 +72,7 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
 
     // MARK : UITableViewDataSource
 
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    func numberOfSections(in tableView: UITableView) -> Int {
 
         var count = 0
 
@@ -88,7 +88,7 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
 
     
 
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 
         var count = 0
 
@@ -104,7 +104,7 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
 
     
 
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
         var retCell : UITableViewCell? = nil
 
@@ -118,7 +118,7 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
 
                     case .ActionItem :
 
-                        let cell = tableView.dequeueReusableCellWithIdentifier("ActionItemCell") as! ActionItemCell
+                        let cell = tableView.dequeueReusableCell(withIdentifier: "ActionItemCell") as! ActionItemCell
 
                         cell.lblItem?.text = checklistItem.details?[0]
 
@@ -128,7 +128,7 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
 
                     case .Note :
 
-                        let cell = tableView.dequeueReusableCellWithIdentifier("NoteCell") as! NoteCell
+                        let cell = tableView.dequeueReusableCell(withIdentifier: "NoteCell") as! NoteCell
 
                         cell.lblNoteText?.text = checklistItem.details?[0]
 
@@ -136,7 +136,7 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
 
                     case .Caution :
 
-                        let cell = tableView.dequeueReusableCellWithIdentifier("CautionCell") as! CautionCell
+                        let cell = tableView.dequeueReusableCell(withIdentifier: "CautionCell") as! CautionCell
 
                         cell.lblCautionText?.text = checklistItem.details?[0]
 
@@ -146,7 +146,7 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
 
             } else {
 
-                let cell = tableView.dequeueReusableCellWithIdentifier("cell")! as UITableViewCell
+                let cell = tableView.dequeueReusableCell(withIdentifier: "cell")! as UITableViewCell
 
                 cell.textLabel?.text = "Unknown"
 
@@ -156,7 +156,7 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
 
         } else {
 
-            let cell = tableView.dequeueReusableCellWithIdentifier("cell")! as UITableViewCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: "cell")! as UITableViewCell
 
             cell.textLabel?.text = "Unknown"
 
@@ -174,7 +174,7 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
 
         retCell?.selectedBackgroundView = bgView
 
-        retCell?.backgroundColor = UIColor.clearColor()
+        retCell?.backgroundColor = UIColor.clear
 
         
 
@@ -184,13 +184,13 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
 
     
 
-    private var currentIndexPath : NSIndexPath? = nil
+    fileprivate var currentIndexPath : IndexPath? = nil
 
     
 
-    private func advanceIndexPath(indexPath: NSIndexPath) -> NSIndexPath? {
+    fileprivate func advanceIndexPath(_ indexPath: IndexPath) -> IndexPath? {
 
-        var retVal : NSIndexPath? = nil
+        var retVal : IndexPath? = nil
 
         
 
@@ -206,13 +206,13 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
 
                 var endOfChecklist = false
 
-                row++
+                row += 1
 
                 if(row >= rowCount) {
 
                     row = 0
 
-                    section++
+                    section += 1
 
                     if(section >= sectionCount) {
 
@@ -228,7 +228,7 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
 
                 if(!endOfChecklist) {
 
-                    retVal = NSIndexPath(forRow: row, inSection: section)
+                    retVal = IndexPath(row: row, section: section)
 
                 }
 
@@ -244,7 +244,7 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
 
     
 
-    private func executePreAction(checklistItem:ChecklistItem?, completionCallback : CompletionCallback?) {
+    fileprivate func executePreAction(_ checklistItem:ChecklistItem?, completionCallback : CompletionCallback?) {
 
         executeAction(checklistItem?.preAction, checklistItem: checklistItem, completionCallback: completionCallback)
 
@@ -252,7 +252,7 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
 
     
 
-    private func executePostAction(checklistItem:ChecklistItem?, completionCallback : (()->Void)?) {
+    fileprivate func executePostAction(_ checklistItem:ChecklistItem?, completionCallback : (()->Void)?) {
 
         executeAction(checklistItem?.postAction,checklistItem: checklistItem, completionCallback: completionCallback)
 
@@ -260,7 +260,7 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
 
     
 
-    private func executeAction(action : Action?, checklistItem : ChecklistItem?, completionCallback : CompletionCallback?) {
+    fileprivate func executeAction(_ action : Action?, checklistItem : ChecklistItem?, completionCallback : CompletionCallback?) {
 
         if let action = action {
 
@@ -282,7 +282,7 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
 
     
 
-    private func getChecklistItemAt(indexPath: NSIndexPath?) -> ChecklistItem? {
+    fileprivate func getChecklistItemAt(_ indexPath: IndexPath?) -> ChecklistItem? {
 
         return (indexPath == nil) ? nil : self.checklist?.sections?[indexPath!.section].checklistItems?[indexPath!.row]
 
@@ -290,31 +290,31 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
 
     
 
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 
         // NOTE: sender is actually payload
 
-        if let fuelQuantityVC = segue.destinationViewController as? R22FuelTankQuantityViewController {
+        if let fuelQuantityVC = segue.destination as? R22FuelTankQuantityViewController {
 
             fuelQuantityVC.setPayload(sender as! RecordFuelQuantityPayload)
 
-        } else if let flightInfoVC = segue.destinationViewController as? FlightInfoViewController {
+        } else if let flightInfoVC = segue.destination as? FlightInfoViewController {
 
             flightInfoVC.flightInfo = self.flightInfo
 
-        } else if let recordHobbsVC = segue.destinationViewController as? HobbsReadingViewController {
+        } else if let recordHobbsVC = segue.destination as? HobbsReadingViewController {
 
             recordHobbsVC.setPayload(sender as! RecordHobbsMeterReadingPayload)
 
-        } else if let rwcVC = segue.destinationViewController as? RecordWeatherConditionsViewController {
+        } else if let rwcVC = segue.destination as? RecordWeatherConditionsViewController {
 
             rwcVC.setPayload(sender as! RecordWeatherConditionsPayload)
 
-        } else if let stVC = segue.destinationViewController as? TimerViewController {
+        } else if let stVC = segue.destination as? TimerViewController {
 
             stVC.setPayload(sender as! ShowTimerPayload)
 
-        } else if let smvVC = segue.destinationViewController as? MapVneViewController {
+        } else if let smvVC = segue.destination as? MapVneViewController {
 
             smvVC.setPayload(sender as! ShowMapVNEChartsPayload)
 
@@ -326,27 +326,27 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
 
     enum ListItemTransition {
 
-        case SOL  // Start of List
+        case sol  // Start of List
 
-        case DOL  // Dual Wield
+        case dol  // Dual Wield
 
-        case NAV  // Navigation
+        case nav  // Navigation
 
         
 
-        static func getTransition(current : NSIndexPath?, _ next : NSIndexPath) -> ListItemTransition {
+        static func getTransition(_ current : IndexPath?, _ next : IndexPath) -> ListItemTransition {
 
-            var retVal = ListItemTransition.SOL
+            var retVal = ListItemTransition.sol
 
             if let current = current {
 
-                if current.isEqual(next) {
+                if current == next {
 
-                    retVal = ListItemTransition.DOL
+                    retVal = ListItemTransition.dol
 
                 } else {
 
-                    retVal = ListItemTransition.NAV
+                    retVal = ListItemTransition.nav
 
                 }
 
@@ -362,45 +362,45 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
 
     enum ListItemState : Int {
 
-        case START = 0,
+        case start = 0,
 
-        S0 = 1, // Execute Next PreAction Only
+        s0 = 1, // Execute Next PreAction Only
 
-        S1 = 2, // Execute Current PostAction Only
+        s1 = 2, // Execute Current PostAction Only
 
-        S2 = 3, // Just Navigate
+        s2 = 3, // Just Navigate
 
-        S3 = 4, // Execute Current PostAction, Then Next PreAction
+        s3 = 4, // Execute Current PostAction, Then Next PreAction
 
-        ERROR = 5
+        error = 5
 
     }
 
     
 
-    private var currentState = ListItemState.START
+    fileprivate var currentState = ListItemState.start
 
     
 
-    private let transitionTable : [ListItemTransition:[ListItemState]] = [
+    fileprivate let transitionTable : [ListItemTransition:[ListItemState]] = [
 
-        .SOL : [.S0, .ERROR, .ERROR, .ERROR, .ERROR],
+        .sol : [.s0, .error, .error, .error, .error],
 
-        .DOL : [.ERROR, .S1, .S2, .S2, .S1],
+        .dol : [.error, .s1, .s2, .s2, .s1],
 
-        .NAV : [.ERROR, .S3, .S0, .S0, .S3]
+        .nav : [.error, .s3, .s0, .s0, .s3]
 
     ]
 
     
 
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 
         var next = indexPath
 
         if let currentIndexPath = self.currentIndexPath {
 
-            if currentIndexPath.isEqual(indexPath) {
+            if currentIndexPath == indexPath {
 
                 next = advanceIndexPath(indexPath) ?? indexPath
 
@@ -422,7 +422,7 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
 
         let navigationClosure = {() -> Void in
 
-            tableView.selectRowAtIndexPath(next, animated: true, scrollPosition: UITableViewScrollPosition.Middle)
+            tableView.selectRow(at: next, animated: true, scrollPosition: UITableViewScrollPosition.middle)
 
             self.currentIndexPath = next
 
@@ -432,27 +432,27 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
 
         switch currentState {
 
-            case .START :
+            case .start :
 
                 break
 
-            case .S0 :
+            case .s0 :
 
                 let checklistItem = getChecklistItemAt(next)
 
                 executePreAction(checklistItem, completionCallback: navigationClosure)
 
-            case .S1 :
+            case .s1 :
 
                 let checklistItem  = getChecklistItemAt(currentIndexPath)
 
                 executePostAction(checklistItem, completionCallback: navigationClosure)
 
-            case .S2 :
+            case .s2 :
 
                 navigationClosure()
 
-            case .S3 :
+            case .s3 :
 
                 let currentChecklistItem = getChecklistItemAt(currentIndexPath)
 
@@ -464,19 +464,19 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
 
                 })
 
-            case .ERROR :
+            case .error :
 
-                let alert = UIAlertController(title: nil, message: "Error Occurred Restarting", preferredStyle: UIAlertControllerStyle.Alert)
+                let alert = UIAlertController(title: nil, message: "Error Occurred Restarting", preferredStyle: UIAlertControllerStyle.alert)
 
-                alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: { (alertAction) -> Void in
+                alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: { (alertAction) -> Void in
 
-                        self.currentState = .START
+                        self.currentState = .start
 
                         self.currentIndexPath = nil
 
                     }))
 
-                presentViewController(alert, animated: true, completion: nil)
+                present(alert, animated: true, completion: nil)
 
         }
 
@@ -486,13 +486,13 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
 
     // MARK : UITableViewDelegate
 
-    func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
 
         var ret : SectionHeader? = nil
 
     
 
-        if let sectionHeader = NSBundle.mainBundle().loadNibNamed("SectionHeader", owner: self, options: nil)[0] as? SectionHeader {
+        if let sectionHeader = Bundle.main.loadNibNamed("SectionHeader", owner: self, options: nil)?[0] as? SectionHeader {
 
             sectionHeader.lblTitle?.text = checklist?.sections?[section].title
 
@@ -508,7 +508,7 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
 
     
 
-    func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
 
         return 43
 
@@ -516,9 +516,9 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
 
     
 
-    @IBAction func showFlightInfo(sender : AnyObject) {
+    @IBAction func showFlightInfo(_ sender : AnyObject) {
 
-        performSegueWithIdentifier("ShowFlightInfo", sender: self)
+        performSegue(withIdentifier: "ShowFlightInfo", sender: self)
 
     }
 
@@ -526,13 +526,13 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
 
     // MARK : ActionDelegate
 
-    func showMessage(action : Action, onChecklistItem : ChecklistItem?, completionCallback : CompletionCallback?) {
+    func showMessage(_ action : Action, onChecklistItem : ChecklistItem?, completionCallback : CompletionCallback?) {
 
         if let showMessageAction = action as? ShowMessageAction {
 
-            let alertController = UIAlertController(title: nil, message: showMessageAction.message, preferredStyle: UIAlertControllerStyle.Alert)
+            let alertController = UIAlertController(title: nil, message: showMessageAction.message, preferredStyle: UIAlertControllerStyle.alert)
 
-            let defaultAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: { (alertAction) -> Void in
+            let defaultAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: { (alertAction) -> Void in
 
                 if let callback = completionCallback {
 
@@ -546,9 +546,9 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
 
             
 
-            dispatch_async(dispatch_get_main_queue(), {()->Void in
+            DispatchQueue.main.async(execute: {()->Void in
 
-                self.presentViewController(alertController, animated: true, completion: nil)
+                self.present(alertController, animated: true, completion: nil)
 
             })
 
@@ -566,7 +566,7 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
 
     
 
-    func recordFuelQuantity(action : Action, onChecklistItem : ChecklistItem?, completionCallback : CompletionCallback?)
+    func recordFuelQuantity(_ action : Action, onChecklistItem : ChecklistItem?, completionCallback : CompletionCallback?)
 
     {
 
@@ -582,9 +582,9 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
 
         
 
-        dispatch_async(dispatch_get_main_queue(), {()->Void in
+        DispatchQueue.main.async(execute: {()->Void in
 
-            self.performSegueWithIdentifier("ShowFuelQuantityNotepad", sender: payload)
+            self.performSegue(withIdentifier: "ShowFuelQuantityNotepad", sender: payload)
 
         })
 
@@ -592,7 +592,7 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
 
     
 
-    func recordHobbsMeterReading(action : Action, onChecklistItem : ChecklistItem?, completionCallback : CompletionCallback?)
+    func recordHobbsMeterReading(_ action : Action, onChecklistItem : ChecklistItem?, completionCallback : CompletionCallback?)
 
     {
 
@@ -618,9 +618,9 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
 
     
 
-            dispatch_async(dispatch_get_main_queue(), {()->Void in
+            DispatchQueue.main.async(execute: {()->Void in
 
-                self.performSegueWithIdentifier("ShowHobbsReadingNotepad", sender: payload)
+                self.performSegue(withIdentifier: "ShowHobbsReadingNotepad", sender: payload)
 
             })
 
@@ -638,7 +638,7 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
 
     }
 
-    func recordWeatherCondition(action : Action, onChecklistItem : ChecklistItem?, completionCallback : CompletionCallback?)
+    func recordWeatherCondition(_ action : Action, onChecklistItem : ChecklistItem?, completionCallback : CompletionCallback?)
 
     {
 
@@ -664,9 +664,9 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
 
             
 
-            dispatch_async(dispatch_get_main_queue(), {()->Void in
+            DispatchQueue.main.async(execute: {()->Void in
 
-                self.performSegueWithIdentifier("ShowRecordWeatherNotepad", sender: payload)
+                self.performSegue(withIdentifier: "ShowRecordWeatherNotepad", sender: payload)
 
             })
 
@@ -684,9 +684,9 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
 
     
 
-    private var timer = NSTimer()
+    fileprivate var timer = Timer()
 
-    private var showFlightTime = true
+    fileprivate var showFlightTime = true
 
     
 
@@ -702,11 +702,11 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
 
                 if self.showFlightTime {
 
-                    self.showFlightTime(flightStartTime);
+                    self.showFlightTime(flightStartTime as Date);
 
                 }else {
 
-                    self.showRemainingFlightTime(flightStartTime);
+                    self.showRemainingFlightTime(flightStartTime as Date);
 
                 }
 
@@ -722,19 +722,19 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
 
     
 
-    private func showFlightTime(flightStartTime:NSDate) {
+    fileprivate func showFlightTime(_ flightStartTime:Date) {
 
-        let now = NSDate()
+        let now = Date()
 
-        let interval = now.timeIntervalSinceDate(flightStartTime)
+        let interval = now.timeIntervalSince(flightStartTime)
 
         
 
-        let miliseconds = (interval * 10000) % 10000;
+        let miliseconds = (interval * 10000).truncatingRemainder(dividingBy: 10000);
 
-        let seconds = interval % 60
+        let seconds = interval.truncatingRemainder(dividingBy: 60)
 
-        let minutes = (interval / 60) % 60
+        let minutes = (interval / 60).truncatingRemainder(dividingBy: 60)
 
         let hours = (interval / 3600)
 
@@ -750,11 +750,11 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
 
     
 
-    private func showRemainingFlightTime(flightStartTime : NSDate) {
+    fileprivate func showRemainingFlightTime(_ flightStartTime : Date) {
 
-        let now = NSDate()
+        let now = Date()
 
-        let interval = now.timeIntervalSinceDate(flightStartTime)
+        let interval = now.timeIntervalSince(flightStartTime)
 
         
 
@@ -764,11 +764,11 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
 
         
 
-        let miliseconds = (remainingTime * 10000) % 10000;
+        let miliseconds = (remainingTime * 10000).truncatingRemainder(dividingBy: 10000);
 
-        let seconds = remainingTime % 60
+        let seconds = remainingTime.truncatingRemainder(dividingBy: 60)
 
-        let minutes = (remainingTime / 60) % 60
+        let minutes = (remainingTime / 60).truncatingRemainder(dividingBy: 60)
 
         let hours = (remainingTime / 3600)
 
@@ -792,11 +792,11 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
 
         if self.showFlightTime {
 
-            btnToggleTimeShown?.setTitle("Flight Time", forState: UIControlState.Normal)
+            btnToggleTimeShown?.setTitle("Flight Time", for: UIControlState())
 
         } else {
 
-            btnToggleTimeShown?.setTitle("Remaining", forState: UIControlState.Normal)
+            btnToggleTimeShown?.setTitle("Remaining", for: UIControlState())
 
         }
 
@@ -804,13 +804,13 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
 
     
 
-    func startFlightTimer(action : Action, onChecklistItem : ChecklistItem?, completionCallback : CompletionCallback?) {
+    func startFlightTimer(_ action : Action, onChecklistItem : ChecklistItem?, completionCallback : CompletionCallback?) {
 
-        self.flightInfo.flightStartTime = NSDate()
+        self.flightInfo.flightStartTime = Date()
 
         self.flightInfo.flightEndTime = nil
 
-        self.timer = NSTimer.scheduledTimerWithTimeInterval(0.001, target: self, selector: Selector("updateTimer"), userInfo: nil, repeats: true)
+        self.timer = Timer.scheduledTimer(timeInterval: 0.001, target: self, selector: #selector(ChecklistViewController.updateTimer), userInfo: nil, repeats: true)
 
 
 
@@ -818,11 +818,11 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
 
         if self.showFlightTime {
 
-            btnToggleTimeShown?.setTitle("Flight Time", forState: UIControlState.Normal)
+            btnToggleTimeShown?.setTitle("Flight Time", for: UIControlState())
 
         } else {
 
-            btnToggleTimeShown?.setTitle("Remaining", forState: UIControlState.Normal)
+            btnToggleTimeShown?.setTitle("Remaining", for: UIControlState())
 
         }
 
@@ -838,9 +838,9 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
 
     
 
-    func stopFlightTimer(action : Action, onChecklistItem : ChecklistItem?, completionCallback : CompletionCallback?) {
+    func stopFlightTimer(_ action : Action, onChecklistItem : ChecklistItem?, completionCallback : CompletionCallback?) {
 
-        self.flightInfo.flightEndTime = NSDate()
+        self.flightInfo.flightEndTime = Date()
 
         timer.invalidate()
 
@@ -856,7 +856,7 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
 
     
 
-    func showTimer(action : Action, onChecklistItem : ChecklistItem?, completionCallback : CompletionCallback?) {
+    func showTimer(_ action : Action, onChecklistItem : ChecklistItem?, completionCallback : CompletionCallback?) {
 
         if let sta = action as? ShowTimerAction {
 
@@ -870,9 +870,9 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
 
                 completionCallback: completionCallback)
 
-            dispatch_async(dispatch_get_main_queue(), {()->Void in
+            DispatchQueue.main.async(execute: {()->Void in
 
-                self.performSegueWithIdentifier("ShowTimer", sender: payload)
+                self.performSegue(withIdentifier: "ShowTimer", sender: payload)
 
             })
 
@@ -888,7 +888,7 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
 
     }
 
-    func showMapVneActions(action : Action, onChecklistItem : ChecklistItem?, completionCallback : CompletionCallback?) {
+    func showMapVneActions(_ action : Action, onChecklistItem : ChecklistItem?, completionCallback : CompletionCallback?) {
 
         if let _ = action as? ShowMapVNEChartsAction {
             let payload = ShowMapVNEChartsPayload(
@@ -897,8 +897,8 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
                 onChecklistItem?.details?[1],
                 completionCallback: completionCallback)
             
-            dispatch_async(dispatch_get_main_queue(), { () -> Void in
-                self.performSegueWithIdentifier("ShowMapVneCharts", sender: payload)
+            DispatchQueue.main.async(execute: { () -> Void in
+                self.performSegue(withIdentifier: "ShowMapVneCharts", sender: payload)
             })
         } else {
             if let completionCallback = completionCallback {

@@ -11,7 +11,7 @@ import UIKit
 class ChecklistSelectViewController : ViewController, UITableViewDataSource, UITableViewDelegate {
     @IBOutlet var lbChecklists : UITableView?
     
-    private var selectedChecklist : Checklist?
+    fileprivate var selectedChecklist : Checklist?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,11 +19,11 @@ class ChecklistSelectViewController : ViewController, UITableViewDataSource, UIT
         lbChecklists?.delegate = self
         
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "main_background")!)
-        lbChecklists?.backgroundColor = UIColor.clearColor()
+        lbChecklists?.backgroundColor = UIColor.clear
     }
     
     // MARK : UITableViewDataSource
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         var count = 0
         if let tCount = self.checklistPack.checklists?.count {
             count = tCount
@@ -31,24 +31,24 @@ class ChecklistSelectViewController : ViewController, UITableViewDataSource, UIT
         return count
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("cell") as! ChecklistCell
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! ChecklistCell
         
         cell.lblChecklistName?.text = self.checklistPack.checklists?[indexPath.row].title
-        cell.backgroundColor = UIColor.clearColor()
+        cell.backgroundColor = UIColor.clear
         
         return cell
     }
     
     // MARK : UITableViewDelegate
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         selectedChecklist = self.checklistPack.checklists?[indexPath.row]
-        performSegueWithIdentifier("PerformChecklist", sender: self)
+        performSegue(withIdentifier: "PerformChecklist", sender: self)
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "Back", style: UIBarButtonItemStyle.Plain, target: nil, action: nil)
-        let destVC = segue.destinationViewController as! ChecklistViewController
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "Back", style: UIBarButtonItemStyle.plain, target: nil, action: nil)
+        let destVC = segue.destination as! ChecklistViewController
         destVC.setChecklist(selectedChecklist!)
     }
 }

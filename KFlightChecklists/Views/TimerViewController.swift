@@ -8,48 +8,48 @@
 
 import UIKit
 
-public class TimerViewController : NotepadViewController {
+open class TimerViewController : NotepadViewController {
     @IBOutlet var lblTimer : UILabel?
     @IBOutlet var containerView : UIView?
     
-    @IBAction func completed(sender : UIButton) {
+    @IBAction func completed(_ sender : UIButton) {
         timer?.invalidate()
-        dismissViewControllerAnimated(true, completion: payload?.completionCallback)
+        dismiss(animated: true, completion: payload?.completionCallback)
     }
     
-    private var timer : NSTimer?
-    private var payload : ShowTimerPayload?
-    private var duration : Float = 0
+    fileprivate var timer : Timer?
+    fileprivate var payload : ShowTimerPayload?
+    fileprivate var duration : Float = 0
     
-    private var startTime : NSDate?
+    fileprivate var startTime : Date?
     
-    public func setPayload(payload : ShowTimerPayload) {
+    open func setPayload(_ payload : ShowTimerPayload) {
         self.payload = payload
         self.duration = Float(payload.duration!)
     }
     
-    public override func viewDidLoad() {
+    open override func viewDidLoad() {
         super.viewDidLoad()
-        startTime = NSDate()
-        timer = NSTimer.scheduledTimerWithTimeInterval(0.001, target: self, selector: Selector("updateTimer"), userInfo: nil, repeats: true)
+        startTime = Date()
+        timer = Timer.scheduledTimer(timeInterval: 0.001, target: self, selector: #selector(TimerViewController.updateTimer), userInfo: nil, repeats: true)
     }
     
-    public override func viewDidAppear(animated: Bool) {
+    open override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         timer?.fire()
     }
 
-    private var animating = false;
-    private var toRed = false;
+    fileprivate var animating = false;
+    fileprivate var toRed = false;
     
     func animateToRed() {
         
     }
     
     func updateTimer() {
-        let now = NSDate()
+        let now = Date()
 
-        let interval = now.timeIntervalSinceDate(startTime!)
+        let interval = now.timeIntervalSince(startTime!)
 
         let elapsed = self.duration - Float(interval)
 
@@ -59,11 +59,11 @@ public class TimerViewController : NotepadViewController {
 
                 self.animating = true
 
-                UIView.animateWithDuration(NSTimeInterval(0.25), delay: NSTimeInterval(0.0), options: [UIViewAnimationOptions.AllowUserInteraction, UIViewAnimationOptions.CurveEaseInOut], animations: { () -> Void in
+                UIView.animate(withDuration: TimeInterval(0.25), delay: TimeInterval(0.0), options: UIViewAnimationOptions.allowUserInteraction, animations: { () -> Void in
                     if(self.toRed){
-                        self.containerView!.backgroundColor = UIColor.redColor();
+                        self.containerView!.backgroundColor = UIColor.red;
                     }else{
-                        self.containerView!.backgroundColor = UIColor.clearColor()
+                        self.containerView!.backgroundColor = UIColor.clear
                     }
                 }, completion:{(b)->Void in
                         self.toRed = !self.toRed

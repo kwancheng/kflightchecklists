@@ -8,8 +8,8 @@
 
 import Foundation
 
-public class ShowMapVNEChartsPayload : Payload {
-    public var oat : Float = 10
+open class ShowMapVNEChartsPayload : Payload {
+    open var oat : Float = 10
     
     public init(_ oat : Float, _ item:String?, _ action: String?, completionCallback:CompletionCallback?) {
         super.init(item, action, completionCallback)

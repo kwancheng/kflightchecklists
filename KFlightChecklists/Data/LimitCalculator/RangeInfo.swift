@@ -8,12 +8,12 @@
 
 import Foundation
 
-public class RangeInfo {
-    public var count : Int // aka number of columns
-    public var minVal : Int // aka the value of column 0
-    public var maxVal : Int // aka the value of the last column
-    public var stepVal : Int // aka the value between the columns
-    public var normalizeBy : Int // aka if value is negative, bring it to positive
+open class RangeInfo {
+    open var count : Int // aka number of columns
+    open var minVal : Int // aka the value of column 0
+    open var maxVal : Int // aka the value of the last column
+    open var stepVal : Int // aka the value between the columns
+    open var normalizeBy : Int // aka if value is negative, bring it to positive
     
     public init(count:Int, minVal:Int, maxVal:Int, stepVal:Int, normalizeBy:Int) {
         self.count = count

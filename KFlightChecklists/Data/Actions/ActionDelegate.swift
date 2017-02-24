@@ -9,15 +9,15 @@
 import Foundation
 
 public typealias CompletionCallback = (()->Void)
-public typealias SetFuelLevelCallback = (mainTankLevel : Float, auxTankLevel : Float)->Void
+public typealias SetFuelLevelCallback = (_ mainTankLevel : Float, _ auxTankLevel : Float)->Void
 
 public protocol ActionDelegate {
-    func showMessage(action : Action, onChecklistItem : ChecklistItem?, completionCallback : CompletionCallback?)
-    func recordFuelQuantity(action : Action, onChecklistItem : ChecklistItem?, completionCallback : CompletionCallback?)
-    func recordHobbsMeterReading(action : Action, onChecklistItem : ChecklistItem?, completionCallback : CompletionCallback?)
-    func recordWeatherCondition(action : Action, onChecklistItem : ChecklistItem?, completionCallback : CompletionCallback?)
-    func startFlightTimer(action : Action, onChecklistItem : ChecklistItem?, completionCallback : CompletionCallback?)
-    func stopFlightTimer(action : Action, onChecklistItem : ChecklistItem?, completionCallback : CompletionCallback?)
-    func showTimer(action : Action, onChecklistItem : ChecklistItem?, completionCallback : CompletionCallback?)
-    func showMapVneActions(action : Action, onChecklistItem : ChecklistItem?, completionCallback : CompletionCallback?)
+    func showMessage(_ action : Action, onChecklistItem : ChecklistItem?, completionCallback : CompletionCallback?)
+    func recordFuelQuantity(_ action : Action, onChecklistItem : ChecklistItem?, completionCallback : CompletionCallback?)
+    func recordHobbsMeterReading(_ action : Action, onChecklistItem : ChecklistItem?, completionCallback : CompletionCallback?)
+    func recordWeatherCondition(_ action : Action, onChecklistItem : ChecklistItem?, completionCallback : CompletionCallback?)
+    func startFlightTimer(_ action : Action, onChecklistItem : ChecklistItem?, completionCallback : CompletionCallback?)
+    func stopFlightTimer(_ action : Action, onChecklistItem : ChecklistItem?, completionCallback : CompletionCallback?)
+    func showTimer(_ action : Action, onChecklistItem : ChecklistItem?, completionCallback : CompletionCallback?)
+    func showMapVneActions(_ action : Action, onChecklistItem : ChecklistItem?, completionCallback : CompletionCallback?)
 }

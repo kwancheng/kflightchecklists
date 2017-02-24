@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class ShowTimerPayload : Payload {
+open class ShowTimerPayload : Payload {
     var duration : Int?
     
     public init(_ item: String?, _ action: String?,

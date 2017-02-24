@@ -8,45 +8,45 @@
 
 import Foundation
 
-public class FlightInfo {        
-    public let mainTankCapacity : Float = 19.2
-    public let auxTankCapacity : Float = 10.5
-    public let gallonsPerHour : Float = 10
+open class FlightInfo {        
+    open let mainTankCapacity : Float = 19.2
+    open let auxTankCapacity : Float = 10.5
+    open let gallonsPerHour : Float = 10
     
-    public var mainTankLevel : Float = 0
-    public var auxTankLevel : Float = 0
+    open var mainTankLevel : Float = 0
+    open var auxTankLevel : Float = 0
     
-    public var preFlightHobbsReading : Float = 0
-    public var postFlightHobbsReading : Float = 0
+    open var preFlightHobbsReading : Float = 0
+    open var postFlightHobbsReading : Float = 0
     
-    public var barometerReading : Float = 29.95
-    public var windDirection = 180
-    public var windSpeed = 20
-    public var temperature = 10
+    open var barometerReading : Float = 29.95
+    open var windDirection = 180
+    open var windSpeed = 20
+    open var temperature = 10
     
-    public var flightStartTime : NSDate?
-    public var flightEndTime : NSDate?
+    open var flightStartTime : Date?
+    open var flightEndTime : Date?
     
-    public let maxFor5Min = 0.9
+    open let maxFor5Min = 0.9
     
-    public func calcActualMainLevel() -> Float {
+    open func calcActualMainLevel() -> Float {
         return self.mainTankCapacity * self.mainTankLevel
     }
     
-    public func calcActualAuxLevel() -> Float {
+    open func calcActualAuxLevel() -> Float {
         return self.auxTankCapacity * self.auxTankLevel
     }
     
-    public func calcApproximateFlightTime() -> Float {
+    open func calcApproximateFlightTime() -> Float {
         return (self.calcActualMainLevel() + self.calcActualAuxLevel()) / gallonsPerHour
     }
     
-    public func setFuelQuantityCallback( mainTankLevel : Float, auxTankLevel : Float)  {
+    open func setFuelQuantityCallback( _ mainTankLevel : Float, auxTankLevel : Float)  {
         self.mainTankLevel = mainTankLevel
         self.auxTankLevel = auxTankLevel
     }
     
-    public func setHobbsMeterReading(isPreFlight : Bool, _ reading : Float ) {
+    open func setHobbsMeterReading(_ isPreFlight : Bool, _ reading : Float ) {
         if(isPreFlight) {
             self.preFlightHobbsReading = reading
         } else {
@@ -54,7 +54,7 @@ public class FlightInfo {
         }
     }
 
-    public func setWeatherConditions(barometerReading:Float, windDirection: Int, windSpeed : Int, temperature : Int)
+    open func setWeatherConditions(_ barometerReading:Float, windDirection: Int, windSpeed : Int, temperature : Int)
     {
         self.barometerReading = barometerReading
         self.windDirection = windDirection

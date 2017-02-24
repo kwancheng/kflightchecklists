@@ -8,11 +8,11 @@
 
 import Foundation
 
-public class IndexOffSet {
-    public var index : Int
-    public var offset: Int
+open class IndexOffSet {
+    open var index : Int
+    open var offset: Int
     
-    private init(index: Int, offset: Int) {
+    fileprivate init(index: Int, offset: Int) {
         self.index = index
         self.offset = offset
     }
@@ -23,7 +23,7 @@ public class IndexOffSet {
         self.offset = nRange % rangeInfo.stepVal
     }
     
-    public func advanceIndex() -> IndexOffSet {
+    open func advanceIndex() -> IndexOffSet {
         return IndexOffSet(index:self.index+1, offset:self.offset)
     }
 }

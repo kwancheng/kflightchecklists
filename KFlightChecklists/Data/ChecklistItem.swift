@@ -9,13 +9,13 @@
 import Foundation
 import SwiftyJSON
 
-public class ChecklistItem {
-    public var type : ChecklistType?
-    public var actionHasNote:Bool?
-    public var itemHasNote:Bool?
-    public var details : [String]?
-    public var preAction : Action?
-    public var postAction : Action?
+open class ChecklistItem {
+    open var type : ChecklistType?
+    open var actionHasNote:Bool?
+    open var itemHasNote:Bool?
+    open var details : [String]?
+    open var preAction : Action?
+    open var postAction : Action?
     
     public init(_ jsonData : JSON){
         if let typeStr = jsonData["type"].string {

@@ -8,8 +8,8 @@
 
 import UIKit
 
-public class NotepadViewController : UIViewController {
-    public override func viewDidLoad() {
+open class NotepadViewController : UIViewController {
+    open override func viewDidLoad() {
         super.viewDidLoad()
         
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "notepad_background")!)

@@ -9,7 +9,7 @@
 import Foundation
 import SwiftyJSON
 
-public class ShowMapVNEChartsAction : Action {
+open class ShowMapVNEChartsAction : Action {
     public override init(_ jsonData: JSON) {
         super.init(jsonData)
     }

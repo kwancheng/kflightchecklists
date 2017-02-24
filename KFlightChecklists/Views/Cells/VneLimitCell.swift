@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class VneLimitCell : UITableViewCell {
+open class VneLimitCell : UITableViewCell {
     @IBOutlet var lblAltitude : UILabel?
     @IBOutlet var lblVne : UILabel?
 }
