@@ -114,8 +114,6 @@ open class FlightInfoViewController : NotepadViewController {
 
     }
 
-    
-
     fileprivate func updateWeatherConditions() {
 
         tbBarometerReading?.text = String(format:"%.2f", self.flightInfo!.barometerReading)
@@ -129,8 +127,6 @@ open class FlightInfoViewController : NotepadViewController {
         tbWindSpeed?.text = String(format:"%d", self.flightInfo!.windSpeed)
 
     }
-
-    
 
     fileprivate func updateFlightTimes() {
         let dateFormatter = DateFormatter()

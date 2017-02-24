@@ -9,10 +9,10 @@
 import UIKit
 
 open class MapVneViewController : NotepadViewController {
-    @IBOutlet var tbOat : UITextField?
-    @IBOutlet var sldrOat : UISlider?
-    @IBOutlet var mapTable : UITableView?
-    @IBOutlet var vneTable : UITableView?
+    @IBOutlet var tbOat : UITextField!
+    @IBOutlet var sldrOat : UISlider!
+    @IBOutlet var mapTable : UITableView!
+    @IBOutlet var vneTable : UITableView!
     
     fileprivate var manifoldLimitDataSource = ManifoldLimitDataSource()
     fileprivate var vneLimitDataSource = VneLimitDataSource()
@@ -22,12 +22,15 @@ open class MapVneViewController : NotepadViewController {
     
     open override func viewDidLoad() {
         super.viewDidLoad()
-        mapTable?.dataSource = self.manifoldLimitDataSource
+        mapTable.dataSource = self.manifoldLimitDataSource
         manifoldLimitDataSource.oat = 10
-        vneTable?.dataSource = self.vneLimitDataSource
+        vneTable.dataSource = self.vneLimitDataSource
         vneLimitDataSource.oat = 10
-        sldrOat?.setValue(payload!.oat, animated: true)
-        oatChanged(sldrOat!)
+        
+        if let payload = payload {
+            sldrOat.setValue(payload.oat, animated: true)
+        }
+        oatChanged(sldrOat)
     }
     
     open func setPayload(_ payload : ShowMapVNEChartsPayload){

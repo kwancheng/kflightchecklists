@@ -512,8 +512,7 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
 
         return 43
 
-    }
-
+    }    
     
 
     @IBAction func showFlightInfo(_ sender : AnyObject) {
