@@ -14,21 +14,62 @@
 		0F0EE6541B2C925500755FCF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F0EE6521B2C925500755FCF /* LaunchScreen.xib */; };
 		0F0EE6601B2C925500755FCF /* KFlightChecklistsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0EE65F1B2C925500755FCF /* KFlightChecklistsTests.swift */; };
 		0F244DCF1B2D126300081141 /* ChecklistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F244DCE1B2D126300081141 /* ChecklistViewController.swift */; };
+		0F3190811B4226350023216A /* ManifoldLimiteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3190801B4226350023216A /* ManifoldLimiteDataSource.swift */; };
+		0F5EF2011B30CAE000622496 /* R22FuelTankQuantityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5EF2001B30CAE000622496 /* R22FuelTankQuantityViewController.swift */; };
 		0F6D4C1B1B2C93D30002A070 /* ChecklistPack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6D4C1A1B2C93D30002A070 /* ChecklistPack.swift */; };
 		0F6D4C1D1B2C94570002A070 /* Checklist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6D4C1C1B2C94570002A070 /* Checklist.swift */; };
 		0F6D4C1F1B2C94A20002A070 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6D4C1E1B2C94A20002A070 /* Section.swift */; };
 		0F6D4C211B2C94CF0002A070 /* ChecklistItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6D4C201B2C94CF0002A070 /* ChecklistItem.swift */; };
+		0F76A98F1B34A0E20051E61E /* ActionTests.json in Resources */ = {isa = PBXBuildFile; fileRef = 0F76A98E1B34A0E20051E61E /* ActionTests.json */; };
+		0F76A9A01B34A43E0051E61E /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F76A99F1B34A43E0051E61E /* Action.swift */; };
+		0F76A9A21B34A44F0051E61E /* ShowMessageAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F76A9A11B34A44F0051E61E /* ShowMessageAction.swift */; };
+		0F7B186C1B3C21950010E279 /* StartFlightTimerPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7B186B1B3C21950010E279 /* StartFlightTimerPayload.swift */; };
+		0F7B186E1B3C2CE10010E279 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7B186D1B3C2CE10010E279 /* TimerViewController.swift */; };
+		0F820C9D1B3AD6EF00DEC9A4 /* ActionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F820C9C1B3AD6EF00DEC9A4 /* ActionDelegate.swift */; };
+		0F8A4EAD1B4540A10020F9BD /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8A4EAC1B4540A10020F9BD /* LaunchScreen.swift */; };
+		0F8C349E1B3B81A6002E5010 /* RecordWeatherConditionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8C349D1B3B81A6002E5010 /* RecordWeatherConditionsViewController.swift */; };
+		0F9D6B491B76F05B00254934 /* AgreementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9D6B481B76F05B00254934 /* AgreementViewController.swift */; };
+		0FB7F9601B42C1520035AAFC /* ActionItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB7F9591B42C1520035AAFC /* ActionItemCell.swift */; };
+		0FB7F9611B42C1520035AAFC /* CautionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB7F95A1B42C1520035AAFC /* CautionCell.swift */; };
+		0FB7F9621B42C1520035AAFC /* ManifoldLimitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB7F95B1B42C1520035AAFC /* ManifoldLimitCell.swift */; };
+		0FB7F9631B42C1520035AAFC /* NoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB7F95C1B42C1520035AAFC /* NoteCell.swift */; };
+		0FB7F9641B42C1520035AAFC /* SectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB7F95D1B42C1520035AAFC /* SectionHeader.swift */; };
+		0FB7F9651B42C1520035AAFC /* SectionHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FB7F95E1B42C1520035AAFC /* SectionHeader.xib */; };
+		0FB7F9661B42C1520035AAFC /* VneLimitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB7F95F1B42C1520035AAFC /* VneLimitCell.swift */; };
+		0FE88B281B383D9000FD7125 /* Payload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE88B261B383D9000FD7125 /* Payload.swift */; };
+		0FE88B291B383D9000FD7125 /* RecordFuelQuantityPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE88B271B383D9000FD7125 /* RecordFuelQuantityPayload.swift */; };
+		0FE88B2B1B3843F100FD7125 /* RecordHobbsMeterReadingPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE88B2A1B3843F100FD7125 /* RecordHobbsMeterReadingPayload.swift */; };
+		0FEC957E1B44B7050088F7D5 /* ChecklistCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FEC957D1B44B7050088F7D5 /* ChecklistCell.swift */; };
+		0FEC95801B44D88F0088F7D5 /* NotepadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FEC957F1B44D88F0088F7D5 /* NotepadViewController.swift */; };
+		0FF2F3FD1B42C3A10002555C /* ManifoldLimitCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF2F3FB1B42C3A10002555C /* ManifoldLimitCalculator.swift */; };
+		0FF2F3FE1B42C3A10002555C /* VneLimitCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF2F3FC1B42C3A10002555C /* VneLimitCalculator.swift */; };
+		0FF4C6EE1B36EAC600448C55 /* FlightInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF4C6ED1B36EAC600448C55 /* FlightInfo.swift */; };
+		0FF4C6F01B36EE9000448C55 /* FlightInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF4C6EF1B36EE9000448C55 /* FlightInfoViewController.swift */; };
 		0FF75C4C1B2C9C7800960DCA /* ChecklistType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF75C4B1B2C9C7800960DCA /* ChecklistType.swift */; };
 		0FF75C4F1B2CFC1A00960DCA /* Checklists.json in Resources */ = {isa = PBXBuildFile; fileRef = 0FF75C4E1B2CFC1A00960DCA /* Checklists.json */; };
 		0FF75C521B2CFE9300960DCA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF75C511B2CFE9300960DCA /* ViewController.swift */; };
 		0FF75C541B2CFEC900960DCA /* ChecklistSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF75C531B2CFEC900960DCA /* ChecklistSelectViewController.swift */; };
-		4412AED670F347553E974285 /* Pods_KFlightChecklistsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FB17246551392FF59599EF1 /* Pods_KFlightChecklistsTests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		8BAF5D244CE3D96F28065E64 /* Pods_KFlightChecklists.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D05D7D07794644001CDA704 /* Pods_KFlightChecklists.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		BC34F8ED1B2DE756001F60C9 /* ActionItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC34F8EC1B2DE756001F60C9 /* ActionItemCell.swift */; };
-		BC34F8F11B2DEED0001F60C9 /* CautionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC34F8F01B2DEED0001F60C9 /* CautionCell.swift */; };
-		BC34F8F31B2DF0FA001F60C9 /* NoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC34F8F21B2DF0FA001F60C9 /* NoteCell.swift */; };
-		BCCB8D441B2DA3D200EDE9C5 /* SectionHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCCB8D431B2DA3D200EDE9C5 /* SectionHeader.xib */; };
-		BCCB8D461B2DA54600EDE9C5 /* SectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCB8D451B2DA54600EDE9C5 /* SectionHeader.swift */; };
+		0FFB12CE1B41EDCC000E0C03 /* MapVneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFB12CD1B41EDCC000E0C03 /* MapVneViewController.swift */; };
+		6F2102AAF05F5D04377903C1 /* Pods_KFlightChecklists.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ABC11ADF3883F81C30A0962 /* Pods_KFlightChecklists.framework */; };
+		83BADE8082ECADBF3E7F2E52 /* Pods_KFlightChecklists_KFlightChecklistsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E1BC851C6286DC5F9ADE857 /* Pods_KFlightChecklists_KFlightChecklistsTests.framework */; };
+		BC24FA3F1B373C62003D919D /* RecordFuelQuantityAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC24FA3E1B373C62003D919D /* RecordFuelQuantityAction.swift */; };
+		BC24FA411B373C7D003D919D /* RecordHobbsMeterReadingAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC24FA401B373C7D003D919D /* RecordHobbsMeterReadingAction.swift */; };
+		BC24FA451B373EDB003D919D /* StopFlightTimerAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC24FA441B373EDB003D919D /* StopFlightTimerAction.swift */; };
+		BC24FA471B373EF2003D919D /* StartFlightTimerAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC24FA461B373EF2003D919D /* StartFlightTimerAction.swift */; };
+		BC24FA491B37419B003D919D /* ShowTimerAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC24FA481B37419B003D919D /* ShowTimerAction.swift */; };
+		BC24FA4B1B3742F1003D919D /* RecordWeatherConditionAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC24FA4A1B3742F1003D919D /* RecordWeatherConditionAction.swift */; };
+		BC32FADC1B42AEC000721E9A /* VneLimitDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC32FADB1B42AEC000721E9A /* VneLimitDataSource.swift */; };
+		BC6877721B3AB65300CF61E9 /* ShowTimerPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6877711B3AB65300CF61E9 /* ShowTimerPayload.swift */; };
+		BCD4AF9C1BE6BDC900A1603A /* MetarEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD4AF9B1BE6BDC900A1603A /* MetarEntry.swift */; };
+		BCD4AF9E1BE6BE1300A1603A /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD4AF9D1BE6BE1300A1603A /* WeatherService.swift */; };
+		BCE999071B43DF2300A63E8F /* IndexOffset.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE999061B43DF2300A63E8F /* IndexOffset.swift */; };
+		BCE999091B43DF4200A63E8F /* RangeInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE999081B43DF4200A63E8F /* RangeInfo.swift */; };
+		BCE9990B1B43DF5E00A63E8F /* LimitCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE9990A1B43DF5E00A63E8F /* LimitCalculator.swift */; };
+		BCF5D37F1B3BFE680088F914 /* RecordWeatherConditionsPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF5D37E1B3BFE680088F914 /* RecordWeatherConditionsPayload.swift */; };
+		BCF639E41B3962FC00548379 /* ShowMessagePayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF639E31B3962FC00548379 /* ShowMessagePayload.swift */; };
+		BCF639E61B397A9900548379 /* HobbsReadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF639E51B397A9900548379 /* HobbsReadingViewController.swift */; };
+		BCFB4CB51B4A9F6200EA9C1C /* ShowMapVNEChartsAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFB4CB41B4A9F6200EA9C1C /* ShowMapVNEChartsAction.swift */; };
+		BCFB4CB71B4AA10000EA9C1C /* ShowMapVNEChartsPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFB4CB61B4AA10000EA9C1C /* ShowMapVNEChartsPayload.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,8 +82,22 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		0FC3FB001E60EBD2000AF01B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		0F0EE6411B2C925500755FCF /* KFlightChecklists.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KFlightChecklists.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		07D570E4DD08824F4171C9F0 /* Pods-KFlightChecklists-KFlightChecklistsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KFlightChecklists-KFlightChecklistsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KFlightChecklists-KFlightChecklistsTests/Pods-KFlightChecklists-KFlightChecklistsTests.release.xcconfig"; sourceTree = "<group>"; };
+		0F0EE6411B2C925500755FCF /* KF Checklists.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "KF Checklists.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F0EE6451B2C925500755FCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F0EE6461B2C925500755FCF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0F0EE6491B2C925500755FCF /* KFlightChecklists.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = KFlightChecklists.xcdatamodel; sourceTree = "<group>"; };
@@ -53,25 +108,65 @@
 		0F0EE65E1B2C925500755FCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F0EE65F1B2C925500755FCF /* KFlightChecklistsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KFlightChecklistsTests.swift; sourceTree = "<group>"; };
 		0F244DCE1B2D126300081141 /* ChecklistViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChecklistViewController.swift; sourceTree = "<group>"; };
+		0F3190801B4226350023216A /* ManifoldLimiteDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManifoldLimiteDataSource.swift; sourceTree = "<group>"; };
+		0F5EF2001B30CAE000622496 /* R22FuelTankQuantityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R22FuelTankQuantityViewController.swift; sourceTree = "<group>"; };
 		0F6D4C1A1B2C93D30002A070 /* ChecklistPack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChecklistPack.swift; sourceTree = "<group>"; };
 		0F6D4C1C1B2C94570002A070 /* Checklist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Checklist.swift; sourceTree = "<group>"; };
 		0F6D4C1E1B2C94A20002A070 /* Section.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
 		0F6D4C201B2C94CF0002A070 /* ChecklistItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChecklistItem.swift; sourceTree = "<group>"; };
+		0F76A98E1B34A0E20051E61E /* ActionTests.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ActionTests.json; sourceTree = "<group>"; };
+		0F76A99F1B34A43E0051E61E /* Action.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
+		0F76A9A11B34A44F0051E61E /* ShowMessageAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowMessageAction.swift; sourceTree = "<group>"; };
+		0F7B186B1B3C21950010E279 /* StartFlightTimerPayload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartFlightTimerPayload.swift; sourceTree = "<group>"; };
+		0F7B186D1B3C2CE10010E279 /* TimerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
+		0F820C9C1B3AD6EF00DEC9A4 /* ActionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionDelegate.swift; sourceTree = "<group>"; };
+		0F8A4EAC1B4540A10020F9BD /* LaunchScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
+		0F8C349D1B3B81A6002E5010 /* RecordWeatherConditionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordWeatherConditionsViewController.swift; sourceTree = "<group>"; };
+		0F9D6B481B76F05B00254934 /* AgreementViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgreementViewController.swift; sourceTree = "<group>"; };
+		0FB7F9591B42C1520035AAFC /* ActionItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionItemCell.swift; sourceTree = "<group>"; };
+		0FB7F95A1B42C1520035AAFC /* CautionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CautionCell.swift; sourceTree = "<group>"; };
+		0FB7F95B1B42C1520035AAFC /* ManifoldLimitCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManifoldLimitCell.swift; sourceTree = "<group>"; };
+		0FB7F95C1B42C1520035AAFC /* NoteCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteCell.swift; sourceTree = "<group>"; };
+		0FB7F95D1B42C1520035AAFC /* SectionHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionHeader.swift; sourceTree = "<group>"; };
+		0FB7F95E1B42C1520035AAFC /* SectionHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SectionHeader.xib; sourceTree = "<group>"; };
+		0FB7F95F1B42C1520035AAFC /* VneLimitCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VneLimitCell.swift; sourceTree = "<group>"; };
+		0FE88B261B383D9000FD7125 /* Payload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Payload.swift; sourceTree = "<group>"; };
+		0FE88B271B383D9000FD7125 /* RecordFuelQuantityPayload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordFuelQuantityPayload.swift; sourceTree = "<group>"; };
+		0FE88B2A1B3843F100FD7125 /* RecordHobbsMeterReadingPayload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordHobbsMeterReadingPayload.swift; sourceTree = "<group>"; };
+		0FEC957D1B44B7050088F7D5 /* ChecklistCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChecklistCell.swift; sourceTree = "<group>"; };
+		0FEC957F1B44D88F0088F7D5 /* NotepadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotepadViewController.swift; sourceTree = "<group>"; };
+		0FF2F3FB1B42C3A10002555C /* ManifoldLimitCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManifoldLimitCalculator.swift; sourceTree = "<group>"; };
+		0FF2F3FC1B42C3A10002555C /* VneLimitCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VneLimitCalculator.swift; sourceTree = "<group>"; };
+		0FF4C6ED1B36EAC600448C55 /* FlightInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightInfo.swift; sourceTree = "<group>"; };
+		0FF4C6EF1B36EE9000448C55 /* FlightInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightInfoViewController.swift; sourceTree = "<group>"; };
 		0FF75C4B1B2C9C7800960DCA /* ChecklistType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChecklistType.swift; sourceTree = "<group>"; };
 		0FF75C4E1B2CFC1A00960DCA /* Checklists.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Checklists.json; sourceTree = "<group>"; };
 		0FF75C511B2CFE9300960DCA /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0FF75C531B2CFEC900960DCA /* ChecklistSelectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChecklistSelectViewController.swift; sourceTree = "<group>"; };
-		3D05D7D07794644001CDA704 /* Pods_KFlightChecklists.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KFlightChecklists.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3FB17246551392FF59599EF1 /* Pods_KFlightChecklistsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KFlightChecklistsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B09E9EF364C6BB9B1379049E /* Pods-KFlightChecklists.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KFlightChecklists.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KFlightChecklists/Pods-KFlightChecklists.debug.xcconfig"; sourceTree = "<group>"; };
-		B6402079B7E308B249B11FD9 /* Pods-KFlightChecklistsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KFlightChecklistsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KFlightChecklistsTests/Pods-KFlightChecklistsTests.release.xcconfig"; sourceTree = "<group>"; };
-		BC34F8EC1B2DE756001F60C9 /* ActionItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionItemCell.swift; sourceTree = "<group>"; };
-		BC34F8F01B2DEED0001F60C9 /* CautionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CautionCell.swift; sourceTree = "<group>"; };
-		BC34F8F21B2DF0FA001F60C9 /* NoteCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteCell.swift; sourceTree = "<group>"; };
-		BCCB8D431B2DA3D200EDE9C5 /* SectionHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SectionHeader.xib; sourceTree = "<group>"; };
-		BCCB8D451B2DA54600EDE9C5 /* SectionHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionHeader.swift; sourceTree = "<group>"; };
-		C0D28F7ED4A8E56A6DED0010 /* Pods-KFlightChecklists.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KFlightChecklists.release.xcconfig"; path = "Pods/Target Support Files/Pods-KFlightChecklists/Pods-KFlightChecklists.release.xcconfig"; sourceTree = "<group>"; };
-		DED56DAC1BB3ABD52566F21E /* Pods-KFlightChecklistsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KFlightChecklistsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KFlightChecklistsTests/Pods-KFlightChecklistsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		0FFB12CD1B41EDCC000E0C03 /* MapVneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapVneViewController.swift; sourceTree = "<group>"; };
+		229CD3BDAAF6ADB82861F794 /* Pods-KFlightChecklists-KFlightChecklistsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KFlightChecklists-KFlightChecklistsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KFlightChecklists-KFlightChecklistsTests/Pods-KFlightChecklists-KFlightChecklistsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5E1BC851C6286DC5F9ADE857 /* Pods_KFlightChecklists_KFlightChecklistsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KFlightChecklists_KFlightChecklistsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7ABC11ADF3883F81C30A0962 /* Pods_KFlightChecklists.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KFlightChecklists.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC24FA3E1B373C62003D919D /* RecordFuelQuantityAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordFuelQuantityAction.swift; sourceTree = "<group>"; };
+		BC24FA401B373C7D003D919D /* RecordHobbsMeterReadingAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordHobbsMeterReadingAction.swift; sourceTree = "<group>"; };
+		BC24FA441B373EDB003D919D /* StopFlightTimerAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopFlightTimerAction.swift; sourceTree = "<group>"; };
+		BC24FA461B373EF2003D919D /* StartFlightTimerAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartFlightTimerAction.swift; sourceTree = "<group>"; };
+		BC24FA481B37419B003D919D /* ShowTimerAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowTimerAction.swift; sourceTree = "<group>"; };
+		BC24FA4A1B3742F1003D919D /* RecordWeatherConditionAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordWeatherConditionAction.swift; sourceTree = "<group>"; };
+		BC32FADB1B42AEC000721E9A /* VneLimitDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VneLimitDataSource.swift; sourceTree = "<group>"; };
+		BC6877711B3AB65300CF61E9 /* ShowTimerPayload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowTimerPayload.swift; sourceTree = "<group>"; };
+		BCD4AF9B1BE6BDC900A1603A /* MetarEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetarEntry.swift; sourceTree = "<group>"; };
+		BCD4AF9D1BE6BE1300A1603A /* WeatherService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
+		BCE999061B43DF2300A63E8F /* IndexOffset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndexOffset.swift; sourceTree = "<group>"; };
+		BCE999081B43DF4200A63E8F /* RangeInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RangeInfo.swift; sourceTree = "<group>"; };
+		BCE9990A1B43DF5E00A63E8F /* LimitCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LimitCalculator.swift; sourceTree = "<group>"; };
+		BCF5D37E1B3BFE680088F914 /* RecordWeatherConditionsPayload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordWeatherConditionsPayload.swift; sourceTree = "<group>"; };
+		BCF639E31B3962FC00548379 /* ShowMessagePayload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowMessagePayload.swift; sourceTree = "<group>"; };
+		BCF639E51B397A9900548379 /* HobbsReadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HobbsReadingViewController.swift; sourceTree = "<group>"; };
+		BCFB4CB41B4A9F6200EA9C1C /* ShowMapVNEChartsAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowMapVNEChartsAction.swift; sourceTree = "<group>"; };
+		BCFB4CB61B4AA10000EA9C1C /* ShowMapVNEChartsPayload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowMapVNEChartsPayload.swift; sourceTree = "<group>"; };
+		DE35D15B40CF6E1A6CD73DF1 /* Pods-KFlightChecklists.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KFlightChecklists.release.xcconfig"; path = "Pods/Target Support Files/Pods-KFlightChecklists/Pods-KFlightChecklists.release.xcconfig"; sourceTree = "<group>"; };
+		F407C42342B876ED4DFAB83B /* Pods-KFlightChecklists.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KFlightChecklists.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KFlightChecklists/Pods-KFlightChecklists.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +174,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8BAF5D244CE3D96F28065E64 /* Pods_KFlightChecklists.framework in Frameworks */,
+				6F2102AAF05F5D04377903C1 /* Pods_KFlightChecklists.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,7 +182,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4412AED670F347553E974285 /* Pods_KFlightChecklistsTests.framework in Frameworks */,
+				83BADE8082ECADBF3E7F2E52 /* Pods_KFlightChecklists_KFlightChecklistsTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,15 +195,15 @@
 				0F0EE6431B2C925500755FCF /* KFlightChecklists */,
 				0F0EE65C1B2C925500755FCF /* KFlightChecklistsTests */,
 				0F0EE6421B2C925500755FCF /* Products */,
-				5A5E17BE4A1CF182B264ABC0 /* Pods */,
-				B080C416EF7C40932709E0FC /* Frameworks */,
+				370C40F7212516857388A725 /* Frameworks */,
+				AA1303756251FC85579810A5 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
 		0F0EE6421B2C925500755FCF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0F0EE6411B2C925500755FCF /* KFlightChecklists.app */,
+				0F0EE6411B2C925500755FCF /* KF Checklists.app */,
 				0F0EE6591B2C925500755FCF /* KFlightChecklistsTests.xctest */,
 			);
 			name = Products;
@@ -158,6 +253,11 @@
 		0F6D4C191B2C93C40002A070 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				BCD4AF9A1BE6BDBD00A1603A /* WeatherService */,
+				0FF2F3FA1B42C3A10002555C /* LimitCalculator */,
+				0FE88B251B383D9000FD7125 /* Payloads */,
+				0F76A99E1B34A43E0051E61E /* Actions */,
+				0FF4C6ED1B36EAC600448C55 /* FlightInfo.swift */,
 				0F6D4C1A1B2C93D30002A070 /* ChecklistPack.swift */,
 				0F6D4C1C1B2C94570002A070 /* Checklist.swift */,
 				0F6D4C1E1B2C94A20002A070 /* Section.swift */,
@@ -167,9 +267,69 @@
 			path = Data;
 			sourceTree = "<group>";
 		};
+		0F76A99E1B34A43E0051E61E /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				0F820C9C1B3AD6EF00DEC9A4 /* ActionDelegate.swift */,
+				0F76A99F1B34A43E0051E61E /* Action.swift */,
+				0F76A9A11B34A44F0051E61E /* ShowMessageAction.swift */,
+				BC24FA3E1B373C62003D919D /* RecordFuelQuantityAction.swift */,
+				BC24FA401B373C7D003D919D /* RecordHobbsMeterReadingAction.swift */,
+				BC24FA4A1B3742F1003D919D /* RecordWeatherConditionAction.swift */,
+				BC24FA461B373EF2003D919D /* StartFlightTimerAction.swift */,
+				BC24FA441B373EDB003D919D /* StopFlightTimerAction.swift */,
+				BC24FA481B37419B003D919D /* ShowTimerAction.swift */,
+				BCFB4CB41B4A9F6200EA9C1C /* ShowMapVNEChartsAction.swift */,
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		0FB7F9581B42C1520035AAFC /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				0FB7F9591B42C1520035AAFC /* ActionItemCell.swift */,
+				0FB7F95A1B42C1520035AAFC /* CautionCell.swift */,
+				0FB7F95B1B42C1520035AAFC /* ManifoldLimitCell.swift */,
+				0FB7F95C1B42C1520035AAFC /* NoteCell.swift */,
+				0FB7F95D1B42C1520035AAFC /* SectionHeader.swift */,
+				0FB7F95E1B42C1520035AAFC /* SectionHeader.xib */,
+				0FB7F95F1B42C1520035AAFC /* VneLimitCell.swift */,
+				0FEC957D1B44B7050088F7D5 /* ChecklistCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		0FE88B251B383D9000FD7125 /* Payloads */ = {
+			isa = PBXGroup;
+			children = (
+				0FE88B261B383D9000FD7125 /* Payload.swift */,
+				BCF639E31B3962FC00548379 /* ShowMessagePayload.swift */,
+				0FE88B271B383D9000FD7125 /* RecordFuelQuantityPayload.swift */,
+				0FE88B2A1B3843F100FD7125 /* RecordHobbsMeterReadingPayload.swift */,
+				BC6877711B3AB65300CF61E9 /* ShowTimerPayload.swift */,
+				BCF5D37E1B3BFE680088F914 /* RecordWeatherConditionsPayload.swift */,
+				0F7B186B1B3C21950010E279 /* StartFlightTimerPayload.swift */,
+				BCFB4CB61B4AA10000EA9C1C /* ShowMapVNEChartsPayload.swift */,
+			);
+			path = Payloads;
+			sourceTree = "<group>";
+		};
+		0FF2F3FA1B42C3A10002555C /* LimitCalculator */ = {
+			isa = PBXGroup;
+			children = (
+				0FF2F3FB1B42C3A10002555C /* ManifoldLimitCalculator.swift */,
+				0FF2F3FC1B42C3A10002555C /* VneLimitCalculator.swift */,
+				BCE999061B43DF2300A63E8F /* IndexOffset.swift */,
+				BCE999081B43DF4200A63E8F /* RangeInfo.swift */,
+				BCE9990A1B43DF5E00A63E8F /* LimitCalculator.swift */,
+			);
+			path = LimitCalculator;
+			sourceTree = "<group>";
+		};
 		0FF75C4D1B2CFC1A00960DCA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				0F76A98E1B34A0E20051E61E /* ActionTests.json */,
 				0FF75C4E1B2CFC1A00960DCA /* Checklists.json */,
 			);
 			path = Resources;
@@ -178,36 +338,60 @@
 		0FF75C501B2CFE9300960DCA /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0FB7F9581B42C1520035AAFC /* Cells */,
+				0FFB12CF1B41EE35000E0C03 /* TableDataSources */,
 				0FF75C511B2CFE9300960DCA /* ViewController.swift */,
 				0FF75C531B2CFEC900960DCA /* ChecklistSelectViewController.swift */,
 				0F244DCE1B2D126300081141 /* ChecklistViewController.swift */,
-				BCCB8D431B2DA3D200EDE9C5 /* SectionHeader.xib */,
-				BCCB8D451B2DA54600EDE9C5 /* SectionHeader.swift */,
-				BC34F8EC1B2DE756001F60C9 /* ActionItemCell.swift */,
-				BC34F8F01B2DEED0001F60C9 /* CautionCell.swift */,
-				BC34F8F21B2DF0FA001F60C9 /* NoteCell.swift */,
+				0F5EF2001B30CAE000622496 /* R22FuelTankQuantityViewController.swift */,
+				0FF4C6EF1B36EE9000448C55 /* FlightInfoViewController.swift */,
+				BCF639E51B397A9900548379 /* HobbsReadingViewController.swift */,
+				0F8C349D1B3B81A6002E5010 /* RecordWeatherConditionsViewController.swift */,
+				0F7B186D1B3C2CE10010E279 /* TimerViewController.swift */,
+				0FFB12CD1B41EDCC000E0C03 /* MapVneViewController.swift */,
+				0FEC957F1B44D88F0088F7D5 /* NotepadViewController.swift */,
+				0F8A4EAC1B4540A10020F9BD /* LaunchScreen.swift */,
+				0F9D6B481B76F05B00254934 /* AgreementViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		5A5E17BE4A1CF182B264ABC0 /* Pods */ = {
+		0FFB12CF1B41EE35000E0C03 /* TableDataSources */ = {
 			isa = PBXGroup;
 			children = (
-				B09E9EF364C6BB9B1379049E /* Pods-KFlightChecklists.debug.xcconfig */,
-				C0D28F7ED4A8E56A6DED0010 /* Pods-KFlightChecklists.release.xcconfig */,
-				DED56DAC1BB3ABD52566F21E /* Pods-KFlightChecklistsTests.debug.xcconfig */,
-				B6402079B7E308B249B11FD9 /* Pods-KFlightChecklistsTests.release.xcconfig */,
+				0F3190801B4226350023216A /* ManifoldLimiteDataSource.swift */,
+				BC32FADB1B42AEC000721E9A /* VneLimitDataSource.swift */,
+			);
+			path = TableDataSources;
+			sourceTree = "<group>";
+		};
+		370C40F7212516857388A725 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7ABC11ADF3883F81C30A0962 /* Pods_KFlightChecklists.framework */,
+				5E1BC851C6286DC5F9ADE857 /* Pods_KFlightChecklists_KFlightChecklistsTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AA1303756251FC85579810A5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F407C42342B876ED4DFAB83B /* Pods-KFlightChecklists.debug.xcconfig */,
+				DE35D15B40CF6E1A6CD73DF1 /* Pods-KFlightChecklists.release.xcconfig */,
+				229CD3BDAAF6ADB82861F794 /* Pods-KFlightChecklists-KFlightChecklistsTests.debug.xcconfig */,
+				07D570E4DD08824F4171C9F0 /* Pods-KFlightChecklists-KFlightChecklistsTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		B080C416EF7C40932709E0FC /* Frameworks */ = {
+		BCD4AF9A1BE6BDBD00A1603A /* WeatherService */ = {
 			isa = PBXGroup;
 			children = (
-				3D05D7D07794644001CDA704 /* Pods_KFlightChecklists.framework */,
-				3FB17246551392FF59599EF1 /* Pods_KFlightChecklistsTests.framework */,
+				BCD4AF9B1BE6BDC900A1603A /* MetarEntry.swift */,
+				BCD4AF9D1BE6BE1300A1603A /* WeatherService.swift */,
 			);
-			name = Frameworks;
+			path = WeatherService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,12 +401,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0F0EE6631B2C925500755FCF /* Build configuration list for PBXNativeTarget "KFlightChecklists" */;
 			buildPhases = (
-				77F7A979444B61DECB67B4B9 /* Check Pods Manifest.lock */,
+				646C31F4864B9EDF3C69BF71 /* [CP] Check Pods Manifest.lock */,
 				0F0EE63D1B2C925500755FCF /* Sources */,
 				0F0EE63E1B2C925500755FCF /* Frameworks */,
 				0F0EE63F1B2C925500755FCF /* Resources */,
-				1B550C639780C85C96B7459F /* Embed Pods Frameworks */,
-				33AF1B8EF35FCB203F5495F1 /* Copy Pods Resources */,
+				0FC3FB001E60EBD2000AF01B /* Embed Frameworks */,
+				64BEAC573C8A8D0C92247A76 /* [CP] Embed Pods Frameworks */,
+				215BDFF68CA282392781B701 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -230,19 +415,19 @@
 			);
 			name = KFlightChecklists;
 			productName = KFlightChecklists;
-			productReference = 0F0EE6411B2C925500755FCF /* KFlightChecklists.app */;
+			productReference = 0F0EE6411B2C925500755FCF /* KF Checklists.app */;
 			productType = "com.apple.product-type.application";
 		};
 		0F0EE6581B2C925500755FCF /* KFlightChecklistsTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0F0EE6661B2C925500755FCF /* Build configuration list for PBXNativeTarget "KFlightChecklistsTests" */;
 			buildPhases = (
-				2658C810D3C910B602AEFFA8 /* Check Pods Manifest.lock */,
+				1558E106D9273FEC4A7557B2 /* [CP] Check Pods Manifest.lock */,
 				0F0EE6551B2C925500755FCF /* Sources */,
 				0F0EE6561B2C925500755FCF /* Frameworks */,
 				0F0EE6571B2C925500755FCF /* Resources */,
-				1B4BCB9E32907ABDCB7E7CA9 /* Embed Pods Frameworks */,
-				B291FA418C32DEFA566834EB /* Copy Pods Resources */,
+				AB18AC06CFF02BC6E763CD7B /* [CP] Embed Pods Frameworks */,
+				2596053D695BC3F4486AFE5C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -260,14 +445,20 @@
 		0F0EE6391B2C925500755FCF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastSwiftMigration = 0710;
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Acproma llc";
 				TargetAttributes = {
 					0F0EE6401B2C925500755FCF = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = GY744476KY;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
 					};
 					0F0EE6581B2C925500755FCF = {
 						CreatedOnToolsVersion = 6.3.1;
+						LastSwiftMigration = 0820;
 						TestTargetID = 0F0EE6401B2C925500755FCF;
 					};
 				};
@@ -298,9 +489,10 @@
 			files = (
 				0FF75C4F1B2CFC1A00960DCA /* Checklists.json in Resources */,
 				0F0EE64F1B2C925500755FCF /* Main.storyboard in Resources */,
-				BCCB8D441B2DA3D200EDE9C5 /* SectionHeader.xib in Resources */,
+				0FB7F9651B42C1520035AAFC /* SectionHeader.xib in Resources */,
 				0F0EE6541B2C925500755FCF /* LaunchScreen.xib in Resources */,
 				0F0EE6511B2C925500755FCF /* Images.xcassets in Resources */,
+				0F76A98F1B34A0E20051E61E /* ActionTests.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,59 +506,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1B4BCB9E32907ABDCB7E7CA9 /* Embed Pods Frameworks */ = {
+		1558E106D9273FEC4A7557B2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KFlightChecklistsTests/Pods-KFlightChecklistsTests-frameworks.sh\"\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		1B550C639780C85C96B7459F /* Embed Pods Frameworks */ = {
+		215BDFF68CA282392781B701 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KFlightChecklists/Pods-KFlightChecklists-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		2658C810D3C910B602AEFFA8 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		33AF1B8EF35FCB203F5495F1 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -374,34 +536,64 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KFlightChecklists/Pods-KFlightChecklists-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		77F7A979444B61DECB67B4B9 /* Check Pods Manifest.lock */ = {
+		2596053D695BC3F4486AFE5C /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KFlightChecklists-KFlightChecklistsTests/Pods-KFlightChecklists-KFlightChecklistsTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B291FA418C32DEFA566834EB /* Copy Pods Resources */ = {
+		646C31F4864B9EDF3C69BF71 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KFlightChecklistsTests/Pods-KFlightChecklistsTests-resources.sh\"\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		64BEAC573C8A8D0C92247A76 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KFlightChecklists/Pods-KFlightChecklists-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB18AC06CFF02BC6E763CD7B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KFlightChecklists-KFlightChecklistsTests/Pods-KFlightChecklists-KFlightChecklistsTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -411,20 +603,60 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FEC95801B44D88F0088F7D5 /* NotepadViewController.swift in Sources */,
 				0F6D4C1D1B2C94570002A070 /* Checklist.swift in Sources */,
+				BCE999091B43DF4200A63E8F /* RangeInfo.swift in Sources */,
 				0FF75C4C1B2C9C7800960DCA /* ChecklistType.swift in Sources */,
 				0FF75C521B2CFE9300960DCA /* ViewController.swift in Sources */,
+				0FF4C6EE1B36EAC600448C55 /* FlightInfo.swift in Sources */,
 				0F244DCF1B2D126300081141 /* ChecklistViewController.swift in Sources */,
-				BC34F8ED1B2DE756001F60C9 /* ActionItemCell.swift in Sources */,
-				BC34F8F31B2DF0FA001F60C9 /* NoteCell.swift in Sources */,
+				0F8A4EAD1B4540A10020F9BD /* LaunchScreen.swift in Sources */,
 				0F6D4C211B2C94CF0002A070 /* ChecklistItem.swift in Sources */,
+				0F820C9D1B3AD6EF00DEC9A4 /* ActionDelegate.swift in Sources */,
+				0FEC957E1B44B7050088F7D5 /* ChecklistCell.swift in Sources */,
+				0F8C349E1B3B81A6002E5010 /* RecordWeatherConditionsViewController.swift in Sources */,
+				BC24FA4B1B3742F1003D919D /* RecordWeatherConditionAction.swift in Sources */,
+				0F7B186C1B3C21950010E279 /* StartFlightTimerPayload.swift in Sources */,
+				0FB7F9661B42C1520035AAFC /* VneLimitCell.swift in Sources */,
+				BC6877721B3AB65300CF61E9 /* ShowTimerPayload.swift in Sources */,
+				BCF5D37F1B3BFE680088F914 /* RecordWeatherConditionsPayload.swift in Sources */,
 				0F0EE64A1B2C925500755FCF /* KFlightChecklists.xcdatamodeld in Sources */,
+				0F76A9A01B34A43E0051E61E /* Action.swift in Sources */,
 				0F6D4C1F1B2C94A20002A070 /* Section.swift in Sources */,
 				0F0EE6471B2C925500755FCF /* AppDelegate.swift in Sources */,
-				BCCB8D461B2DA54600EDE9C5 /* SectionHeader.swift in Sources */,
+				0F76A9A21B34A44F0051E61E /* ShowMessageAction.swift in Sources */,
+				BC24FA491B37419B003D919D /* ShowTimerAction.swift in Sources */,
+				BCD4AF9C1BE6BDC900A1603A /* MetarEntry.swift in Sources */,
+				BCE999071B43DF2300A63E8F /* IndexOffset.swift in Sources */,
+				0F5EF2011B30CAE000622496 /* R22FuelTankQuantityViewController.swift in Sources */,
+				0FF4C6F01B36EE9000448C55 /* FlightInfoViewController.swift in Sources */,
+				0FE88B291B383D9000FD7125 /* RecordFuelQuantityPayload.swift in Sources */,
+				BCD4AF9E1BE6BE1300A1603A /* WeatherService.swift in Sources */,
 				0F6D4C1B1B2C93D30002A070 /* ChecklistPack.swift in Sources */,
-				BC34F8F11B2DEED0001F60C9 /* CautionCell.swift in Sources */,
+				0F3190811B4226350023216A /* ManifoldLimiteDataSource.swift in Sources */,
+				BC24FA3F1B373C62003D919D /* RecordFuelQuantityAction.swift in Sources */,
+				0FE88B281B383D9000FD7125 /* Payload.swift in Sources */,
+				0F7B186E1B3C2CE10010E279 /* TimerViewController.swift in Sources */,
+				BC24FA471B373EF2003D919D /* StartFlightTimerAction.swift in Sources */,
+				0FF2F3FE1B42C3A10002555C /* VneLimitCalculator.swift in Sources */,
+				BC24FA451B373EDB003D919D /* StopFlightTimerAction.swift in Sources */,
+				BCF639E41B3962FC00548379 /* ShowMessagePayload.swift in Sources */,
+				0FFB12CE1B41EDCC000E0C03 /* MapVneViewController.swift in Sources */,
+				0FE88B2B1B3843F100FD7125 /* RecordHobbsMeterReadingPayload.swift in Sources */,
+				BCFB4CB71B4AA10000EA9C1C /* ShowMapVNEChartsPayload.swift in Sources */,
+				0F9D6B491B76F05B00254934 /* AgreementViewController.swift in Sources */,
 				0FF75C541B2CFEC900960DCA /* ChecklistSelectViewController.swift in Sources */,
+				BC32FADC1B42AEC000721E9A /* VneLimitDataSource.swift in Sources */,
+				0FB7F9631B42C1520035AAFC /* NoteCell.swift in Sources */,
+				0FB7F9621B42C1520035AAFC /* ManifoldLimitCell.swift in Sources */,
+				BCF639E61B397A9900548379 /* HobbsReadingViewController.swift in Sources */,
+				0FB7F9641B42C1520035AAFC /* SectionHeader.swift in Sources */,
+				BCE9990B1B43DF5E00A63E8F /* LimitCalculator.swift in Sources */,
+				0FB7F9601B42C1520035AAFC /* ActionItemCell.swift in Sources */,
+				BCFB4CB51B4A9F6200EA9C1C /* ShowMapVNEChartsAction.swift in Sources */,
+				0FB7F9611B42C1520035AAFC /* CautionCell.swift in Sources */,
+				BC24FA411B373C7D003D919D /* RecordHobbsMeterReadingAction.swift in Sources */,
+				0FF2F3FD1B42C3A10002555C /* ManifoldLimitCalculator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -479,14 +711,17 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -502,7 +737,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -524,8 +759,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -541,9 +778,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -551,29 +789,43 @@
 		};
 		0F0EE6641B2C925500755FCF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B09E9EF364C6BB9B1379049E /* Pods-KFlightChecklists.debug.xcconfig */;
+			baseConfigurationReference = F407C42342B876ED4DFAB83B /* Pods-KFlightChecklists.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Yu Kwan Cheng (9SZFZ2ARAL)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = GY744476KY;
 				INFOPLIST_FILE = KFlightChecklists/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ghengiskwan.KFChecklists;
+				PRODUCT_NAME = "KF Checklists";
+				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
 		0F0EE6651B2C925500755FCF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C0D28F7ED4A8E56A6DED0010 /* Pods-KFlightChecklists.release.xcconfig */;
+			baseConfigurationReference = DE35D15B40CF6E1A6CD73DF1 /* Pods-KFlightChecklists.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Yu Kwan Cheng (9SZFZ2ARAL)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = GY744476KY;
 				INFOPLIST_FILE = KFlightChecklists/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ghengiskwan.KFChecklists;
+				PRODUCT_NAME = "KF Checklists";
+				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
 		0F0EE6671B2C925500755FCF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DED56DAC1BB3ABD52566F21E /* Pods-KFlightChecklistsTests.debug.xcconfig */;
+			baseConfigurationReference = 229CD3BDAAF6ADB82861F794 /* Pods-KFlightChecklists-KFlightChecklistsTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -586,14 +838,16 @@
 				);
 				INFOPLIST_FILE = KFlightChecklistsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.acproma.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KFlightChecklists.app/KFlightChecklists";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KF Checklists.app/KF Checklists";
 			};
 			name = Debug;
 		};
 		0F0EE6681B2C925500755FCF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B6402079B7E308B249B11FD9 /* Pods-KFlightChecklistsTests.release.xcconfig */;
+			baseConfigurationReference = 07D570E4DD08824F4171C9F0 /* Pods-KFlightChecklists-KFlightChecklistsTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -602,8 +856,10 @@
 				);
 				INFOPLIST_FILE = KFlightChecklistsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.acproma.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KFlightChecklists.app/KFlightChecklists";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KF Checklists.app/KF Checklists";
 			};
 			name = Release;
 		};

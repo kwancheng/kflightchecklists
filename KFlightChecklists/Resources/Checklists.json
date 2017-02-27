@@ -1,1 +1,3650 @@
-{"title":"Robinson R22 Beta II","checklists":[{"title":"R22 POH 0315","sections":[{"title":"Cowl Door","checklist_items":[{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Master Switch","On"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Oil Pressure and Alternator Lights","On"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Warning Light Test Switches","Push to Test"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Fuel Quantity","Check Gauges"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Master Switch","Off"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Aux Fuel Tank Quantity","Check"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Fuel Filler Cap","Tight"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Aux Fuel Tank","No Leaks"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Fuel Lines","No Leaks"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Fuel Tank Sump Drain(s)","Sample"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Gearbox Oil","Full, No Leaks"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Rotor Brake","Actuation Normal"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Flex Coupling","No Cracks, Nuts Tight"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Yoke Flanges","No Cracks"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Gearbox Telatemp","Normal"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Sprag Clutch","No Leaks"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Static Source","Clear"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Control Rod Ends","Free Without Looseness"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Steel Tube Frame","No Cracks"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["All Fasteners","Tight"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Tail Rotor Control","No Interference"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Cowl Door","Latched"]}]},{"title":"Engine Right Side","checklist_items":[{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Carb Air Ducts","Secure"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Carb Heat Scoop","Secure"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Engine Sheet Metal","No Cracks"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Electrical Terminals","Tight"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Fuel Line","No Leaks"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Oil Cooler Door","Check"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Oil Lines","No Leaks of Chafing"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Exhaust System","No Cracks"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Engine General Condition","Check"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["V-Belt Condition","Check"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["V-Belt Slack","Check"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Sprag Clutch","No Leaks"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Upper Bearing","No Leaks"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Telatemp - Upper Bearing","Normal"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Lower Sheave Groove Wear","Smooth and Uniform"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Flex Coupling","No Cracks, Nuts Tight"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Yoke Flanges","No Cracks"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Steel Tube Frame","No Cracks"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Tail Rotor Control","No Interference"]}]},{"title":"Engine Rear","checklist_items":[{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Cooling Fan Nut","Pin in Line with Marks"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Cooling Fan","No Cracks"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Fan Scroll","No Cracks"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Telatemps - Lower Bearing","Normal"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Lower Bearing","No Leaks"]}]},{"title":"Empennage","checklist_items":[{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Tail Surfaces","No Cracks"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Fasteners","Tight"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Position Light","Check"]}]},{"title":"Tail Rotor","checklist_items":[{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Gearbox Telatemp","Normal"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Gearbox","Oil visible, no Leaks"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Blades","Clean and No Damage / Cracks"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Pitch Links","No Looseness"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Teeter Bearings","Check Condition"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Teeter Bearing Bolt","Does not Rotate"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Control Bellcrank","Free without Looseness"]}]},{"title":"Tailcone","checklist_items":[{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Rivets","Tight"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Skins","No Cracks or Dents"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Strobe Light Condition","Check"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Antenna","Check"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Attachment Bolts","Tight"]}]},{"title":"Engine Left Side","checklist_items":[{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Engine Oil","4 to 6 Quarts"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Oil Filter (if installed)","Secure, No Leaks"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Fuel Lines","No Leaks"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Gascolator Drain","Sample"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Throttle Linkage","Operable"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Battery and Relay (If Located There)","Secure"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Alternator Belt Tension","Check"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Steel Tube Frame","No Cracks"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Engine Sheet Metal","No Cracks"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Exhaust System","No Cracks"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Engine General Condition","Check"]}]},{"title":"Main Fuel Tank","checklist_items":[{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Quantity","Check"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Filler Cap","Tight"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Leakage","None"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Sump Drain (Non-Bladder Tank)","Sample"]}]},{"title":"Main Rotor","checklist_items":[{"type":"CAUTION","action_has_note":false,"item_has_note":false,"details":["Do not pull rotor blades down as damage may occur.  To lower one blade, push opposite blade up."]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Blades","Clean and No Damage / Cracks"]},{"type":"CAUTION","action_has_note":false,"item_has_note":false,"details":["Verify erosion on lower surface of blades has not exposed skin-to-spar bond line.  Reference Rotor Systems Description in Section 7."]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Pitch Change Boots","No Leaks"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Main Hinge Bolts","Free Without Looseness"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Pitch Link Jam Nuts","Tight"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Pitch Link Safety Wire","Secure"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["All Fasteners","Tight"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Swashplate Scissors","No Excessive Looseness"]}]},{"title":"Fuselage Left Side","checklist_items":[{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Baggage Compartment","Check"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Removable Controls","Secure if Installed"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Collective Control","Clear"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Seat Belt","Check Condition and Fastened"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Door","Unlocked and Latched"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Door Hinge Safety Pins","Installed"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Landing Gear","Check"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Ground Handling Wheel","Removed"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Position Light","Check"]}]},{"title":"Nose Section","checklist_items":[{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Pitot Tube","Clear"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Windshield Condition and Cleanliness","Check"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Fresh Air Vent","Clear"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Landing Lights","Check"]}]},{"title":"Fuselage Right Side","checklist_items":[{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Landing Gear","Check"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Ground Handling Wheel","Removed"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Position Light","Check"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Door Hinge Safety Pins","Installed"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Baggage Compartment","Check"]}]},{"title":"Cabin Interior","checklist_items":[{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Loose Articles","Removed or Stowed"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Seat Belt","Check Condition"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Instruments, Switches and Controls","Check Condition"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Clock","Functioning"]},{"type":"CAUTION","action_has_note":false,"item_has_note":false,"details":["For helicopters with removable controls, remove left seat controls if person in that seat is not a rated helicopter pilot."]},{"type":"CAUTION","action_has_note":false,"item_has_note":false,"details":["Be sure rotor blades are approximately level to avoid possible tailcone strike."]},{"type":"CAUTION","action_has_note":false,"item_has_note":false,"details":["When flying solo, fill left baggage compartment to capacity before using right compartment.  Avoid placing objects in compartments which could injure occupant if seat collapses during a hard landing."]},{"type":"CAUTION","action_has_note":false,"item_has_note":false,"details":["Shorter pilots may require cushion to obtain full travel of all controls.  Verify aft cyclic travel is not restricted."]}]},{"title":"Before Starting Engine","checklist_items":[{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Seat Belts","Fastened"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Fuel Shut-Off Valve","On"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Cyclic / Collective Friction","Off"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Cyclic, Collective, Pedals","Full Travel Free"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Throttle","Full Travel Free"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Collective","Full Down, Friction On"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Cyclic","Neutral, Friction On"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Pedals","Neutral"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Rotor Brake","Disengaged"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Circuit Breakers","In"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Carb Heat","Off"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Mixture","Full Rich"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":true,"details":["Mixture Guard","Installed","Mixture guard is not used on aircraft with vernier mixture control on console face."]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Primer (If Installed)","Down and Locked"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Landing Lights","Off"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Avionics Switch (If Installed)","Off"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Clutch","Disengaged"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Altimeter","Set"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Governor Switch","On"]}]},{"title":"Starting Engine and Run-Up","checklist_items":[{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Throttle Twists for Priming","As Required"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Throttle","Closed"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Battery, Strobe Switches","On"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Area","Clear"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Ignition Switch","Start, then Both"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Starter-On Light","Out"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Set Engine RPM","50 to 60%"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Clutch Switch","Engaged"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Blades Turning","Less than 5 seconds"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Alternator Switch","On"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Oil Pressure Within 30 Seconds","25 PSI Minimum"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Avionics, Headsets","On"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Wait for Clutch Light Out","Circuit Breakers In"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Warm-up RPM","70 to 75%"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Engine Gages","Green"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Mag Drop at 75% RPM","7% max in 2 seconds"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Carb Heat","CAT Rise / Drop, Set as Required"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Sprag Clutch Check","Needles Split"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Doors","Closed and Latched"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Limit MAP Chart","Check"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Cyclic / Collective Friction","Off"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Governor On, Increase Throttle","RPM 102 - 104%"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Warning Lights","Out"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Lift Collective Slightly, Reduce RPM","Horn / Light at 97%"]},{"type":"CAUTION","action_has_note":false,"item_has_note":false,"details":["Avoid continuous operation at rotor speed of 60 to 70% to minimize tail resonance."]},{"type":"CAUTION","action_has_note":false,"item_has_note":false,"details":["On slippery surfaces, be prepared to counter nose-right rotation with left pedal as governor increases RPM."]},{"type":"NOTE","action_has_note":false,"item_has_note":false,"details":["Before takeoff, pilot should uncover one ear and listen for any unusual noise which may indicate impending failure of a bearing or other component."]}]},{"title":"Takeoff Procedure","checklist_items":[{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Verify Doors","Latched"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Governor","On"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["RPM Stabilized","102 to 104%"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Area","Clear"]},{"type":"NOTE","action_has_note":false,"item_has_note":false,"details":["Slowly raise collective until aircraft is light on skids.  Reposition cyclic as required for equilibrium, then gently lift aircraft into hover."]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Check Gauges","Green"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Adjust Carb Heat","If Required (Out of Yellow)"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Lower Nose","And Accelerate to Climb Speed (per H/V Diagram)"]},{"type":"CAUTION","action_has_note":false,"item_has_note":false,"details":["If RPM drops below 102%, lower collective."]}]},{"title":"Cruise","checklist_items":[{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Carb Heat","Adjust if Required"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["RPM","Top of Green Arc"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Manifold Pressure","Set with Collective for Desired Power"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Right Trim Knob","Pull"]},{"type":"ITEM_ACTION","action_has_note":false,"item_has_note":false,"details":["Gauges","Verify in the Green"]},{"type":"CAUTION","action_has_note":false,"item_has_note":false,"details":["Exercise extreme care never to inadvertently pull mixture control as engine stoppage will result."]},{"type":"CAUTION","action_has_note":false,"item_has_note":false,"details":["In-flight leaning with engine mixture control is not recommended.  Engine stoppage may result as there is no propeller to keep engine turning should over leaning occur."]}]}]}]}
+{
+    "title": "R22 Robinson Beta II",
+    "checklists": [
+        {
+            "title": "R22 POH 03/15",
+            "sections": [
+                {
+                    "title": "Cowl Door",
+                    "checklist_items": [
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Master Switch",
+                                "On"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Oil Pressure and Alternator Lights",
+                                "On"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Warning Light Test Switches",
+                                "Push to Test"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Fuel Quantity",
+                                "Check Gauges"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Master Switch",
+                                "Off"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Fuel Filler Cap",
+                                "Tight"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Aux Fuel Tank",
+                                "No Leaks"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Fuel Lines",
+                                "No Leaks"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Fuel Tank Sump Drain(s)",
+                                "Sample"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Gearbox Oil",
+                                "Full, No Leaks"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Rotor Brake",
+                                "Actuation Normal"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Flex Coupling",
+                                "No Cracks, Nuts Tight"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Yoke Flanges",
+                                "No Cracks"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Gearbox Telatemp",
+                                "Normal"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Sprag Clutch",
+                                "No Leaks"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Static Source",
+                                "Clear"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Control Rod Ends",
+                                "Free Without Looseness"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Steel Tube Frame",
+                                "No Cracks"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "All Fasteners",
+                                "Tight"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Tail Rotor Control",
+                                "No Interference"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Cowl Door",
+                                "Latched"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Engine Right Side",
+                    "checklist_items": [
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Carb Air Ducts",
+                                "Secure"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Carb Heat Scoop",
+                                "Secure"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Engine Sheet Metal",
+                                "No Cracks"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Electrical Terminals",
+                                "Tight"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Fuel Line",
+                                "No Leaks"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Oil Cooler Door",
+                                "Check"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Oil Lines",
+                                "No Leaks of Chafing"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Exhaust System",
+                                "No Cracks"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Engine General Condition",
+                                "Check"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "V-Belt Condition",
+                                "Check"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "V-Belt Slack",
+                                "Check"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Sprag Clutch",
+                                "No Leaks"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Upper Bearing",
+                                "No Leaks"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Telatemp - Upper Bearing",
+                                "Normal"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Lower Sheave Groove Wear",
+                                "Smooth and Uniform"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Flex Coupling",
+                                "No Cracks, Nuts Tight"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Yoke Flanges",
+                                "No Cracks"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Steel Tube Frame",
+                                "No Cracks"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Tail Rotor Control",
+                                "No Interference"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Engine Rear",
+                    "checklist_items": [
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Cooling Fan Nut",
+                                "Pin in Line with Marks"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Cooling Fan",
+                                "No Cracks"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Fan Scroll",
+                                "No Cracks"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Telatemps - Lower Bearing",
+                                "Normal"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Lower Bearing",
+                                "No Leaks"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Empennage",
+                    "checklist_items": [
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Tail Surfaces",
+                                "No Cracks"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Fasteners",
+                                "Tight"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Position Light",
+                                "Check"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Tail Rotor",
+                    "checklist_items": [
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Gearbox Telatemp",
+                                "Normal"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Gearbox",
+                                "Oil visible, no Leaks"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Blades",
+                                "Clean and No Damage / Cracks"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Pitch Links",
+                                "No Looseness"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Teeter Bearings",
+                                "Check Condition"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Teeter Bearing Bolt",
+                                "Does not Rotate"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Control Bellcrank",
+                                "Free without Looseness"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Tailcone",
+                    "checklist_items": [
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Rivets",
+                                "Tight"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Skins",
+                                "No Cracks or Dents"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Strobe Light Condition",
+                                "Check"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Antenna",
+                                "Check"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Attachment Bolts",
+                                "Tight"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Engine Left Side",
+                    "checklist_items": [
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Engine Oil",
+                                "4 to 6 Quarts"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Oil Filter (if installed)",
+                                "Secure, No Leaks"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Fuel Lines",
+                                "No Leaks"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Gascolator Drain",
+                                "Sample"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Throttle Linkage",
+                                "Operable"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Battery and Relay (If Located There)",
+                                "Secure"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Alternator Belt Tension",
+                                "Check"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Steel Tube Frame",
+                                "No Cracks"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Engine Sheet Metal",
+                                "No Cracks"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Exhaust System",
+                                "No Cracks"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Engine General Condition",
+                                "Check"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Main Fuel Tank",
+                    "checklist_items": [
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Quantity",
+                                "Check"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Filler Cap",
+                                "Tight"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Leakage",
+                                "None"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Sump Drain (Non-Bladder Tank)",
+                                "Sample"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Main Rotor",
+                    "checklist_items": [
+                        {
+                            "type": "CAUTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Do not pull rotor blades down as damage may occur.  To lower one blade, push opposite blade up."
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Blades",
+                                "Clean and No Damage / Cracks"
+                            ]
+                        },
+                        {
+                            "type": "CAUTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Verify erosion on lower surface of blades has not exposed skin-to-spar bond line.  Reference Rotor Systems Description in Section 7."
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Pitch Change Boots",
+                                "No Leaks"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Main Hinge Bolts",
+                                "Free Without Looseness"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Pitch Link Jam Nuts",
+                                "Tight"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Pitch Link Safety Wire",
+                                "Secure"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "All Fasteners",
+                                "Tight"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Swashplate Scissors",
+                                "No Excessive Looseness"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Fuselage Left Side",
+                    "checklist_items": [
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Baggage Compartment",
+                                "Check"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Removable Controls",
+                                "Secure if Installed"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Collective Control",
+                                "Clear"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Seat Belt",
+                                "Check Condition and Fastened"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Door",
+                                "Unlocked and Latched"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Door Hinge Safety Pins",
+                                "Installed"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Landing Gear",
+                                "Check"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Ground Handling Wheel",
+                                "Removed"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Position Light",
+                                "Check"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Nose Section",
+                    "checklist_items": [
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Pitot Tube",
+                                "Clear"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Windshield Condition and Cleanliness",
+                                "Check"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Fresh Air Vent",
+                                "Clear"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Landing Lights",
+                                "Check"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Fuselage Right Side",
+                    "checklist_items": [
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Landing Gear",
+                                "Check"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Ground Handling Wheel",
+                                "Removed"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Position Light",
+                                "Check"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Door Hinge Safety Pins",
+                                "Installed"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Baggage Compartment",
+                                "Check"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Cabin Interior",
+                    "checklist_items": [
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Loose Articles",
+                                "Removed or Stowed"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Seat Belt",
+                                "Check Condition"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Instruments, Switches and Controls",
+                                "Check Condition"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Clock",
+                                "Functioning"
+                            ]
+                        },
+                        {
+                            "type": "CAUTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "For helicopters with removable controls, remove left seat controls if person in that seat is not a rated helicopter pilot."
+                            ]
+                        },
+                        {
+                            "type": "CAUTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Be sure rotor blades are approximately level to avoid possible tailcone strike."
+                            ]
+                        },
+                        {
+                            "type": "CAUTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "When flying solo, fill left baggage compartment to capacity before using right compartment.  Avoid placing objects in compartments which could injure occupant if seat collapses during a hard landing."
+                            ]
+                        },
+                        {
+                            "type": "CAUTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Shorter pilots may require cushion to obtain full travel of all controls.  Verify aft cyclic travel is not restricted."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Before Starting Engine",
+                    "checklist_items": [
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Seat Belts",
+                                "Fastened"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Fuel Shut-Off Valve",
+                                "On"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Cyclic / Collective Friction",
+                                "Off"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Cyclic, Collective, Pedals",
+                                "Full Travel Free"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Throttle",
+                                "Full Travel Free"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Collective",
+                                "Full Down, Friction On"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Cyclic",
+                                "Neutral, Friction On"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Pedals",
+                                "Neutral"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Rotor Brake",
+                                "Disengaged"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Circuit Breakers",
+                                "In"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Carb Heat",
+                                "Off"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Mixture",
+                                "Full Rich"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": true,
+                            "details": [
+                                "Mixture Guard",
+                                "Installed",
+                                "Mixture guard is not used on aircraft with vernier mixture control on console face."
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Primer (If Installed)",
+                                "Down and Locked"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Landing Lights",
+                                "Off"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Avionics Switch (If Installed)",
+                                "Off"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Clutch",
+                                "Disengaged"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Altimeter",
+                                "Set"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Governor Switch",
+                                "On"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Starting Engine and Run-Up",
+                    "checklist_items": [
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Throttle Twists for Priming",
+                                "As Required"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Throttle",
+                                "Closed"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Battery, Strobe Switches",
+                                "On"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Area",
+                                "Clear"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Ignition Switch",
+                                "Start, then Both"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Starter-On Light",
+                                "Out"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Set Engine RPM",
+                                "50 to 60%"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Clutch Switch",
+                                "Engaged"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Blades Turning",
+                                "Less than 5 seconds"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Alternator Switch",
+                                "On"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Oil Pressure Within 30 Seconds",
+                                "25 PSI Minimum"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Avionics, Headsets",
+                                "On"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Wait for Clutch Light Out",
+                                "Circuit Breakers In"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Warm-up RPM",
+                                "70 to 75%"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Engine Gages",
+                                "Green"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Mag Drop at 75% RPM",
+                                "7% max in 2 seconds"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Carb Heat",
+                                "CAT Rise / Drop, Set as Required"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Sprag Clutch Check",
+                                "Needles Split"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Doors",
+                                "Closed and Latched"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Limit MAP Chart",
+                                "Check"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Cyclic / Collective Friction",
+                                "Off"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Governor On, Increase Throttle",
+                                "RPM 102 - 104%"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Warning Lights",
+                                "Out"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Lift Collective Slightly, Reduce RPM",
+                                "Horn / Light at 97%"
+                            ]
+                        },
+                        {
+                            "type": "CAUTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Avoid continuous operation at rotor speed of 60 to 70% to minimize tail resonance."
+                            ]
+                        },
+                        {
+                            "type": "CAUTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "On slippery surfaces, be prepared to counter nose-right rotation with left pedal as governor increases RPM."
+                            ]
+                        },
+                        {
+                            "type": "NOTE",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Before takeoff, pilot should uncover one ear and listen for any unusual noise which may indicate impending failure of a bearing or other component."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Takeoff Procedure",
+                    "checklist_items": [
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Verify Doors",
+                                "Latched"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Governor",
+                                "On"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "RPM Stabilized",
+                                "102 to 104%"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Area",
+                                "Clear"
+                            ]
+                        },
+                        {
+                            "type": "NOTE",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Slowly raise collective until aircraft is light on skids.  Reposition cyclic as required for equilibrium, then gently lift aircraft into hover."
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Check Gauges",
+                                "Green"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Adjust Carb Heat",
+                                "If Required (Out of Yellow)"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Lower Nose",
+                                "And Accelerate to Climb Speed (per H/V Diagram)"
+                            ]
+                        },
+                        {
+                            "type": "CAUTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "If RPM drops below 102%, lower collective."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Cruise",
+                    "checklist_items": [
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Carb Heat",
+                                "Adjust if Required"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "RPM",
+                                "Top of Green Arc"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Manifold Pressure",
+                                "Set with Collective for Desired Power"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Right Trim Knob",
+                                "Pull"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Gauges",
+                                "Verify in the Green"
+                            ]
+                        },
+                        {
+                            "type": "CAUTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Exercise extreme care never to inadvertently pull mixture control as engine stoppage will result."
+                            ]
+                        },
+                        {
+                            "type": "CAUTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "In-flight leaning with engine mixture control is not recommended.  Engine stoppage may result as there is no propeller to keep engine turning should over leaning occur."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Shutdown Procedure",
+                    "checklist_items": [
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Collective Down, RPM 70 - 75%",
+                                "Friction On"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Cyclic and Pedals Neutral",
+                                "Friction On"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "CHT Drop",
+                                "Throttle Closed"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Clutch Switch",
+                                "Disengage"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Wait 30 Seconds",
+                                "Mixture Off"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Mixture Guard",
+                                "Back on Mixture"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Wait 30 Seconds",
+                                "Apply Rotor Brake"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Clutch Light",
+                                "Extinguishes"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Avionics, Alt, Battery and Ignition Switches",
+                                "Off"
+                            ]
+                        },
+                        {
+                            "type": "CAUTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Do not slow rotor by raising collective during shutdown.  Blades may flap and strike tailcone."
+                            ]
+                        },
+                        {
+                            "type": "NOTE",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "During idle and after engine shutdown, pilot should uncover one ear and listen for unusual noise which may indicate impending failure of a bearing or other component."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "R22 Custom 06/15",
+            "sections": [
+                {
+                    "title": "Preflight Preparation",
+                    "checklist_items": [
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Hobbs Meter",
+                                "Read and Note"
+                            ],
+                            "post_action" : {
+                                "name" : "RecordHobbsMeterReading",
+                                "is_pre_flight" : true
+                            }
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Fuel Examination Flask",
+                                "Find / Gather"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Paper Towels for Oil Examinations",
+                                "Find / Gather"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Aux Tank Fuel",
+                                "Sample"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Aux Fuel Tank Quantity",
+                                "Tap and Note"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Main Tank Fuel",
+                                "Sample"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Main Fuel Tank Quantity",
+                                "Tap and Note"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Gascolator Fuel Drain",
+                                "Sample"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Check Engine Oil",
+                                "4 to 6 Quarts"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Cowl Door",
+                    "checklist_items": [
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Master Switch",
+                                "On"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Oil Pressure and Alternator Lights",
+                                "On"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Warning Light Test Switches",
+                                "Push to Test"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Fuel Quantity",
+                                "Check Gauges and Note"
+                            ],
+                            "post_action" : {
+                                "name" : "RecordFuelQuantity"
+                            }
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Master Switch",
+                                "Off"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Fuel Filler Cap",
+                                "Tight"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Aux Fuel Tank",
+                                "No Leaks"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Aux Fuel Lines",
+                                "No Leaks"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Gearbox Oil",
+                                "Full, No Leaks"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Rotor Brake",
+                                "Actuation Normal"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Flex Coupling",
+                                "No Cracks, Nuts Tight"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Yoke Flanges",
+                                "No Cracks"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Gearbox Telatemp",
+                                "Normal"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Sprag Clutch",
+                                "No Leaks"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Static Source",
+                                "Clear"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Control Rod Ends",
+                                "Free Without Looseness"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Steel Tube Frame",
+                                "No Cracks"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "All Fasteners",
+                                "Tight"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Tail Rotor Control",
+                                "No Interference"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Cowl Door",
+                                "Latched"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Engine Right Side",
+                    "checklist_items": [
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Carb Air Ducts",
+                                "Secure"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Carb Heat Scoop",
+                                "Secure"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Engine Sheet Metal",
+                                "No Cracks"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Electrical Terminals",
+                                "Tight"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Fuel Line",
+                                "No Leaks"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Oil Cooler Door",
+                                "Check"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Oil Lines",
+                                "No Leaks or Chafing"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Exhaust System",
+                                "No Cracks"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Engine General Condition",
+                                "Check"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "V-Belt Condition",
+                                "Check"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "V-Belt Slack",
+                                "Check"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Sprag Clutch",
+                                "No Leaks"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Upper Bearing",
+                                "No Leaks"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Upper Bearing Telatemp",
+                                "Normal"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Lower Sheave Groove Wear",
+                                "Smooth and Uniform"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Flex Coupling",
+                                "No Cracks, Nuts Tight"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Yoke Flanges",
+                                "No Cracks"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Steel Tube Frame",
+                                "No Cracks"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Tail Rotor Control",
+                                "No Interference"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Engine Rear",
+                    "checklist_items": [
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Cooling Fan Nut",
+                                "Pin In Line With No Marks"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Cooling Fan",
+                                "No Cracks"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Fan Scroll",
+                                "No Cracks"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Lower Bearing Telatemps",
+                                "Normal"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Lower Bearing",
+                                "No Leaks"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Empennage",
+                    "checklist_items": [
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Tail Surfaces",
+                                "No Cracks"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Fasteners",
+                                "Tight"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Position Light",
+                                "Check"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Tail Rotor",
+                    "checklist_items": [
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Gearbox Telatemp",
+                                "Normal"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Gearbox",
+                                "Oil Visible, No Leaks"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Blades",
+                                "Clean, No Damage / Cracks"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Pitch Links",
+                                "No Looseness"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Teeter Bearings",
+                                "Check Condition"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Teeter Bearing Bolt",
+                                "Does Not Rotate"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Control Bellcrank",
+                                "Free Without Looseness"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Rivets",
+                                "Tight"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Skins",
+                                "No Cracks or Dents"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Strobe Light Condition",
+                                "Check"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Antenna",
+                                "Check"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Attachment Bolts",
+                                "Tight"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Engine Left Side",
+                    "checklist_items": [
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Oil Filter",
+                                "Secure, No Leaks"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Fuel Lines",
+                                "No Leaks"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Throttle Linkage",
+                                "Operable"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Battery and Relay",
+                                "Secure"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Alternator Belt Tension",
+                                "Check"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Steel Tube Frame",
+                                "No Cracks"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Engine Sheet Metal",
+                                "No Cracks"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Exhaust System",
+                                "No Cracks"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Engine General Condition",
+                                "Check"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Fuel Tank (Main)",
+                    "checklist_items": [
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Filler Cap",
+                                "Tight"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Leakage",
+                                "None"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Main Rotor",
+                    "checklist_items": [
+                        {
+                            "type": "CAUTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Do not pull rotor blades down as damage may occur.  To lower one blade, push opposite blade up."
+                            ]
+                        },                    
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Blades",
+                                "Clean, No Damage / Cracks"
+                            ]
+                        },
+                        {
+                            "type": "CAUTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Verify erosion on lower surface of blades has not exposed skin-to-spar bond line.  Reference Rotor Systems Description in Section 7."
+                            ]
+                        },                        
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Pitch Change Boots",
+                                "No Leaks"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Main Hinge Bolts",
+                                "Cotter Pins Installed"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "All Rod Ends",
+                                "Free Without Looseness"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Pitch Link Jam Nuts",
+                                "Tight"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Pitch Link Safety Wire",
+                                "Secure"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "All Fasteners",
+                                "Tight"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Swashplate Scissors",
+                                "No Excessive Looseness"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Fuselage Left Side",
+                    "checklist_items": [
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Baggage Compartment",
+                                "Check"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Removable Controls",
+                                "Secure If Installed"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Collective Control",
+                                "Clear"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Seat Belt",
+                                "Check Condition and Fastened"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Door",
+                                "Unlocked and Latched"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Door Hinge Safety Pin",
+                                "Installed"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Landing Gear",
+                                "Check"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Ground Handling Wheel",
+                                "Removed"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Position Light",
+                                "Check"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Nose Section",
+                    "checklist_items": [
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Pitot Tube",
+                                "Clear"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Windshield Condition and Cleanliness",
+                                "Check"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Fresh Air Vents",
+                                "Clear"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Landing Lights",
+                                "Check"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Fuselage Right Side",
+                    "checklist_items": [
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Landing Gear",
+                                "Check"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Ground Handling Wheel",
+                                "Removed"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Position Light",
+                                "Check"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Door Hinge Safety Pin",
+                                "Installed"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Baggage Compartment",
+                                "Check"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Cabin Interior",
+                    "checklist_items": [
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Loose Articles",
+                                "Removed and Stowed"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Seat Belt",
+                                "Check Condition"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Instrument, Switches and Controls",
+                                "Check Condition"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Clock",
+                                "Functioning"
+                            ]
+                        },
+                        {
+                            "type": "CAUTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "For helicopters with removable controls, remove left seat controls if person in that seat is not a rated helicopter pilot."
+                            ]
+                        },
+                        {
+                            "type": "CAUTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Be sure rotor blades are approximately level to avoid possible tailcone strike."
+                            ]
+                        },
+                        {
+                            "type": "CAUTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "When flying solo, fill left baggage compartment to capacity before using right compartment.  Avoid placing objects in compartments which could injure occupant if seat collapses during a hard landing."
+                            ]
+                        },
+                        {
+                            "type": "CAUTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Shorter pilots may require cushion to obtain full travel of all controls.  Verify aft cyclic travel is not restricted."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Before Starting Engine",
+                    "checklist_items": [
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Seatbelts",
+                                "Fastened"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Headsets",
+                                "On, Uncover One Ear"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Headset Switch On (Bose A20)",
+                                "Indicator Light Green Flashing"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Cyclic / Collective Friction",
+                                "Off"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Cyclic / Collective / Pedals / Throttle",
+                                "Full Travel Free"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Collective",
+                                "Full Down - Friction On"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Cyclic Neutral",
+                                "Friction On"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Pedals",
+                                "Neutral"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Fuel Shut Off",
+                                "On"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "All Circuit Breakers",
+                                "In"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Governor",
+                                "On"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Carb Heat",
+                                "Off"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Mixture",
+                                "Full Rich"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Mixture Guard",
+                                "Installed"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "All Switches / Avionics",
+                                "Off"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Clutch",
+                                "Disengaged"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Landing Light",
+                                "Off"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Altimeter",
+                                "Set Field Elevation (KLDJ:22ft)"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Rotor Brake",
+                                "Disengaged"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Map Light",
+                                "Off"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Starting Engine",
+                    "checklist_items": [
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Throttle Twist for Priming",
+                                "Twice"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Throttle",
+                                "Closed"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Master Switch",
+                                "On"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Area",
+                                "Clear"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Strobe Light",
+                                "On"
+                            ]
+                        },
+                        {
+                            "type": "CAUTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "CAUTION! Avoid continuous operation at rotor speed of 60 to 70% to minimize tail rotor resonance."
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Ignition Switch",
+                                "Start then Both"
+                            ],
+                            "post_action" : {
+                                "name" : "StartFlightTimer"
+                            }
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Alternator Switch",
+                                "On"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Clutch Switch",
+                                "Engaged"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Blades Turning",
+                                "Less than 5 seconds"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Starter-On Light",
+                                "Out"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Oil Pressure Within 30 Seconds",
+                                "25 PSI Minimum"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Transponder On",
+                                "Set 1200"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Avionics On",
+                                "Set Volume, Set Squelch"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Announce on CTAF",
+                                "Radio Check"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Check Weather",
+                                "Note Barometer, Temp, Wind Speed & Direction"
+                            ],
+                            "post_action" : {
+                                 "name" : "RecordWeatherConditionAction",
+                            }
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Limit MAP / VNE Charts",
+                                "Check"
+                            ],
+                            "post_action" : {
+                                 "name" : "ShowMapVNECharts",
+                            }                            
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Wait for Clutch Light",
+                                "Out, < 100 Seconds"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Warm up RPM",
+                                "70 to 75%"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Cylinder Temperature",
+                                "Wait for, In the Green"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Warning Lights",
+                                "Out"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Mag Drop @ 75%",
+                                "No Roughness - 7% Max in 2 Seconds"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Carb Heat Check",
+                                "Note CAT Rise and Fall in ERPM"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Sprag Clutch Check from 75%",
+                                "Needle Split / Idle OK"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Doors",
+                                "Closed and Latched"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Cyclic / Collective Friction",
+                                "Off"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Governor On, Inc Throttle and Guard",
+                                "RPM 102 to 104%"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Warning / Caution Lights",
+                                "Out"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Fuel",
+                                "Sufficient for Mission"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Reduce RPM, Raise Collective",
+                                "Horn / Light at 97%"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Area",
+                                "Clear"
+                            ]
+                        },
+                        {
+                            "type": "CAUTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "On slippery surfaces, be prepared to counter nose-right rotation with left pedal as governor increases RPM."
+                            ]
+                        },
+                        {
+                            "type": "NOTE",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Before takeoff, pilot should uncover one ear and listen for any unusual noise which may indicate impending failure of a bearing or other component."
+                            ]
+                        }                        
+                    ]
+                },
+                {
+                    "title": "Before Takeoff and Landing",
+                    "checklist_items": [
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Engine / Rotor RPM",
+                                "Top of Green"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Engine Temperature / Pressure",
+                                "Green"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Warning / Caution Lights",
+                                "Out"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Fuel",
+                                "Sufficient for Mission"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Landing Light",
+                                "On as Required"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Trim",
+                                "Off"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Carb Heat",
+                                "Full on for Landing"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Governor",
+                                "On"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Frequencies",
+                                "Confirmed"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Area",
+                                "Clear"
+                            ]
+                        },
+                        {
+                            "type": "NOTE",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Slowly raise collective until aircraft is light on skids.  Reposition cyclic as required for equilibrium, then gently lift aircraft into hover."
+                            ]
+                        },
+                        {
+                            "type": "CAUTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "If RPM drops below 102%, lower collective."
+                            ]
+                        }                        
+                    ]
+                },
+                {
+                    "title": "Shutdown",
+                    "checklist_items": [
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Reduce Throttle",
+                                "75%"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Cyclic / Collective Frictions",
+                                "On"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Wait",
+                                "60 Seconds"
+                            ],
+                            "post_action" : {
+                                "name" : "ShowTimer",
+                                "duration" : 60
+                            }
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Reduce Throttle",
+                                "70%"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Wait",
+                                "60 Seconds"
+                            ],
+                            "post_action" : {
+                                "name" : "ShowTimer",
+                                "duration" : 60
+                            }
+                        },
+                        {
+                            "type": "NOTE",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "During idle and after engine shutdown, pilot should uncover one ear and listen for unusual noise which may indicate impending failure of a bearing or other component."
+                            ]
+                        },                        
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Reduce Throttle",
+                                "Idle"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Wait",
+                                "60 Seconds"
+                            ],
+                            "post_action" : {
+                                "name" : "ShowTimer",
+                                "duration" : 60
+                            }
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Disengage",
+                                "Clutch"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Mixture Guard",
+                                "On Trim"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Pull Mixture",
+                                "1 / 3"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Wait",
+                                "RPM Needle Split"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Pull Mixture",
+                                "Idle Cut Off"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Avionics Transponder",
+                                "Off"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Clutch Light",
+                                "Out"
+                            ]
+                        },
+                        {
+                            "type": "CAUTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Do not slow rotor by raising collective during shutdown.  Blades may flap and strike tailcone."
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Apply Rotor Brake",
+                                "3 Sec on, 3 Sec off"
+                            ]
+                        },                        
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Blades Stopped",
+                                "Strobe Off"
+                            ]
+                        },
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Master Switch",
+                                "Off"
+                            ],
+                            "post_action" : {
+                                "name" : "StopFlightTimer"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "Postflight Procedure",
+                    "checklist_items": [
+                        {
+                            "type": "ITEM_ACTION",
+                            "action_has_note": false,
+                            "item_has_note": false,
+                            "details": [
+                                "Hobbs Meter",
+                                "Read and Note"
+                            ],
+                            "post_action" : {
+                                "name" : "RecordHobbsMeterReading",
+                                "is_pre_flight" : false
+                            }
+                        }                   
+                    ]
+                }                
+            ]
+        }
+    ]
+}

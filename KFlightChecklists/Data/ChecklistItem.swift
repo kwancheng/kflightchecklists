@@ -9,11 +9,13 @@
 import Foundation
 import SwiftyJSON
 
-public class ChecklistItem {
-    public var type : ChecklistType?
-    public var actionHasNote:Bool?
-    public var itemHasNote:Bool?
-    public var details : [String]?
+open class ChecklistItem {
+    open var type : ChecklistType?
+    open var actionHasNote:Bool?
+    open var itemHasNote:Bool?
+    open var details : [String]?
+    open var preAction : Action?
+    open var postAction : Action?
     
     public init(_ jsonData : JSON){
         if let typeStr = jsonData["type"].string {
@@ -31,6 +33,9 @@ public class ChecklistItem {
         
         actionHasNote = jsonData["action_has_note"].bool
         itemHasNote = jsonData["item_has_note"].bool
+        
+        self.preAction = Action.instantiateActionFromJson(jsonData["pre_action"])
+        self.postAction = Action.instantiateActionFromJson(jsonData["post_action"])
         
         self.details = []
         if let detailsJsonArray = jsonData["details"].array {

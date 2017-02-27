@@ -4,7 +4,17 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Pods-KFlightChecklists-SwiftyJSON.xcscheme</key>
+		<key>AEXML.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Alamofire.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-KFlightChecklists-KFlightChecklistsTests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -14,12 +24,7 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-KFlightChecklistsTests-SwiftyJSON.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-KFlightChecklistsTests.xcscheme</key>
+		<key>SwiftyJSON.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -27,22 +32,27 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0AB4DCAF2964442C618E9AAB</key>
+		<key>88C257C954247EE49E09C66A8B19E56A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5A78698E82696000AF865A9E</key>
+		<key>88E9EC28B8B46C3631E6B242B50F4442</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D61A6F7054BEA09280B44918</key>
+		<key>C095EB47162AB210537F51CF913E6CCF</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>EB8F1C896A7AC670750E14E9</key>
+		<key>EE2980517B36E57DF5698EC039B46623</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F306A3941C399EB870E9A53E24BAEFB7</key>
 		<dict>
 			<key>primary</key>
 			<true/>

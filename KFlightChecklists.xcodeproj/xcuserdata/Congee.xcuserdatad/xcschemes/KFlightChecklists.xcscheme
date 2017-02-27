@@ -15,22 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "0F0EE6401B2C925500755FCF"
-               BuildableName = "KFlightChecklists.app"
+               BuildableName = "KF Checklists.app"
                BlueprintName = "KFlightChecklists"
-               ReferencedContainer = "container:KFlightChecklists.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0F0EE6581B2C925500755FCF"
-               BuildableName = "KFlightChecklistsTests.xctest"
-               BlueprintName = "KFlightChecklistsTests"
                ReferencedContainer = "container:KFlightChecklists.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -42,22 +28,12 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0F0EE6581B2C925500755FCF"
-               BuildableName = "KFlightChecklistsTests.xctest"
-               BlueprintName = "KFlightChecklistsTests"
-               ReferencedContainer = "container:KFlightChecklists.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0F0EE6401B2C925500755FCF"
-            BuildableName = "KFlightChecklists.app"
+            BuildableName = "KF Checklists.app"
             BlueprintName = "KFlightChecklists"
             ReferencedContainer = "container:KFlightChecklists.xcodeproj">
          </BuildableReference>
@@ -77,7 +53,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0F0EE6401B2C925500755FCF"
-            BuildableName = "KFlightChecklists.app"
+            BuildableName = "KF Checklists.app"
             BlueprintName = "KFlightChecklists"
             ReferencedContainer = "container:KFlightChecklists.xcodeproj">
          </BuildableReference>
@@ -96,7 +72,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0F0EE6401B2C925500755FCF"
-            BuildableName = "KFlightChecklists.app"
+            BuildableName = "KF Checklists.app"
             BlueprintName = "KFlightChecklists"
             ReferencedContainer = "container:KFlightChecklists.xcodeproj">
          </BuildableReference>

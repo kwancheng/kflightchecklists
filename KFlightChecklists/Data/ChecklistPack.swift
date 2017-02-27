@@ -9,17 +9,17 @@
 import Foundation
 import SwiftyJSON
 
-public class ChecklistPack {
-    public var title : String?
-    public var checklists : [Checklist]?
+open class ChecklistPack {
+    open var title : String?
+    open var checklists : [Checklist]?
     
     public init(){
-        if let path = NSBundle.mainBundle().pathForResource("Checklists", ofType: "json") {
-            if let content = NSData(contentsOfFile: path) {
-                var error : NSErrorPointer = NSErrorPointer()
-                var jsonData = JSON(data: content, options: NSJSONReadingOptions.MutableContainers, error: error)
+        if let path = Bundle.main.path(forResource: "Checklists", ofType: "json") {
+            if let content = try? Data(contentsOf: URL(fileURLWithPath: path)) {
+                let error : NSErrorPointer = nil
+                var jsonData = JSON(data: content, options: JSONSerialization.ReadingOptions.mutableContainers, error: error)
                 
-                if let error = jsonData.error {
+                if let _ = jsonData.error {
                     // TODO : handle json parse error
                 } else {
                     self.title = jsonData["title"].string
