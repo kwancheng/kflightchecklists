@@ -39,15 +39,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch_image" translatesAutoresizingMaskIntoConstraints="NO" id="W7I-cD-Jrd">
+                                <rect key="frame" x="20" y="20" width="728" height="1004"/>
+                            </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Z7F-x2-HL1">
-                                <rect key="frame" x="20" y="20" width="728" height="989"/>
+                                <rect key="frame" x="20" y="28" width="728" height="988"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="60" id="8gV-o9-cnd" customClass="ChecklistCell" customModule="KF_Checklists" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="22" width="728" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8gV-o9-cnd" id="nhN-kr-lI3">
-                                            <rect key="frame" x="0.0" y="0.0" width="728" height="60"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="728" height="59"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Del-0b-0Ep">
@@ -74,13 +77,19 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Z7F-x2-HL1" firstAttribute="top" secondItem="NEx-Dg-xuc" secondAttribute="topMargin" constant="20" id="2Aa-mg-7JU"/>
-                            <constraint firstItem="Z7F-x2-HL1" firstAttribute="leading" secondItem="NEx-Dg-xuc" secondAttribute="leadingMargin" id="Ghu-5r-X4a"/>
-                            <constraint firstItem="Z7F-x2-HL1" firstAttribute="trailing" secondItem="NEx-Dg-xuc" secondAttribute="trailingMargin" id="XxW-KS-1sv"/>
-                            <constraint firstItem="IB7-Jm-FTS" firstAttribute="top" secondItem="Z7F-x2-HL1" secondAttribute="bottom" constant="15" id="gpd-5l-g9D"/>
+                            <constraint firstItem="Z7F-x2-HL1" firstAttribute="top" secondItem="Zkl-5S-2mC" secondAttribute="bottom" constant="8" symbolic="YES" id="6WU-bi-ya4"/>
+                            <constraint firstItem="W7I-cD-Jrd" firstAttribute="leading" secondItem="NEx-Dg-xuc" secondAttribute="leadingMargin" id="A1M-vt-irW"/>
+                            <constraint firstItem="W7I-cD-Jrd" firstAttribute="top" secondItem="Zkl-5S-2mC" secondAttribute="bottom" id="IR5-M8-zNq"/>
+                            <constraint firstItem="Z7F-x2-HL1" firstAttribute="trailing" secondItem="NEx-Dg-xuc" secondAttribute="trailingMargin" id="Nkc-a2-oaw"/>
+                            <constraint firstItem="IB7-Jm-FTS" firstAttribute="top" secondItem="Z7F-x2-HL1" secondAttribute="bottom" constant="8" symbolic="YES" id="aVO-kQ-FO1"/>
+                            <constraint firstItem="Z7F-x2-HL1" firstAttribute="leading" secondItem="NEx-Dg-xuc" secondAttribute="leadingMargin" id="fpB-b8-afv"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="W7I-cD-Jrd" secondAttribute="trailing" id="i5S-S6-uNP"/>
+                            <constraint firstItem="IB7-Jm-FTS" firstAttribute="top" secondItem="W7I-cD-Jrd" secondAttribute="bottom" id="ok8-tn-Spz"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Select Checklist" id="X3O-oC-R2N"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="lbChecklists" destination="Z7F-x2-HL1" id="3dU-eC-ONp"/>
                         <segue destination="HJW-kc-DbC" kind="show" identifier="PerformChecklist" id="3ca-Ak-HSP"/>
@@ -103,13 +112,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cxs-U3-uy3">
-                                <rect key="frame" x="0.0" y="20" width="768" height="68"/>
+                                <rect key="frame" x="20" y="20" width="728" height="68"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="00:00:00.0000" textAlignment="center" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="W9H-PX-I7O">
-                                        <rect key="frame" x="360" y="8" width="400" height="50"/>
+                                        <rect key="frame" x="360" y="8" width="360" height="50"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="DIi-H2-phT"/>
-                                            <constraint firstAttribute="width" constant="400" id="JDZ-7O-ybo"/>
+                                            <constraint firstAttribute="width" constant="360" id="qxV-WM-BWu"/>
+                                            <constraint firstAttribute="height" constant="50" id="wMs-CW-l6I"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -117,7 +126,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TQh-4k-h05">
                                         <rect key="frame" x="8" y="19" width="344" height="30"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="30" id="LpD-Lu-mDp"/>
+                                            <constraint firstAttribute="height" constant="30" id="W43-5Y-qIm"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
                                         <state key="normal" title="Flight Time">
@@ -131,12 +140,12 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="W9H-PX-I7O" secondAttribute="trailing" constant="8" id="6WU-Dz-VHp"/>
-                                    <constraint firstItem="TQh-4k-h05" firstAttribute="leading" secondItem="cxs-U3-uy3" secondAttribute="leading" constant="8" id="8ZF-5W-GvZ"/>
-                                    <constraint firstItem="TQh-4k-h05" firstAttribute="top" secondItem="cxs-U3-uy3" secondAttribute="top" constant="19" id="DF5-QC-BJy"/>
                                     <constraint firstAttribute="height" constant="68" id="JVM-Sk-qAt"/>
-                                    <constraint firstItem="W9H-PX-I7O" firstAttribute="leading" secondItem="TQh-4k-h05" secondAttribute="trailing" constant="8" id="XMn-QR-eTL"/>
-                                    <constraint firstItem="W9H-PX-I7O" firstAttribute="top" secondItem="cxs-U3-uy3" secondAttribute="top" constant="8" id="uGO-Tx-0fu"/>
+                                    <constraint firstItem="TQh-4k-h05" firstAttribute="leading" secondItem="cxs-U3-uy3" secondAttribute="leading" constant="8" id="LXe-8t-FiL"/>
+                                    <constraint firstItem="W9H-PX-I7O" firstAttribute="top" secondItem="cxs-U3-uy3" secondAttribute="top" constant="8" id="jVx-SQ-oMS"/>
+                                    <constraint firstItem="W9H-PX-I7O" firstAttribute="leading" secondItem="TQh-4k-h05" secondAttribute="trailing" constant="8" id="m1i-Kh-u8l"/>
+                                    <constraint firstItem="TQh-4k-h05" firstAttribute="top" secondItem="cxs-U3-uy3" secondAttribute="top" constant="19" id="odN-k3-4No"/>
+                                    <constraint firstAttribute="trailing" secondItem="W9H-PX-I7O" secondAttribute="trailing" constant="8" id="phg-DK-k9y"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="subviews">
@@ -152,27 +161,27 @@
                                 </variation>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="vNB-kL-hwV">
-                                <rect key="frame" x="0.0" y="88" width="768" height="936"/>
+                                <rect key="frame" x="20" y="88" width="728" height="916"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ActionItemCell" rowHeight="75" id="Jdh-cd-Y7h" customClass="ActionItemCell" customModule="KF_Checklists" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="22" width="768" height="75"/>
+                                        <rect key="frame" x="0.0" y="22" width="728" height="75"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Jdh-cd-Y7h" id="QFc-QQ-dMO">
-                                            <rect key="frame" x="0.0" y="0.0" width="768" height="75"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="728" height="75"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="UzV-0W-l06">
-                                                    <rect key="frame" x="4" y="0.0" width="760" height="75"/>
+                                                    <rect key="frame" x="4" y="0.0" width="740" height="75"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fXg-cH-23j" userLabel="Item Label">
-                                                            <rect key="frame" x="0.0" y="0.0" width="380" height="75"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="370" height="75"/>
                                                             <color key="backgroundColor" red="0.9803109217" green="0.83141337660000003" blue="0.56586462230000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="36u-Sz-i9v" userLabel="Action Label">
-                                                            <rect key="frame" x="380" y="0.0" width="380" height="75"/>
+                                                            <rect key="frame" x="370" y="0.0" width="370" height="75"/>
                                                             <color key="backgroundColor" red="0.80454278319999994" green="0.90617322710000003" blue="0.9803109217" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                                             <nil key="highlightedColor"/>
@@ -197,14 +206,14 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CautionCell" id="zd2-4x-vqi" customClass="CautionCell" customModule="KF_Checklists" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="97" width="768" height="44"/>
+                                        <rect key="frame" x="0.0" y="97" width="728" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zd2-4x-vqi" id="YIG-ej-pU9">
-                                            <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="728" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DTv-T2-pd8">
-                                                    <rect key="frame" x="8" y="11" width="752" height="22"/>
+                                                    <rect key="frame" x="8" y="11" width="732" height="22"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -223,14 +232,14 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="NoteCell" id="ZEf-3k-DGL" customClass="NoteCell" customModule="KF_Checklists" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="141" width="768" height="44"/>
+                                        <rect key="frame" x="0.0" y="141" width="728" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZEf-3k-DGL" id="qpm-xL-TmP">
-                                            <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="728" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="25" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tVL-Rn-lmr">
-                                                    <rect key="frame" x="8" y="11" width="752" height="22"/>
+                                                    <rect key="frame" x="8" y="11" width="732" height="22"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -253,11 +262,11 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="cxs-U3-uy3" firstAttribute="leading" secondItem="Jof-74-NlU" secondAttribute="leading" id="0Qt-i6-ZPQ"/>
-                            <constraint firstAttribute="trailing" secondItem="cxs-U3-uy3" secondAttribute="trailing" id="97h-6k-ahP"/>
-                            <constraint firstItem="8Tu-gi-0qr" firstAttribute="top" secondItem="vNB-kL-hwV" secondAttribute="bottom" id="XHe-MN-b5U"/>
-                            <constraint firstItem="vNB-kL-hwV" firstAttribute="leading" secondItem="Jof-74-NlU" secondAttribute="leading" id="hAf-Wz-3LV"/>
-                            <constraint firstAttribute="trailing" secondItem="vNB-kL-hwV" secondAttribute="trailing" id="o2p-91-Fqb"/>
+                            <constraint firstItem="cxs-U3-uy3" firstAttribute="leading" secondItem="Jof-74-NlU" secondAttribute="leading" constant="20" id="0Qt-i6-ZPQ"/>
+                            <constraint firstAttribute="trailing" secondItem="cxs-U3-uy3" secondAttribute="trailing" constant="20" id="97h-6k-ahP"/>
+                            <constraint firstItem="8Tu-gi-0qr" firstAttribute="top" secondItem="vNB-kL-hwV" secondAttribute="bottom" constant="20" id="XHe-MN-b5U"/>
+                            <constraint firstItem="vNB-kL-hwV" firstAttribute="leading" secondItem="Jof-74-NlU" secondAttribute="leading" constant="20" id="hAf-Wz-3LV"/>
+                            <constraint firstAttribute="trailing" secondItem="vNB-kL-hwV" secondAttribute="trailing" constant="20" id="o2p-91-Fqb"/>
                             <constraint firstItem="cxs-U3-uy3" firstAttribute="top" secondItem="c8F-gS-orl" secondAttribute="bottom" id="v0i-u2-emv"/>
                             <constraint firstItem="vNB-kL-hwV" firstAttribute="top" secondItem="cxs-U3-uy3" secondAttribute="bottom" id="x7u-QI-LUl"/>
                         </constraints>
@@ -1212,7 +1221,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vxq-TD-jqg">
-                                <rect key="frame" x="20" y="72" width="728" height="129"/>
+                                <rect key="frame" x="20" y="28" width="728" height="129"/>
                                 <subviews>
                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="E6N-st-EBv" userLabel="Main Tank Level">
                                         <rect key="frame" x="152" y="84" width="568" height="30"/>
@@ -1310,7 +1319,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QDG-oh-7XN" userLabel="Hobb Meter Panel">
-                                <rect key="frame" x="20" y="209" width="728" height="75"/>
+                                <rect key="frame" x="20" y="165" width="728" height="75"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hobbs Meter" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lvk-a4-Eoy">
                                         <rect key="frame" x="8" y="8" width="712" height="21"/>
@@ -1401,7 +1410,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gk9-io-57O">
-                                <rect key="frame" x="20" y="384" width="728" height="113"/>
+                                <rect key="frame" x="20" y="340" width="728" height="113"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DfZ-Lz-XMF">
                                         <rect key="frame" x="63" y="37" width="486" height="30"/>
@@ -1514,7 +1523,7 @@
                                 </variation>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AM7-BK-eSu">
-                                <rect key="frame" x="20" y="505" width="728" height="113"/>
+                                <rect key="frame" x="20" y="461" width="728" height="113"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Manifold Limit - Sea Level" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2BN-3a-nyJ">
                                         <rect key="frame" x="8" y="8" width="712" height="21"/>
@@ -1688,7 +1697,7 @@
                                 </variation>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UZL-n4-7al">
-                                <rect key="frame" x="20" y="292" width="728" height="84"/>
+                                <rect key="frame" x="20" y="248" width="728" height="84"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NV6-9O-tT5">
                                         <rect key="frame" x="145" y="8" width="236" height="30"/>
@@ -1908,10 +1917,10 @@
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <prototypes>
                                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="2Ss-bR-6c0" customClass="ManifoldLimitCell" customModule="KF_Checklists" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="22" width="242" height="44"/>
+                                                <rect key="frame" x="0.0" y="22" width="242.5" height="44"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2Ss-bR-6c0" id="DLj-p5-X1A">
-                                                    <rect key="frame" x="0.0" y="0.0" width="242" height="43"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="242.5" height="43"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mBx-bt-4PE">
@@ -1950,10 +1959,10 @@
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <prototypes>
                                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="s6o-3B-nuB" customClass="VneLimitCell" customModule="KF_Checklists" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="22" width="243" height="44"/>
+                                                <rect key="frame" x="0.0" y="22" width="242.5" height="44"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="s6o-3B-nuB" id="0ho-Qf-tU2">
-                                                    <rect key="frame" x="0.0" y="0.0" width="243" height="43"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="242.5" height="43"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pCd-LT-qXN">
@@ -2167,6 +2176,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="launch_image" width="1500" height="827"/>
         <image name="map" width="840" height="484"/>
         <image name="vne" width="725" height="472"/>
     </resources>
