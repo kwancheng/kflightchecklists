@@ -8,6 +8,12 @@
 
 import UIKit
 
-open class NoteCell : UITableViewCell {
-    @IBOutlet var lblNoteText : UILabel?
+class NoteCell : UITableViewCell {
+    @IBOutlet var lblNoteText : UILabel!
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        
+        lblNoteText.text = nil
+    }
 }

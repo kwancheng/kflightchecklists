@@ -8,6 +8,11 @@
 
 import UIKit
 
-open class CautionCell : UITableViewCell {
-    @IBOutlet var lblCautionText : UILabel?
+class CautionCell : UITableViewCell {
+    @IBOutlet var lblCautionText : UILabel!
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        lblCautionText.text = nil
+    }
 }

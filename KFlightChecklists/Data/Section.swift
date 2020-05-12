@@ -9,9 +9,9 @@
 import Foundation
 import SwiftyJSON
 
-open class Section {
-    open var title : String?
-    open var checklistItems : [ChecklistItem]?
+class Section {
+    var title : String?
+    var checklistItems : [ChecklistItem]?
     
     public init(_ jsonData : JSON) {
         self.title = jsonData["title"].string

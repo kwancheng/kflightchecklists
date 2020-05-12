@@ -9,8 +9,8 @@
 import UIKit
 
 open class TimerViewController : NotepadViewController {
-    @IBOutlet var lblTimer : UILabel?
-    @IBOutlet var containerView : UIView?
+    @IBOutlet var lblTimer : UILabel!
+    @IBOutlet var containerView : UIView!
     
     @IBAction func completed(_ sender : UIButton) {
         timer?.invalidate()
@@ -57,9 +57,9 @@ open class TimerViewController : NotepadViewController {
 
                 UIView.animate(withDuration: TimeInterval(0.25), delay: TimeInterval(0.0), options: UIView.AnimationOptions.allowUserInteraction, animations: { () -> Void in
                     if(self.toRed){
-                        self.containerView!.backgroundColor = UIColor.red;
+                        self.containerView.backgroundColor = UIColor.red;
                     }else{
-                        self.containerView!.backgroundColor = UIColor.clear
+                        self.containerView.backgroundColor = UIColor.clear
                     }
                 }, completion:{(b)->Void in
                         self.toRed = !self.toRed
@@ -67,6 +67,6 @@ open class TimerViewController : NotepadViewController {
                 });
             }
         }
-        lblTimer?.text = String(format: "%02.4f", elapsed)
+        lblTimer.text = String(format: "%02.4f", elapsed)
     }
 }

@@ -27,7 +27,6 @@ class WeatherService {
             "hoursBeforeNow" : "1"
         ]
         
-        
         Alamofire.request(server, method: HTTPMethod.get, parameters: queryParams, encoding: URLEncoding.default, headers: [:])
             .response { (response) in
                 do {

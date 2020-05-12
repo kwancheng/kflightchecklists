@@ -8,6 +8,4 @@
 
 import Foundation
 
-open class StopFlightTimerAction : Action {
-    
-}
+class StopFlightTimerAction : Action {}

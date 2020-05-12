@@ -9,7 +9,7 @@
 import Foundation
 import SwiftyJSON
 
-open class RecordHobbsMeterReadingAction : Action {
+class RecordHobbsMeterReadingAction : Action {
     var isPreFlight : Bool?
     
     public override init(_ jsonData : JSON){

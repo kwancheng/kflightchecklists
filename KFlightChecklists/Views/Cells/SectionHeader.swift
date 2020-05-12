@@ -8,6 +8,6 @@
 
 import UIKit
 
-open class SectionHeader : UIView {
-    @IBOutlet var lblTitle : UILabel?    
+class SectionHeader : UIView {
+    @IBOutlet var lblTitle : UILabel!    
 }

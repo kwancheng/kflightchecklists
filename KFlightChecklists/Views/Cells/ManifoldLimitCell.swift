@@ -8,7 +8,14 @@
 
 import UIKit
 
-open class ManifoldLimitCell : UITableViewCell {
-    @IBOutlet var lblAltitude : UILabel?
-    @IBOutlet var lblMapLimit : UILabel?
+class ManifoldLimitCell : UITableViewCell {
+    @IBOutlet var lblAltitude : UILabel!
+    @IBOutlet var lblMapLimit : UILabel!
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        
+        lblAltitude.text = nil
+        lblMapLimit.text = nil
+    }
 }

@@ -9,7 +9,7 @@
 import Foundation
 import SwiftyJSON
 
-open class ShowMessageAction : Action {
+class ShowMessageAction : Action {
     open var message : String?
     
     override init(_ jsonData: JSON) {

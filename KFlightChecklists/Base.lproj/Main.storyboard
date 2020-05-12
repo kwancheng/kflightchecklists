@@ -162,18 +162,42 @@
                                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="UzV-0W-l06">
                                                     <rect key="frame" x="0.0" y="0.0" width="728" height="75"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fXg-cH-23j" userLabel="Item Label">
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KrW-k9-HmM">
                                                             <rect key="frame" x="0.0" y="0.0" width="364" height="75"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fXg-cH-23j" userLabel="Item Label">
+                                                                    <rect key="frame" x="8" y="0.0" width="356" height="75"/>
+                                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
                                                             <color key="backgroundColor" red="0.9803109217" green="0.83141337660000003" blue="0.56586462230000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="36u-Sz-i9v" userLabel="Action Label">
+                                                            <constraints>
+                                                                <constraint firstItem="fXg-cH-23j" firstAttribute="top" secondItem="KrW-k9-HmM" secondAttribute="top" id="4fe-Wv-1UK"/>
+                                                                <constraint firstAttribute="trailing" secondItem="fXg-cH-23j" secondAttribute="trailing" id="ZWP-E5-FiN"/>
+                                                                <constraint firstItem="fXg-cH-23j" firstAttribute="leading" secondItem="KrW-k9-HmM" secondAttribute="leading" constant="8" id="bCA-xe-9dI"/>
+                                                                <constraint firstAttribute="bottom" secondItem="fXg-cH-23j" secondAttribute="bottom" id="iU2-wY-U9F"/>
+                                                            </constraints>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IWK-A8-yKj">
                                                             <rect key="frame" x="364" y="0.0" width="364" height="75"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="36u-Sz-i9v" userLabel="Action Label">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="356" height="75"/>
+                                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
                                                             <color key="backgroundColor" red="0.80454278319999994" green="0.90617322710000003" blue="0.9803109217" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
+                                                            <constraints>
+                                                                <constraint firstAttribute="trailing" secondItem="36u-Sz-i9v" secondAttribute="trailing" constant="8" id="55r-pY-xwq"/>
+                                                                <constraint firstAttribute="bottom" secondItem="36u-Sz-i9v" secondAttribute="bottom" id="Mi7-sl-r01"/>
+                                                                <constraint firstItem="36u-Sz-i9v" firstAttribute="top" secondItem="IWK-A8-yKj" secondAttribute="top" id="XvV-gW-3Pl"/>
+                                                                <constraint firstItem="36u-Sz-i9v" firstAttribute="leading" secondItem="IWK-A8-yKj" secondAttribute="leading" id="cdk-Qb-e9l"/>
+                                                            </constraints>
+                                                        </view>
                                                     </subviews>
                                                     <constraints>
                                                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="75" id="3LU-vF-wGm"/>

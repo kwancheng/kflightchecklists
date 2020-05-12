@@ -9,9 +9,9 @@
 import Foundation
 import SwiftyJSON
 
-open class ChecklistPack {
-    open var title : String?
-    open var checklists : [Checklist]?
+class ChecklistPack {
+    var title : String?
+    var checklists : [Checklist]?
     
     public init(){
         if let path = Bundle.main.path(forResource: "Checklists", ofType: "json") {

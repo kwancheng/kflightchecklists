@@ -9,10 +9,10 @@
 import UIKit
 
 class ChecklistViewController : ViewController, ActionDelegate {
-    @IBOutlet var navItem : UINavigationItem?
-    @IBOutlet var lbChecklist : UITableView?
-    @IBOutlet var tbFlightTime : UITextField?
-    @IBOutlet var btnToggleTimeShown : UIButton?
+    @IBOutlet var navItem : UINavigationItem!
+    @IBOutlet var lbChecklist : UITableView!
+    @IBOutlet var tbFlightTime : UITextField!
+    @IBOutlet var btnToggleTimeShown : UIButton!
     
     fileprivate var checklist : Checklist?
     fileprivate var sectionHeaders : [UIView]?
@@ -23,17 +23,17 @@ class ChecklistViewController : ViewController, ActionDelegate {
     }
 
     override func viewDidLoad() {
-        navItem?.title = self.checklist?.title
+        navItem.title = self.checklist?.title
 
-        self.lbChecklist?.rowHeight = UITableView.automaticDimension
-        self.lbChecklist?.estimatedRowHeight = 44.0
-        self.lbChecklist?.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
-        self.lbChecklist?.dataSource = self
-        self.lbChecklist?.delegate = self
+        self.lbChecklist.rowHeight = UITableView.automaticDimension
+        self.lbChecklist.estimatedRowHeight = 44.0
+        self.lbChecklist.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        self.lbChecklist.dataSource = self
+        self.lbChecklist.delegate = self
 
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "checklist_background")!)
 
-        lbChecklist?.backgroundColor = UIColor.clear
+        lbChecklist.backgroundColor = UIColor.clear
     }
 
     override func viewDidAppear(_ animated: Bool) {
@@ -59,7 +59,7 @@ class ChecklistViewController : ViewController, ActionDelegate {
                 var endOfChecklist = false
                 row += 1
 
-                if(row >= rowCount) {
+                if (row >= rowCount) {
                     row = 0
                     section += 1
                     if(section >= sectionCount) {
@@ -227,7 +227,7 @@ class ChecklistViewController : ViewController, ActionDelegate {
 
     func recordWeatherCondition(_ action : Action, onChecklistItem : ChecklistItem?, completionCallback : CompletionCallback?)
     {
-        if let _ = action as? RecordWeatherConditionsAction {
+        if action is RecordWeatherConditionsAction {
             let payload = RecordWeatherConditionsPayload(
                 barometerReading: flightInfo.barometerReading,
                 windDirection: flightInfo.windDirection,
@@ -284,7 +284,7 @@ class ChecklistViewController : ViewController, ActionDelegate {
 
         let msg = String(format: "%02.0f : %02.0f : %02.0f . %04.0f", hours, minutes, seconds, miliseconds );
 
-        tbFlightTime?.text = msg
+        tbFlightTime.text = msg
     }
 
     fileprivate func showRemainingFlightTime(_ flightStartTime : Date) {
@@ -298,17 +298,17 @@ class ChecklistViewController : ViewController, ActionDelegate {
         let hours = (remainingTime / 3600)
         let msg = String(format: "%02.0f : %02.0f : %02.0f . %04.0f", hours, minutes, seconds, miliseconds );
 
-        tbFlightTime?.text = msg
+        tbFlightTime.text = msg
     }
 
     @IBAction func toggleShownTime() {
         self.showFlightTime = !self.showFlightTime
 
         if self.showFlightTime {
-            btnToggleTimeShown?.setTitle("Flight Time", for: UIControl.State())
+            btnToggleTimeShown.setTitle("Flight Time", for: UIControl.State())
 
         } else {
-            btnToggleTimeShown?.setTitle("Remaining", for: UIControl.State())
+            btnToggleTimeShown.setTitle("Remaining", for: UIControl.State())
 
         }
     }
@@ -321,10 +321,10 @@ class ChecklistViewController : ViewController, ActionDelegate {
         self.showFlightTime = true
 
         if self.showFlightTime {
-            btnToggleTimeShown?.setTitle("Flight Time", for: UIControl.State())
+            btnToggleTimeShown.setTitle("Flight Time", for: UIControl.State())
 
         } else {
-            btnToggleTimeShown?.setTitle("Remaining", for: UIControl.State())
+            btnToggleTimeShown.setTitle("Remaining", for: UIControl.State())
 
         }
 

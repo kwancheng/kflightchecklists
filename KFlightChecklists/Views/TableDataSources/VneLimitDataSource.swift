@@ -8,18 +8,16 @@
 
 import UIKit
 
-open class VneLimitDataSource : NSObject, UITableViewDataSource {
+class VneLimitDataSource : NSObject, UITableViewDataSource {
     fileprivate let vneLimitCalculator = VneLimitCalculator()
-    open var oat : Int?
+    var oat : Int?
     
-    open func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return oat == nil ? 0 : 8
     }
     
-    open func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! VneLimitCell
-
-        
 
         let altitude = indexPath.row * 2000
 

@@ -9,7 +9,7 @@
 import Foundation
 import SwiftyJSON
 
-open class Action {
+class Action {
     open var actionDelegate : ActionDelegate?
     open var name : String?
     

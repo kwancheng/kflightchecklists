@@ -8,6 +8,4 @@
 
 import Foundation
 
-open class RecordWeatherConditionsAction : Action {
-    
-}
+class RecordWeatherConditionsAction : Action {}

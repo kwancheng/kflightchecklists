@@ -8,5 +8,4 @@
 
 import UIKit
 
-open class RecordFuelQuantityAction : Action {
-}
+class RecordFuelQuantityAction : Action {}

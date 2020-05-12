@@ -8,45 +8,45 @@
 
 import Foundation
 
-open class FlightInfo {        
+class FlightInfo {
     public let mainTankCapacity : Float = 19.2
     public let auxTankCapacity : Float = 10.5
     public let gallonsPerHour : Float = 10
     
-    open var mainTankLevel : Float = 0
-    open var auxTankLevel : Float = 0
+    var mainTankLevel : Float = 0
+    var auxTankLevel : Float = 0
     
-    open var preFlightHobbsReading : Float = 0
-    open var postFlightHobbsReading : Float = 0
+    var preFlightHobbsReading : Float = 0
+    var postFlightHobbsReading : Float = 0
     
-    open var barometerReading : Float = 29.95
-    open var windDirection = 180
-    open var windSpeed = 20
-    open var temperature = 10
+    var barometerReading : Float = 29.95
+    var windDirection = 180
+    var windSpeed = 20
+    var temperature = 10
     
-    open var flightStartTime : Date?
-    open var flightEndTime : Date?
+    var flightStartTime : Date?
+    var flightEndTime : Date?
     
     public let maxFor5Min = 0.9
     
-    open func calcActualMainLevel() -> Float {
+    func calcActualMainLevel() -> Float {
         return self.mainTankCapacity * self.mainTankLevel
     }
     
-    open func calcActualAuxLevel() -> Float {
+    func calcActualAuxLevel() -> Float {
         return self.auxTankCapacity * self.auxTankLevel
     }
     
-    open func calcApproximateFlightTime() -> Float {
+    func calcApproximateFlightTime() -> Float {
         return (self.calcActualMainLevel() + self.calcActualAuxLevel()) / gallonsPerHour
     }
     
-    open func setFuelQuantityCallback( _ mainTankLevel : Float, auxTankLevel : Float)  {
+    func setFuelQuantityCallback( _ mainTankLevel : Float, auxTankLevel : Float)  {
         self.mainTankLevel = mainTankLevel
         self.auxTankLevel = auxTankLevel
     }
     
-    open func setHobbsMeterReading(_ isPreFlight : Bool, _ reading : Float ) {
+    func setHobbsMeterReading(_ isPreFlight : Bool, _ reading : Float ) {
         if(isPreFlight) {
             self.preFlightHobbsReading = reading
         } else {
@@ -54,7 +54,7 @@ open class FlightInfo {
         }
     }
 
-    open func setWeatherConditions(_ barometerReading:Float, windDirection: Int, windSpeed : Int, temperature : Int)
+    func setWeatherConditions(_ barometerReading:Float, windDirection: Int, windSpeed : Int, temperature : Int)
     {
         self.barometerReading = barometerReading
         self.windDirection = windDirection

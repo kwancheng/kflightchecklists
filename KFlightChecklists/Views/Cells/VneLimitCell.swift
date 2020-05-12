@@ -8,7 +8,13 @@
 
 import UIKit
 
-open class VneLimitCell : UITableViewCell {
-    @IBOutlet var lblAltitude : UILabel?
-    @IBOutlet var lblVne : UILabel?
+class VneLimitCell : UITableViewCell {
+    @IBOutlet var lblAltitude : UILabel!
+    @IBOutlet var lblVne : UILabel!
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        lblAltitude.text = nil
+        lblVne.text = nil
+    }
 }

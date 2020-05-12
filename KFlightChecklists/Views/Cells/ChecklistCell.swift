@@ -8,6 +8,11 @@
 
 import UIKit
 
-open class ChecklistCell : UITableViewCell {
-    @IBOutlet var lblChecklistName : UILabel?
+class ChecklistCell : UITableViewCell {
+    @IBOutlet var lblChecklistName : UILabel!
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        lblChecklistName.text = nil
+    }
 }

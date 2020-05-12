@@ -11,7 +11,7 @@ import Foundation
 public typealias CompletionCallback = (()->Void)
 public typealias SetFuelLevelCallback = (_ mainTankLevel : Float, _ auxTankLevel : Float)->Void
 
-public protocol ActionDelegate {
+protocol ActionDelegate {
     func showMessage(_ action : Action, onChecklistItem : ChecklistItem?, completionCallback : CompletionCallback?)
     func recordFuelQuantity(_ action : Action, onChecklistItem : ChecklistItem?, completionCallback : CompletionCallback?)
     func recordHobbsMeterReading(_ action : Action, onChecklistItem : ChecklistItem?, completionCallback : CompletionCallback?)

@@ -9,17 +9,17 @@
 import UIKit
 
 class ChecklistSelectViewController : ViewController, UITableViewDataSource, UITableViewDelegate {
-    @IBOutlet var lbChecklists : UITableView?
+    @IBOutlet var lbChecklists : UITableView!
     
     fileprivate var selectedChecklist : Checklist?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        lbChecklists?.dataSource = self
-        lbChecklists?.delegate = self
+        lbChecklists.dataSource = self
+        lbChecklists.delegate = self
         
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "main_background")!)
-        lbChecklists?.backgroundColor = UIColor.clear
+        lbChecklists.backgroundColor = UIColor.clear
     }
     
     // MARK : UITableViewDataSource

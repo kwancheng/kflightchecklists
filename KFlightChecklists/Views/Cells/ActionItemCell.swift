@@ -8,7 +8,12 @@
 
 import UIKit
 
-open class ActionItemCell : UITableViewCell {
-    @IBOutlet var lblItem : UILabel?
-    @IBOutlet var lblAction : UILabel?
+class ActionItemCell : UITableViewCell {
+    @IBOutlet var lblItem : UILabel!
+    @IBOutlet var lblAction : UILabel!
+    
+    override func prepareForReuse() {
+        lblItem.text = nil
+        lblAction.text = nil
+    }
 }
