@@ -12,7 +12,6 @@
 		0F0EE64F1B2C925500755FCF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F0EE64D1B2C925500755FCF /* Main.storyboard */; };
 		0F0EE6511B2C925500755FCF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F0EE6501B2C925500755FCF /* Images.xcassets */; };
 		0F0EE6541B2C925500755FCF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F0EE6521B2C925500755FCF /* LaunchScreen.xib */; };
-		0F0EE6601B2C925500755FCF /* KFlightChecklistsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0EE65F1B2C925500755FCF /* KFlightChecklistsTests.swift */; };
 		0F244DCF1B2D126300081141 /* ChecklistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F244DCE1B2D126300081141 /* ChecklistViewController.swift */; };
 		0F3190811B4226350023216A /* ManifoldLimiteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3190801B4226350023216A /* ManifoldLimiteDataSource.swift */; };
 		0F5EF2011B30CAE000622496 /* R22FuelTankQuantityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5EF2001B30CAE000622496 /* R22FuelTankQuantityViewController.swift */; };
@@ -51,7 +50,6 @@
 		0FF75C541B2CFEC900960DCA /* ChecklistSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF75C531B2CFEC900960DCA /* ChecklistSelectViewController.swift */; };
 		0FFB12CE1B41EDCC000E0C03 /* MapVneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFB12CD1B41EDCC000E0C03 /* MapVneViewController.swift */; };
 		6F2102AAF05F5D04377903C1 /* Pods_KFlightChecklists.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ABC11ADF3883F81C30A0962 /* Pods_KFlightChecklists.framework */; };
-		83BADE8082ECADBF3E7F2E52 /* Pods_KFlightChecklists_KFlightChecklistsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E1BC851C6286DC5F9ADE857 /* Pods_KFlightChecklists_KFlightChecklistsTests.framework */; };
 		BC24FA3F1B373C62003D919D /* RecordFuelQuantityAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC24FA3E1B373C62003D919D /* RecordFuelQuantityAction.swift */; };
 		BC24FA411B373C7D003D919D /* RecordHobbsMeterReadingAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC24FA401B373C7D003D919D /* RecordHobbsMeterReadingAction.swift */; };
 		BC24FA451B373EDB003D919D /* StopFlightTimerAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC24FA441B373EDB003D919D /* StopFlightTimerAction.swift */; };
@@ -71,16 +69,6 @@
 		BCFB4CB51B4A9F6200EA9C1C /* ShowMapVNEChartsAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFB4CB41B4A9F6200EA9C1C /* ShowMapVNEChartsAction.swift */; };
 		BCFB4CB71B4AA10000EA9C1C /* ShowMapVNEChartsPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFB4CB61B4AA10000EA9C1C /* ShowMapVNEChartsPayload.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		0F0EE65A1B2C925500755FCF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0F0EE6391B2C925500755FCF /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0F0EE6401B2C925500755FCF;
-			remoteInfo = KFlightChecklists;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		0FC3FB001E60EBD2000AF01B /* Embed Frameworks */ = {
@@ -104,9 +92,6 @@
 		0F0EE64E1B2C925500755FCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0F0EE6501B2C925500755FCF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		0F0EE6531B2C925500755FCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		0F0EE6591B2C925500755FCF /* KFlightChecklistsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KFlightChecklistsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0F0EE65E1B2C925500755FCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0F0EE65F1B2C925500755FCF /* KFlightChecklistsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KFlightChecklistsTests.swift; sourceTree = "<group>"; };
 		0F244DCE1B2D126300081141 /* ChecklistViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChecklistViewController.swift; sourceTree = "<group>"; };
 		0F3190801B4226350023216A /* ManifoldLimiteDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManifoldLimiteDataSource.swift; sourceTree = "<group>"; };
 		0F5EF2001B30CAE000622496 /* R22FuelTankQuantityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R22FuelTankQuantityViewController.swift; sourceTree = "<group>"; };
@@ -178,14 +163,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0F0EE6561B2C925500755FCF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				83BADE8082ECADBF3E7F2E52 /* Pods_KFlightChecklists_KFlightChecklistsTests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -193,7 +170,6 @@
 			isa = PBXGroup;
 			children = (
 				0F0EE6431B2C925500755FCF /* KFlightChecklists */,
-				0F0EE65C1B2C925500755FCF /* KFlightChecklistsTests */,
 				0F0EE6421B2C925500755FCF /* Products */,
 				370C40F7212516857388A725 /* Frameworks */,
 				AA1303756251FC85579810A5 /* Pods */,
@@ -204,7 +180,6 @@
 			isa = PBXGroup;
 			children = (
 				0F0EE6411B2C925500755FCF /* KF Checklists.app */,
-				0F0EE6591B2C925500755FCF /* KFlightChecklistsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -229,23 +204,6 @@
 			isa = PBXGroup;
 			children = (
 				0F0EE6451B2C925500755FCF /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		0F0EE65C1B2C925500755FCF /* KFlightChecklistsTests */ = {
-			isa = PBXGroup;
-			children = (
-				0F0EE65F1B2C925500755FCF /* KFlightChecklistsTests.swift */,
-				0F0EE65D1B2C925500755FCF /* Supporting Files */,
-			);
-			path = KFlightChecklistsTests;
-			sourceTree = "<group>";
-		};
-		0F0EE65D1B2C925500755FCF /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				0F0EE65E1B2C925500755FCF /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -406,8 +364,7 @@
 				0F0EE63E1B2C925500755FCF /* Frameworks */,
 				0F0EE63F1B2C925500755FCF /* Resources */,
 				0FC3FB001E60EBD2000AF01B /* Embed Frameworks */,
-				64BEAC573C8A8D0C92247A76 /* [CP] Embed Pods Frameworks */,
-				215BDFF68CA282392781B701 /* [CP] Copy Pods Resources */,
+				1CFD494D0F29A6BDEFEB0A5C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -418,27 +375,6 @@
 			productReference = 0F0EE6411B2C925500755FCF /* KF Checklists.app */;
 			productType = "com.apple.product-type.application";
 		};
-		0F0EE6581B2C925500755FCF /* KFlightChecklistsTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0F0EE6661B2C925500755FCF /* Build configuration list for PBXNativeTarget "KFlightChecklistsTests" */;
-			buildPhases = (
-				1558E106D9273FEC4A7557B2 /* [CP] Check Pods Manifest.lock */,
-				0F0EE6551B2C925500755FCF /* Sources */,
-				0F0EE6561B2C925500755FCF /* Frameworks */,
-				0F0EE6571B2C925500755FCF /* Resources */,
-				AB18AC06CFF02BC6E763CD7B /* [CP] Embed Pods Frameworks */,
-				2596053D695BC3F4486AFE5C /* [CP] Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				0F0EE65B1B2C925500755FCF /* PBXTargetDependency */,
-			);
-			name = KFlightChecklistsTests;
-			productName = KFlightChecklistsTests;
-			productReference = 0F0EE6591B2C925500755FCF /* KFlightChecklistsTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -447,7 +383,7 @@
 			attributes = {
 				LastSwiftMigration = 0710;
 				LastSwiftUpdateCheck = 0710;
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 1140;
 				ORGANIZATIONNAME = "Acproma llc";
 				TargetAttributes = {
 					0F0EE6401B2C925500755FCF = {
@@ -456,16 +392,11 @@
 						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
-					0F0EE6581B2C925500755FCF = {
-						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 0820;
-						TestTargetID = 0F0EE6401B2C925500755FCF;
-					};
 				};
 			};
 			buildConfigurationList = 0F0EE63C1B2C925500755FCF /* Build configuration list for PBXProject "KFlightChecklists" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -477,7 +408,6 @@
 			projectRoot = "";
 			targets = (
 				0F0EE6401B2C925500755FCF /* KFlightChecklists */,
-				0F0EE6581B2C925500755FCF /* KFlightChecklistsTests */,
 			);
 		};
 /* End PBXProject section */
@@ -496,59 +426,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0F0EE6571B2C925500755FCF /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1558E106D9273FEC4A7557B2 /* [CP] Check Pods Manifest.lock */ = {
+		1CFD494D0F29A6BDEFEB0A5C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KFlightChecklists/Pods-KFlightChecklists-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AEXML/AEXML.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
-			name = "[CP] Check Pods Manifest.lock";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AEXML.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		215BDFF68CA282392781B701 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KFlightChecklists/Pods-KFlightChecklists-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		2596053D695BC3F4486AFE5C /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KFlightChecklists-KFlightChecklistsTests/Pods-KFlightChecklists-KFlightChecklistsTests-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KFlightChecklists/Pods-KFlightChecklists-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		646C31F4864B9EDF3C69BF71 /* [CP] Check Pods Manifest.lock */ = {
@@ -557,43 +457,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KFlightChecklists-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		64BEAC573C8A8D0C92247A76 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KFlightChecklists/Pods-KFlightChecklists-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		AB18AC06CFF02BC6E763CD7B /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KFlightChecklists-KFlightChecklistsTests/Pods-KFlightChecklists-KFlightChecklistsTests-frameworks.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -660,23 +533,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0F0EE6551B2C925500755FCF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0F0EE6601B2C925500755FCF /* KFlightChecklistsTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		0F0EE65B1B2C925500755FCF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 0F0EE6401B2C925500755FCF /* KFlightChecklists */;
-			targetProxy = 0F0EE65A1B2C925500755FCF /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		0F0EE64D1B2C925500755FCF /* Main.storyboard */ = {
@@ -702,18 +559,27 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -737,7 +603,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -750,18 +616,27 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -778,7 +653,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -800,7 +675,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ghengiskwan.KFChecklists;
 				PRODUCT_NAME = "KF Checklists";
 				PROVISIONING_PROFILE = "";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
@@ -818,48 +693,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ghengiskwan.KFChecklists;
 				PRODUCT_NAME = "KF Checklists";
 				PROVISIONING_PROFILE = "";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 2;
-			};
-			name = Release;
-		};
-		0F0EE6671B2C925500755FCF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 229CD3BDAAF6ADB82861F794 /* Pods-KFlightChecklists-KFlightChecklistsTests.debug.xcconfig */;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = KFlightChecklistsTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.acproma.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KF Checklists.app/KF Checklists";
-			};
-			name = Debug;
-		};
-		0F0EE6681B2C925500755FCF /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 07D570E4DD08824F4171C9F0 /* Pods-KFlightChecklists-KFlightChecklistsTests.release.xcconfig */;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = KFlightChecklistsTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.acproma.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KF Checklists.app/KF Checklists";
 			};
 			name = Release;
 		};
@@ -880,15 +715,6 @@
 			buildConfigurations = (
 				0F0EE6641B2C925500755FCF /* Debug */,
 				0F0EE6651B2C925500755FCF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		0F0EE6661B2C925500755FCF /* Build configuration list for PBXNativeTarget "KFlightChecklistsTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0F0EE6671B2C925500755FCF /* Debug */,
-				0F0EE6681B2C925500755FCF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

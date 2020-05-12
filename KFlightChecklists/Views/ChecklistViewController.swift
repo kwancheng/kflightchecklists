@@ -32,7 +32,7 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
 
      
 
-        self.lbChecklist?.rowHeight = UITableViewAutomaticDimension
+        self.lbChecklist?.rowHeight = UITableView.automaticDimension
 
         self.lbChecklist?.estimatedRowHeight = 44.0
 
@@ -422,7 +422,7 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
 
         let navigationClosure = {() -> Void in
 
-            tableView.selectRow(at: next, animated: true, scrollPosition: UITableViewScrollPosition.middle)
+            tableView.selectRow(at: next, animated: true, scrollPosition: UITableView.ScrollPosition.middle)
 
             self.currentIndexPath = next
 
@@ -466,9 +466,9 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
 
             case .error :
 
-                let alert = UIAlertController(title: nil, message: "Error Occurred Restarting", preferredStyle: UIAlertControllerStyle.alert)
+                let alert = UIAlertController(title: nil, message: "Error Occurred Restarting", preferredStyle: UIAlertController.Style.alert)
 
-                alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: { (alertAction) -> Void in
+                alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: { (alertAction) -> Void in
 
                         self.currentState = .start
 
@@ -529,9 +529,9 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
 
         if let showMessageAction = action as? ShowMessageAction {
 
-            let alertController = UIAlertController(title: nil, message: showMessageAction.message, preferredStyle: UIAlertControllerStyle.alert)
+            let alertController = UIAlertController(title: nil, message: showMessageAction.message, preferredStyle: UIAlertController.Style.alert)
 
-            let defaultAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: { (alertAction) -> Void in
+            let defaultAction = UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: { (alertAction) -> Void in
 
                 if let callback = completionCallback {
 
@@ -689,7 +689,7 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
 
     
 
-    func updateTimer() {
+    @objc func updateTimer() {
 
         if let flightStartTime = self.flightInfo.flightStartTime {
 
@@ -791,11 +791,11 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
 
         if self.showFlightTime {
 
-            btnToggleTimeShown?.setTitle("Flight Time", for: UIControlState())
+            btnToggleTimeShown?.setTitle("Flight Time", for: UIControl.State())
 
         } else {
 
-            btnToggleTimeShown?.setTitle("Remaining", for: UIControlState())
+            btnToggleTimeShown?.setTitle("Remaining", for: UIControl.State())
 
         }
 
@@ -817,11 +817,11 @@ class ChecklistViewController : ViewController, UITableViewDataSource, UITableVi
 
         if self.showFlightTime {
 
-            btnToggleTimeShown?.setTitle("Flight Time", for: UIControlState())
+            btnToggleTimeShown?.setTitle("Flight Time", for: UIControl.State())
 
         } else {
 
-            btnToggleTimeShown?.setTitle("Remaining", for: UIControlState())
+            btnToggleTimeShown?.setTitle("Remaining", for: UIControl.State())
 
         }
 

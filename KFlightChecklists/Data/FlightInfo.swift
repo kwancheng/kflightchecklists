@@ -9,9 +9,9 @@
 import Foundation
 
 open class FlightInfo {        
-    open let mainTankCapacity : Float = 19.2
-    open let auxTankCapacity : Float = 10.5
-    open let gallonsPerHour : Float = 10
+    public let mainTankCapacity : Float = 19.2
+    public let auxTankCapacity : Float = 10.5
+    public let gallonsPerHour : Float = 10
     
     open var mainTankLevel : Float = 0
     open var auxTankLevel : Float = 0
@@ -27,7 +27,7 @@ open class FlightInfo {
     open var flightStartTime : Date?
     open var flightEndTime : Date?
     
-    open let maxFor5Min = 0.9
+    public let maxFor5Min = 0.9
     
     open func calcActualMainLevel() -> Float {
         return self.mainTankCapacity * self.mainTankLevel

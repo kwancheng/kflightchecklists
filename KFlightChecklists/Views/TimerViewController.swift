@@ -41,12 +41,8 @@ open class TimerViewController : NotepadViewController {
 
     fileprivate var animating = false;
     fileprivate var toRed = false;
-    
-    func animateToRed() {
         
-    }
-    
-    func updateTimer() {
+    @objc func updateTimer() {
         let now = Date()
 
         let interval = now.timeIntervalSince(startTime!)
@@ -59,7 +55,7 @@ open class TimerViewController : NotepadViewController {
 
                 self.animating = true
 
-                UIView.animate(withDuration: TimeInterval(0.25), delay: TimeInterval(0.0), options: UIViewAnimationOptions.allowUserInteraction, animations: { () -> Void in
+                UIView.animate(withDuration: TimeInterval(0.25), delay: TimeInterval(0.0), options: UIView.AnimationOptions.allowUserInteraction, animations: { () -> Void in
                     if(self.toRed){
                         self.containerView!.backgroundColor = UIColor.red;
                     }else{

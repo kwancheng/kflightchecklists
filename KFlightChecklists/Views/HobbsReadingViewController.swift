@@ -61,7 +61,7 @@ open class HobbsReadingViewController : NotepadViewController, UITextFieldDelega
 
         var hours = 0
 
-        if tbReadingHours!.text!.characters.count > 0 {
+        if tbReadingHours!.text!.count > 0 {
 
             hours = Int(tbReadingHours!.text!)!
 
@@ -71,7 +71,7 @@ open class HobbsReadingViewController : NotepadViewController, UITextFieldDelega
 
         var fHours = 0
 
-        if tbReadingHoursFractional!.text!.characters.count > 0 {
+        if tbReadingHoursFractional!.text!.count > 0 {
 
             fHours = Int(tbReadingHoursFractional!.text!)!
         }

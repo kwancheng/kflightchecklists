@@ -39,7 +39,7 @@ open class Action {
         }
     }
         
-    static open func instantiateActionFromJson(_ jsonData : JSON) -> Action? {
+    static public func instantiateActionFromJson(_ jsonData : JSON) -> Action? {
         var retAction : Action?
         
         if let actionName = jsonData["name"].string {

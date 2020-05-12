@@ -31,16 +31,16 @@ class MetarEntry {
         self.rawText = xmlElem["raw_text"].string
         self.stationId = xmlElem["station_id"].string
         self.observationTime = xmlElem["observation_time"].string
-        self.latitude = xmlElem["latitude"].double
-        self.longitude = xmlElem["longitude"].double
-        self.tempC = xmlElem["temp_c"].double
-        self.dewPointC = xmlElem["dewpoint_c"].double
-        self.windDirDegrees = xmlElem["wind_dir_degrees"].int
-        self.windSpdKts = xmlElem["wind_speed_kt"].int
-        self.visibilitySM = xmlElem["visibility_statute_mi"].double
-        self.altimHg = xmlElem["altim_in_hg"].double
+        self.latitude = xmlElem["latitude"].double ?? 0
+        self.longitude = xmlElem["longitude"].double ?? 0
+        self.tempC = xmlElem["temp_c"].double ?? 0
+        self.dewPointC = xmlElem["dewpoint_c"].double ?? 0
+        self.windDirDegrees = xmlElem["wind_dir_degrees"].int ?? 0
+        self.windSpdKts = xmlElem["wind_speed_kt"].int ?? 0
+        self.visibilitySM = xmlElem["visibility_statute_mi"].double ?? 0
+        self.altimHg = xmlElem["altim_in_hg"].double ?? 0
         self.flightCategory = xmlElem["flight_category"].string
         self.metarType = xmlElem["metar_type"].string
-        self.elevationMeter = xmlElem["elevation_m"].double
+        self.elevationMeter = xmlElem["elevation_m"].double ?? 0
     }
 }
